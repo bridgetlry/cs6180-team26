@@ -1,0 +1,27 @@
+{
+  "num_scenarios": 26,
+  "min_turns": 66,
+  "max_turns": 156,
+  "avg_turns": 98.31,
+  "scenario_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "artifacts": [
+    "extracted_full_text.txt",
+    "transcripts.jsonl",
+    "scenarios.csv",
+    "turns.csv",
+    "soap_dataset.db",
+    "soap_schema.json",
+    "prompt_ready_inputs.json"
+  ]
+}
