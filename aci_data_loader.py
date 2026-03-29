@@ -1,201 +1,247 @@
-import json
+"""
+aci_data_loader.py
+------------------
+Shared data loader for the ACI-Bench test1 dataset.
+Used by all three techniques: prompt engineering, constrained decoding, and GVR.
+
+Primary sources (from ACI-Bench figshare download):
+  - clinicalnlp_taskB_test1.csv          columns: dataset, encounter_id, dialogue, note
+  - clinicalnlp_taskB_test1_metadata.csv columns: dataset, encounter_id, id,
+                                                   doctor_name, patient_gender, patient_age,
+                                                   patient_firstname, patient_familyname,
+                                                   cc, 2nd_complaints
+
+Optional baseline file:
+  - test1ChatGPT_.csv  -- ChatGPT baseline predictions (joined on encounter_id)
+
+Usage:
+    from aci_data_loader import load_test1_encounters, save_predictions, ACIEncounter
+
+    encounters = load_test1_encounters(
+        data_csv="data/clinicalnlp_taskB_test1.csv",
+        metadata_csv="data/clinicalnlp_taskB_test1_metadata.csv",
+    )
+    for enc in encounters:
+        print(enc.encounter_id, enc.transcript[:80])
+"""
+
 import csv
-import os
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Optional
 
 
-# ─────────────────────────────────────────────
-# DATA PATHS
-# ─────────────────────────────────────────────
-# Primary files — use these for your main experiments
-TRAIN_JSON      = "aci_bench_data/src_experiment_data_json/train_aci_asrcorr.json"
-TEST_JSON       = "aci_bench_data/src_experiment_data_json/test1_aci_asr.json"
-VALID_JSON      = "aci_bench_data/src_experiment_data_json/valid_aci_asr.json"
+# ---------------------------------------------------------------------------
+# Data model
+# ---------------------------------------------------------------------------
 
-# Optional metadata CSVs — for chief complaint ground truth
-TRAIN_META_CSV  = "aci_bench_data/src_experiment_data/train_aci_asrcorr_metadata.csv"
-TEST_META_CSV   = "aci_bench_data/src_experiment_data/test1_aci_asr_metadata.csv"
-VALID_META_CSV  = "aci_bench_data/src_experiment_data/valid_aci_asr_metadata.csv"
-
-
-# ─────────────────────────────────────────────
-# ENCOUNTER DATACLASS
-# ─────────────────────────────────────────────
 @dataclass
 class ACIEncounter:
-    encounter_id: str               # from 'file' field e.g. "0-aci"
-    transcript: str                 # 'src' — doctor-patient conversation
-    reference_note: str             # 'tgt' — clinician-written SOAP note (ground truth)
-    dataset: str                    # always 'aci' for these files
-    # from metadata CSV (optional — None if metadata not loaded)
-    chief_complaint_gt: Optional[str] = None   # ground truth cc from metadata
-    secondary_complaints: Optional[str] = None
-    gender: Optional[str] = None
+    """One doctor-patient encounter from ACI-Bench test1."""
+    # Core fields (from clinicalnlp_taskB_test1.csv)
+    encounter_id: str       # e.g. "D2N088"
+    dataset: str            # "aci", "virtassist", or "virtscribe"
+    transcript: str         # full doctor-patient conversation
+    reference_note: str     # gold human-written SOAP note
+
+    # Metadata fields (from clinicalnlp_taskB_test1_metadata.csv)
+    patient_age: Optional[str] = None
+    patient_gender: Optional[str] = None
+    patient_firstname: Optional[str] = None
+    patient_familyname: Optional[str] = None
+    chief_complaint: Optional[str] = None
+    secondary_complaints: list = field(default_factory=list)
+    doctor_name: Optional[str] = None
+
+    # Optional: ChatGPT baseline prediction (from test1ChatGPT_.csv)
+    chatgpt_note: Optional[str] = None
 
 
-# ─────────────────────────────────────────────
-# METADATA LOADER
-# ─────────────────────────────────────────────
-def load_metadata(meta_csv_path: str) -> dict:
+# ---------------------------------------------------------------------------
+# Loaders
+# ---------------------------------------------------------------------------
+
+def load_test1_encounters(
+    data_csv,
+    metadata_csv=None,
+    chatgpt_csv=None,
+):
     """
-    Load metadata CSV into a dict keyed by encounter_id.
-    Returns empty dict if file not found.
+    Load all 40 ACI-Bench test1 encounters.
+
+    Args:
+        data_csv:     Path to clinicalnlp_taskB_test1.csv (required)
+        metadata_csv: Path to clinicalnlp_taskB_test1_metadata.csv (optional but recommended)
+        chatgpt_csv:  Path to test1ChatGPT_.csv (optional, for baseline comparison)
+
+    Returns:
+        List of ACIEncounter objects in original order (D2N088-D2N127).
+
+    Raises:
+        FileNotFoundError: if data_csv does not exist.
+        ValueError: if required columns are missing.
     """
-    metadata = {}
-    if not os.path.exists(meta_csv_path):
-        print(f"[warn] metadata file not found: {meta_csv_path}")
-        return metadata
-    with open(meta_csv_path, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            # strip whitespace from all keys and values
-            row = {k.strip(): v.strip() for k, v in row.items()}
-            eid = row.get("encounter_id", "")
-            metadata[eid] = row
-    return metadata
-
-
-# ─────────────────────────────────────────────
-# MAIN LOADER
-# ─────────────────────────────────────────────
-def load_aci_json(
-    json_path: str,
-    meta_csv_path: Optional[str] = None
-) -> list[ACIEncounter]:
-    """
-    Load an ACI-bench JSON file into a list of ACIEncounter objects.
-    Optionally merges metadata CSV for chief complaint ground truth.
-
-    JSON structure:
-        {"data": [{"src": "...", "tgt": "...", "file": "0-aci"}, ...]}
-    """
-    with open(json_path, "r", encoding="utf-8") as f:
-        raw = json.load(f)
-
-    metadata = load_metadata(meta_csv_path) if meta_csv_path else {}
-
-    encounters = []
-    for item in raw["data"]:
-        file_id  = str(item.get("file", ""))
-        src      = str(item.get("src", "")).strip()
-        tgt      = str(item.get("tgt", "")).strip()
-        dataset  = file_id.split("-")[-1] if "-" in file_id else "aci"
-
-        # look up metadata by file_id or by numeric part
-        meta = metadata.get(file_id, {})
-
-        enc = ACIEncounter(
-            encounter_id        = file_id,
-            transcript          = src,
-            reference_note      = tgt,
-            dataset             = dataset,
-            chief_complaint_gt  = meta.get("cc") or None,
-            secondary_complaints= meta.get("2nd_complaints") or None,
-            gender              = meta.get("gender") or None,
+    data_csv = Path(data_csv)
+    if not data_csv.exists():
+        raise FileNotFoundError(
+            f"ACI-Bench test1 CSV not found at: {data_csv}\n"
+            f"Expected: clinicalnlp_taskB_test1.csv\n"
+            f"Download from: https://doi.org/10.6084/m9.figshare.22494601"
         )
-        encounters.append(enc)
+
+    # --- Load core data ---
+    encounters = []
+    with open(data_csv, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        required = {"encounter_id", "dialogue", "note", "dataset"}
+        missing = required - set(reader.fieldnames or [])
+        if missing:
+            raise ValueError(f"clinicalnlp_taskB_test1.csv missing columns: {missing}")
+
+        for row in reader:
+            encounters.append(ACIEncounter(
+                encounter_id=row["encounter_id"].strip(),
+                dataset=row["dataset"].strip(),
+                transcript=row["dialogue"].strip(),
+                reference_note=row["note"].strip(),
+            ))
+
+    # Index by encounter_id for joining
+    enc_index = {enc.encounter_id: enc for enc in encounters}
+
+    # --- Join metadata (optional) ---
+    if metadata_csv is not None:
+        metadata_csv = Path(metadata_csv)
+        if not metadata_csv.exists():
+            print(f"Warning: metadata CSV not found at {metadata_csv}, skipping.")
+        else:
+            with open(metadata_csv, newline="", encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    eid = row["encounter_id"].strip()
+                    if eid not in enc_index:
+                        continue
+                    enc = enc_index[eid]
+                    enc.patient_age = row.get("patient_age", "").strip() or None
+                    enc.patient_gender = row.get("patient_gender", "").strip() or None
+                    enc.patient_firstname = row.get("patient_firstname", "").strip() or None
+                    enc.patient_familyname = row.get("patient_familyname", "").strip() or None
+                    enc.chief_complaint = row.get("cc", "").strip() or None
+                    enc.doctor_name = row.get("doctor_name", "").strip() or None
+                    raw_secondary = row.get("2nd_complaints", "").strip()
+                    enc.secondary_complaints = (
+                        [s.strip() for s in raw_secondary.split(";") if s.strip()]
+                        if raw_secondary else []
+                    )
+
+    # --- Join ChatGPT baseline (optional) ---
+    if chatgpt_csv is not None:
+        chatgpt_csv = Path(chatgpt_csv)
+        if not chatgpt_csv.exists():
+            print(f"Warning: ChatGPT CSV not found at {chatgpt_csv}, skipping.")
+        else:
+            with open(chatgpt_csv, newline="", encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    eid = row["encounter_id"].strip()
+                    if eid in enc_index:
+                        enc_index[eid].chatgpt_note = row["note"].strip()
 
     return encounters
 
 
-# ─────────────────────────────────────────────
-# CONVENIENCE FUNCTIONS
-# ─────────────────────────────────────────────
-def load_train(with_metadata: bool = True) -> list[ACIEncounter]:
-    return load_aci_json(
-        TRAIN_JSON,
-        TRAIN_META_CSV if with_metadata else None
-    )
-
-def load_test(with_metadata: bool = True) -> list[ACIEncounter]:
-    return load_aci_json(
-        TEST_JSON,
-        TEST_META_CSV if with_metadata else None
-    )
-
-def load_valid(with_metadata: bool = True) -> list[ACIEncounter]:
-    return load_aci_json(
-        VALID_JSON,
-        VALID_META_CSV if with_metadata else None
-    )
-
-def format_transcript(encounter: ACIEncounter) -> str:
+def get_encounter_by_id(encounters, encounter_id):
     """
-    Return transcript text ready to pass into a pipeline prompt.
-    Preserves [doctor] / [patient] speaker tags.
+    Get a single encounter by ID from an already-loaded list.
+    Useful for single-record testing during development.
+
+    Example:
+        encounters = load_test1_encounters(...)
+        enc = get_encounter_by_id(encounters, "D2N088")
     """
-    return encounter.transcript
+    for enc in encounters:
+        if enc.encounter_id == encounter_id:
+            return enc
+    return None
 
-def parse_reference_sections(reference_note: str) -> dict:
+
+# ---------------------------------------------------------------------------
+# Output helper -- matches paper four-column output format
+# ---------------------------------------------------------------------------
+
+def save_predictions(predictions, output_path, encounters=None):
     """
-    Parse a clinician reference note into its SOAP sections.
-    Uses section headers as delimiters.
-    Returns dict with keys: chief_complaint, history, physical_exam,
-    assessment, plan, results (all Optional[str]).
+    Save generated notes to a CSV matching the paper output format.
 
-    Useful for field-level ground truth comparison.
+    If encounters is provided, outputs four columns matching test1ChatGPT_.csv:
+        Dialogues, Reference Summaries, note, encounter_id
+
+    If encounters is not provided, outputs two columns (minimal format):
+        encounter_id, note
+
+    Args:
+        predictions: Dict mapping encounter_id -> generated note text.
+        output_path: Where to write the output CSV.
+        encounters:  List of ACIEncounter objects (optional but recommended).
     """
-    import re
-    sections = {}
-    # common section headers in ACI-bench notes
-    headers = [
-        "CHIEF COMPLAINT",
-        "HISTORY OF PRESENT ILLNESS",
-        "MEDICAL HISTORY",
-        "SURGICAL HISTORY",
-        "SOCIAL HISTORY",
-        "FAMILY HISTORY",
-        "REVIEW OF SYSTEMS",
-        "VITALS",
-        "PHYSICAL EXAM",
-        "RESULTS",
-        "ASSESSMENT AND PLAN",
-        "ASSESSMENT",
-        "PLAN",
-        "INSTRUCTIONS",
-    ]
-    # build regex to split on headers
-    pattern = "(" + "|".join(re.escape(h) for h in headers) + ")"
-    parts = re.split(pattern, reference_note)
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    current_header = None
-    for part in parts:
-        part = part.strip()
-        if part in headers:
-            current_header = part
-        elif current_header and part:
-            sections[current_header] = part
+    if encounters is not None:
+        enc_index = {enc.encounter_id: enc for enc in encounters}
+        with open(output_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(
+                f, fieldnames=["Dialogues", "Reference Summaries", "note", "encounter_id"]
+            )
+            writer.writeheader()
+            for encounter_id, note in predictions.items():
+                enc = enc_index.get(encounter_id)
+                writer.writerow({
+                    "Dialogues": enc.transcript if enc else "",
+                    "Reference Summaries": enc.reference_note if enc else "",
+                    "note": note,
+                    "encounter_id": encounter_id,
+                })
+    else:
+        with open(output_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=["encounter_id", "note"])
+            writer.writeheader()
+            for encounter_id, note in predictions.items():
+                writer.writerow({"encounter_id": encounter_id, "note": note})
 
-    return sections
+    print(f"Saved {len(predictions)} predictions to {output_path}")
 
 
-# ─────────────────────────────────────────────
-# MAIN — preview the dataset
-# ─────────────────────────────────────────────
+# ---------------------------------------------------------------------------
+# CLI -- quick sanity check
+# ---------------------------------------------------------------------------
+
 if __name__ == "__main__":
-    print("Loading train split (aci subset, ASR-corrected)...")
-    train = load_train()
-    print(f"Train encounters: {len(train)}")
+    import sys
+    from collections import Counter
 
-    print("\nLoading test split (aci subset, ASR)...")
-    test = load_test()
-    print(f"Test encounters: {len(test)}")
+    data_csv = sys.argv[1] if len(sys.argv) > 1 else "data/clinicalnlp_taskB_test1.csv"
+    metadata_csv = sys.argv[2] if len(sys.argv) > 2 else "data/clinicalnlp_taskB_test1_metadata.csv"
+    chatgpt_csv = sys.argv[3] if len(sys.argv) > 3 else None
 
-    print("\n--- First encounter preview ---")
-    enc = train[0]
-    print(f"ID:              {enc.encounter_id}")
-    print(f"Dataset:         {enc.dataset}")
-    print(f"Gender:          {enc.gender}")
-    print(f"CC (metadata):   {enc.chief_complaint_gt}")
+    try:
+        encounters = load_test1_encounters(data_csv, metadata_csv, chatgpt_csv)
+    except FileNotFoundError as e:
+        print(e)
+        sys.exit(1)
 
-    print(f"\nTranscript preview (first 300 chars):")
-    print(enc.transcript[:300])
+    datasets = Counter(enc.dataset for enc in encounters)
+    print(f"Loaded {len(encounters)} encounters")
+    print(f"Dataset breakdown: {dict(datasets)}")
+    print(f"Encounter IDs: {encounters[0].encounter_id} ... {encounters[-1].encounter_id}")
+    print()
 
-    print(f"\nReference note preview (first 300 chars):")
-    print(enc.reference_note[:300])
-
-    print(f"\nParsed reference sections:")
-    sections = parse_reference_sections(enc.reference_note)
-    for k, v in sections.items():
-        print(f"  [{k}]: {v[:80]}...")
+    enc = encounters[0]
+    print(f"=== {enc.encounter_id} ({enc.dataset}) ===")
+    print(f"Patient:    {enc.patient_firstname} {enc.patient_familyname}, {enc.patient_age}yo {enc.patient_gender}")
+    print(f"CC:         {enc.chief_complaint}")
+    print(f"2nd:        {enc.secondary_complaints}")
+    print(f"Transcript: {enc.transcript[:120]}...")
+    print(f"Gold note:  {enc.reference_note[:120]}...")
+    if enc.chatgpt_note:
+        print(f"ChatGPT:    {enc.chatgpt_note[:120]}...")
