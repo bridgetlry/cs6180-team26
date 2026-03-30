@@ -2,25 +2,39 @@
 pipeline_base.py
 ────────────────
 Shared infrastructure for all three SOAP note generation techniques:
-  - GVR                  (generate_validate_retry.py)
+  - GVR                  (gvr.py)
   - Prompt Engineering   (prompt_engineering.py)
   - Constrained Decoding (constrained_decoding.py)
 
+This file is the foundation that all three techniques build on top of.
+It provides four things so technique files don't have to reimplement them:
+  1. PipelineResult  — a standardized "report card" dataclass every technique returns
+  2. call_llm()      — the shared function that talks to the OpenRouter API
+  3. soap_note_to_text() — converts a validated SOAPNote into plain-text clinical note format
+  4. SOAPPipeline    — the abstract base class each technique must subclass
+
 To implement a new technique, subclass SOAPPipeline and implement run_pipeline().
-Everything else — LLM calls, result structure, text formatting — is inherited.
+Everything else — LLM calls, result structure, text formatting — is inherited for free.
 """
 
 from __future__ import annotations
 
+# ─────────────────────────────────────────────
+# IMPORTS
+# ─────────────────────────────────────────────
+
+# standard library imports
 import os
 import time
-import requests
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field as dc_field
 from typing import Optional
 
+# third-party imports
+import requests
 from dotenv import load_dotenv
 
+# local imports
 from aci_data_loader import ACIEncounter
 from gvr_pydantic_schema import SOAPNote
 
@@ -29,16 +43,29 @@ load_dotenv()
 # ─────────────────────────────────────────────
 # SHARED CONFIGURATION
 # ─────────────────────────────────────────────
+# All three techniques use the same model and API settings.
+# If you need to adjust parameters for your technique, pass them
+# as keyword arguments to call_llm() — don't modify the defaults here.
+
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 MODEL              = "meta-llama/llama-3.1-8b-instruct"
 API_URL            = "https://openrouter.ai/api/v1/chat/completions"
-TEMPERATURE        = 0.0    # deterministic for reproducibility
-DELAY_SECONDS      = 0.5    # between API calls — increase if rate limited
+TEMPERATURE        = 0.0    # deterministic — same input always produces same output
+DELAY_SECONDS      = 0.5    # pause between API calls — increase if hitting rate limits
 
 
 # ─────────────────────────────────────────────
-# SHARED RESULT DATACLASS
+# PIPELINE RESULT
 # ─────────────────────────────────────────────
+# A standardized "report card" that every technique returns for each encounter.
+# Having one shared shape means the batch runner, evaluation scripts, and
+# failure taxonomy all work identically across GVR, prompt engineering,
+# and constrained decoding — none of them need to know which technique ran.
+#
+# Use _success() and _failure() (defined in SOAPPipeline below) to construct
+# these — don't build them by hand, those helpers fill in all shared fields
+# automatically from the encounter object.
+
 @dataclass
 class PipelineResult:
     """
@@ -46,17 +73,17 @@ class PipelineResult:
     The batch runner, evaluation scripts, and failure taxonomy
     all consume this — technique implementations must not change its shape.
     """
-    # identity
+    # which encounter this result is for
     encounter_id:    str
     dataset_subset:  str            # virtassist | virtscribe | aci
     technique:       str            # "gvr" | "prompt_engineering" | "constrained_decoding"
 
-    # outcome
+    # did it work, and how many LLM calls did it take?
     success:         bool
     attempts:        int            # total LLM calls made (1-3 for GVR; always 1 for others)
     soap_note:       Optional[dict] # validated SOAPNote as dict, or None if failed
 
-    # failure tracking (Dao et al. failure taxonomy)
+    # failure tracking — used by the Dao et al. failure taxonomy analysis
     final_error:     Optional[str]
     failure_type:    Optional[str]  # json_parse | pydantic | unexpected | None
     failed_fields:   list = dc_field(default_factory=list)
@@ -64,18 +91,24 @@ class PipelineResult:
     # semantic flags
     plan_is_inferred: Optional[bool] = None
 
-    # ground truth from metadata (populated from ACIEncounter, not from LLM output)
+    # ground truth from ACI-Bench metadata — populated from the encounter object,
+    # NOT from LLM output, so we always have the authoritative values for comparison
     chief_complaint_gt: Optional[str] = None
     patient_age_gt:     Optional[str] = None
     patient_gender_gt:  Optional[str] = None
 
-    # reference note (gold standard, for ROUGE/BERTScore/MEDCON evaluation)
+    # the gold standard clinical note, used for ROUGE/BERTScore/MEDCON scoring
     reference_note:  Optional[str] = None
 
 
 # ─────────────────────────────────────────────
 # SHARED LLM WRAPPER
 # ─────────────────────────────────────────────
+# One function that handles all communication with the OpenRouter API.
+# All three techniques call this through self.call_llm() on the SOAPPipeline class.
+# Centralizing this means if we ever need to swap models or change API behavior,
+# there's only one place to update.
+
 def call_llm(
     prompt: str,
     model: str = MODEL,
@@ -105,13 +138,19 @@ def call_llm(
     }
     response = requests.post(API_URL, headers=headers, json=payload)
     response.raise_for_status()
-    time.sleep(delay)
+    time.sleep(delay)  # rate limit buffer between calls
     return response.json()["choices"][0]["message"]["content"].strip()
 
 
 # ─────────────────────────────────────────────
 # SHARED TEXT FORMATTER
 # ─────────────────────────────────────────────
+# After a SOAPNote is validated by Pydantic, it needs to be converted to plain
+# text before evaluation. This function applies the exact section headers that
+# sectiontagger.py (in evaluation/) uses to split notes into divisions.
+# If the headers don't match exactly, the evaluation script can't split the
+# note correctly and division-level scores will be wrong.
+
 def soap_note_to_text(soap: SOAPNote, encounter_id: str) -> str:
     """
     Convert a validated SOAPNote into plain-text clinical note format.
@@ -130,6 +169,8 @@ def soap_note_to_text(soap: SOAPNote, encounter_id: str) -> str:
         f"PHYSICAL EXAM\n\n{soap.objective_exam}",
     ]
 
+    # objective_results is legitimately empty in many encounters — omit the
+    # section entirely rather than writing an empty RESULTS block
     if soap.objective_results and soap.objective_results.strip():
         parts.append(f"RESULTS\n\n{soap.objective_results}")
 
@@ -141,6 +182,27 @@ def soap_note_to_text(soap: SOAPNote, encounter_id: str) -> str:
 # ─────────────────────────────────────────────
 # ABSTRACT BASE CLASS
 # ─────────────────────────────────────────────
+# SOAPPipeline is the template (contract) that all three techniques must follow.
+# It says: "if you want to be a technique in this project, you must implement
+# run_pipeline() and return a PipelineResult."
+#
+# By inheriting from SOAPPipeline, each technique file gets call_llm(),
+# soap_note_to_text(), _success(), and _failure() for free — it only needs
+# to implement the technique-specific logic inside run_pipeline().
+#
+# Example — minimal subclass:
+#
+#     class MyTechniquePipeline(SOAPPipeline):
+#         TECHNIQUE_NAME = "my_technique"
+#
+#         def run_pipeline(self, encounter, max_retries=0):
+#             try:
+#                 raw  = self.call_llm(your_prompt)
+#                 soap = SOAPNote(**your_parsed_output)
+#                 return self._success(encounter, soap, attempts=1)
+#             except Exception as e:
+#                 return self._failure(encounter, str(e), "unexpected", attempts=1)
+
 class SOAPPipeline(ABC):
     """
     Base class for all three SOAP note generation techniques.
@@ -148,23 +210,11 @@ class SOAPPipeline(ABC):
     Subclasses must implement run_pipeline(). They get call_llm()
     and soap_note_to_text() for free, and must return a PipelineResult
     so the shared batch runner and evaluation scripts work unchanged.
-
-    Minimal subclass skeleton:
-
-        class MyTechniquePipeline(SOAPPipeline):
-            TECHNIQUE_NAME = "my_technique"
-
-            def run_pipeline(self, encounter, max_retries=0):
-                try:
-                    raw  = self.call_llm(your_prompt)
-                    soap = SOAPNote(**your_parsed_output)
-                    return self._success(encounter, soap, attempts=1)
-                except Exception as e:
-                    return self._failure(encounter, str(e), "unexpected", attempts=1)
     """
 
-    # Set this in each subclass. It gets stamped into every PipelineResult
-    # so the failure taxonomy and evaluation can group by technique.
+    # Each subclass sets this to its technique name.
+    # It gets stamped into every PipelineResult so the failure taxonomy
+    # and evaluation scripts can group and compare results by technique.
     TECHNIQUE_NAME: str = "base"
 
     def call_llm(self, prompt: str, **kwargs) -> str:
@@ -179,6 +229,7 @@ class SOAPPipeline(ABC):
     def run_pipeline(self, encounter: ACIEncounter, max_retries: int = 0) -> PipelineResult:
         """
         Run the technique on a single encounter and return a PipelineResult.
+        This is the only method each technique file must implement.
 
         Args:
             encounter:   One ACIEncounter from load_test1_encounters().
@@ -192,9 +243,9 @@ class SOAPPipeline(ABC):
         ...
 
     # ── Convenience constructors ──────────────────────────────────────────
-    # Use _success() and _failure() inside run_pipeline() instead of
-    # constructing PipelineResult by hand — they fill in all the shared
-    # fields automatically from the encounter object.
+    # Call these inside run_pipeline() instead of constructing PipelineResult
+    # by hand. They automatically populate all shared fields from the encounter
+    # object so you only need to pass in what your technique produced.
 
     def _success(
         self,

@@ -1,3 +1,35 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# LICENSE
+# ─────────────────────────────────────────────────────────────────────────────
+# From the ACI-BENCH repository by Yim et al. (2023)
+# Original source: https://github.com/wyim/aci-bench
+# Published under Creative Commons Attribution 4.0 International License (CC BY 4.0)
+# https://creativecommons.org/licenses/by/4.0/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CITATION
+# ─────────────────────────────────────────────────────────────────────────────
+# @article{aci-bench,
+#   author = {Wen{-}wai Yim and
+#             Yujuan Fu and
+#             Asma {Ben Abacha} and
+#             Neal Snider and Thomas Lin and Meliha Yetisgen},
+#   title = {ACI-BENCH: a Novel Ambient Clinical Intelligence Dataset for
+#            Benchmarking Automatic Visit Note Generation},
+#   journal = {Nature Scientific Data},
+#   year = {2023}
+# }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# USAGE
+# ─────────────────────────────────────────────────────────────────────────────
+# used in UMLS_evaluation.py
+
+# ─────────────────────────────────────────────────────────────────────────────
+# MODIFICATIONS BY TEAM 26 (CS6180, Northeastern University, 2026)
+# ─────────────────────────────────────────────────────────────────────────────
+# NONE
+
 #source https://lhncbc.nlm.nih.gov/ii/tools/MetaMap/Docs/SemGroups_2018.txt
 import os
 PROJECT_DIR = os.path.dirname( os.path.dirname( __file__ ) )
