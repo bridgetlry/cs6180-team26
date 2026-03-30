@@ -1,1 +1,10 @@
+.env__pycache__/
+.idea/
+.DS_Store
+evaluation/__pycache__/
+__pycache__/
 .env
+resources/MRCONSO.RRF
+resources/MRSTY.RRF
+resources/des/
+.DS_Store

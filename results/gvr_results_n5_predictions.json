@@ -9,8 +9,8 @@
         "bertscore-recall": 0.0,
         "bertscore-f1": 0.0,
         "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
+        "umls": 0.5632056572701734,
+        "NER": 0.47691396119188917
     },
     "dataset-virtassist": {
         "rouge1": 0.40323934492593594,
@@ -21,8 +21,8 @@
         "bertscore-recall": 0.0,
         "bertscore-f1": 0.0,
         "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
+        "umls": 0.5632056572701734,
+        "NER": 0.47691396119188917
     },
     "division-subjective": {
         "rouge1": 0.3969063665665067,
@@ -33,8 +33,8 @@
         "bertscore-recall": 0.0,
         "bertscore-f1": 0.0,
         "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
+        "umls": 0.4539272321881018,
+        "NER": 0.4500706311232626
     },
     "division-objective_exam": {
         "rouge1": 0.520253547545426,
@@ -45,8 +45,8 @@
         "bertscore-recall": 0.0,
         "bertscore-f1": 0.0,
         "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
+        "umls": 0.1917293233082707,
+        "NER": 0.13333333333333333
     },
     "division-objective_results": {
         "rouge1": 0.369235970250169,
@@ -57,7 +57,7 @@
         "bertscore-recall": 0.0,
         "bertscore-f1": 0.0,
         "bleurt": 0.0,
-        "umls": 0.0,
+        "umls": 0.14603174603174604,
         "NER": 0.0
     },
     "division-assessment_and_plan": {
@@ -69,8 +69,8 @@
         "bertscore-recall": 0.0,
         "bertscore-f1": 0.0,
         "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
+        "umls": 0.4412251216275983,
+        "NER": 0.4847899159663866
     },
     "longer-src (support:5)": {
         "rouge1": 0.40323934492593594,
@@ -81,20 +81,8 @@
         "bertscore-recall": 0.0,
         "bertscore-f1": 0.0,
         "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
-    },
-    "patient_gender-female(support:2)": {
-        "rouge1": 0.3713353313353313,
-        "rouge2": 0.14115316189552,
-        "rougeL": 0.2841092241092241,
-        "rougeLsum": 0.3580619380619381,
-        "bertscore-precision": 0.0,
-        "bertscore-recall": 0.0,
-        "bertscore-f1": 0.0,
-        "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
+        "umls": 0.5632056572701734,
+        "NER": 0.47691396119188917
     },
     "patient_gender-male(support:3)": {
         "rouge1": 0.42450868731967234,
@@ -105,32 +93,20 @@
         "bertscore-recall": 0.0,
         "bertscore-f1": 0.0,
         "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
+        "umls": 0.5826426426426426,
+        "NER": 0.4305302262749071
     },
-    "cc-upper respiratory infection(support:1)": {
-        "rouge1": 0.42733188720173537,
-        "rouge2": 0.1956521739130435,
-        "rougeL": 0.2776572668112799,
-        "rougeLsum": 0.41431670281995653,
+    "patient_gender-female(support:2)": {
+        "rouge1": 0.3713353313353313,
+        "rouge2": 0.14115316189552,
+        "rougeL": 0.2841092241092241,
+        "rougeLsum": 0.3580619380619381,
         "bertscore-precision": 0.0,
         "bertscore-recall": 0.0,
         "bertscore-f1": 0.0,
         "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
-    },
-    "cc-ER follow-up (support:1)": {
-        "rouge1": 0.41019417475728154,
-        "rouge2": 0.2214111922141119,
-        "rougeL": 0.29611650485436897,
-        "rougeLsum": 0.38834951456310673,
-        "bertscore-precision": 0.0,
-        "bertscore-recall": 0.0,
-        "bertscore-f1": 0.0,
-        "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
+        "umls": 0.5340501792114696,
+        "NER": 0.5464895635673623
     },
     "cc-right arm pain(support:1)": {
         "rouge1": 0.35497835497835495,
@@ -141,8 +117,20 @@
         "bertscore-recall": 0.0,
         "bertscore-f1": 0.0,
         "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
+        "umls": 0.4444444444444444,
+        "NER": 0.7058823529411764
+    },
+    "cc-ER follow-up (support:1)": {
+        "rouge1": 0.41019417475728154,
+        "rouge2": 0.2214111922141119,
+        "rougeL": 0.29611650485436897,
+        "rougeLsum": 0.38834951456310673,
+        "bertscore-precision": 0.0,
+        "bertscore-recall": 0.0,
+        "bertscore-f1": 0.0,
+        "bleurt": 0.0,
+        "umls": 0.52,
+        "NER": 0.38095238095238093
     },
     "cc-annual exam(support:2)": {
         "rouge1": 0.4118461538461538,
@@ -153,56 +141,20 @@
         "bertscore-recall": 0.0,
         "bertscore-f1": 0.0,
         "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
+        "umls": 0.6091252542865446,
+        "NER": 0.39354838709677414
     },
-    "2nd_complaints-RA;artrial fibrillation;reflux(support:1)": {
-        "rouge1": 0.38769230769230767,
-        "rouge2": 0.20370370370370372,
-        "rougeL": 0.27384615384615385,
-        "rougeLsum": 0.3784615384615385,
+    "cc-upper respiratory infection(support:1)": {
+        "rouge1": 0.42733188720173537,
+        "rouge2": 0.1956521739130435,
+        "rougeL": 0.2776572668112799,
+        "rougeLsum": 0.41431670281995653,
         "bertscore-precision": 0.0,
         "bertscore-recall": 0.0,
         "bertscore-f1": 0.0,
         "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
-    },
-    "2nd_complaints-osteoporosis;multiple sclerosis(support:1)": {
-        "rouge1": 0.43599999999999994,
-        "rouge2": 0.20883534136546186,
-        "rougeL": 0.29200000000000004,
-        "rougeLsum": 0.4,
-        "bertscore-precision": 0.0,
-        "bertscore-recall": 0.0,
-        "bertscore-f1": 0.0,
-        "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
-    },
-    "2nd_complaints-depression;type 2 diabetes;kidney transplant(support:1)": {
-        "rouge1": 0.41019417475728154,
-        "rouge2": 0.2214111922141119,
-        "rougeL": 0.29611650485436897,
-        "rougeLsum": 0.38834951456310673,
-        "bertscore-precision": 0.0,
-        "bertscore-recall": 0.0,
-        "bertscore-f1": 0.0,
-        "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
-    },
-    "2nd_complaints-allergies(support:1)": {
-        "rouge1": 0.35497835497835495,
-        "rouge2": 0.07860262008733625,
-        "rougeL": 0.2943722943722944,
-        "rougeLsum": 0.33766233766233766,
-        "bertscore-precision": 0.0,
-        "bertscore-recall": 0.0,
-        "bertscore-f1": 0.0,
-        "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
+        "umls": 0.6333333333333333,
+        "NER": 0.5106382978723404
     },
     "2nd_complaints-depression;type two diabetes;hypertension(support:1)": {
         "rouge1": 0.42733188720173537,
@@ -213,7 +165,55 @@
         "bertscore-recall": 0.0,
         "bertscore-f1": 0.0,
         "bleurt": 0.0,
-        "umls": 0.0,
-        "NER": 0.0
+        "umls": 0.6333333333333333,
+        "NER": 0.5106382978723404
+    },
+    "2nd_complaints-depression;type 2 diabetes;kidney transplant(support:1)": {
+        "rouge1": 0.41019417475728154,
+        "rouge2": 0.2214111922141119,
+        "rougeL": 0.29611650485436897,
+        "rougeLsum": 0.38834951456310673,
+        "bertscore-precision": 0.0,
+        "bertscore-recall": 0.0,
+        "bertscore-f1": 0.0,
+        "bleurt": 0.0,
+        "umls": 0.52,
+        "NER": 0.38095238095238093
+    },
+    "2nd_complaints-allergies(support:1)": {
+        "rouge1": 0.35497835497835495,
+        "rouge2": 0.07860262008733625,
+        "rougeL": 0.2943722943722944,
+        "rougeLsum": 0.33766233766233766,
+        "bertscore-precision": 0.0,
+        "bertscore-recall": 0.0,
+        "bertscore-f1": 0.0,
+        "bleurt": 0.0,
+        "umls": 0.4444444444444444,
+        "NER": 0.7058823529411764
+    },
+    "2nd_complaints-osteoporosis;multiple sclerosis(support:1)": {
+        "rouge1": 0.43599999999999994,
+        "rouge2": 0.20883534136546186,
+        "rougeL": 0.29200000000000004,
+        "rougeLsum": 0.4,
+        "bertscore-precision": 0.0,
+        "bertscore-recall": 0.0,
+        "bertscore-f1": 0.0,
+        "bleurt": 0.0,
+        "umls": 0.5945945945945946,
+        "NER": 0.39999999999999997
+    },
+    "2nd_complaints-RA;artrial fibrillation;reflux(support:1)": {
+        "rouge1": 0.38769230769230767,
+        "rouge2": 0.20370370370370372,
+        "rougeL": 0.27384615384615385,
+        "rougeLsum": 0.3784615384615385,
+        "bertscore-precision": 0.0,
+        "bertscore-recall": 0.0,
+        "bertscore-f1": 0.0,
+        "bleurt": 0.0,
+        "umls": 0.6236559139784946,
+        "NER": 0.3870967741935483
     }
 }

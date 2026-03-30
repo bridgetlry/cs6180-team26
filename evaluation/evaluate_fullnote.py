@@ -6,12 +6,13 @@ import evaluate
 import pandas as pd
 import numpy as np
 from sectiontagger import SectionTagger
+from UMLS_evaluation import umls_score_group
 
 # UMLS_evaluation stubbed out — set up QuickUMLS and replace this when ready
 # When UMLS is configured, replace this stub with: from UMLS_evaluation import *
-def umls_score_group(references, predictions, use_umls=True):
-    """Stub: returns zeros until QuickUMLS is configured."""
-    return [0.0] * len(references)
+# def umls_score_group(references, predictions, use_umls=True):
+#     """Stub: returns zeros until QuickUMLS is configured."""
+#     return [0.0] * len(references)
 
 section_tagger = SectionTagger()
 
@@ -223,4 +224,4 @@ print(f"\n=== FULL NOTE ROUGE SCORES ===")
 print(f"ROUGE-1: {results_all['ALL']['rouge1']:.4f}")
 print(f"ROUGE-2: {results_all['ALL']['rouge2']:.4f}")
 print(f"ROUGE-L: {results_all['ALL']['rougeL']:.4f}")
-print(f"UMLS (MEDCON): {results_all['ALL']['umls']:.4f} (stubbed — 0.0 until QuickUMLS configured)")
+print(f"UMLS (MEDCON): {results_all['ALL']['umls']:.4f}")

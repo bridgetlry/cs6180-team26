@@ -155,6 +155,65 @@ Key fields your prompt needs to produce:
 
 ---
 
+## MEDCON evaluation setup
+
+MEDCON requires QuickUMLS, which depends on a C extension (`leveldb`) that only compiles correctly on **Python 3.11**. It will fail on the main `.venv` (Python 3.13) and on `acidemo` (Python 3.9). You need a dedicated environment.
+
+This is a one-time setup per machine.
+
+**1. Get the UMLS 2022AA metathesaurus**
+
+You need a UMLS license. Request one at https://uts.nlm.nih.gov/uts/ if you don't have one.
+
+Download the 2022AA release from:
+https://www.nlm.nih.gov/research/umls/licensedcontent/umlsarchives04.html
+
+Extract the download and copy these three files into the `resources/` directory:
+```
+resources/
+├── MRCONSO.RRF
+├── MRSTY.RRF
+└── semantic_types.txt        ← already in the repo
+```
+
+> These files are large and are not committed to the repo. Each person must download them individually.
+
+**2. Create the QuickUMLS conda environment**
+
+```bash
+conda create -n umls_env python=3.11
+conda activate umls_env
+pip install quickumls
+```
+
+**3. Build the QuickUMLS index (one-time, takes several minutes)**
+
+Run this from the project root using absolute paths:
+
+```bash
+python -m quickumls.install /absolute/path/to/resources/ /absolute/path/to/resources/des
+```
+
+For example:
+```bash
+python -m quickumls.install ~/PycharmProjects/PythonProject4/resources/ ~/PycharmProjects/PythonProject4/resources/des
+```
+
+When it finishes, `resources/des/` will exist. You never need to run this again.
+
+**4. Run MEDCON evaluation**
+
+Always switch to `umls_env` before running anything that imports QuickUMLS:
+
+```bash
+conda activate umls_env
+python evaluation/UMLS_evaluation.py ...
+```
+
+> If you see `ModuleNotFoundError: No module named 'quickumls'`, you are in the wrong environment. Run `conda activate umls_env` first.
+
+---
+
 ## Constrained decoding note
 
 The `instructor` library must be initialized in **JSON mode** to avoid tool-call
