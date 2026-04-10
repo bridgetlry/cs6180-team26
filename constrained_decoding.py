@@ -50,20 +50,22 @@ class ConstrainedDecodingPipeline(SOAPPipeline):
         OpenAI(
             base_url="https://openrouter.ai/api/v1",
             api_key=os.getenv("OPENROUTER_API_KEY"),
-        ),
-        mode=instructor.Mode.JSON
+        )
     )
 
     def _build_prompt(self, encounter: ACIEncounter) -> str:
+        """
+        TODO: Replace with your actual prompt for constrained decoding.
+
+        This is where your technique's prompt engineering lives.
+        You have access to:
+            encounter.transcript        — the full doctor-patient dialogue
+            encounter.chief_complaint   — from ACI-Bench metadata (authoritative)
+            encounter.patient_age       — from metadata
+            encounter.patient_gender    — from metadata
+        """
         return (
-            f"Convert the following doctor-patient transcript into a structured SOAP note."
-            f"Return ONLY valid JSON matching the schema exactly.\n"
-            f"STRICT TYPE RULES:\n"
-            f"- Integer fields (patient_age, bp_systolic, etc.): use numbers like 62, never strings like '62'\n"
-            f"- Float fields (hemoglobin_a1c, pain_severity, etc.): use numbers like 8.0, never '8' or 'null'\n"
-            f"- Boolean fields (is_urgent, smoker, etc.): use true or false, never 'True'/'False'/'None'\n"
-            f"- systolic_murmur_grade: extract only the numerator, e.g. for '2/6' output 2\n"
-            f"- Missing fields: omit them entirely, do not output null or 'None'\n\n"
+            f"Convert the following doctor-patient transcript into a structured SOAP note. "
             f"Use only information stated in the transcript.\n\n"
             f"TRANSCRIPT:\n{encounter.transcript}"
         )
