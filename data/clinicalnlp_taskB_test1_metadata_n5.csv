@@ -1,0 +1,6 @@
+dataset,encounter_id,id,doctor_name,patient_gender,patient_age,patient_firstname,patient_familyname,cc,2nd_complaints
+virtassist,D2N088,VA045,,male,59,Andrew,Campbell,upper respiratory infection,depression;type two diabetes;hypertension
+virtassist,D2N089,VA046,,female,52,Andrea,Roberts,annual exam,RA;artrial fibrillation;reflux
+virtassist,D2N090,VA050,,male,62,Albert,Powell,ER follow-up ,depression;type 2 diabetes;kidney transplant
+virtassist,D2N091,VA015,,male,54,Jerry,Nguyen,annual exam,osteoporosis;multiple sclerosis
+virtassist,D2N092,VA025,,female,43,,Martinez,right arm pain,allergies

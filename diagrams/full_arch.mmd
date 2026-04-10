@@ -1,0 +1,132 @@
+flowchart TB
+
+    subgraph DATA["  ACI-Bench Dataset  "]
+        direction LR
+        CSV1[("ACI-Bench Dataset Test1
+        clinicalnlp_taskB_test1.csv")]
+        CSV2[("ACI-Bench Dataset Test1 Metadata
+        clinicalnlp_taskB_test1_metadata.csv")]
+    end
+
+    GOLD[("Gold Typed Fields
+    manually annotated · Team 26
+    patient_age · patient_gender
+    vitals · lab values · pain scores")]
+
+    LOAD["load_test1_encounters()"]
+
+    ENC[["ACIEncounter
+    ─────────────────────
+    encounter_id · dataset
+    transcript · reference_note
+    ─────────────────────
+    patient_age · patient_gender
+    chief_complaint · doctor_name"]]
+
+    BATCH["batch_runner.py
+    iterates 40 encounters · resumable · saves incrementally"]
+
+    LLM["🧠 Shared LLM Engine
+    meta-llama / llama-3.1-8b-instruct
+    OpenRouter API · T=0 · max_tokens=3000"]
+
+    subgraph TECHNIQUES["  Three Structured Output Techniques  "]
+        direction LR
+        PE["Prompt Engineering
+        single-shot
+        engineered prompt
+        JSON parse · Pydantic"]
+
+        GVR["Generate-Validate-Retry
+        JSON validate · Pydantic validate
+        retry with feedback · max 3"]
+
+        CD["Constrained Decoding
+        instructor library
+        JSON mode · schema-enforced"]
+    end
+
+    RESULT[["PipelineResult
+    ─────────────────────
+    encounter_id · technique
+    success · attempts
+    ─────────────────────
+    soap_note · failure_type
+    failed_fields"]]
+
+    subgraph OUT["  Outputs  "]
+        direction LR
+        PRED(["predictions.csv
+        plain-text SOAP notes"])
+        RES(["results.json
+        typed fields · failure info"])
+    end
+
+    subgraph EVAL["  Evaluation  "]
+        direction LR
+        ROUGE["Text Quality Metrics
+        ─────────────────────
+        ROUGE-1 · ROUGE-2
+        ROUGE-L · ROUGE-Lsum
+        MEDCON · QuickUMLS 2022AA"]
+
+        TAXONOMY["Failure Taxonomy
+        ─────────────────────
+        cross-method failure analysis
+        extracted typed fields
+        vs gold annotation
+        ─────────────────────
+        Schema Violation
+        Incomplete Output
+        Missed Extraction
+        Hallucination
+        Unresolved Retry Failure"]
+    end
+
+    CSV1 --> LOAD
+    CSV2 -- "joined on encounter_id" --> LOAD
+    LOAD --> ENC
+    ENC --> BATCH
+    BATCH --> LLM
+    LLM --> PE
+    LLM --> GVR
+    LLM --> CD
+    PE --> RESULT
+    GVR --> RESULT
+    CD --> RESULT
+    RESULT --> PRED
+    RESULT --> RES
+    PRED -- "evaluate_fullnote.py
+    vs gold reference notes" --> ROUGE
+    RES -- "typed fields vs
+    gold annotation" --> TAXONOMY
+    GOLD -- "ground truth
+    typed fields" --> TAXONOMY
+
+    classDef clsFile      fill:#FDEBD0,stroke:#7D6608,stroke-width:2px,color:#000
+    classDef clsGold      fill:#F9E79F,stroke:#B7950B,stroke-width:2.5px,color:#000
+    classDef clsLoad      fill:#D6EAF8,stroke:#1B4F72,stroke-width:2px,color:#000
+    classDef clsEnc       fill:#D5F5E3,stroke:#145A32,stroke-width:2px,color:#000
+    classDef clsBatch     fill:#D6EAF8,stroke:#1B4F72,stroke-width:2px,color:#000
+    classDef clsLLM       fill:#1B5E20,stroke:#0D3B12,stroke-width:3px,color:#fff
+    classDef clsPE        fill:#D5F5E3,stroke:#145A32,stroke-width:2px,color:#000
+    classDef clsGVR       fill:#D6EAF8,stroke:#1A5276,stroke-width:2px,color:#000
+    classDef clsCD        fill:#E8DAEF,stroke:#6E2F8B,stroke-width:2px,color:#000
+    classDef clsResult    fill:#FEF9E7,stroke:#7D6608,stroke-width:2px,color:#000
+    classDef clsOut       fill:#FDEBD0,stroke:#7D6608,stroke-width:2px,color:#000
+    classDef clsRouge     fill:#D6EAF8,stroke:#1A5276,stroke-width:2px,color:#000
+    classDef clsTaxonomy  fill:#FADBD8,stroke:#C0392B,stroke-width:2px,color:#000
+
+    class CSV1,CSV2 clsFile
+    class GOLD clsGold
+    class LOAD clsLoad
+    class ENC clsEnc
+    class BATCH clsBatch
+    class LLM clsLLM
+    class PE clsPE
+    class GVR clsGVR
+    class CD clsCD
+    class RESULT clsResult
+    class PRED,RES clsOut
+    class ROUGE clsRouge
+    class TAXONOMY clsTaxonomy
