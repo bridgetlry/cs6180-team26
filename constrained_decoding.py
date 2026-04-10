@@ -1,107 +1,84 @@
-"""
-constrained_decoding.py
-───────────────────────
-doest work.. but a start...
-Constrained decoding technique using `instructor` to enforce Pydantic schema
-at the token generation level.
+from __future__ import annotations # for type hints to reference classes defined later in the file without needing string literals
 
-Only technique-specific logic lives here. Everything shared
-(LLM calls, PipelineResult, batch runner) is in pipeline_base.py / batch_runner.py.
+from dataclasses import dataclass, asdict
+from pathlib import Path
+from typing import Iterable, Optional
 
-Setup:
-    pip install instructor openai
-    Set OPENROUTER_API_KEY in your .env file.
-
-Run:
-    python constrained_decoding.py single
-    python constrained_decoding.py batch
-    python constrained_decoding.py batch --n 5
-"""
-
-from __future__ import annotations
-
-import os
+# Uses Pydantic for structured data models and validation if available
+# Falls back to simple dataclasses where Pydantic may not be installed
+try:
+    from pydantic import BaseModel, Field
+except Exception:  # pragma: no cover
+    BaseModel = object  # type: ignore
+    Field = lambda default=None, **kwargs: default  # type: ignore
 
 import instructor
+import sys
 from openai import OpenAI
 from dotenv import load_dotenv
+import jsonlines
+import os
+from soap_data_processing import SOAPNote # using SOAPNote schema from dataprocessing
 
-from aci_data_loader import ACIEncounter
-from gvr_pydantic_schema import SOAPNote
-from pipeline_base import SOAPPipeline, PipelineResult
+# Generates and prints a SOAP Note output for the given scenario (1-26)
+def generate_notes(scenario_number):
 
-load_dotenv()
+    # client = instructor.from_provider("qwen/qwen-turbo") # from documentation
 
-# ─────────────────────────────────────────────
-# CONSTRAINED DECODING PIPELINE
-# ─────────────────────────────────────────────
-class ConstrainedDecodingPipeline(SOAPPipeline):
-    """
-    Uses `instructor` to enforce the SOAPNote Pydantic schema at the token
-    level — the model cannot produce output that fails schema validation.
-
-    No retry logic needed: instructor either returns a valid SOAPNote or raises.
-    """
-
-    TECHNIQUE_NAME = "constrained_decoding"
-
-    # Instructor wraps the OpenAI-compatible OpenRouter client
-    _client = instructor.from_openai(
+    load_dotenv()
+    api_key = os.getenv("OPENROUTER_API_KEY")
+    client = instructor.from_openai(
         OpenAI(
             base_url="https://openrouter.ai/api/v1",
-            api_key=os.getenv("OPENROUTER_API_KEY"),
+            api_key=api_key
         )
     )
 
-    def _build_prompt(self, encounter: ACIEncounter) -> str:
-        """
-        TODO: Replace with your actual prompt for constrained decoding.
+    scenario = ""
+    with jsonlines.open("processed_data/transcripts.jsonl") as file:
+        for line_num, line in enumerate(file):
+            if line_num == scenario_number - 1:
+                scenario = line
+                break
 
-        This is where your technique's prompt engineering lives.
-        You have access to:
-            encounter.transcript        — the full doctor-patient dialogue
-            encounter.chief_complaint   — from ACI-Bench metadata (authoritative)
-            encounter.patient_age       — from metadata
-            encounter.patient_gender    — from metadata
-        """
-        return (
-            f"Convert the following doctor-patient transcript into a structured SOAP note. "
-            f"Use only information stated in the transcript.\n\n"
-            f"TRANSCRIPT:\n{encounter.transcript}"
-        )
+    instruction = "Convert the patient-doctor transcript into a SQL-compatible SOAP note that follows the target schema exactly. Use only information stated in the transcript."
 
-    def run_pipeline(
-        self,
-        encounter: ACIEncounter,
-        max_retries: int = 0,   # not used — instructor handles this internally
-    ) -> PipelineResult:
+    prompt_text = f"{instruction} Transcript: {scenario['raw_transcript']} Hint: {scenario['chief_complaint_hint']}"
 
-        try:
-            soap = self._client.chat.completions.create(
-                model="meta-llama/llama-3.1-8b-instruct",
-                response_model=SOAPNote,
-                messages=[
-                    {"role": "user", "content": self._build_prompt(encounter)}
-                ],
-            )
-            return self._success(encounter, soap, attempts=1)
+    soap_note = client.create(
+        model="qwen/qwen-turbo",
+        response_model=SOAPNote,
+        messages=[
+            {"role": "user", "content": prompt_text}
+        ]
+    )
 
-        except Exception as e:
-            return self._failure(
-                encounter,
-                error=str(e),
-                failure_type="unexpected",
-                attempts=1,
-            )
+    print(soap_note)
 
 
-# ─────────────────────────────────────────────
-# ENTRY POINT
-# ─────────────────────────────────────────────
 if __name__ == "__main__":
-    from batch_runner import main
-    main(
-        ConstrainedDecodingPipeline(),
-        default_results_path="results/cd_results.json",
-        default_max_retries=0,  # constrained decoding does not retry
-    )
+
+    scenario_arg = ""
+    scenario_int = 0
+    
+    try:
+        print("Starting constrained decoding...")
+        try:
+            scenario_arg = sys.argv[1]
+            scenario_int = int(scenario_arg)
+            if scenario_int < 1 or scenario_int > 26:
+                raise Exception()
+        except:
+            print("Scenario number must be an integer between 1 and 26, inclusive")
+            quit()
+
+        generate_notes(scenario_int)
+            
+    except Exception as e :
+        print(f"Unable to process: {e}")
+        quit()
+
+
+
+
+
