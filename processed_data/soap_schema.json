@@ -1,0 +1,144 @@
+{
+  "input_record": {
+    "$defs": {
+      "TurnModel": {
+        "properties": {
+          "turn_index": {
+            "title": "Turn Index",
+            "type": "integer"
+          },
+          "speaker": {
+            "description": "D for doctor, P for patient",
+            "title": "Speaker",
+            "type": "string"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "turn_index",
+          "speaker",
+          "text"
+        ],
+        "title": "TurnModel",
+        "type": "object"
+      }
+    },
+    "properties": {
+      "scenario_id": {
+        "title": "Scenario Id",
+        "type": "integer"
+      },
+      "chief_complaint_hint": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Chief Complaint Hint"
+      },
+      "raw_transcript": {
+        "title": "Raw Transcript",
+        "type": "string"
+      },
+      "normalized_transcript": {
+        "title": "Normalized Transcript",
+        "type": "string"
+      },
+      "turns": {
+        "items": {
+          "$ref": "#/$defs/TurnModel"
+        },
+        "title": "Turns",
+        "type": "array"
+      }
+    },
+    "required": [
+      "scenario_id",
+      "raw_transcript",
+      "normalized_transcript",
+      "turns"
+    ],
+    "title": "TranscriptExample",
+    "type": "object"
+  },
+  "target_output": {
+    "properties": {
+      "scenario_id": {
+        "title": "Scenario Id",
+        "type": "integer"
+      },
+      "subjective": {
+        "description": "History, symptoms, PMH, medications, allergies, family/social history",
+        "title": "Subjective",
+        "type": "string"
+      },
+      "objective": {
+        "description": "Only explicitly observed or stated findings from the transcript",
+        "title": "Objective",
+        "type": "string"
+      },
+      "assessment": {
+        "description": "Likely clinical impression or differential, grounded in transcript only",
+        "title": "Assessment",
+        "type": "string"
+      },
+      "plan": {
+        "description": "Next steps, tests, treatments, follow-up, grounded in transcript only",
+        "title": "Plan",
+        "type": "string"
+      },
+      "probable_diagnosis": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Probable Diagnosis"
+      },
+      "severity": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Severity"
+      },
+      "disposition": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Disposition"
+      }
+    },
+    "required": [
+      "scenario_id",
+      "subjective",
+      "objective",
+      "assessment",
+      "plan"
+    ],
+    "title": "SOAPNote",
+    "type": "object"
+  }
+}

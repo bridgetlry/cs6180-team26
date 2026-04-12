@@ -1,0 +1,2831 @@
+scenario_id,turn_index,speaker,utterance
+1,1,D,What brought you in today?
+1,2,P,"Sure, I'm I'm just having a lot of chest pain and and so I thought I should get it checked out."
+1,3,D,"OK, before we start, could you remind me of your gender and age?"
+1,4,P,"Sure 39, I'm a male."
+1,5,D,"OK, and so when did this chest pain start?"
+1,6,P,"It started last night, but it's becoming sharper."
+1,7,D,"OK, and where is this pain located?"
+1,8,P,It's located on the left side of my chest.
+1,9,D,"OK, and, so how long has it been going on for then if it started last night?"
+1,10,P,"So I guess it would be a couple of hours now, maybe like 8."
+1,11,D,"OK. Has it been constant throughout that time, or uh, or changing?"
+1,12,P,"I would say it's been pretty constant, yeah."
+1,13,D,"OK, and how would you describe the pain? People will use words sometimes like sharp, burning, achy."
+1,14,P,"I'd say it's pretty sharp, yeah."
+1,15,D,"Sharp OK. Uh, anything that you have done tried since last night that's made the pain better?"
+1,16,P,Um not laying down helps.
+1,17,D,"OK, so do you find laying down makes the pain worse?"
+1,18,P,"Yes, definitely."
+1,19,D,"OK, do you find that the pain is radiating anywhere?"
+1,20,P,No.
+1,21,D,"OK, and is there anything else that makes the pain worse besides laying down?"
+1,22,P,"Not that I've noticed, no."
+1,23,D,"OK, so not like taking a deep breath or anything like that?"
+1,24,P,Maybe taking a deep breath. Yeah.
+1,25,D,"OK. And when the pain started, could you tell me uh, could you think of anything that you were doing at the time?"
+1,26,P,"I mean, I was moving some furniture around, but, that I've done that before."
+1,27,D,"OK, so you didn't feel like you hurt yourself when you were doing that?"
+1,28,P,No.
+1,29,D,"OK, and in regards to how severe the pain is on a scale of 1 to 10, 10 being the worst pain you've ever felt, how severe would you say the pain is?"
+1,30,P,I'd say it's like a seven or eight. It's pretty bad.
+1,31,D,"OK, and with the pain, do you have any other associated symptoms?"
+1,32,P,I feel a little lightheaded and I'm having some trouble breathing.
+1,33,D,OK. Have you had any loss of consciousness?
+1,34,P,No.
+1,35,D,"OK. Uh, have you been experiencing any like racing of the heart?"
+1,36,P,"Um, a little bit, yeah."
+1,37,D,OK. And have you been sweaty at all?
+1,38,P,Just from the from having issues breathing.
+1,39,D,"OK, have you been having issues breathing since the pain started?"
+1,40,P,Yes.
+1,41,D,"OK. Um recently have you had any periods of time where you like have been immobilized or or, you haven't been like able to move around a lot?"
+1,42,P,No no.
+1,43,D,OK. And have you been feeling sick at all? Any infectious symptoms?
+1,44,P,No.
+1,45,D,"OK, have you had any nausea or vomiting?"
+1,46,P,No.
+1,47,D,Any fevers or chills?
+1,48,P,No.
+1,49,D,"OK, how about any abdominal pain?"
+1,50,P,No.
+1,51,D,Any urinary problems?
+1,52,P,No.
+1,53,D,Or bowel problems?
+1,54,P,No.
+1,55,D,"OK, have you had a cough?"
+1,56,P,No.
+1,57,D,OK. You haven't brought up any blood?
+1,58,P,No.
+1,59,D,"OK, have you had a wheeze with your difficulty breathing?"
+1,60,P,"No, not that I've heard."
+1,61,D,"OK, any changes to the breath sounds at all like any noisy breathing?"
+1,62,P,"No. Well, I guess if when I'm really having trouble breathing, yeah."
+1,63,D,OK. Has anything like this ever happened to you before?
+1,64,P,No.
+1,65,D,"No, OK. And have you had any night sweats?"
+1,66,P,No.
+1,67,D,"Alright, and then how about any rashes or skin changes?"
+1,68,P,"No rashes, but I guess like my neck seems to be a little swollen."
+1,69,D,"OK, do you have any neck pain?"
+1,70,P,No.
+1,71,D,"OK, have you had any like accidents like a car accident or anything where you really jerked your neck?"
+1,72,P,No.
+1,73,D,OK. Um any any trauma at all to the chest or or back?
+1,74,P,No.
+1,75,D,"OK, so just in regards to past medical history, do you have any prior medical conditions?"
+1,76,P,No.
+1,77,D,"OK, any recent hospitalizations?"
+1,78,P,No.
+1,79,D,"OK, any prior surgeries?"
+1,80,P,No.
+1,81,D,"OK, do you take any medications regularly? Are they prescribed or over the counter?"
+1,82,P,No.
+1,83,D,"Alright, how about any allergies to medications?"
+1,84,P,None.
+1,85,D,"Alright, any immunizations or are they up to date?"
+1,86,P,They are all up to date.
+1,87,D,"Excellent. Alright, and could you tell me a little bit about your living situation currently?"
+1,88,P,"Sure, I live in an apartment by myself. I, uh, yep, that's about it."
+1,89,D,"OK, and how do you support yourself financially?"
+1,90,P,I'm an accountant.
+1,91,D,"OK, sounds like a pretty stressful job or that it can be. Do you smoke cigarettes?"
+1,92,P,I do.
+1,93,D,"OK, and how much do you smoke?"
+1,94,P,I smoke about a pack a day.
+1,95,D,"OK, how long have you been smoking for?"
+1,96,P,For the past 10 to 15 years.
+1,97,D,"OK, and do you smoke cannabis?"
+1,98,P,Uh sometimes.
+1,99,D,"Uh, how much marijuana would you smoke per per week?"
+1,100,P,"Per week, maybe about 5 milligrams. Not that much."
+1,101,D,"OK, and do you use any other recreational drugs like cocaine, crystal, meth, opioids?"
+1,102,P,No.
+1,103,D,OK. Have you used IV drugs before?
+1,104,P,No.
+1,105,D,OK. And do you drink alcohol?
+1,106,P,I do.
+1,107,D,OK. How much alcohol do you drink each week?
+1,108,P,"Uhm about I would say I have like one or two drinks a day, so about 10 drinks a week."
+1,109,D,"OK, uh, yeah and um alright, and then briefly, could you tell me a little bit about your like diet and exercise?"
+1,110,P,"Sure, I try to eat healthy for dinner at least, but most of my lunches are, uh I eat out. And then in terms of exercise, I try to exercise every
+other day, I run for about half an hour."
+1,111,D,"OK, well that's great that you've been working on the the activity and the diet as well. So has anything like this happened in your family before?"
+1,112,P,No.
+1,113,D,"OK, has anybody in the family had a heart attack before?"
+1,114,P,"Actually, yes, my father had a heart attack when he was 45."
+1,115,D,"OK, and anybody in the family have cholesterol problems?"
+1,116,P,I think my father did.
+1,117,D,"I see OK, and how about anybody in the family have a stroke?"
+1,118,P,No strokes.
+1,119,D,"OK, and then any cancers in the family?"
+1,120,P,No.
+1,121,D,"OK, and is there anything else that you wanted to tell me about today that that I on on history?"
+1,122,P,"No, I don't think so. I think you asked me everything."
+2,1,D,What brings you in here today?
+2,2,P,"Yeah, I have this pain in my chest."
+2,3,D,"OK, and where is the pain exactly?"
+2,4,P,It's just right over on the on the left side.
+2,5,D,"OK, and when did this pain start?"
+2,6,P,It started just 30 minutes ago.
+2,7,D,"OK, and did it just come on randomly or were you doing something strenuous?"
+2,8,P,I was just shovelling the driveway and it came on.
+2,9,D,"OK, and has that pain been getting worse at all over the last half an hour?"
+2,10,P,"No, it just came on suddenly and it's uh, uh, I'm sorry. Yeah the pain has been there this whole time and it's gotten worse ever since it started."
+2,11,D,"OK, and how would you describe the pain? Is it kind of like an aching pain or is it a sharp or tight tightness kind of pain? How would you describe
+it?"
+2,12,P,It feels dull. I feel like there's a lot of pressure on my chest.
+2,13,D,"And how do you rate the pain right now on a scale of zero to 10, zero being the least amount of pain you felt in your life, 10 being the worst?"
+2,14,P,"Uh, seven."
+2,15,D,"Seven, OK. Have you had ny similar episodes before?"
+2,16,P,"No, I've never had any chest pain before."
+2,17,D,"OK, and is the pain just staying in the region of the left chest area that you mentioned or is it traveling to any other part of your body?"
+2,18,P,"No, I'm kind of just feeling it right here. On the left side."
+2,19,D,"OK, uh, is there anything that you do that makes the pain either get worse or go away or like get better?"
+2,20,P,"Uh. I think it's a bit bit worse if I'm moving around or when I was walking in here. I think it it made it a bit worse, but nothing has seemed to
+make it any better since it starting."
+2,21,D,"OK, and does it change at all from you changing positions like if you're standing up versus sitting down or laying down?"
+2,22,P,I think it's a little bit worse when I when I'm laying down.
+2,23,D,"OK, and other than the pain that you've been having, have you been having any other symptoms like a cough or difficulty breathing or any pain when
+you're breathing in or out?"
+2,24,P,"Uh, I've felt a little bit uh short of breath or having difficulty breathing since yesterday when the sorry since the pain started, but uh just the
+difficulty breathing."
+2,25,D,OK. And have you recently injured your chest or surrounding area at all? Like from a fall or anything like that?
+2,26,P,I do I play rugby and was tackled by another player yesterday. But but my chest felt fine after that.
+2,27,D,OK so but the pain just started half an hour ago?
+2,28,P,Yeah.
+2,29,D,"OK, have you have you been traveling at all recently?"
+2,30,P,"No, been at home."
+2,31,D,"OK, has anyone around you been sick at all?"
+2,32,P,No.
+2,33,D,"OK, have you been having any symptoms like nausea or vomiting or any fevers or chills?"
+2,34,P,"No nausea or vomiting, but I do feel a little bit hot today."
+2,35,D,"OK, but have you measured your temperature at all?"
+2,36,P,Uh I did and it was 38 degrees.
+2,37,D,"OK, and have you been having any kind of swelling in your legs or feet?"
+2,38,P,"Uh, no swelling in my legs."
+2,39,D,"OK. Have you been feeling tired at all, like increasingly fatigued?"
+2,40,P,"No, my energy has been good."
+2,41,D,Have you been having any kind of thumping or palpitations or feel like your heart has been racing at all?
+2,42,P,It uhh it does feel like it's beating faster right now. It usually only feels like this when I'm playing sports.
+2,43,D,OK. And have you noticed any changes in your skin at all? Any rashes?
+2,44,P,No rashes.
+2,45,D,"OK, have you had any cough or runny nose or sore throat? Any kind of those symptoms and in the past month?"
+2,46,P,"Uh few weeks ago I was a little runny, but that went away on its own. I haven't had any cough."
+2,47,D,"OK, and have you been feeling dizzy at all or have you fainted?"
+2,48,P,No dizziness and uh no I haven't fainted at all.
+2,49,D,OK. Just a few more questions. Have you had any diagnosis made by any physician or any anything like diabetes or high blood pressure?
+2,50,P,"Yeah, I've been told I have high cholesterol and high blood pressure."
+2,51,D,"OK, and do you take any medications for the these things?"
+2,52,P,"Um, I do take medications for both blood pressure and cholesterol, Rosuvastatin and um Lisinopril and I take a multi vitamin."
+2,53,D,"OK, and do you have any allergies to any medications at all?"
+2,54,P,No allergies.
+2,55,D,"OK, have you at all in the past been hospitalized for any reason?"
+2,56,P,No hospitalizations.
+2,57,D,Any previous surgeries?
+2,58,P,No.
+2,59,D,"OK, and within your family, has anyone passed away from a heart attack or any cancers that run in the family?"
+2,60,P,No.
+2,61,D,"OK, and currently right now, do you live alone? Do you live with someone? And where do you live, like an apartment or house?"
+2,62,P,"I I live in a house with um, my parents."
+2,63,D,"OK, and do you currently work?"
+2,64,P,"Yeah, I I drive a bus for the city."
+2,65,D,"OK. And in your daily routine, would you say you get enough exercise throughout the week?"
+2,66,P,"Uhh yeah, usually on Sundays I'll go for a run."
+2,67,D,"OK, and how about your diet? Well, how's your diet like, just regularly?"
+2,68,P,"Uhh, usually I feel like it's fairly balanced overall, I might I eat out a little bit too often, but try to eat as many vegetables as I can."
+2,69,D,OK. And do you smoke cigarettes at all?
+2,70,P,I do yes. Been smoking for the last 20 years roughly.
+2,71,D,"OK, how much do you smoke on an average day?"
+2,72,P,About a half a pack to a pack a day.
+2,73,D,OK. And do you drink?
+2,74,P,No alcohol.
+2,75,D,"OK, and any recreational drugs like marijuana?"
+2,76,P,"Um, no marijuana, but I have used crystal meth in the past."
+2,77,D,"OK, and when was the last time that you used crystal meth?"
+2,78,P,"Um, six days ago."
+2,79,D,"Six days ago, OK, and how often do you use crystal meth?"
+2,80,P,"Um, I would say a couple of times a month."
+2,81,D,"A couple of times a month, OK. Alright, and for how long have you been using crystal meth?"
+2,82,P,Uh for the last seven years.
+2,83,D,"Seven years, OK."
+3,1,D,What brings you in here today?
+3,2,P,"Yeah, I've just been feeling breathless and it's getting worse. So I wanted to check it out."
+3,3,D,"OK, and when did you first start feeling breathless?"
+3,4,P,About two months ago.
+3,5,D,"OK, and did it come on about like gradually through time or suddenly just happened?"
+3,6,P,"I guess gradually, yeah."
+3,7,D,"OK. And, do you feel, uh, how often do you feel breathless?"
+3,8,P,"I'd say it's worse when I when I walk more than 50 meters. That's kind of the main like that's kind of the main trigger, just exertion."
+3,9,D,"OK, and were you able to walk normally more than 50 meters before two months?"
+3,10,P,"Yeah, three months ago I was fine."
+3,11,D,OK. And do you have any other symptoms like cough or chest pain?
+3,12,P,"I have a cough sometimes, yeah."
+3,13,D,"OK, but nothing like constant?"
+3,14,P,No.
+3,15,D,"OK, and do you have any wet cough or any productive cough or are you producing like sputum or phlegm?"
+3,16,P,"Yeah, I guess I'd say I have this frothy sputum."
+3,17,D,"OK, and has your breathlessness been getting any worse at all over the last two months?"
+3,18,P,"I would say so, yes."
+3,19,D,"OK, and you mentioned like exertion makes it worse, but anything else like going outside or exposure to any chemicals that makes it worse?"
+3,20,P,"Uh, I don't think so."
+3,21,D,"OK, and how about a positional changes? Does lying flat at all make it worse?"
+3,22,P,"I would say so, yes. Yeah, I'm basically gasping for air when I lay down."
+3,23,D,"OK, and do you ever find yourself waking up at night in the middle of the night to catch your breath?"
+3,24,P,No.
+3,25,D,"No, OK. And when do you feel the breathlessness the most? Is it more so during the day or at night?"
+3,26,P,I guess it's worse at night because I'm laying down.
+3,27,D,"OK. Great and, in terms of how many flights of stairs you can climb before you start feeling breathless, do you have a number?"
+3,28,P,I would say like 3/4.
+3,29,D,"Three or four steps, OK. And was there anything new that happened in your life recently? Any new medical diagnosis recently? Or any travel that
+happened before you started having these symptoms?"
+3,30,P,"No, nothing like that."
+3,31,D,"OK, and prior to two months, have you ever had any similar experiences?"
+3,32,P,Prior to 2 months? No.
+3,33,D,"OK. And, does anything make it better? Like any positional changes makes the breathlessness go away?"
+3,34,P,"I guess when I I'm not laying down or when I'm laying down, I try to add pillows, stack pillows so that it gets better."
+3,35,D,"OK, and are you having any other symptoms like sore throat, runny nose, chest pain, dizziness, anything like that?"
+3,36,P,No.
+3,37,D,OK. Have you recently traveled outside of the country?
+3,38,P,No.
+3,39,D,Have you recently had any surgeries?
+3,40,P,"No recent surgeries, no."
+3,41,D,"OK, any headache nausea or vomiting?"
+3,42,P,"Um, no."
+3,43,D,"OK, any fevers or chills or night sweats."
+3,44,P,No.
+3,45,D,OK. Do you feel increasingly fatigued throughout the day?
+3,46,P,"Uh, I would say so, yeah."
+3,47,D,OK. And any changes in your bowel movements at all?
+3,48,P,No.
+3,49,D,"OK, and any chest pain at all within the last two months?"
+3,50,P,"No, no chest pain."
+3,51,D,"OK. Any swelling in your in your legs, ankles, or in your hands and arms?"
+3,52,P,There is some swelling.
+3,53,D,"OK, and uh, where do you, where are you getting this swelling?"
+3,54,P,Around my legs.
+3,55,D,"OK, and how when did you first notice this?"
+3,56,P,Around the same time actually two months ago.
+3,57,D,OK. Have you noticed any kind of fevers at all?
+3,58,P,No.
+3,59,D,OK. Have you been in contact with anyone that has been ill recently?
+3,60,P,No no.
+3,61,D,"OK, and have you been coughing up any blood at all?"
+3,62,P,No.
+3,63,D,"OK, any weight loss?"
+3,64,P,No.
+3,65,D,Any night sweats or chills?
+3,66,P,No.
+3,67,D,"OK, apart from the breathlessness when laying down, any other issues with your sleep?"
+3,68,P,No.
+3,69,D,Any changes in your appetite?
+3,70,P,Nope.
+3,71,D,"OK, have you had any recent infections like a cold at all?"
+3,72,P,No.
+3,73,D,"OK, any exposure to tuberculosis in the past?"
+3,74,P,Not that I know of.
+3,75,D,"OK, any exposure to fumes or dust within your home or work environment?"
+3,76,P,No.
+3,77,D,"OK, any animals or pets in the house?"
+3,78,P,"No, no."
+3,79,D,"OK, and in terms of your past medical history, has anyone told you that you have anything like COPD or any cardiovascular issues like high blood
+pressure, cholesterol?"
+3,80,P,"Um so, yeah, so I have high blood pressure, diabetes and high cholesterol."
+3,81,D,"OK, and do you take any medications for this?"
+3,82,P,"Yep, so I take aspirin, ramipril and simvastatin."
+3,83,D,"OK, and have you ever had any chest pain or heart attack in the past?"
+3,84,P,"Yeah, actually I had a heart attack four years ago."
+3,85,D,"OK, and do you remember what they did for your heart attack?"
+3,86,P,Something like a stent or something.
+3,87,D,"OK, and since then you've been on these medications?"
+3,88,P,Yes.
+3,89,D,"OK, and after they managed your heart attack, have you ever had similar symptoms to when you had your heart attack?"
+3,90,P,"No, no."
+3,91,D,nothing like that? OK. Do you have any allergies to any medications?
+3,92,P,No.
+3,93,D,Any environmental allergies?
+3,94,P,No.
+3,95,D,"OK, and have you previously had any surgeries in the past?"
+3,96,P,"Um, I guess the stenting."
+3,97,D,"Just the stenting? And apart from that, have you had any other previous hospitalizations?"
+3,98,P,No.
+3,99,D,"OK, and any family history of any cancers or heart attacks?"
+3,100,P,"Um, my father died of a heart attack when he was 60."
+3,101,D,OK. And currently do you work at all?
+3,102,P,"I do, um, I work as a cashier."
+3,103,D,OK. And has the shortness of breath been affecting your daily routine at home or at work at all?
+3,104,P,"Yeah, I would say so. It's been hard to make it to work and then standing around all day or if I have to go help out with something and exert myself
+too much, I get short of breath."
+3,105,D,"OK. And at home, do you currently live with anyone or do you live by yourself?"
+3,106,P,I live by myself.
+3,107,D,"OK, and do you live in an apartment or house?"
+3,108,P,I live in an apartment.
+3,109,D,"OK, and are there any exposures like dust or mold or asbestos in your home environment?"
+3,110,P,No.
+3,111,D,OK. And currently do you smoke?
+3,112,P,Not right now. I used to smoke. I used to smoke 10 a day for like 40 years.
+3,113,D,"OK, and do you use any recreational drugs like marijuana?"
+3,114,P,No.
+3,115,D,OK. Any alcohol?
+3,116,P,No.
+3,117,D,"OK. And in terms of your daily routine, do you feel that you get 3 meals a day, a well balanced diet?"
+3,118,P,I wouldn't say well balanced. I'm trying to eat healthier but doesn't always happen.
+3,119,D,"OK, and how about exercise? Do you find that your exercise levels or activity levels have gone down in the last two months?"
+3,120,P,Yes.
+3,121,D,"OK. Alright, is there any other questions or concerns that you have or something I may have missed to ask you today?"
+3,122,P,"No, I don't think so."
+3,123,D,"OK, so based on what we talked about from your swelling as well as breathlessness while laying down and your past history of a heart attack and high
+cholesterol, it may be likely with the medications you are on as well as your history, that you might be having what's called congestive heart failure.
+So we will need to do further investigations to determine if that is what it is and if we need to get you on something like lasix or a diuretic to get
+rid of some of the fluid that's building up in your body, which may be caused by heart failure. So we'll do some investigations and then go from there."
+4,1,D,What brings you here today?
+4,2,P,I'm just having this really sharp pain in my chest and I'm scared. I think I'm having a heart attack.
+4,3,D,"Oh wow, yeah um that must be really scary. When did this, when did this pain start?"
+4,4,P,So about 3 days ago.
+4,5,D,"Three days ago, OK, and where exactly in your chest do you feel it?"
+4,6,P,"It's kind of right here, right over my heart I think, that's where it's the worst."
+4,7,D,"OK, and is it, what kind of pain is it? Is it more like a dull pressure pain, or is it a sharp pain? How would you describe it?"
+4,8,P,I would say it's a sharp pain.
+4,9,D,"A sharp pain, OK. Um, so it started three days ago, has it been coming and going or has it been constant?"
+4,10,P,It just lasts for a few seconds and then it goes away.
+4,11,D,"OK, does the pain come on when you're doing any activities or When does the pain usually come on?"
+4,12,P,"Oh, it's usually worse when I'm coughing or laying down. Yeah, yeah."
+4,13,D,"OK, and um, does it improve with any positional changes at all, or anything that you do that does it help?"
+4,14,P,"When I when I lean forward, it actually does get better. I think about it, yeah."
+4,15,D,"OK, and has this ever happened to you before?"
+4,16,P,"No, no it hasn't."
+4,17,D,"OK and on a scale of 1 to 10, one being the least amount of pain felt and 10 being the worst, how much would you rate it?"
+4,18,P,I would say a 6 out of 10.
+4,19,D,"OK, and does the pain move anywhere in your chest or does it stay in the same spot?"
+4,20,P,"Yeah, I think it kind of goes to my neck sometimes."
+4,21,D,"OK, and do you have any other symptoms, like do you have any shortness of breath, dizziness, anything like that?"
+4,22,P,"No, I don't."
+4,23,D,OK any any palpitations?
+4,24,P,No.
+4,25,D,"OK. Alright, and other than that, have you been having any other symptoms at all besides the pain?"
+4,26,P,"No, no, nothing else, that's it, just have these sharp episodes of pain that last a couple of seconds."
+4,27,D,"OK, um have you have you tried like any medications that has helped the pain?"
+4,28,P,"Yeah, I took some um, I took some Tylenol and that did help."
+4,29,D,OK.
+4,30,P,I took it once yesterday.
+4,31,D,"Alright, um, any recent injuries to the area like did you have any falls or anything like that?"
+4,32,P,"No, no I haven't."
+4,33,D,"Any headaches, nausea or vomiting, fevers, or chills? Any of those symptoms?"
+4,34,P,No.
+4,35,D,"OK, any cough, runny nose, any viral symptoms?"
+4,36,P,"No, well not right now, but I did have a, I did have a flu last week. I had a fever, had a runny nose. I did have a bit of a cough and I was feeling
+super tired, but not anymore. I'm OK now."
+4,37,D,"OK, and have you at all had any dizziness or have you fainted at all?"
+4,38,P,No.
+4,39,D,OK. Have you been noticing any kind of weakness or numbness?
+4,40,P,No.
+4,41,D,"No, OK, and in terms of your past medical history, do you have any medical conditions like diabetes, high blood pressure, any other diagnosis?"
+4,42,P,No. I'm a pretty healthy 25 year old.
+4,43,D,"OK. Um, do you take any medications?"
+4,44,P,I sometimes take Tylenol.
+4,45,D,"OK, and any allergies at all?"
+4,46,P,No.
+4,47,D,"OK, and any previous surgeries?"
+4,48,P,"No no, no surgeries."
+4,49,D,Do you have any family history of any heart conditions or any cancers or anything like that?
+4,50,P,"Yeah, my father, he he had a heart attack two weeks ago and he and he passed away. And I'm worried I am having a heart attack too."
+4,51,D,It was just two weeks ago?
+4,52,P,Yeah.
+4,53,D,"I'm so sorry to hear that. Yeah, it must be really difficult time for you right now. OK, so you're worried you might be having a heart attack as
+well?"
+4,54,P,Yeah.
+4,55,D,"OK, so we can definitely do some tests and see what was going on. I just have a few more questions and then I'll just get to some of the management
+and what we will be doing for you in the future. So currently right now do you work at all?"
+4,56,P,"No, I'm a student. I, well as a part time job, I do work as a post man."
+4,57,D,"OK, and where are you a student? What do you do?"
+4,58,P,I'm studying engineering at Western.
+4,59,D,"Alright, and currently where do you live? Do you live in student housing, an apartment or a house?"
+4,60,P,"I live with my parents, well my mom now, in a house."
+4,61,D,"Right, and you drink at all any alcohol?"
+4,62,P,"I drink occasionally, maybe one or two drinks on the weekends."
+4,63,D,"OK, and any recreational drug use like marijuana or cocaine?"
+4,64,P,No.
+4,65,D,And do you smoke?
+4,66,P,No.
+4,67,D,"Alright, so those are all the questions we had for you today. And yeah, it must be really difficult and scary for you right now, but we'll make sure
+to get to the bottom of this to see what's going on. So what we can do is get you an ECG to see how your heart is functioning and then see getting the
+blood work if we need it for the future. But yeah, right now I would say try not to worry too much about it right now and see um what some of those
+tests come back."
+4,68,P,Thank you.
+4,69,D,"So yeah, you're welcome."
+5,1,D,It sounds like that you're experiencing some chest pain.
+5,2,P,"Yeah, so this chest pain has just been coming on for the last couple of weeks now."
+5,3,D,"OK, uhm. So 2 weeks, and can you tell me kind of where you're feeling that pain?"
+5,4,P,"Um yeah, I'm I'm just feeling this chest discomfort, sort of over on the left side."
+5,5,D,"The left side, OK. Does does it stay just in one spot or does it kind of spread anywhere else?"
+5,6,P,"No, I don't really feel it anywhere else. Yeah, I just feel it in that one spot on the left side."
+5,7,D,"OK, does it feel dull and achy, or does it feel more sharp?"
+5,8,P,It feels pretty sharp.
+5,9,D,"OK, and is it constant like on all the time, or do you feel like it kind of comes and goes?"
+5,10,P,It comes and goes. I would say I it might last for um 20-30 minutes at a time and then it goes away.
+5,11,D,"OK, and over the last two weeks since you said it started, has it gotten any worse?"
+5,12,P,"Uh, no. It's been about the same."
+5,13,D,"About the same, OK, and has it gotten more frequent, these like 20 to 30 minute episodes?"
+5,14,P,"No, it's happened about two or three times during the 2 weeks."
+5,15,D,"And if you were to rate it on a scale of zero to 10, zero being no pain and 10 being like the worst pain you've ever felt, where would it fall?"
+5,16,P,I would say a 4 out of 10.
+5,17,D,"OK. Uh, can you think of anything that that you've done differently recently that could have brought it on or is there any kind of common factor
+between the times that you had the pain?"
+5,18,P,"Um, I don't know I've separated from my husband 2 two years ago which has been really stressful but other than that I mean I can't really think of
+any changes to my health or anything like that recently."
+5,19,D,"OK, but do you feel like you have been more stressed out in general?"
+5,20,P,"Uh, yeah the last couple of years have been a lot more stressful because of those issues in my personal life."
+5,21,D,"OK, I'm sorry to hear that, but I'm glad that you're coming in and we can hopefully get to the bottom of this. Not that I think that's necessarily
+the source of your pain, and we definitely want to look into everything, but it is really helpful to know that. So when you've had these episodes, have
+you taken anything to help with the pain or done anything that's that you felt it made it go away?"
+5,22,P,"Uhm, I've tried some Advil, some Tylenol and actually some Tums as well, and it hasn't really helped."
+5,23,D,"OK, do you think it's worse when you're moving around, if you're if you're kind of doing more exercise, or is it kind of just the same no matter what
+you're doing when you get the episodes?"
+5,24,P,"Oh, it actually I I feel like it happens most of the time when I'm either at work or or driving."
+5,25,D,"OK. OK, and before this two week period, have you ever had anything like this before?"
+5,26,P,"No, I haven't had anything like this happen before."
+5,27,D,Do you have any chronic conditions that you see your family doctor for?
+5,28,P,"No, previously healthy."
+5,29,D,"And just jumping back to these pain episodes when you have them, do you experience anything else? Do you get any nausea or vomiting?"
+5,30,P,No.
+5,31,D,"OK, do you get any, do you have any difficulty breathing during these times?"
+5,32,P,"No, I haven't."
+5,33,D,"OK, and have you noticed any fevers?"
+5,34,P,"Uh, no, no fevers."
+5,35,D,"OK, have you been in contact with anyone that's been sick recently?"
+5,36,P,"Uhm, no, I haven't."
+5,37,D,And have you traveled anywhere outside of Canada?
+5,38,P,"No, I've been home."
+5,39,D,"OK so you have, you said you have been previously healthy, nothing that you've been seeing your family doctor for on a regular basis. Do you take any
+medications?"
+5,40,P,"Uhm, I do not, no medications, just the Tylenol and Advil I tried for the pain."
+5,41,D,"OK, do you have any allergies?"
+5,42,P,No allergies.
+5,43,D,And is there any history of heart problems in your family?
+5,44,P,"Yeah, my father had a heart attack when he was 60 just last year and it's actually one of the reasons what concerns me about the chest pain that I
+thought I was having."
+5,45,D,"For sure, it always feels very concerning when when you have these these symptoms and that and you know people in your life that have had issues like
+similar issues in the past. I don't know that this is related to that. I I personally don't think so at this point, but we're definitely going to do
+everything to look into it and and rule out something that would be scary like that. I'm going to ask you few more questions about your lifestyle in
+general. Do you smoke cigarettes?"
+5,46,P,"Yeah, I smoke about half a pack to a pack per day. I've been trying to quit and I was smoking more one pack per day, but so it is down a little bit,
+but, It's still something I'm trying to work on."
+5,47,D,"Congratulations, that's a really tough thing to do so, good for you. That's that's really exciting. Step in the right direction, right? Do you drink
+alcohol?"
+5,48,P,"Um, I do, but, uh, I'll have maybe one or two glasses of wine on the weekend."
+5,49,D,Do you use any other substances?
+5,50,P,Uh no.
+5,51,D,"I know that you said you don't see your family doctor for anything regularly, but I just want to check a couple of specific things like have you ever
+been told you have high blood pressure?"
+5,52,P,"No, I've never been told I've I've had high blood pressure."
+5,53,D,And have you ever been told you have like high cholesterol?
+5,54,P,"I haven't, but I've actually never been tested either."
+5,55,D,"OK, and do you exercise regularly?"
+5,56,P,"Yeah, actually, I'll either do some running or cycling, probably three or four days per week and I haven't had any chest pain or or problems
+exercising."
+5,57,D,"OK, that's good to hear. And have you ever had problems with heartburn?"
+5,58,P,"Uh. I don't think so, no."
+5,59,D,"OK. OK, so just to kind of summarize what we've talked about, over the last two weeks, you started having these 20 to 30 minute episodes of chest
+pain that's on the left side, it feels more sharp, is that correct?"
+5,60,P,Yeah.
+5,61,D,"And it's kind of constant when it comes on, there's nothing really that makes it better or worse, it just kind of goes away on its own after half an
+hour or so, it has kind of stayed the same over over the last two weeks, hasn't really gotten worse or better, it hasn't gone away either?"
+5,62,P,"Right, yeah exactly."
+5,63,D,"You never had anything like that before and you have been, it sounds like experiencing some stress in your life, it definitely can play into that as
+well. OK, is there anything else that you wanted to to tell me about that I didn't ask you today?"
+5,64,P,"Uh, no, I think that's um, yeah, I think that's all that I wanted to talk about today."
+5,65,D,"OK, so what I'm going to do is bring all this information to your family doctor and we can come back together and talk to you about the next steps."
+5,66,P,"Awesome, thank you."
+5,67,D,Thanks for coming in.
+6,1,P,"Hey Doc, I'm a 45 year old man coming in, I'm worried there's a little old rash on my leg that I'm getting nervous about."
+6,2,D,"Hi, so you I understand you have a rash on your leg."
+6,3,P,"I don't really know what I would call it. That's what I told the nurse when I came in, but it more hurts than anything."
+6,4,D,"OK, uh, how long is this been going on for?"
+6,5,P,"Ah, it's been it's been looking weird for about a week, but only yes, it started hurting yesterday and started looking strange and I just wanted to
+come in to get it checked out."
+6,6,D,"OK when you say it's looking strange, can you tell me what you mean by that?"
+6,7,P,"Swollen, it looks bigger than it did before, and meaner, if that makes sense."
+6,8,D,"Swollen OK, is it red?"
+6,9,P,"Yeah, it's red, it's turning more red, kind of in the area around it. I've got these I got these scabs. I've got diabetes and I'm not exactly the
+best with it and scratching at it, and normally it's not that bad, but this is just strange looking and there's no other word for it."
+6,10,D,"OK, have you ever had anything like this before? I guess you kinda just said that you didn't, but I'll just double check."
+6,11,P,"No no. Well I've had, I have occasional ulcers and sometimes I have banged my toe when I'm not exactly the best taking care of my feet, but this is
+the first time I've gotten something that I don't know, I've just never seen it before."
+6,12,D,Do you have any ulcers right now?
+6,13,P,"Let me see. I think so, when's the last time I saw the family doc? I think I've got an ulcer on my left heel, but I think it's doing alright."
+6,14,D,"OK, and what leg are you having this problem with?"
+6,15,P,"Right now it's on my right, so my ankle."
+6,16,D,"OK, how have your sugars been controlled recently?"
+6,17,P,"I stopped measuring them. Yeah, last time I measured it was pretty bad. I think my A1C last time was like 9 something. I'm trying, I'm trying better
+to be with it. It's hard with work you know?"
+6,18,D,"For sure, I can imagine so, in general, even if you don't know your numbers for your sugars, have you felt worse than usual lately? Have you felt
+rundown at all?"
+6,19,P,"Yeah, actually I have gained more, feel hungry, sometimes just tired, but it's hard to tell. There's an awful lot going on in my life right now with
+the kids, but, It's hard to tell I think. Yeah, I need to see my family doc."
+6,20,D,"OK. Definitely you know a good a good idea moving forward just to make sure you get on top of these things, but I'm glad you came in today so we can,
+you know, have a better look at you and make sure that there's nothing super concerning going on. So in addition to this, have you had any other new
+symptoms?"
+6,21,P,"Symptoms? Um, I feel a little hot actually. When the swelling started it's it also started leaking this like white stuff from one of the one of what
+used to be a scab so now like kind of an open wound now."
+6,22,D,"OK, OK so when did you start feeling hot?"
+6,23,P,"Honestly, last 12 hours."
+6,24,D,"OK, you take your temperature at all?"
+6,25,P,"No, I don't have a thermometer at home."
+6,26,D,Have you had any difficulty breathing?
+6,27,P,No no.
+6,28,D,Any chest pain?
+6,29,P,No.
+6,30,D,"Have you noticed that your left, sorry, your right leg feels any hotter than the left?"
+6,31,P,"Yeah, yeah it does. Actually changing socks the other day, yeah."
+6,32,D,"Right. Say, have you alone have you felt ill recently? Have you been sick at all?"
+6,33,P,"Aside from just feeling overall crummy last couple weeks, no don't really, less energy today, but I was up last night thinking about this and yeah
+wanted to come in and talk."
+6,34,D,"OK yeah, you did the right thing. I'm glad that you're in today. Is the pain on your legs worse when you touch it?"
+6,35,P,"Yeah, maybe not so much when I touch it. When I walk with it and I start flexing it it, it doesn't like that."
+6,36,D,"OK, uhm."
+6,37,P,"Just resting it right now, it feels fine."
+6,38,D,"It's OK, OK. OK, well I'm going to if I think of any more questions specifically about your leg I will, I'll go back to it, but I'm going to just
+move on and ask you questions about your overall health. You've already shared with me that you you are diabetic. Do you have any other chronic
+conditions that you live with?"
+6,39,P,"Chronic condition? I see the family doc about cholesterol. I'm on a pill for that. Uhm, I had asthma as a kid, not too much of an issue now. And my
+back, I've had back pain for the last 10 years, but all I really take for it is Tylenol Advil for that."
+6,40,D,"OK, oh my other question about your leg was, have you lost any feeling in it?"
+6,41,P,"It kind of is like a dull ache sometimes when I touch it. But, no like, in the area, the ankle no, but definitely on my feet, like over the years
+I've noticed I feel less on it compared to what I did previously, yeah."
+6,42,D,"OK, so sorry I kind of sidetracked there so we talked about your diabetes. You said you have high cholesterol. So what medications are you currently
+taking?"
+6,43,P,"I'm taking 4 pills right now. One of them is for the cholesterol. I think it's called. rosuvastatin. The other three, they're all diabetes
+medications, but I don't remember. Metformin is one of them. Sidas...something I have a list somewhere. I'll give it to you later."
+6,44,D,"OK, are you on insulin right now?"
+6,45,P,No.
+6,46,D,"Are you on any or any of these medications new to you, recently?"
+6,47,P,"No no, but had them for about a year now."
+6,48,D,Do you have any allergies?
+6,49,P,"Um, yeah, I do actually. Penicillin, can't take that."
+6,50,D,And what happens when you take penicillin?
+6,51,P,"It's been a while, as a kid apparently like my face got bloated and I was having a hard time breathing so..."
+6,52,D,"Well, we will make sure that we don't give you that. Can you tell me if you've had any previous surgery?"
+6,53,P,"Oh yeah, uh, what was it? I had my sinuses, had some pretty bad sinusitis when I was in my teens and they went in and kind of carved a little space
+out."
+6,54,D,"OK, OK. Is that the only surgery that you had?"
+6,55,P,Yeah.
+6,56,D,"And can you tell me, do you have any family history of diabetes, skin problems, anything else that stands out to you?"
+6,57,P,"Yep, mom's side of the family, very much everyone has diabetes, high blood pressure, cholesterol. Dad's side of the the family is pretty healthy. I
+think maybe one of my aunts had lung cancer, but she's a pretty big smoker too."
+6,58,D,And then just ask you a few questions about your lifestyle. So you said that you have children.
+6,59,P,"Yeah, I do."
+6,60,D,Do you live in town? Do you live with your kids?
+6,61,P,I live in town. I see my kids every two weeks.
+6,62,D,"And, uh. What do you do for work? Did I already ask you this?"
+6,63,P,"No, I'm currently unemployed and looking for work, partially employed, I suppose we should say I have my own business."
+6,64,D,"I see and, what do you, what do you do when when you are working, ideally?"
+6,65,P,"When I am working, I'm an accountant."
+6,66,D,"OK well, and do you smoke?"
+6,67,P,"Yeah once in a while, yeah, when I'm stressed."
+6,68,D,How much do you smoke on average?
+6,69,P,"Last couple of weeks, I've been smoking more, maybe like 2 packs a week."
+6,70,D,OK. Do you drink alcohol?
+6,71,P,Yeah yeah.
+6,72,D,How much do you typically drink?
+6,73,P,"Average week, maybe a 2 4."
+6,74,D,So maybe like 3 per day or something like that if you were to average it out?
+6,75,P,"Yeah, if you average out I mainly go through the two four in a weekend to be honest."
+6,76,D,"Oh, I see. OK, more so on the weekend, so maybe a little bit more than three per day on those days?"
+6,77,P,Mhm.
+6,78,D,"OK so that that that's everything that I need to ask you for now. I'd like to get a closer look at this leg. Did you have any other questions or
+concerns before we move forward to the physical exam?"
+6,79,P,No I just want to get this figured out.
+6,80,D,"OK, yeah, we will definitely do that for you. So yeah, I'm going to have a look at it and then after that I will go talk to the doctor that I'm
+working with and we'll see what we can do for you. That sounds good?"
+6,81,P,"Thank you doc, yeah sounds great."
+6,82,D,Awesome OK thanks.
+7,1,D,What brings you in today?
+7,2,P,"I've just been feeling like very nauseated for, it feels like all the time right now."
+7,3,D,When did this start?
+7,4,P,"It's been over a week. Maybe not quite two weeks, but like around then. Yeah, maybe like 9 days."
+7,5,D,"And um, is it, do you always have the sensation of nausea or is it related, or does it come and go?"
+7,6,P,"Oh, I think it's like worse when I am smelling something really bad, and it's worse in the morning. But I feel like it's always kind of there."
+7,7,D,"I see OK. Um, have you had any vomiting?"
+7,8,P,"Uh, yeah, like um, yeah, like a lot of days I'll throw up like once or twice."
+7,9,D,"And this has all been over the past week, week two weeks or so?"
+7,10,P,Yeah.
+7,11,D,"OK, um, any other symptoms that you have?"
+7,12,P,"Oh no, just, well, like I feel like I've I've had to pee a lot more. Um, but I don't, I don't think that's like related. I think maybe I have just
+been drinking a lot of water, so yeah."
+7,13,D,How often do you have to pee?
+7,14,P,"Oh, like, I feel like every couple hours right now."
+7,15,D,"OK, so say every two hours, every hour, every five hours?"
+7,16,P,"Probably every probably every like 2, maybe, maybe every hour I get certain times in a day."
+7,17,D,Do you wake up at night to pee?
+7,18,P,"Oh, like it doesn't wake me up but it's like I wake up because I hear something. Then I'll be like, oh I think I should probably go to the bathroom."
+7,19,D,"Yeah, do you feel like you have control over when you are going to bathroom or is it difficult for you to hold it in?"
+7,20,P,Oh I I I can control it. It's just like uncomfortable right?
+7,21,D,"I see I see so, um, you have urinary frequency, but do you do you feel like, uh so you said that you can control it, you don't you don't feel like
+you need to run to the bathroom or you'll pee in your pants?"
+7,22,P,"No, I don't feel like that."
+7,23,D,OK. Do you have any pain when you're peeing?
+7,24,P,No.
+7,25,D,"No, OK alright um, do you feel like you've been more thirsty recently? Why do you feel you've been drinking more more water?"
+7,26,P,"I think, I think just 'cause like I was getting I was like throwing up like so like I feel like I was a little dehydrated."
+7,27,D,"Um, I see OK, um, have you, other than the nausea and vomiting, have you had any other stomach related issues? Any belly pain or changes in your
+bowel movements?"
+7,28,P,"Ah no, I don't think so, well my stomach has been like it feels like a little crampy. I thought that maybe it could be my period but like I'm not on
+my period."
+7,29,D,When did you last have your period?
+7,30,P,"Oh well, let me think. Um, like six weeks ago. I guess that would be, I don't know. I don't really like keep track."
+7,31,D,"OK, OK. Do you know if you get your periods regularly or are your periods irregular?"
+7,32,P,"I think they're I think they're usually pretty regular, but I don't I don't like I don't
+calculate it like to the day."
+7,33,D,"True yeah, is it is it normal for you to go six weeks without a period?"
+7,34,P,"Oh, come to think of it, I don't, I don't think so."
+7,35,D,"Alright. Um, OK. Uh, have you, I'll just ask you a couple more questions about your symptoms. So I know that you've been nauseous and have vomited a
+couple of times in the past two weeks. And, you have had some cramps in your belly. Have you had any flu like symptoms?"
+7,36,P,No.
+7,37,D,Nothing like that?
+7,38,P,I don't think so.
+7,39,D,Any headaches?
+7,40,P,Uh no.
+7,41,D,Any fevers?
+7,42,P,No.
+7,43,D,Muscle aches?
+7,44,P,Uh no.
+7,45,D,"OK, um, have you, have you had a cough at all?"
+7,46,P,Oh no.
+7,47,D,"OK, and have you noticed any blood in your stools?"
+7,48,P,No.
+7,49,D,"Have you, you haven't had any palpitations or chest pain or anything of that sort?"
+7,50,P,No.
+7,51,D,"Alright um can you tell me about your past medical history, any medical issues medical conditions that you have?"
+7,52,P,"Uh, nothing, nothing really."
+7,53,D,"OK. Have you, um, been taking any medications?"
+7,54,P,"No, I mean, I've been taking like like I've been chewing like those ginger things that are supposed to help with nausea, but they weren't really
+helpful."
+7,55,D,I see. Any allergies?
+7,56,P,"So just like nickel, like in jewelry, if I wear not real jewellery, it'll give me a rash, but it's not food or like or medications or anything."
+7,57,D,"Um, and, uh, a couple of questions about your social history. Who do you currently live with?"
+7,58,P,"Um, like I I just I live with one roommate."
+7,59,D,"Um and, do you currently smoke?"
+7,60,P,No.
+7,61,D,"Alright, you don't smoke, OK. Have you, do you consume alcohol?"
+7,62,P,"Uh, no, very rarely because I always get a headache."
+7,63,D,"OK, when was the last drink that you had?"
+7,64,P,"Oh gosh, like like a month ago probably."
+7,65,D,"OK, um, and you consume any illicit drugs?"
+7,66,P,"No, no."
+7,67,D,"Alright, are you currently sexually active?"
+7,68,P,Yeah just like with my boyfriend.
+7,69,D,And do you use protection while having sex?
+7,70,P,"Yeah, we we just use condoms. I used to be on birth control but it always made me
+feel like like kind of sick so I don't use that anymore."
+7,71,D,"Mhm, I see, OK. Uh and um, let's see. Family history. Do you do you have any medical conditions that run in your family?"
+7,72,P,"Uh, like I don't, I don't think so. I guess my dad my dad has like high blood pressure, yeah, I don't think there's anything else."
+7,73,D,"Alright, alright, well, thank you so much for spending time with me today. I think I have gathered all the information that I would have liked. I
+will go talk to my attending, we'll come back and maybe ask a couple more questions and then share the plan with you."
+7,74,P,"OK, thank you."
+7,75,D,You're welcome.
+8,1,D,I was wondering if you could tell me a little bit about what brought you in to the Emergency Department today?
+8,2,P,"Yeah, so nice to meet you. I've been having this pain right in my abdomen. It's kind of like in the upper right area."
+8,3,D,"OK, and so uh, when, where is this painting located exactly?"
+8,4,P,"So it's just in the upper right corner of my abdomen, right below where the lungs are, and it, yeah, it's just I have this severe pain that's going
+on."
+8,5,D,"OK, and how long is it been going on for?"
+8,6,P,So it's been going on for the last few days and it got worse today.
+8,7,D,"OK, and how long is it been since it's like got got worse, has this been a few hours or or how long is that been?"
+8,8,P,"So I would say it got worse, just three or four hours ago before I came to the Emergency Department."
+8,9,D,"OK, and does the pain radiate anywhere?"
+8,10,P,"Uh no, it stays right in the in the spot that I told you right in the right upper corner."
+8,11,D,"OK, and when did the pain start? Or if you could tell me what were you doing right prior to the pain starting?"
+8,12,P,So I think it started after just three days ago after I had a meal like I I think it was after lunch around half an hour or an hour after lunch.
+8,13,D,"I see OK, has the pain gotten worse, stayed the same, or gotten better since since yesterday?"
+8,14,P,"I think it's gotten, it was, it's the worst today, like especially like a few hours ago like 3 hours ago, it was much worse than the other two days."
+8,15,D,"OK, and how would you describe the character or the quality of the pain?"
+8,16,P,"So it's like a sharp, I would describe it as like a sharp pain."
+8,17,D,"OK, and on a scale of 1 to 10, 10 being the most severe pain, what would you rate it as?"
+8,18,P,"I would rate it as, right now I would rate it as an 8."
+8,19,D,"OK, and has anything like this happened to you before?"
+8,20,P,"I think it happened to me a few years back, where I had this pain and then it just kind of went away on its own. I didn't go to the Emergency
+Department then though."
+8,21,D,"OK, and has there been anything that you've tried to make this pain any better?"
+8,22,P,"I tried taking just like Advil and Tylenol, but it didn't really seem to help the pain too much."
+8,23,D,"OK, and have you had any other associated symptoms such as nausea or or vomiting?"
+8,24,P,"I've I've had some nausea over the past few days, but I haven't vomited anything."
+8,25,D,"OK, so no blood in your emesis uh or no vomiting at all?"
+8,26,P,"Uh, yeah."
+8,27,D,"OK, and have you traveled anywhere recently?"
+8,28,P,Uh no like we haven't traveled anywhere recently.
+8,29,D,"OK, and, how has your energy levels been?"
+8,30,P,"Uh, energy uh when it's hurting a lot like today I've been it's been difficult to move around, I've been pretty drained from the pain but uh
+otherwise over the last few days it hasn't affected me too much, but today I would say my energy levels are down."
+8,31,D,"OK, and have you noticed any skin changes or any rashes?"
+8,32,P,"I don't think so. I mean, I don't think I've noticed any kind of skin changes."
+8,33,D,"OK, and how about any changes to urinary habits like painful urination or the color of your urine?"
+8,34,P,"No no, no changes."
+8,35,D,"OK, and have you had any changes to bowel patterns such as diarrhea or changes in color of your stool?"
+8,36,P,"No, I don't think so. No changes that I've noticed."
+8,37,D,"OK, so notice any blood in the stool?"
+8,38,P,"No, no blood."
+8,39,D,"OK, and how has your appetite been?"
+8,40,P,"It's it was around the same before the pain actually started getting worse, so today I didn't really feel like eating. I did have nausea over the
+past few days, but my appetite I would say is the worst today."
+8,41,D,"OK, and have you noticed any changes to your weight recently?"
+8,42,P,"No, no, I don't think so."
+8,43,D,"OK, and have you had any recent infections?"
+8,44,P,"No, not not that I know of."
+8,45,D,"OK, so next just to ask some questions about your past medical history, have you been diagnosed with any medical conditions in the past?"
+8,46,P,"Uh so, I think the only thing is my doctor told me that I should lose some weight, but other than that no medical history."
+8,47,D,"OK, and any allergies to medications?"
+8,48,P,"Uh no, no allergies."
+8,49,D,"And are there any medications that you take on a regular basis, either prescribed or over the counter?"
+8,50,P,"Uh not prescribed, sometimes I take like some antacids when I get heartburn. But this is just like a couple times a month after dinner, sometimes at
+night, but that's about it."
+8,51,D,"OK, and, uh, any, um, hospitalizations?"
+8,52,P,"Just for just when I had my children, at the time of their birth, but that's it."
+8,53,D,"OK, and have you been around anybody who's been sick?"
+8,54,P,No.
+8,55,D,"OK, and have you had any prior surgeries?"
+8,56,P,"Nope, no prior surgeries."
+8,57,D,"OK, and any family history of gallbladder disease or cardiovascular disease in the family?"
+8,58,P,"Um, so my father died of a stroke when he was in his 60s, my mother does have gallstones."
+8,59,D,"OK, and what do you do for work?"
+8,60,P,So I work in at the bank as a consultant.
+8,61,D,"OK, and do you drink alcohol?"
+8,62,P,"Uh, yeah sometimes, maybe one or two glasses of wine every night."
+8,63,D,"OK, and do you feel the need to cut down on your drinking?"
+8,64,P,"No, not really."
+8,65,D,"OK, have you ever felt annoyed by people criticizing your drinking?"
+8,66,P,Uh No.
+8,67,D,"OK, have you felt guilty about your drinking?"
+8,68,P,"Uh no, so should I be?"
+8,69,D,"Uhm no, at the at this time, just wanting to gauge a sense of how you feel about your drinking levels at this time and the follow up question to that
+would be, have you ever felt the need to have a drink early in the morning?"
+8,70,P,"Uh no, no I've never drank, I don't drink in the morning."
+8,71,D,"OK, and do you use recreational drugs?"
+8,72,P,"Uh, no never."
+8,73,D,OK and do you smoke cigarettes?
+8,74,P,Nope.
+8,75,D,"And um, do, oh, and then, um, who are you living with currently at home?"
+8,76,P,And so I'm living with my two children and my partner.
+8,77,D,And can you tell me a little bit about the home situation?
+8,78,P,"Yeah, the home situation is fine, like kids are doing great and my partner is very supportive. No, no issues that I can think of at home."
+8,79,D,"OK, excellent."
+9,1,D,What brings you in here today?
+9,2,P,"Yeah hi, I'm I I have a pain in my belly. It started a couple hours ago."
+9,3,D,"OK, and where exactly in your belly do you have this pain?"
+9,4,P,It's mostly up here on the right side.
+9,5,D,"The right side, OK and can you describe what kind of pain is it? Is it like a dull pain or sharp pain, an aching pain?"
+9,6,P,"Oh I guess it's a, it's an aching pain I'd say. It kind of just, um, it would initially just come and go, but now it's just it's staying. It's not
+going away."
+9,7,D,"OK, and so it's in the right area and does it travel anywhere elsewhere besides on from the right side?"
+9,8,P,No.
+9,9,D,"OK. And on a scale of 1 to 10, one being the least amount of pain you felt in your life, and 10 being the worst, how much would you rate it right
+now?"
+9,10,P,"It's about to a 10, an 8 maybe."
+9,11,D,"An 8, OK and so just to clarify, when did it start?"
+9,12,P,About 8 hours ago.
+9,13,D,"8 hours ago, OK. And were you doing anything before? Like, did you have a meal or how were you sleeping before it woke you up, what was going on
+before you had the pain?"
+9,14,P,I was just about to go to sleep. I wasn't doing anything in particular at the time.
+9,15,D,OK. And has it been getting worse since it first started?
+9,16,P,"Oh yeah, definitely it would come and go, but now for the past I'd say five to six hours, it's been constant, just there all the time."
+9,17,D,OK. And have you had any similar pain like this in the past?
+9,18,P,"Yeah, uh I I have the same pain that sort of comes and goes after I eat. Usually after I've had something like a something fatty, something from
+outdoors, maybe like a burger or fries or something. I initially thought it was indigestion, but I don't I don't know what's going on now."
+9,19,D,"OK, and does it, does anything make it better or worse or anything that you've tried?"
+9,20,P,"Well, I guess eating sometimes makes it worse, um, but I don't I don't think there's anything that's making it better."
+9,21,D,"OK, have you tried any medications at all?"
+9,22,P,I tried Tylenol but that didn't do anything.
+9,23,D,"OK. And besides, uh, the pain that you're having, do you have any nausea and vomiting?"
+9,24,P,"I am a little nauseous, but no, I didn't, haven't had I haven't vomited yet, no."
+9,25,D,"OK, and have you been having any fevers?"
+9,26,P,I don't think so. I haven't checked. I don't feel feverish.
+9,27,D,Any sweats or like chills?
+9,28,P,"No, I don't think so."
+9,29,D,"OK, any changes in your bowel movements like constipation, diarrhea?"
+9,30,P,No.
+9,31,D,OK. Have you traveled anywhere recently?
+9,32,P,"No, I haven't."
+9,33,D,"Have you been feeling at all, very tired, not your usual self, fatigued?"
+9,34,P,"Well the pain is making it difficult for me to do things, um, but I I guess I'm not, uh a little fatigued maybe."
+9,35,D,"OK. Um, have you been having any changes in your urinary patterns?"
+9,36,P,No.
+9,37,D,"No? Any changes in your skin and you rashes, any yellowing of your skin?"
+9,38,P,"Nothing that I've noticed, no, I don't think so."
+9,39,D,OK. Any changes in your urine color?
+9,40,P,No.
+9,41,D,"OK, have you noticed blood in your stools at all?"
+9,42,P,"I have not, no."
+9,43,D,"OK, and how about your appetite, has this changed at all?"
+9,44,P,"Well, I guess because it's this thing happens usually happens after I eat, I think I've been eating less than usual, just because I don't, I don't
+want to, you know, I don't like the pain."
+9,45,D,Any significant weight loss recently?
+9,46,P,I don't think so.
+9,47,D,"OK, any recent infections recently at all?"
+9,48,P,No.
+9,49,D,"Um, and otherwise are you, do you have any other medical conditions like diabetes, high blood pressure or anything else?"
+9,50,P,I do have diabetes but that's about it I think.
+9,51,D,And you take anything for your diabetes?
+9,52,P,I take metformin.
+9,53,D,"OK, um do you take any other medications at all?"
+9,54,P,"No, I don't, sorry, no."
+9,55,D,"No worries. Do you have any allergies to any medications, any environmental allergies?"
+9,56,P,"No no, no, I don't."
+9,57,D,OK. And have you been hospitalized in the past?
+9,58,P,"No, no I haven't ever. I've been very uh healthy. No hospitalizations."
+9,59,D,Any past surgeries?
+9,60,P,I got my wisdom teeth removed when I was a teenager.
+9,61,D,OK. Have you been in contact with anyone who has been ill recently?
+9,62,P,"No, I don't think so."
+9,63,D,"OK. Hmm, and in terms of your family history, has anyone had any cancers or um any err um IBD like Crohn's disease or ulcerative colitis?"
+9,64,P,"No, not that I know of."
+9,65,D,OK. And anything that runs in the family at all?
+9,66,P,My dad had a heart attack when he was in his 60s. But that's it.
+9,67,D,"OK. And um, currently right now do you work?"
+9,68,P,"Oh no, I'm I'm laid off because of COVID."
+9,69,D,"OK. And currently, what is your home situation like?"
+9,70,P,What do you mean?
+9,71,D,"So do you live in an apartment, house and do you live with anyone?"
+9,72,P,"I I I live in an apartment, I live alone."
+9,73,D,"Um, and in terms of your daily routine, do you feel that you get enough exercise? Do you go outside for walks or runs or anything like that?"
+9,74,P,"I usually go out for a run, especially when it's a little bit warmer, which it now is."
+9,75,D,And do you do you drink alcohol?
+9,76,P,"Uh, sometimes."
+9,77,D,How much would you say you drink in an average week?
+9,78,P,One to two drinks a day.
+9,79,D,"OK, and what do you usually drink?"
+9,80,P,"I'll just drink a glass of wine at night, just helps me relax."
+9,81,D,OK. And do you smoke cigarettes?
+9,82,P,"I don't, no."
+9,83,D,OK. And do you use any recreational drugs like marijuana?
+9,84,P,"No, I don't."
+9,85,D,"OK. Alright, so um, that's all the questions I have and just to clarify, does your pain come and go, or is it constant?"
+9,86,P,"Yes, so initially it would come and go, but now, so for the first 2 hours it would come and go. And when I would have this pain when I was eating, it
+would come and go. But over the past six hours it's just been constant."
+9,87,D,OK. Alright.
+10,1,D,I understand that you've been having some diarrhea. Can you tell me a little bit about that?
+10,2,P,"Yeah, sure I had, I've been having diarrhea for the past three to four days, and it's been pretty bad. I couldn't go, uh I couldn't go to my classes,
+had to skip because it was just it was just embarrassing."
+10,3,D,"OK, I'm sorry to hear that. Uh, have you ever experienced something like this before?"
+10,4,P,"Um, have I experienced something like this before? Uhm no, I don't think so."
+10,5,D,"OK. And over the three or four days, have your stools all been loose? Or have you had some solid ones in between?"
+10,6,P,"I think they've mostly been loose. I think they've all been loose actually, if I think about it."
+10,7,D,"OK, and how many times a day have you been having episodes of diarrhea?"
+10,8,P,"Oh my god, I have I've lost count. I'm going every every hour."
+10,9,D,"OK, every hour. OK, and then you notice any changes in the color of your stool?"
+10,10,P,"No, it's brown."
+10,11,D,OK. Any blood in your stool that you've noticed?
+10,12,P,Um not really. I don't think so. I don't look that much to be honest.
+10,13,D,"OK, um have you noticed any any pain associated with it?"
+10,14,P,"Well, I didn't start off with pain, but I I I do have a bit of a cramp now since yesterday. It's just it hurts. Yeah, it hurts sometimes, it comes
+and goes."
+10,15,D,"OK, and do you feel that when it, do you feel that you still have control over like releasing it to like does it come on and you don't even notice
+that it has happened or you still are able to kind of have a warning before you get to the toilet?"
+10,16,P,"Uh no I do get a warning, but it's just I I do need to get to the toilet really fast, yeah."
+10,17,D,"OK, and before this happened, have you noticed, have you, is there anything that you've done differently that you've been eating differently, or any
+other changes that have happened in your life recently?"
+10,18,P,"Um, I I did go to um, I did go to a new restaurant 5 days ago."
+10,19,D,"OK, what did you have there?"
+10,20,P,"Um I I just got some rice with chicken Manchurian, it was a nice little Chinese restaurant, and yeah."
+10,21,D,Did anyone else have the same thing that you did that you were with?
+10,22,P,"Um, no not really, I went with my friend and I haven't really, haven't talked to her about this. I never really thought that these were related, that
+this was related to that."
+10,23,D,"And then it's, you know, absolutely, potentially not like, maybe not. It could possibly be so not to not to worry you about that. We just like to get
+an idea of kind of the whole picture of what you're coming in with. So in terms of the last three to four days, have you experienced any nausea or
+vomiting?"
+10,24,P,"Yeah yeah, I have actually, but it's not been as bad as the diarrhea. I didn't even yeah, I didn't, I wasn't even thinking about that. Yeah, I I did
+vomit, I think twice yesterday."
+10,25,D,"OK, have you noticed any blood in the vomit?"
+10,26,P,"No, it's just watery."
+10,27,D,"And are you nauseated all the time, or is it kind of on and off?"
+10,28,P,It's on and off.
+10,29,D,"OK, have you taken any any over the counter medicine or anything to help?"
+10,30,P,"Uh, not really. I was just trying to drink a lot of water, 'cause I I know that I can get dehydrated so just drinking lots of water."
+10,31,D,"OK, well that's good to hear. Have you have you been eating normally or have you not been eating as much as you regularly do?"
+10,32,P,I have been eating less specially since yesterday when I had my these abdominal cramps started. I just don't feel like eating.
+10,33,D,OK. Is there anything that has been making it worse?
+10,34,P,Making what worse?
+10,35,D,"Just in general, like is there anything that you're finding makes your nausea or your diarrhea come on?"
+10,36,P,"Not really, I don't think so."
+10,37,D,Do you notice any changes to your urine or any discomfort when going to the bathroom?
+10,38,P,No.
+10,39,D,Have you traveled anywhere recently?
+10,40,P,No.
+10,41,D,"OK, and have you noticed any fever or chills in the last few days?"
+10,42,P,"Um, I've just been feeling really tired and and, I don't know, maybe I haven't checked my checked my temperature."
+10,43,D,OK. Have you noticed any rashes or changes in your skin?
+10,44,P,No.
+10,45,D,"OK. Have you noticed any major changes to your weight, I know that you might not weigh yourself everyday, but anything that jumps out to you?"
+10,46,P,"I actually haven't weighed myself in the past five days, so I don't, I don't know."
+10,47,D,"OK. OK, I'm I'm just gonna jump to you and your general history. Do you have any history of problems with your digestive system?"
+10,48,P,No.
+10,49,D,OK. Do you have any chronic conditions that you see a family doctor for regularly?
+10,50,P,I have asthma.
+10,51,D,OK. Do you take any medication?
+10,52,P,"Yeah, I've got some puffers that my family doc gave me."
+10,53,D,OK. Nothing else?
+10,54,P,"No, that's it."
+10,55,D,Do you have any allergies?
+10,56,P,"Um, no I don't."
+10,57,D,Have you (unclear speech due to connection issues)?
+10,58,P,"I'm sorry, can you say that again?"
+10,59,D,Have you ever been hospitalized in the past?
+10,60,P,"Um? I had my wisdom teeth removed. But no, I like I wasn't hospitalized, no."
+10,61,D,Have you been in contact with anyone recently that's been sick?
+10,62,P,"Nope, I don't think so."
+10,63,D,OK. What is your living situation right now? You said you're a student?
+10,64,P,I am.
+10,65,D,"OK, and do you live, do you live on your own, with family, with roommates?"
+10,66,P,I live with two roommates.
+10,67,D,Do you drink alcohol?
+10,68,P,"Um, sometimes."
+10,69,D,"OK, how how many drinks per week would you say?"
+10,70,P,I might have like a glass or two on the weekends.
+10,71,D,"OK, do you smoke?"
+10,72,P,No.
+10,73,D,"OK, do you use any other substances?"
+10,74,P,No.
+10,75,D,"OK, and what would you eat on a regular day typically, what would your typical diet be?"
+10,76,P,"Oh gosh, um well, I like to have oatmeal for breakfast. I usually make something quick for lunch, maybe like a salad, and then I might have my, I'll
+probably just like eat out at night, maybe get like a burger or fries or something."
+10,77,D,"OK. Well, and I just wanted to jump over to ask you about your family history. Does anyone in your family have any history of digestive problems, or
+um abdominal problems, abdominal surgery?"
+10,78,P,"My brother had appendicitis when he was young. Um, my mom has had a hysterectomy if that counts. Yeah, nothing else."
+10,79,D,"OK. OK, thank you for sharing that with me. So I think that's everything that I wanted to ask you for today."
+11,1,D,Would you mind by starting with what brought you in today?
+11,2,P,"Yeah, so I'm just coming in with my son. He's six years old and yeah, just over the last few days he's not been himself and he's been having this
+stomach ache. Uh, so it started around like I would say 3 days ago and then he's also having vomiting for the last two days, he's vomited in total six
+times over the last two days and then yesterday he also developed a fever as well. I managed to measure it and it was 38.3 degrees Celsius."
+11,3,D,"OK, I see. So I just so that I understand the timeline, so he started to have abdominal pain about 3 days ago, started with having vomiting and
+diarrhea two days ago and you checked his temperature, he had a fever as of yesterday?"
+11,4,P,Yeah.
+11,5,D,"OK, and uh, was there anything that that he ate that was different over over these last few days?"
+11,6,P,"No, we've been strictly home food during like a pandemic like no, no real changes."
+11,7,D,"OK, and what's his kind of behavior been like over these last couple of days?"
+11,8,P,"Yeah, so at first with the stomach pain he was a bit just irritable and just not himself, but especially yesterday with the fever just been very
+quiet and just kind of sleeping pretty much the whole day."
+11,9,D,"OK, I see and uh, could you describe the vomit?"
+11,10,P,"Yes, so vomit like, it started two days ago. The first day it was just like he puked up the things that he had eaten, but yesterday it was it was
+mainly just like uh just yellowish material, I couldn't really tell if it was food or not."
+11,11,D,"OK, have you noticed any bile or blood in the vomit?"
+11,12,P,"Uh no I didn't notice any blood and I didn't notice any green material. It was mainly just like like normal vomit, like yellowish color."
+11,13,D,"OK, I see and, has the what was the vomiting triggered by anything that you're aware of, like eating or drinking?"
+11,14,P,"Uhm? Yeah, two days ago it was it was after after lunch when he first vomited. But after that it's just been kind of random."
+11,15,D,"I see OK, and, uh, and with regards to his diarrhea, has there been any any blood or or any color changes?"
+11,16,P,"No, no, I didn't notice any blood at all. It's definitely just very very watery and he's had to go probably even just in the last day, probably
+around like six or seven times."
+11,17,D,"OK, um, and he's vomited how many times?"
+11,18,P,So in total I can count 6 times.
+11,19,D,"OK, and, has he been complaining of any headaches at all?"
+11,20,P,"No, not that I know."
+11,21,D,"No. OK, and how about any ear pain or or eye pain?"
+11,22,P,"No, not that he's mentioned to me."
+11,23,D,"OK, and any eye redness?"
+11,24,P,Nope.
+11,25,D,"OK, and as he had a runny nose?"
+11,26,P,"No, not really."
+11,27,D,OK and has he had a sore throat or any pain with swallowing?
+11,28,P,No.
+11,29,D,"OK, have you had any loss of taste or loss of smell?"
+11,30,P,"Uh no, not that he has mentioned to me now."
+11,31,D,"OK, and has he had a cough?"
+11,32,P,"Uh, no, not really."
+11,33,D,"OK, and how about any shortness of breath or wheezing?"
+11,34,P,No.
+11,35,D,"OK, and has he had any any pain anywhere? Any chest pain?"
+11,36,P,"Um, he did, he did point to his stomach like it seems like he was having with all the vomiting like, he was having some stomach pain as well."
+11,37,D,"OK, is there any specific location that that he's feeling the pain?"
+11,38,P,"Well, it's hard to say. He was just pointing at the center of his belly like, I don't know if it's like, I tried pressing on it and he didn't feel
+any pain then, but I think it's just kind of all over his stomach."
+11,39,D,"OK, and has he had any urinary problems like painful voiding or been peeing more often?"
+11,40,P,"No, that's been OK."
+11,41,D,Have you noticed any rashes or skin changes?
+11,42,P,"Uh, no, not not really, no."
+11,43,D,"OK. And has he had any muscle aches or uh, or joint pains that that he's mentioned?"
+11,44,P,"No, no he hasn't mentioned anything like that."
+11,45,D,"OK, and he's had a fever, has he had the chills?"
+11,46,P,"Yeah, so that's that's what I, that prompted me to take his temperature yesterday around the afternoon, like we had to wrap him up with like more
+than two blankets and he was still feeling cold so, yeah, definitely was having chills."
+11,47,D,"OK, and and has there been any concerns with his growth, either weight or or height?"
+11,48,P,"So he's been going along the charts pretty well, like no concerns during his growth. Otherwise, he's a very healthy child."
+11,49,D,"OK, so no medical diagnosis previously?"
+11,50,P,No nothing like that.
+11,51,D,"OK, and uh, yeah, is he meeting all developmental milestones OK? Like gross motor, fine motor, doing well at school?"
+11,52,P,"Yeah yeah, he didn't have any issues with walking, running, he's pretty social with all his peers. He's doing well at school, no complaints."
+11,53,D,"OK, excellent and you know, no medical conditions, but has there been any reasons for being in the hospital before?"
+11,54,P,"No, not at all. We, yeah, we haven't really gone to the doctor with him after like all those vaccinations that he had to do, so he's been good."
+11,55,D,"OK, great, so immunizations are up to date?"
+11,56,P,"Yeah, immunizations all up to date."
+11,57,D,Excellent and does he have any allergies?
+11,58,P,"Uh, no, uh, not not anything that we know of yet."
+11,59,D,"OK, and I just wanted to ask about his birth history. Were there any complications throughout throughout pregnancy, either mom being sick or having
+any any issues herself?"
+11,60,P,"No, so it was a normal vaginal delivery, uh no issues, uh he was born at 39 weeks, didn't need to stay in the hospital at all. Yeah, it was a pretty
+smooth pregnancy compared to some of the other ones."
+11,61,D,"OK, oh, that's that's great. Do you remember the Apgar score or his birth weight?"
+11,62,P,"Uhm, I don't exactly remember his Apgar scores, I think they were like just just they they were normal like there was nothing concerning about them,
+and birth weight I think he was probably around 3 kilograms."
+11,63,D,"OK, great so, yeah healthy birth weight at term it sounds like. And so, healthy, does he take any medications regularly?"
+11,64,P,"No, no medications."
+11,65,D,"OK, and could you tell me about who is living with currently and then who's looking after him?"
+11,66,P,"Yeah, so he's living with myself, his mother and, and then my husband, and he has two older siblings. One is a boy, seven years old, and another one
+like a 10 year old girl."
+11,67,D,"OK, and has anybody in the house been sick?"
+11,68,P,"Uh no, no one has been sick recently, however he does, they did let them go back into school at one point, so I don't know, I don't know, so that was
+just last week, so I don't know if he caught something from school."
+11,69,D,"OK, but nobody that you know that's had similar symptoms?"
+11,70,P,No.
+11,71,D,"OK, and have you traveled anywhere?"
+11,72,P,"No, we've been, we've been at home."
+11,73,D,"OK, uh, and then you know recent changes to anything in the diet you've mentioned?"
+11,74,P,"No, that's been fine."
+11,75,D,"OK, and any concerns for safety in the home, whether physical or or verbal abuse?"
+11,76,P,"No, no concerns like that."
+11,77,D,"OK, yeah a question that we have to ask everybody and is there any smoking in the home?"
+11,78,P,"No, no, we don't smoke."
+11,79,D,"OK, great then, are there any pets?"
+11,80,P,"Nope, no pets."
+11,81,D,"Alright, and uh and in the family, has there been anybody who's had any heart problems or any lung problems?"
+11,82,P,"Uh, we are getting the 10 year old tested for just uh, asthma."
+11,83,D,OK.
+11,84,P,"But nothing diagnosed yet, no."
+11,85,D,"OK, anybody in the family have any congenital diseases or any genetic diseases?"
+11,86,P,"No, not that I know of."
+11,87,D,"OK, uh, anybody in the family have celiac disease or Crohn's disease?"
+11,88,P,"No, no, uh no history of any kind of bowel diseases."
+11,89,D,"OK, so I think that's, uh, everything I want I wanted to ask about today. Uh, was there anything that maybe I I forgot to ask or or that I missed
+that you wanted to tell me?"
+11,90,P,"Uh, yeah, no it's, it's also just like I was just reading up like, can it be like I don't know if it can be COVID as well, if it can, it can do this
+as well?"
+11,91,D,"It is possible. Uh, it's uh, especially with nonspecific symptoms, COVID can cause a variety of different presentations, and there for some people it
+can be more gastrointestinal issues like like your son has with vomiting and diarrhea and belly pain. But it also could be well, uh, another type of
+gastrointestinal virus itself or or a viral illness like the common cold, which can also end up causing symptoms like this as well. So we will, I will
+go ahead and do a COVID test today, along with some other blood work. And maybe increase the hydration as well, because it sounds like he has lost a lot
+of fluid over these last couple of days. So we will check electrolytes and go from there on the test results."
+11,92,P,"Alright, sounds good. Thank you so much."
+12,1,D,So I understand you have been experiencing some abdominal pain?
+12,2,P,"Yeah yeah stomach hurt, started hurting more last couple of days, maybe 3 days ago I think."
+12,3,D,"OK, so for three days ago, for the last three days you said it's been hurting more. Did you have pain before that?"
+12,4,P,"It felt weird, like crampy. I just, I just thought I was constipated, 'cause I've been haven't been able to be able to go to the bathroom as well. I
+just thought I was kind of bloated a bit, but yeah, about about that time, started to feel a little bit more painful."
+12,5,D,Can you tell me kind of where you're feeling the pain the most?
+12,6,P,"Yeah, kinda like near my right hip like lower where my stomach is that kind of right and below my belly button. Sometimes a little bit on the top
+just below my belly button, but mainly just in that right lower side yeah."
+12,7,D,"OK, have you ever had pain like this in the past?"
+12,8,P,"No, never."
+12,9,D,"OK. And for the last three days, has it been pretty constant? Has it been on and off?"
+12,10,P,I feel it's been getting worse to be honest.
+12,11,D,Is there anything that you can think of this made it feel better?
+12,12,P,"Honestly, just resting flat makes it feel a little bit better, but nothing much, no."
+12,13,D,"OK, is there anything that makes it worse?"
+12,14,P,"Touching it. Also I puked the the other day and that made it definitely feel worse, just that whole contraction in my body was nasty."
+12,15,D,"OK, was it just the one time?"
+12,16,P,Yeah.
+12,17,D,"OK, you had the nausea associated with the pain?"
+12,18,P,"Mhm, mhm."
+12,19,D,"Um, did the pain stay in that same spot or does it move anywhere else?"
+12,20,P,"It has pretty much stayed in that one spot, yeah."
+12,21,D,Have you noticed any fevers lately?
+12,22,P,"Felt a bit hot the other day, didn't take a temperature though."
+12,23,D,"OK, OK, and what specifically prompted you to come in today to the emergency department?"
+12,24,P,"I thought it was just going to get better when it first started. Maybe just a bit of gas, but here we are kind of Thursday now and it's still pretty
+bad."
+12,25,D,"OK, have you been in contact with anyone that's been sick lately?"
+12,26,P,"Not off the top of my head, no."
+12,27,D,And have you traveled anywhere recently?
+12,28,P,No.
+12,29,D,"And I forgot to ask, did you notice any changes to your bowel habits?"
+12,30,P,"Yeah, yeah. Before it was fairly regular, about once a day. Five days ago, I started getting constipated, it backed up and pretty much the picture I
+think last time I went to the bathroom was two days ago I think, yeah."
+12,31,D,"OK, I'm just gonna ask you some questions about your overall health. You have any chronic conditions that you see your family doctor for, or any
+other doctor?"
+12,32,P,"I got diabetes, type 2."
+12,33,D,And has that generally has that been well controlled for you lately?
+12,34,P,"Most part, doctor checks my sugars. I'm not too regular on them myself, but last time he changed medications was a couple years back and I've just
+been on the same ones ever since."
+12,35,D,What medication are you currently taking?
+12,36,P,Metformin? Metformin.
+12,37,D,And have you ever had any surgeries in the past?
+12,38,P,"No, I had my teeth pulled as a kid, but no."
+12,39,D,"OK, still have your appendix?"
+12,40,P,"Yeah, yeah, I never had that problem as a kid."
+12,41,D,And do you have any allergies?
+12,42,P,"No, sometimes get a little bit congested during the fall, but that's it."
+12,43,D,Do you have any family history of gastrointestinal problems?
+12,44,P,"Gas, like no. I think my grandma died of breast cancer fairly early, but no, not not that not that I can think of."
+12,45,D,"OK, and just in terms of your lifestyle, do you live here in town?"
+12,46,P,"Yeah yeah, I live here."
+12,47,D,Living alone or with family?
+12,48,P,"No, no, I got family. Me, the wife, got two kids, one of them is college bound now but yeah."
+12,49,D,"Nice, and what do you do for work? Or are you retired?"
+12,50,P,"I'm still working, I am a production overseer, production manager over at Fairbanks."
+12,51,D,"OK, you're a big boss."
+12,52,P,It took awhile to get here.
+12,53,D,"I'm sure it was very hard work. In general, do you drink alcohol?"
+12,54,P,"Oh yeah, like, well, plan on drinking on the two four but not regular, special occasions mainly. Hot days, sometimes I'll have a beer or two."
+12,55,D,"Sure, and do you smoke cigarettes?"
+12,56,P,No.
+12,57,D,Have you ever smoked in the past?
+12,58,P,No.
+12,59,D,Do you cannabis?
+12,60,P,No.
+12,61,D,Any other substances?
+12,62,P,No.
+12,63,D,"OK, is there anything else you wanted to bring up today that I didn't ask you about or any other questions that you have?"
+12,64,P,"No, just hoping to get an answer to whatever is going on."
+12,65,D,"OK, well at this point I will do a quick physical exam. We may want to have blood work done, maybe some other tests based on what we find out from
+there and then we can kind of let you know after that, what the next steps will be. So I'm just going to take this and go over it with the physician
+that I'm working with and will get back to you shortly. Thanks for chatting with me."
+12,66,P,Thanks doc.
+13,1,D,"Hi, what brings you to clinic today?"
+13,2,P,"Hi, so I feel like I might have a bladder infection. I see a urologist because I've had some issues with like an overactive bladder for awhile. I've
+had a few bladder infections in the past and this is usually how how they feel. I feel like a little bit of burning when I go to the bathroom and I have
+to go like a lot right now. But then also sometimes it means that like it gets like this when I have my period and I don't have my period right now, but
+I you know I I could be getting it, but I also just don't wanna let it go keep going if I do have an infection. I just like rather get it like treated
+if I do."
+13,3,D,OK understood. When was your last period?
+13,4,P,"Um, like 2 weeks ago."
+13,5,D,"About two weeks ago, are you fairly regular?"
+13,6,P,"Like yes and no, it's. I'm I'm not super irregular, but I I sometimes have like basically it's like I alternate sometimes. I my cycles like 4 weeks
+and sometimes it's more like 5."
+13,7,D,"Sorry, just clarify again, you're 30 years old?"
+13,8,P,Yeah I'm 30.
+13,9,D,Ok are you on any contraception right now?
+13,10,P,"Uh, no, I'm not."
+13,11,D,Ok. Are you sexually active at all?
+13,12,P,No.
+13,13,D,"No? Ok. So just in terms of your urinary tract infections, when was your last one?"
+13,14,P,I had one like 3 months ago maybe.
+13,15,D,"3 months ago ok, and they prescribed you antibiotics and it went away fairly quickly?"
+13,16,P,"Yeah yeah it went away like I always I always have an overactive bladder and I always have to go pretty frequently, like every hour, sometimes half
+hour. But so that's still there, but like it hasn't ever since then, I haven't had any like pain with it."
+13,17,D,"Ok, so you still have quite a, you have a, quite a bit of urgency to go?"
+13,18,P,Yeah.
+13,19,D,"Kind of going more frequently, but I suppose the new thing you're a little bit concerned about is that it, it burns a little bit, it stings a little
+bit when you do urinate. Am I understanding correctly?"
+13,20,P,"Exactly like for the past couple days, it's felt like that."
+13,21,D,"Ok, has it been getting progressively worse at all?"
+13,22,P,"Um, maybe a little bit I I feel like now I can recognize it pretty early when it's not too bad to kind of get ahead of it."
+13,23,D,OK understood. And do you have any pain kind of behind your ribs at all? On your back?
+13,24,P,"Sorry, can you repeat that?"
+13,25,D,"You haven't had any pain on your back, middle back kind of close to your ribs, have you?"
+13,26,P,Not that I can think of.
+13,27,D,"Ok, and have you noticed any changes to the quality of the urine? For example has it looked frothy or smelled bad?"
+13,28,P,"It maybe looked like a little cloudy. But nothing, nothing else out of the ordinary like I've never had blood in it or anything."
+13,29,D,Understood. Have you noticed any visual changes in the area near the vagina?
+13,30,P,"No, not that I can think of."
+13,31,D,"Like any lesions, anything like that? Anything concerned for an STI that you're worried about?"
+13,32,P,"No, and like I haven't had like had a sexual partner in a few years."
+13,33,D,"Understood, understood. These are kind of questions that we ask when someone's having a little bit of maybe an issue holding in their urine. Have you
+ever felt any numbness or inability to feel kind of around your buttocks region? For example, when you wipe with tissue paper, can you feel that well?"
+13,34,P,"Oh yeah, I can feel everything."
+13,35,D,"Ok and no changes to your poops, to your bowel movements?"
+13,36,P,"No, nothing, pretty normal."
+13,37,D,"Ok, and how do you feel otherwise?"
+13,38,P,"I, I mean, I feel I feel a little tired, felt like a little hot yesterday. I don't have a thermometer so like I didn't take my temperature but, you
+know, sometimes I feel a little hot like when I've had the infections before."
+13,39,D,"OK, you don't have any swelling on your anywhere in your body on your ankles, do you?"
+13,40,P,No.
+13,41,D,"No? Ok, and then, so no puffiness around your eyes that you've noticed?"
+13,42,P,"No, nothing like that."
+13,43,D,Any rashes or any changes on your face?
+13,44,P,"Like my mom said, I, I I saw my mom earlier and she said I looked like a little flushed but it's not not like a rash or anything."
+13,45,D,No? No markings across the bridge of your nose and your cheeks?
+13,46,P,No.
+13,47,D,"Ok, and then in regards otherwise you feel a little flushed, a little tired? Any other medical issues that you have?"
+13,48,P,"No, just this like overactive bladder thing."
+13,49,D,"OK, and have they given you any medications for it?"
+13,50,P,"We tried a few different ones before, now I get I get Botox injections into the bladder like maybe twice a year."
+13,51,D,"Anything else they've used recently? Like any medications you're on right now, I suppose?"
+13,52,P,"No, nothing no nothing else. Yeah, I guess I have like I have an inhaler but I don't use it all the time like I haven't had to."
+13,53,D,"Oh, so you have asthma?"
+13,54,P,"Yeah, like I honestly don't feel like I have it very much now, but I still have like I still have the inhaler."
+13,55,D,"Understood, understood. Anything else, you've taken medications for in the past?"
+13,56,P,"Oh, I used to take birth control, like the the pill but like I just I don't have a boyfriend right now and I just didn't really feel like I needed it
+otherwise."
+13,57,D,"Understood, understood. And have you had any past surgeries?"
+13,58,P,"Um, I had my appendix out when I was 24. That's it though."
+13,59,D,"Ok got it. And then just in terms of you yourself, do you live in London?"
+13,60,P,Yeah yeah I do.
+13,61,D,Ok. What do you do for work?
+13,62,P,I work at a bank.
+13,63,D,"Ok, do you have any children?"
+13,64,P,No.
+13,65,D,"Ok, and in regards to anything so any sick contacts?"
+13,66,P,Uh no.
+13,67,D,Any recent travel?
+13,68,P,No.
+13,69,D,Any allergies?
+13,70,P,Like sometimes in the spring I'll get like a little stuffy but...
+13,71,D,"Ok, sounds great."
+13,72,P,"No like, yeah..."
+13,73,D,Nothing to concerning? No drug allergies?
+13,74,P,"No, nothing like that."
+13,75,D,"Got it, got it. OK, I think what now do next, I'll move to a physical exam. I think we might just do some investigations just in order to get some
+more information. And then the physician will come in to see you, ok?"
+13,76,P,"Cool, thank you."
+13,77,D,No problem.
+14,1,D,And what brings you to the emergency department today?
+14,2,P,Low back pain.
+14,3,D,"OK, and where exactly is uh is the back pain?"
+14,4,P,So the pain's just right in the in the lower back.
+14,5,D,"Just in the lower back, OK. And when did this pain start?"
+14,6,P,"It started yesterday, I was unloading groceries from my pickup truck when it suddenly started."
+14,7,D,"OK, so, and, did you kind of make any kind of movement? Or did you pick up something really heavy?"
+14,8,P,I'm not sure. I just noticed the pain after um after that.
+14,9,D,"OK, and what kind of pain are you experiencing? Is it like a dull cramping pain or is it more like a sharp or stabbing pain?"
+14,10,P,It feels like it's stabbing just right in my lower back.
+14,11,D,"OK. And, um, on a scale of 1 to 10, uh 1 being like the least pain that you felt in your life, 10 being the worst, how much would you rate this pain?"
+14,12,P,"If I'm sitting, uh completely still like like I am right now, it's a 2 out of 10."
+14,13,D,OK. Um and when does it get worse?
+14,14,P,Uh anytime I I move or bend my back or uh even cough it it worsens the pain significantly.
+14,15,D,"OK, and has this pain changed at all since yesterday?"
+14,16,P,"No, it's been this same awful pain this whole time."
+14,17,D,OK and have have you ever had this kind of pain before?
+14,18,P,"I've had back pain uh over the years, but nothing like this before."
+14,19,D,"OK. And does it, does the pain go anywhere or does it just stay in the lower back?"
+14,20,P,I also feel the pain uh into my right leg.
+14,21,D,"OK, and is it the same kind of aching or like stabbing pain that goes into your right leg? Or is it uh just like an aching pain?"
+14,22,P,"Uh it's it's a, uh, an aching pain."
+14,23,D,"OK. And do you have any other symptoms besides the pain? Like are you experiencing any kind of weakness or any kind of, any other changes in your
+health?"
+14,24,P,Uh no it's just the uh the low back pain.
+14,25,D,"OK, and have you ever uh experienced any kind of trauma to your back? Like something has hit you or you've fall down, anything like that?"
+14,26,P,"No, I can't remember any injuries like that in the past."
+14,27,D,"OK, any uh fevers or chills or night sweats?"
+14,28,P,"Um no fever, uh no chills, no night sweats."
+14,29,D,"OK, any uh symptoms of feeling very tired, fatigued, anything like that?"
+14,30,P,"Uh no, I've been OK recently."
+14,31,D,"OK. Any changes to your skin at all? Uh I mean, any rashes?"
+14,32,P,No.
+14,33,D,"OK, any pain in your joints at all?"
+14,34,P,Uh just the back pain.
+14,35,D,OK. Uh any new coughs or any um symptoms and runny nose or anything like that?
+14,36,P,Uh no.
+14,37,D,"Any changes in your um bowel movements at all like diarrhea, constipation or anything?"
+14,38,P,"Nothing like that, been regular."
+14,39,D,"OK, how about, uh, any urinary problems?"
+14,40,P,"Uh no, nothing to report there."
+14,41,D,"OK, and how has your appetite been?"
+14,42,P,Uh appetite's been normal.
+14,43,D,Any significant weight loss or weight gain recently?
+14,44,P,"No, the weight's been about the same."
+14,45,D,"OK, any recent infections that you know of?"
+14,46,P,"No, I've been feeling well otherwise."
+14,47,D,"OK. Any uh tingling sensation or numbness uh in your back or lower limbs, in your legs?"
+14,48,P,Uh no numbness or tingling.
+14,49,D,OK. Any muscle weakness at all?
+14,50,P,Uh no muscle weakness.
+14,51,D,"OK, have you been uh having any uh kind of erectile dysfunction?"
+14,52,P,Uh no concerns with uh erectile dysfunction.
+14,53,D,"OK, and any issues with uh incontinence, like uh having accidents at all, at night or during the day?"
+14,54,P,"Uh no, I haven't had any problems with bowel or bladder incontinence."
+14,55,D,"OK, alright, and in terms of your past medical history, have you have you been diagnosed with any conditions like high blood pressure, diabetes?"
+14,56,P,Uh type 2 diabetes.
+14,57,D,"OK, and do you take any medications for it?"
+14,58,P,"Uh I, um insulin for diabetes."
+14,59,D,"OK, and any other medications at all?"
+14,60,P,Uh just been taking Tylenol for the the back pain.
+14,61,D,And has that worked for you at all? Or has it not made a difference?
+14,62,P,"Uh maybe it's taking the edge off a little bit, but it hasn't done too much uh to help the pain."
+14,63,D,"OK, any allergies?"
+14,64,P,Uh nope.
+14,65,D,OK. Any previous surgeries?
+14,66,P,Uh I had hemorrhoids removed three years ago.
+14,67,D,OK. Um any hospitalizations before?
+14,68,P,"Uh no, it was just day surgery,"
+14,69,D,"OK, any family history of any um conditions uh or like any cancers?"
+14,70,P,Uh my father had prostate cancer.
+14,71,D,"OK. And currently right now, uh do you work?"
+14,72,P,Uh I'm a retired school teacher.
+14,73,D,"OK, and where do you live?"
+14,74,P,"I live alone um in a in a house uh not too far from here, actually."
+14,75,D,OK. And do you do you drink at all?
+14,76,P,"Um occasionally uh maybe I'll have a glass of red wine on the weekend or something like that, but uh not too often."
+14,77,D,"OK, and do you smoke?"
+14,78,P,"Uh, I've smoked um yeah, I smoke a pack of cigarettes uh per day."
+14,79,D,"OK, and for how long have you smoked uh cigarettes for?"
+14,80,P,Uh about 40 years.
+14,81,D,"40 years, OK. And, uh, do you use any kind of recreational drugs?"
+14,82,P,Uh never.
+14,83,D,"OK, and how is your diet like on like a regular basis?"
+14,84,P,"I feel like it's uh pretty normal, mostly home cooked meals with some variety, vegetable, vegetables, other meats, and fish. I would say it's pretty
+balanced."
+14,85,D,"OK, alright, I just have a few more questions for you. Um are you currently sexually active?"
+14,86,P,"Yes, I am."
+14,87,D,"OK and who are you sexually active with, any new partners at all?"
+14,88,P,"Uh no new partners, um just my girlfriend, uh."
+14,89,D,"And, uh, how many, I'm sorry, go ahead."
+14,90,P,Um just my my girlfriend recently.
+14,91,D,"OK, and have you been sexually active with more than one partner in the past, past year?"
+14,92,P,"Uh yes, I have, um um two women over the past year."
+14,93,D,"OK, and um do you use any kind of protection?"
+14,94,P,"Yes, always use uh condoms."
+14,95,D,"OK. Alright, so now I'm just going to get the patient's vitals."
+15,1,P,"My back, it just really hurts. I feel really stiff in the morning and um yeah, it's just been going on for a few months now."
+15,2,D,"Ok, so for a few months, stiffness in the morning. So your back hurts, where exactly would you say it hurts?"
+15,3,P,"It kinda hurts all over. I can't really pinpoint any specific locations that hurts most, kind of hurts like all down my my back."
+15,4,D,"OK, all the way up to I guess your neck and all the way down to your lower back?"
+15,5,P,"So I wouldn't really say the neck, and I guess more of the the lower parts. Maybe like the middle of my back and..."
+15,6,D,I see.
+15,7,P,And down.
+15,8,D,"Ok and what kind of pain would you say it is, is it like a dull aching pain? Is it a sharp stabbing pain? How would you describe it?"
+15,9,P,It's a dull pain.
+15,10,D,"Dull pain, ok. Ok, and on a scale of 0 to 10 with 0 being the least amount of pain you felt in your life and 10 being the worst, how much would you
+rate it?"
+15,11,P,"It's about a four or five. I mean some days it can be better, but yeah, some days it can be worse."
+15,12,D,OK and when did this start?
+15,13,P,"I think this started about like four or five months ago. It's been going on, yeah, for probably about half a year now."
+15,14,D,"OK, and when it first started up, was there anything that caused the back pain? Like any kind of trauma or injury, anything that you can think of
+that might have led to this?"
+15,15,P,"No, nothing that it's I I can think of. It's sort of it's come on so slowly like when I first started noticing the back pain it it was maybe like a 0
+to a one. I didn't really notice it too much, but over these last 5, 6 months it has gotten has gotten a bit worse."
+15,16,D,"Ok, so it kind of came on progressively. Didn't just come on suddenly at some point?"
+15,17,P,"Right, yeah, it's been getting worse."
+15,18,D,"Ok, and have you ever had any previous episodes that are similar to this?"
+15,19,P,"Uh, not not in my back pain. I do get pain in my right knee and in my hands sometimes. But those pains just kind of come and go."
+15,20,D,"Ok, and when did those pains start?"
+15,21,P,"Uhm, those ones started, probably similar timeline around six months ago."
+15,22,D,"Ok, ok. And in the back pain that you're having, does it radiate or move to any other part of your body?"
+15,23,P,"No, I don't feel it anywhere else."
+15,24,D,"Ok, and have you tried anything that has helped relieve some of the pain? Any medications or anything?"
+15,25,P,"Yeah, I've tried some Tylenol and Advil, and that the Advil is actually helped taking the edge off a little bit, but the next morning I I have the
+stiffness and and pain again."
+15,26,D,"Ok, and for your pain, are there any kind of factors that make the pain worse, like bending down or standing straight up or laying down anything that
+makes your pain worse?"
+15,27,P,Uh no nothing that I can think of that really makes it any worse.
+15,28,D,"Ok, and is your pain worse when you wake up in the morning or is it worse as the day progresses?"
+15,29,P,"It's worse in the morning. It gets a bit better as the day goes on. I asked about it, an hour into the day, I feel my best. It takes a little bit of
+time to to move around a little bit first."
+15,30,D,"Ok, approximately how much time would you say after you wake up, the stiffness and pain goes away?"
+15,31,P,I would say maybe 30 to 60 minutes.
+15,32,D,"Ok, alright. And no, you haven't had any trauma injuries in recently, right?"
+15,33,P,No trauma or injuries.
+15,34,D,Ok and no fevers or chills?
+15,35,P,No.
+15,36,D,"Ok, any night sweats?"
+15,37,P,No.
+15,38,D,Any fatigue or malaise?
+15,39,P,"Yeah, I have been a bit more fatigued than usual, and yeah, I I've had some malaise as well."
+15,40,D,"Ok, and for how long have you had this?"
+15,41,P,"It's been similarly getting a little bit more progressive. I mean some days I'm just feeling like I just want to lay around and rest 'cause I'm
+feeling just so burnt out and other days I'm ok but, I'm certainly more tired than usual."
+15,42,D,"Ok, I see. Other than that, have you noticed any kind of rashes or skin changes or changes in your nails at all?"
+15,43,P,"Uhm, no, I haven't noticed any any rashes or any nail changes."
+15,44,D,"Ok, any shortness of breath?"
+15,45,P,No.
+15,46,D,Any changes in your bowel movements or urinary patterns?
+15,47,P,"No, I haven't had any diarrhea or any any urinary problems."
+15,48,D,"Ok, have you noticed any changes in your appetite or your weight?"
+15,49,P,"No, my appetite's been normal and my weight's been stable."
+15,50,D,"Ok, and have you noticed any difficulties or changes with your vision or any eye problems?"
+15,51,P,"No, I haven't noticed anything like that."
+15,52,D,"Ok, have you noticed any kind of numbness or tingling sensation in your limbs specifically like your back and your legs?"
+15,53,P,"No, no tingling or numbness."
+15,54,D,"Ok, any muscle weakness at all?"
+15,55,P,"Nope, I haven't noticed any muscle weakness."
+15,56,D,"Ok, and have you been sick at all recently with any viral or bacterial infections?"
+15,57,P,"Um I had a uh, and then I was diarrhea like several months ago and I had some antibiotics, but that was a yeah, so a few months ago."
+15,58,D,"Ok, and other than that, currently are you sexually active?"
+15,59,P,"Yes I am uh I I have a girlfriend then we've, uh, we started dating about about, uh, six months ago."
+15,60,D,Ok and do either of you have any history of any STI's at all?
+15,61,P,"Uh, no history of STIs."
+15,62,D,"Ok, alright and is your partner fine or is she having any symptoms at all?"
+15,63,P,"No, she she hasn't been having any symptoms then we we've been using a condom mostly."
+15,64,D,"Ok, alright and otherwise are you generally healthy or do you have any medical conditions?"
+15,65,P,"Uhm, yeah, I'm I'm generally alright. I do have asthma actually and just, I had diarrhea a few months ago after eating at a buffet. So I think maybe
+it yeah, it was food poisoning or maybe something like that."
+15,66,D,Ok.
+15,67,P,"But yeah, so asthma and that's it."
+15,68,D,"Ok, and do you use any medications for your asthma?"
+15,69,P,"Yeah, use that blue inhaler sometimes. I guess that just when I when I need it, but that hasn't been very often."
+15,70,D,Ok and do you have any allergies to any medications or any environmental factors?
+15,71,P,"I do have environmental allergies, I I'm not sure if it's like ragweed or or pollen, but something like that."
+15,72,D,"Ok, and have you had any hospitalizations or previous surgeries?"
+15,73,P,"Uhm, never."
+15,74,D,"Ok any family history of any medical conditions, any autoimmune conditions or any musculoskeletal conditions?"
+15,75,P,Yeah my mother has a uh psoriasis.
+15,76,D,Ok.
+15,77,P,"Yeah, and so she's had to, I know use like like creams and stuff like that for her skin."
+15,78,D,"Ok, and currently right now, do you work?"
+15,79,P,"I do, yeah I work uh, at a bank."
+15,80,D,"Ok, and your mother, so she had psoriasis. Did she ever have any joint pains alongside the psoriasis?"
+15,81,P,I don't believe so. I think she had just more issues with her with her skin.
+15,82,D,"Ok, and so you work and then what's your living situation like?"
+15,83,P,"Yeah, so I live with my girlfriend in a condo in the city here."
+15,84,D,"Ok, and do you use any recreational drugs like marijuana?"
+15,85,P,"Yes, sometimes yeah, I'll smoke like once or twice per week, with that with a friend or something like that."
+15,86,D,"Ok, and do you smoke?"
+15,87,P,"No cigarettes, no never."
+15,88,D,Ok and you drink alcohol?
+15,89,P,"Sometimes, yeah, I'll have a beer or two on weekends or or a cocktail with friends."
+15,90,D,"Ok, alright, so those were just some of the questions I had. Now I'm just going to quickly uh, ask some specific questions. So have you noticed any
+kind of swelling in the areas that you are having pain or redness or anything like that?"
+15,91,P,"Uhm no, I haven't noticed really any any uh redness or or swelling"
+15,92,D,"OK and no so, are you able to bend down and stand up straight or extend backwards so without pain or are you in any pain?"
+15,93,P,"Uhm, I do get it. It's a bit stiff. Uhm I, uh, yeah, I'm not really too sure it's like, not really, it's more more more stiff."
+15,94,D,"Ok, and yeah, other than that, do you have any questions or concerns?"
+15,95,P,"Uhm, yeah, I was just wondering, yeah, like like what what this could be possibly?"
+15,96,D,"Yeah, so definitely what so this this seems like it started off like 3 months or six months ago, and it's been going on and it's happening in the
+morning. And how old did you say you were?"
+15,97,P,Uhm I'm 26.
+15,98,D,"OK, yeah, so uh, it seems progressive and you're getting some pain in your other joints as well and it's mainly from your middle to lower back. It
+can be multiple things that we would have to rule out. So you first you have a family history of psoriasis so it can be psoriatic arthritis. You don't
+have any other skins, changes or any other symptoms. It can also be since you have had a you were sick for months ago with a what might be
+gastroenteritis. It can be sometimes a few months afterwards you can get something called reactive arthritis - where you get this progressive pain in
+your joints and stiffness. And otherwise it can also be something called ankylosing spondylitis, which can present in men your age and it's kind of like
+a progressive, dull back pain and that has some morning stiffness as well. So yeah, there's definitely multiple things that it can be. So first we would
+need to do a full physical examination and book an appointment or for that in person. And we will get some lab work done as well, as well as a X Ray of
+the of the spine and your sacroiliac joints. And we'll also get some blood work with CBC, CRP and ESR. So those are just inflammatory markers as well as
+the rheumatoid factor antinuclear antibodies. Those are just some things that will test for different kind of rheumatological issues and to see if you
+have any arthritis. So yeah those are and then will also get an X Ray of your hands and knees since you're having pain there as well. So yeah, those are
+some steps that we'll take. Do you have any questions or concerns?"
+15,99,P,"No, that that sounds, that sounds great, thank you."
+15,100,D,"Alright, yeah, so I will get in touch with you shortly."
+15,101,P,"Sounds great, thank you."
+15,102,D,"Alright, take care."
+15,103,P,Bye.
+15,104,D,Bye.
+16,1,D,What brings in here today?
+16,2,P,"Hi there, I've just last night I was, I went for a run and I twisted my ankle. I think I stepped on something and it it really hurts."
+16,3,D,"OK, and so when did you have the injury?"
+16,4,P,It was just yesterday.
+16,5,D,OK.
+16,6,P,Yeah it was just just yesterday that it happened.
+16,7,D,"OK, and do you remember if you twisted it so you twisted your ankle, like did did it twist inwards or outwards?"
+16,8,P,"Inwards yeah, I feel like I inverted my ankle."
+16,9,D,"OK. And, so since then, were you able to stand up and or were you not able to bear any weight?"
+16,10,P,"No, I was able to, uh, kind of finish the I I I just finished the walk. I was able to walk home 'cause it didn't hurt that bad immediately. It was a
+bit painful, but the pain really started a few hours later and has been pretty much constant ever since."
+16,11,D,"OK, OK so it kind of got worse over time over the last day?"
+16,12,P,Yeah.
+16,13,D,"And do you notice any kind of bruising, redness, swelling, any skin changes?"
+16,14,P,"No, I haven't really noticed I uh, really, any swelling or I or or skin changes. Yeah, no skin changes and no swelling."
+16,15,D,"OK, and how would you describe the pain? Is it like a dull, aching pain or sharp stabbing pain?"
+16,16,P,Dull and achy.
+16,17,D,OK. OK. And has this happened to you in your ankle before?
+16,18,P,"I'm I, I feel like I've maybe I I've done something like this when I was younger, maybe playing basketball or something like this when I was a kid, I
+twisted my ankle before."
+16,19,D,"OK, and does this pain just stay, where's the pain exactly on the right side of your ankle or on your left, like interior side?"
+16,20,P,It's on the right kind of outside of the ankle.
+16,21,D,"OK, and which ankle is this just to clarify?"
+16,22,P,On the right ankle.
+16,23,D,OK so so it hurts on the right side of the right ankle.
+16,24,P,"Yeah, exactly."
+16,25,D,"OK, and does the pain radiate or move anywhere in your feet?"
+16,26,P,"I can kind of feel it around on the the sole of my foot as well, but mostly on the outside though."
+16,27,D,"OK, and is there anything that makes the pain better or worse?"
+16,28,P,"Alright, it gets worse really to if if I move my ankle or if I'm standing on it."
+16,29,D,"OK, and anything that makes it better?"
+16,30,P,"Alright, just if I rest and avoid moving it."
+16,31,D,"OK, have you notice any fevers or chills?"
+16,32,P,No.
+16,33,D,"OK, any pain in any other joints besides your ankle?"
+16,34,P,"No, just my my right ankle."
+16,35,D,"OK, any appetite or weight changes?"
+16,36,P,"No, I've been I've been just training for this race coming up, so I mean I've been just trying to work on my fitness a little bit, but my weight has
+been relatively stable."
+16,37,D,"OK, any weakness in your right right extremities or any kind of numbness or tingling sensation?"
+16,38,P,No numbness or tingling and no muscle weakness either.
+16,39,D,"Ok, right. Have you been diagnosed with any medical conditions in the past?"
+16,40,P,"I'm uh, I had diarrhea a few months ago and I was given a fluoroquinolone as an antibiotic."
+16,41,D,"OK, that's two months ago. OK. And any medications that you're on currently?"
+16,42,P,I I take a Vitamin D and some other vitamins too. Vitamin A as well I guess that just helps my my skin and and then the vitamin D for my my bones.
+16,43,D,"OK, any allergies to medications or any environmental issues?"
+16,44,P,"No allergies, no."
+16,45,D,"OK, any hospitalizations or previous surgeries?"
+16,46,P,No.
+16,47,D,"OK. Any family history of any musculoskeletal conditions, any rheumatological conditions. Anything that you know of?"
+16,48,P,"My grandparents have arthritis, so and my like my dad had had gout before."
+16,49,D,"OK, and do your grandparents have rheumatoid arthritis or osteoarthritis, do you know?"
+16,50,P,I think osteo yeah osteoarthritis.
+16,51,D,"OK, and do you currently work?"
+16,52,P,"I do, yeah, I work as a software engineer."
+16,53,D,"OK, and what's your living situation like currently?"
+16,54,P,Right now I'm actually just living alone in a in an apartment.
+16,55,D,"Ok, and do you smoke at all?"
+16,56,P,"No, never I can't with the with all this like training for yeah at the race and stuff like that."
+16,57,D,"OK, that's good. Any recreational drugs like marijuana, cocaine, heroin, anything like that before?"
+16,58,P,"No, I've never used anything like that in the past."
+16,59,D,"OK, and how about alcohol?"
+16,60,P,"Uh rarely I'll have maybe a glass of wine like once every couple of months, but it's pretty infrequent."
+16,61,D,"OK. Alright, so I just have a few questions. Right now over your right ankle, do you have, so you mentioned you don't have any swelling, but do you
+notice any kind of redness or warmth at all?"
+16,62,P,"No, nothing like that."
+16,63,D,"OK, and if you press down on your ankle, does it hurt a lot?"
+16,64,P,"Uh a little bit of pain now that right, uh, like outside, but it's not uh, it doesn't hurt that bad. Yeah, I'll say no."
+16,65,D,"OK, and if you kind of, uh, are you able to move your ankle at all?"
+16,66,P,"I can, yeah I can move it around a little bit. I'm trying to avoid that though, just because it it does hurt, but I can move it around."
+16,67,D,OK. And are you able to stand up and walk or are you not able to do that right now?
+16,68,P,"I can, yeah, just for short periods of time 'cause it's just 'cause of the pain, but I can walk on it."
+16,69,D,"Ok, yeah, so definitely what we'll do is we might need to get like a proper physical examination done to make sure there is no fracture. Most likely
+though, it seems that this may just be an ankle sprain uh, due to you inverting your ankle the other day. Uhm, what we can do is usually we just
+immobilize the ankle and then recommend applying ice. You can take some NSAIDS like Advil for pain to help you. And it should it should get better on
+its own, with some physiotherapy later on as well. However, if we find that on physical examination you are having significant pain on palpation or any
+kind of bony pain, we might also require you to get an X Ray of the right foot and ankle, as well as just your lower leg. So yeah, we'll have you come
+come in in person and then go from there and see if you need an X Ray."
+16,70,P,"OK, that sounds good, thank you."
+16,71,D,"Alright, take care bye."
+17,1,D,What brings you in?
+17,2,P,"Hi, I've I've had this pain on the outside of my uh right elbow now it's it I first started knowing, noticing it several months ago, but recently
+it's just been more painful."
+17,3,D,"OK, so you said several months ago. Um did anything happen several months ago? Was there any sort of trigger, trauma, anything like that to that
+area?"
+17,4,P,"No, there wasn't any any trauma or any triggers that that I noticed, I was just um feeling it, uh, a bit more at the end of of work. Um yeah, I was
+just having it uh, feeling the pain a bit more at the end of work."
+17,5,D,"OK, does uh anything make it better or worse, the pain?"
+17,6,P,"Um yeah, if I, really if I'm just resting the elbow um it makes it better, and I've tried uh things like ibuprofen um which has helped with the pain,
+I'll I'll do that for um hoping I can get through work sometimes if the pain is bad enough."
+17,7,D,"Right, OK. Um and if you were to describe the quality of the pain, is it sharp, throbby, achy?"
+17,8,P,"Uh it's um kind of uh, well, it's achy and then sometimes depending on the movement it can get, it can be sharp as well."
+17,9,D,"It can be sharp, OK. OK, um and what sorts of movements make it worse?"
+17,10,P,"Um, so like, really it's mostly the movements at my wrist, if I'm bending my wrist down, uh I can I can feel it, or um if I'm having to pick things
+up or hold heavy objects at work, I do a lot of repetitive uh things at at work, I work on a line."
+17,11,D,"OK, OK. And 1 to 10, 10 being the worst pain you've ever felt, how bad is this pain?"
+17,12,P,It is about a four.
+17,13,D,"About a four, OK. And have you ever experienced this type of pain before?"
+17,14,P,"Uh, no I haven't."
+17,15,D,"No, OK, and do you feel like your pain is getting worse over the past several months, or is it the same, getting better?"
+17,16,P,Uh it's been getting worse.
+17,17,D,"It's been getting worse, OK. OK, um have you tried any like topical ointments or anything like that for it?"
+17,18,P,"Uh I did, I yeah, I tried some um some stuff that you can get at the um drugstore and it did help take the edge off a little bit."
+17,19,D,"OK. Um alright and are you still able to move that arm, your right arm, um as well as your hand?"
+17,20,P,"I am, yeah, I I have full range of motion of both the elbow and uh hand."
+17,21,D,OK and it's not like preventing you from doing everyday tasks?
+17,22,P,"Uh, no. I I've been been able to manage so far at work, but um it is starting to become an issue um yeah, with my job."
+17,23,D,"OK. Um alright, and then do you have any sorts of aches or pains uh in any other joint or muscle groups?"
+17,24,P,"No, it's just right there on the outside of my right elbow, and it's really annoying 'cause I'm right handed as well, so um yeah, it's causing
+problems there."
+17,25,D,"Right, um and is the pain radiating upwards or downwards?"
+17,26,P,"Uh no, I kinda just feel it right over that that one spot."
+17,27,D,"OK, any numbness or tingling in that arm?"
+17,28,P,"No, no, no numbness or tingling."
+17,29,D,"Yeah, um OK, and then how about um like your arm feeling like it's cold?"
+17,30,P,"No, I haven't had anything like that."
+17,31,D,"OK, alright, um and then otherwise do you have any other symptoms?"
+17,32,P,"Um no I, it's just been the elbow pain."
+17,33,D,"OK, so no weight loss?"
+17,34,P,"No, my weights been stable over these last few months."
+17,35,D,"OK, fevers or chills?"
+17,36,P,"No, I haven't had any fevers or chills."
+17,37,D,"OK, any fatigue?"
+17,38,P,"No, my energy's been good."
+17,39,D,OK. How about um rashes?
+17,40,P,Uh no rashes.
+17,41,D,"OK. Changes to your senses like vision, hearing, smell, smell or taste?"
+17,42,P,No changes there.
+17,43,D,"OK any coughing, shortness of breath, or wheezing?"
+17,44,P,No.
+17,45,D,"OK. Chest pain, any heart palpitations, or uh dizziness?"
+17,46,P,Nothing like that.
+17,47,D,"OK, changes to your bowel movements?"
+17,48,P,No.
+17,49,D,"No, no no nausea or vomiting?"
+17,50,P,"No, I haven't had any nausea or vomiting."
+17,51,D,OK. Changes to your urine?
+17,52,P,"No, I haven't had any urinary uh symptoms."
+17,53,D,OK. Memory loss or confusion?
+17,54,P,No.
+17,55,D,"OK, so if you look at that right elbow, um do you notice any redness or swelling?"
+17,56,P,"Uh no, I don't."
+17,57,D,"No, OK. Does it seem misaligned or like asymmetrical compared to your other elbow?"
+17,58,P,"No, it looks, it looks the same."
+17,59,D,"Looks the same, OK so no um skin changes or deformities there?"
+17,60,P,Uh no.
+17,61,D,"No, OK, alright and now I'm going to get you to um just palpate uh that lateral or yeah, the lateral aspect of that elbow and you let me know if you
+feel pain when you push, push on that."
+17,62,P,Uh there is pain at the lateral uh lateral elbow.
+17,63,D,How about the medial aspect?
+17,64,P,No pain.
+17,65,D,"No pain, OK, and how about when you palpate your um forearm and your biceps?"
+17,66,P,Uh no no pain.
+17,67,D,"OK, alright and then do you feel like it's hot, that area?"
+17,68,P,No.
+17,69,D,"No, OK now I am going to get you to um extend your wrist."
+17,70,P,OK.
+17,71,D,And then keep your elbow in full extension as well. Does that hurt?
+17,72,P,"Uh it does, yeah."
+17,73,D,"Yeah, OK, how about when you flex your wrist with the elbow still in full extension?"
+17,74,P,"Uh it does, yeah that hurts as well."
+17,75,D,"OK, how about when you flex your elbow?"
+17,76,P,"Uh no, that that doesn't cause any pain."
+17,77,D,OK. How about when you extend your shoulder all the way up?
+17,78,P,"No, nothing there, that feels fine."
+17,79,D,"OK, and then flexing your uh, or sorry abducting your shoulder?"
+17,80,P,That feels normal.
+17,81,D,"OK, alright, and then how about when you pronate and supinate your forearms?"
+17,82,P,"Uh, pronation um?"
+17,83,D,So like twist your um arm inwards so that your palm is facing the floor.
+17,84,P,"No, that doesn't really cause any pain, pronation and supination."
+17,85,D,"OK, alright. Um alright, and then are you otherwise healthy or do you have any longstanding medical conditions?"
+17,86,P,Um I'm uh healthy.
+17,87,D,"You're healthy, OK. And then UM do you have, have you had any hospitalizations or surgeries in the past?"
+17,88,P,"I had a surgery for um a C-section for uh my, my son, um but that's that's it."
+17,89,D,"OK. OK, and um how long ago was that?"
+17,90,P,That was about uh 17 years ago.
+17,91,D,OK. And was that an emergency C-section?
+17,92,P,"Uh no, it was not."
+17,93,D,OK um and then are you on any medications?
+17,94,P,"Um no, I've just been taking uh Tylenol and Advil um for the pain."
+17,95,D,"OK, alright um immunizations wise, are you up to date?"
+17,96,P,"Uh I I am, yes."
+17,97,D,OK. Do you have any allergies?
+17,98,P,Uh no allergies.
+17,99,D,"OK, family history of any uh skeletal or muscular um issues?"
+17,100,P,"Um no, nothing like that in the family."
+17,101,D,"OK, neurological issues in the family?"
+17,102,P,Um no neurological issues in the family.
+17,103,D,"OK, how about um autoimmune conditions?"
+17,104,P,"Uh no, nothing like that."
+17,105,D,OK and then um do you smoke?
+17,106,P,"Uh no, I haven't smoked before."
+17,107,D,"OK, uh do you do um marijuana."
+17,108,P,"No, I I don't use that."
+17,109,D,OK. Um Alcohol?
+17,110,P,"Um uh yeah, I'll have a glass of wine every once in awhile, but maybe just one, one a week."
+17,111,D,"OK, and have you been around sick contacts recently?"
+17,112,P,"Um no, I haven't been around anybody who's been sick."
+17,113,D,OK. Any recent travel?
+17,114,P,"Uh nope, I've been at home."
+17,115,D,"OK. Um I think those are all the questions that I had for you, um did you have any questions of your own for myself?"
+17,116,P,"Uh no, I was just wondering what this pain could be on my, in my elbow."
+17,117,D,"Yeah, so right now it seems like you may have a case of something called um lateral epicondylitis. So, it's also known as uh tennis elbow, um and
+there are a lot of things that could kind of predispose you to this, um so it could be like the repetitive strain at work, um and like continuous
+contraction of your wrist extensor muscle group there. Um so for this we basically recommend um a couple of things to manage the pain. Uh but first,
+like in terms of imaging, I don't think it is necessary because it doesn't seem like there was any trauma and I'm not too worried about any fractures.
+Um so to help you treat this, um we recommend some activity modifications, so um at work not doing things that are too repetitive, especially if it's
+using those um extensor forearm muscles. Um and then you can use some, use a compression sleeve as well, continue taking Tylenol or NSAIDs for the pain
+and uh really important is physical therapy um to increase mobility and strength in that arm. Uh and as well you can apply things like ice um to it for
+like the pain and swelling if you see any. Uh, yeah, so it should resolve in about six months to two years at most, uh but normally it does um go away
+in a couple of months with some physical therapy and the compression and splints if you choose to do that. How does that sound?"
+17,118,P,"Yeah, that that sounds um good, thank you."
+17,119,D,"Yeah, no worries."
+18,1,D,What brings you in?
+18,2,P,"I I've had this, uh pain in the right buttock area, it's been really intense, and more recently I'm feeling it like radiate just down my right leg as
+well."
+18,3,D,"OK, and sorry when did you say it started?"
+18,4,P,"So um it's been going on uh for, well, it's it's gotten really intense in the last uh like 2 days."
+18,5,D,"OK, and before that, did you have any pain at all or was it just like sudden?"
+18,6,P,"Yeah, I do have a bit of pain uh down in my uh in in my buttock area. Um but um it's just gotten really uh, it's gotten more painful over these last
+couple of days."
+18,7,D,OK. Um and is it a persistent kind of pain? Or does it come and go?
+18,8,P,"Um it's uh persistent, it's it it does get worse though, depending on what what I'm doing."
+18,9,D,"OK, what uh when does it get worse?"
+18,10,P,"Um well it it gets it gets worse with walking, with sitting, um really any like any kinds of movements, like if I just gotta kind of stay still and
+that's the only thing that really helps it."
+18,11,D,"OK, um have you tried anything for it?"
+18,12,P,"Uh yeah, I'm just taking some pain medic medications over the counter for these last couple of days um like Advil and Tylenol, but that's it."
+18,13,D,"OK, um and does, is it helping?"
+18,14,P,"It does, I mean, uh not really, it hasn't really helped much."
+18,15,D,"OK. Um alright, and if you were to describe the quality of the pain, would you say it's sharp, dull, achy, throbby?"
+18,16,P,"Uh it um, kind of like a sharp pain in the in the buttock and um it it um it's kind of like burning uh down the leg."
+18,17,D,"OK, OK, so a radicular kind of pain then. Um OK, and if you were to rate the severity of your pain 1 to 10, 10 being the worst pain you've ever felt,
+what would you rate it?"
+18,18,P,8.
+18,19,D,"OK. And does this pain radiate elsewhere, I know you said it starts on your buttocks, kind of goes down your legs, does it go up your back or down
+into the other leg at all?"
+18,20,P,"No, I feel it just uh just in the buttock and down the leg."
+18,21,D,"OK, uh have you ever experienced this kind of pain before?"
+18,22,P,"Uhm I have, yeah um I'm a a truck driver, and so I do a lot of uh a lot of sitting and I've had kind of sciatic pain um in the past."
+18,23,D,"OK, and have you ever had any like trauma or anything that could have triggered this initially um in the past?"
+18,24,P,"No, I don't think so, I don't, I haven't really done much, just kind of work and um ueah, I haven't had any trauma to the back or anything like that."
+18,25,D,"OK, and are you experiencing any sort of weakness with your legs?"
+18,26,P,"Uh no no weakness, just um well, yeah, maybe I guess, maybe yeah, maybe a little bit of uh, leg weakness, I've had I've had a little bit of
+difficulty walking, been limping."
+18,27,D,"Oh I see, OK. OK, and just in your right leg, right?"
+18,28,P,Yeah.
+18,29,D,"Any urinary or um stool incontinence?
+P No."
+18,30,D,"No, OK. Any sexual dysfunction?"
+18,31,P,"No, I haven't had anything like that."
+18,32,D,"OK, um any numbness or tingling?"
+18,33,P,"Yeah, I've I've had some numbness and tingling down the the right leg."
+18,34,D,"OK, how about in the groin area?"
+18,35,P,"No, it's just kind of down the back of my leg."
+18,36,D,"OK, um alright, and otherwise do you have any other symptoms?"
+18,37,P,"No, it's just been just been, uh, this pain."
+18,38,D,"OK, alright. Um and I'll just kind of go through some questions with you. Do you have any joint pains or muscle aches elsewhere?"
+18,39,P,No.
+18,40,D,No weight loss?
+18,41,P,No weight loss.
+18,42,D,Fevers or chills?
+18,43,P,No fevers or chills.
+18,44,D,Uh rashes?
+18,45,P,No rashes.
+18,46,D,"Changes to your vision, hearing, smell, or taste?"
+18,47,P,No.
+18,48,D,"Um are you coughing, having shortness of breath, or wheezing?"
+18,49,P,"No, I haven't been any, having any symptoms like that."
+18,50,D,"OK, any chest pain, palpitations, uh or dizziness or fainting spells?"
+18,51,P,"No, nothing like that."
+18,52,D,Any changes to your bowel movements?
+18,53,P,No diarrhea or constipation.
+18,54,D,And no bleeding in the stool?
+18,55,P,No blood in the stool.
+18,56,D,OK. And then how about nausea or vomiting?
+18,57,P,"No, I haven't had any nausea or vomiting."
+18,58,D,"OK, changes to your urine?"
+18,59,P,"Uh no, no changes to the urine."
+18,60,D,"OK, and are you otherwise healthy? Do you have any longstanding medical conditions?"
+18,61,P,"I do have um high blood pressure and uh high cholesterol and I take medications for those, I take amlodipine and um a statin."
+18,62,D,"OK, do you have any other medical conditions, are are you on any other medications besides those?"
+18,63,P,Just a multivitamin.
+18,64,D,"OK, and are you up to date with all your immunizations?"
+18,65,P,"I am, yes."
+18,66,D,"OK, any allergies?"
+18,67,P,"Uh no, I don't believe so."
+18,68,D,"No, uh family history of um musculoskeletal or neurological issues?"
+18,69,P,"Uh no, nothing like that."
+18,70,D,Uh autoimmune conditions?
+18,71,P,"No, nothing like that."
+18,72,D,Cancers?
+18,73,P,No.
+18,74,D,"No, OK. And do you smoke?"
+18,75,P,"Um yeah, I smoke uh about um half a pack of cigarettes per day."
+18,76,D,"OK, for how long have you been doing that?"
+18,77,P,"Uh for uh yeah, about 40 years."
+18,78,D,"40 years, OK, have you ever thought of quitting?"
+18,79,P,"I have, yeah, I've cut down over the years, um I used to smoke more, it's just the culture with uh, I don't know everybody's driving a truck and
+smoking."
+18,80,D,"OK, yeah, that's hard. If you ever need any resources, we have some that we can refer you to."
+18,81,P,Thank you.
+18,82,D,"Yeah, no worries. And do you um consume marijuana?"
+18,83,P,"No, I don't."
+18,84,D,"OK, how about other recreational drugs?"
+18,85,P,"Uh nope, nothing like that before."
+18,86,D,"OK, do you drink alcohol?"
+18,87,P,"Um yeah, I'll have a beer or two on the weekend, so maybe a couple of drinks per week."
+18,88,D,"OK. Um and how about um do uh, sick contacts, have you been in touch with any recently?"
+18,89,P,"No, I haven't been around anybody who's been sick."
+18,90,D,"OK, um any travel recently?"
+18,91,P,"Uh just for the drop offs that I that I make um driving, I do have to make some pretty um long hauls uh back and forth um, the, yeah."
+18,92,D,OK. Um and where do you currently live?
+18,93,P,So I live in a house with my um with my wife uh yeah and son.
+18,94,D,"OK, alright and, OK so now I'm just going to move on to the physical exam part of this um and I'm going to ask you to do a few things, OK? So, well
+just by looking at your legs, or if you have a mirror um and you can look at your right buttock area, um do you see any swelling or redness?"
+18,95,P,"Um no, I don't see anything like that."
+18,96,D,OK. And does it feel hot?
+18,97,P,"No, it doesn't feel hot."
+18,98,D,OK. And do you see any skin changes?
+18,99,P,No skin changes.
+18,100,D,Um any atrophy or deformity in the area?
+18,101,P,No.
+18,102,D,"No, um has your gait changed, like does it, are you limping, hobbling, anything like that?"
+18,103,P,"Um yeah, I feel like I've been limping a little bit, uh yeah."
+18,104,D,Are you putting more um pressure on the left foot then?
+18,105,P,"I am, yeah, yeah, I guess there's like an antalgic gait."
+18,106,D,"OK, alright, and then um if you press down on your hipbone, do you feel any pain there? On your right hip bone."
+18,107,P,"No, I don't."
+18,108,D,"OK, how about when you press down on your buttocks itself?"
+18,109,P,"Um yeah, there is uh a little bit of tenderness um over the buttock area."
+18,110,D,"OK, how about the back of your legs?"
+18,111,P,No.
+18,112,D,"OK, how about the front um of your legs, thighs?"
+18,113,P,No.
+18,114,D,"No, OK. Alright, um and then I'm gonna just get you to do a few movements um with me as well. Would you uh OK, so are you sitting down right now?"
+18,115,P,Yeah.
+18,116,D,OK. Would you mind standing up from a sitting position?
+18,117,P,"Yeah, for sure."
+18,118,D,Does that hurt?
+18,119,P,"It uh yeah, that that that causes pain."
+18,120,D,"OK, so that causes, so um hip hip extension uh that causes some pain, um and as well as knee extension, so would you mind um kicking your right leg
+up in front of you all the way up as far as you can go?"
+18,121,P,"Mhmm, oh yeah."
+18,122,D,Does that hurt?
+18,123,P,"It does, yeah."
+18,124,D,"OK so right hip flexion um also causes pain, and then would you mind uh folding your knees backwards um and just sort of flexing it? Does that hurt?"
+18,125,P,Uh no.
+18,126,D,"OK, so no pain at knee flexion. And how about when you point your feet um and toes up towards the ceiling?"
+18,127,P,"Uhm yeah I I do get some pain with my um, yeah when that's all straightened out, yeah."
+18,128,D,"OK, so some pain on um planter flexion of the right foot. And how about if you um point your feet and toes towards the ground?"
+18,129,P,No pain there.
+18,130,D,"OK, um alright and how about when you uh kick your legs uh to the side and upwards?"
+18,131,P,Oh uh no pain with abduction.
+18,132,D,"OK so no pain on right hip abduction, and then how about when you bring it back down?"
+18,133,P,No.
+18,134,D,"OK and no pain on hip adduction. OK, well those are all the questions that I have for you. Do you have any questions for myself?"
+18,135,P,Uh just wondering about possibly like what it could be.
+18,136,D,"Yeah, um so it sounds um right now like you may have some sort of uh sacral nerve radiculopathy um or or like a lower lumbar, lumbar um
+radiculopathy, um basically uh that's known as sciatica, uh where your nerve roots can be compressed, causing some of these symptoms. Um and to diagnose
+these things, usually it's just done by history and physical exam um but if after we try out some management things, it doesn't go away or you're having
+some red flags, including um numbness in the groin area, bowel or bladder incontinence, then we can look at some um imaging for the for the spine,
+including MRI. Um and so in terms of management of this, um we can try a couple couple of like conservative approaches first, so that includes taking
+NSAIDs uh for the pain um and then like activity modification. So if you're sitting down um all the time, um perhaps like taking little breaks, uh
+stretching out your legs, doing some physio as well um during those breaks can help um, and as well, I'm going to give you a referral for physical
+therapy and they'll do some exercises with you and um slowly increase those exercises. Um and if those still don't work, we can try um steroids, steroid
+injections, um as well, we talked about the imaging if it doesn't go away in about 6 to 8 weeks. Does that sound OK?"
+18,137,P,"Yeah, that sounds good. Thank you."
+18,138,D,"OK, yeah no problem."
+19,1,D,How may I help you?
+19,2,P,"Hi, yes I've had this pain in my left elbow for a couple of weeks now and it's not getting any better so. I'm just here to kind of figure out what it
+is."
+19,3,D,"OK alright are you feeling this pain on the lateral side of the elbow, on the or on the medial side of the elbow?"
+19,4,P,It's on the medial side.
+19,5,D,"OK and sorry, when did this pain exactly start?"
+19,6,P,"So it's been on going for like the past three months. But it's gotten worse over the last, I'd say three weeks."
+19,7,D,"OK, and. Has the pain been getting worse, any better?"
+19,8,P,Oh the pains been getting worse.
+19,9,D,"Yeah, OK. Was there any triggers or precipitating events to the pain, such as like a fall or any types of trauma to the elbow?"
+19,10,P,"No, no, not that I can think of."
+19,11,D,Have you had any pain or injury to the elbow in the past?
+19,12,P,No.
+19,13,D,"Could you describe the character of the pain. Is it sharp, achey or dull?"
+19,14,P,"It's usually achey, but it can be sharp."
+19,15,D,OK. Does the pain radiate anywhere?
+19,16,P,"No, it's pretty. It's pretty much in that one area."
+19,17,D,"OK, just on the medial side of the left elbow?"
+19,18,P,Yeah.
+19,19,D,"OK, and is there anything that you've done to help make the pain go away, or any alleviating factors?"
+19,20,P,I am taking some NSAIDs that helps with the pain temporarily.
+19,21,D,OK. And uh. Are there any factors that make the pain worse?
+19,22,P,Um when I. I. I guess when I like extend my elbow out it gets worse.
+19,23,D,"OK, so it's a movement OK, and straightening the elbow?"
+19,24,P,Yeah.
+19,25,D,"OK, I mean, what is the severity of the pain on a scale of 1 to 10, with 10 being the worst pain you've ever felt."
+19,26,P,I'd say about 5.
+19,27,D,OK. And um. So did you have any other symptoms associated with the elbow pain?
+19,28,P,"Um no, um not really I. I'm otherwise pretty healthy."
+19,29,D,"OK, so have you had any fevers or chills?"
+19,30,P,No.
+19,31,D,Have you had any night sweats
+19,32,P,No
+19,33,D,Or any any weight loss?
+19,34,P,No.
+19,35,D,"OK, have you had any any headaches?"
+19,36,P,No.
+19,37,D,Any sensory changes like changes to your vision or or hearing or even your smell or taste?
+19,38,P,No.
+19,39,D,"OK, have you had any eye redness or eye discharge or your ear pain?"
+19,40,P,No.
+19,41,D,OK. Have you had a runny nose or sore throat?
+19,42,P,No.
+19,43,D,Have you had a cough or shortness of breath?
+19,44,P,No.
+19,45,D,Have you had any wheezing?
+19,46,P,No.
+19,47,D,OK. Have you had any chest pain?
+19,48,P,No.
+19,49,D,Any lightheadedness or dizziness?
+19,50,P,No.
+19,51,D,Have you had any heart palpitations?
+19,52,P,No.
+19,53,D,"OK, and have you had any nausea or vomiting?"
+19,54,P,No.
+19,55,D,Have you had any abdominal pain?
+19,56,P,No.
+19,57,D,Any diarrhea or constipation.
+19,58,P,No.
+19,59,D,Have you had any urinary problems?
+19,60,P,No.
+19,61,D,OK. Have you had any skin rashes?
+19,62,P,"No, no."
+19,63,D,"OK, have you had any numbness or tingling?"
+19,64,P,No.
+19,65,D,And how about any muscle weakness?
+19,66,P,No.
+19,67,D,"OK, and any joint pains anywhere else?"
+19,68,P,No.
+19,69,D,"OK, and any changes to your memory or or any confusion?"
+19,70,P,No.
+19,71,D,"OK, and have you had any fatigue?"
+19,72,P,No.
+19,73,D,"OK and, have you had any changes to your appetite?"
+19,74,P,No.
+19,75,D,OK. Are an have you been diagnosed with any medical conditions in the past?
+19,76,P,No.
+19,77,D,"OK, so do you take any medications, either prescribed or over the counter?"
+19,78,P,"Um no, I just take some multivitamins."
+19,79,D,"OK, and do you have any allergies to medications?"
+19,80,P,Um no.
+19,81,D,"OK, and have you had any hospitalizations or prior surgeries?"
+19,82,P,I I had a fracture when I was younger. It was in my humerus bone on the right side.
+19,83,D,"OK, so it's the to the fracture was on the other arm?"
+19,84,P,Yes.
+19,85,D,"OK, and did that heal OK?"
+19,86,P,Yes.
+19,87,D,"Alright then. Can you tell me about your living situation? Currently, like whereabouts and who you're living with?"
+19,88,P,I live with my partner of five years. We live in an apartment together.
+19,89,D,"OK, and are you working currently?"
+19,90,P,I am.
+19,91,D,And what do you do?
+19,92,P,"I work on the assembly line for Chrysler.
+D : OK, uh, and uh. Do you do repetitive tasks at work?"
+19,93,P,I do.
+19,94,D,"OK, yeah, do you notice this, uh pain after, more so after a shift or after after a long day?"
+19,95,P,"Yes, definitely."
+19,96,D,"OK, and what types of hobbies do you have, like do you play golf or tennis or or any kind of like, sports I guess?"
+19,97,P,"Yeah, I used to play golf before this pain in my arm and my elbow, so I haven't played it in the past like six months."
+19,98,D,"OK, um OK and um do you smoke cigarettes?"
+19,99,P,I don't.
+19,100,D,And do you drink alcohol?
+19,101,P,Um I'll have a glass of wine every other day.
+19,102,D,"OK, and how about the use of any recreational drugs like cannabis or or anything else?"
+19,103,P,I'll smoke a joint once a week.
+19,104,D,"OK, alright and. Is there any family history of any heart or lung problems?"
+19,105,P,No.
+19,106,D,Any musculoskeletal or neurological diseases?
+19,107,P,Um no.
+19,108,D,"OK, I got any autoimmune diseases like thyroid disease or diabetes?"
+19,109,P,No.
+19,110,D,"OK, um and so next I wanted to walk through a physical exam, so when you look at the elbow yourself, do you see any swelling or redness?"
+19,111,P,No.
+19,112,D,"OK, does it look like there is any muscle atrophy either in the forearm or the biceps or triceps?"
+19,113,P,No.
+19,114,D,"OK, and how about any misalignment or joint deformity?"
+19,115,P,"No, I don't see any of that."
+19,116,D,"OK, and are there any scars?"
+19,117,P,No.
+19,118,D,"OK, and when you press on the medial part of the the elbow, do you feel pain?"
+19,119,P,I do.
+19,120,D,"How about over the olecranon or the, yea any pain over the olecranon?"
+19,121,P,Um a little bit.
+19,122,D,"OK, and is there any pain over the lateral part of the elbow?"
+19,123,P,No.
+19,124,D,"OK, an any pain over the forearm, or biceps, or triceps muscles?"
+19,125,P,No.
+19,126,D,"OK, and does the joint feel like it's hot?"
+19,127,P,No.
+19,128,D,"OK, and any pain with shoulder or elbow movements?"
+19,129,P,No.
+19,130,D,OK.
+19,131,P,"Actually, sorry with the elbow when I straighten it out all the way it hurts a little bit."
+19,132,D,"OK, when are you straightening it out all the way OK, But no pain with shoulder movements and full range of motion?"
+19,133,P,"No, no pain with shoulder."
+19,134,D,OK. And how about pain with pronation and supination?
+19,135,P,With pronation it hurts.
+19,136,D,"OK, at the medial side?"
+19,137,P,Yes.
+19,138,D,"OK and how about with wrist. So with resisted uh, yeah, wrist flexion?"
+19,139,P,Wrist flexion yeah. That hurts too.
+19,140,D,"OK, and then how about if you passively extend your your wrist as far down as as you can go?"
+19,141,P,Down uh yes. That hurts too.
+19,142,D,OK. And is there any numbness or tingling anywhere?
+19,143,P,"No, no, no numbness or tingling."
+19,144,D,"OK. OK, so that was everything that I wanted to ask about today. Was there anything else that you wanted to mention?"
+19,145,P,"No, that was that. What do you think I have and how can I fix it?"
+19,146,D,"Yeah, so it. It's certainly it it sounds like with the medial aspect of your elbow having pain there over the last several months and some of the
+physical exam maneuvers, such as like passive wrist extension, resisted wrist flexion as well as pronation and the point tenderness over the medial
+elbow this could be a medial epicondylitis or a tendinopathy in that area. And so this is typically treated with activity modification, so this could be
+trying to avoid repetitive movements that that cause pain. And using medications such as Advil and Tylenol and doing strengthening and stretching
+exercises, which you can learn from a physiotherapist or or on your own as well. And also other things that that the medial side of the elbow that it
+could be is an ulnar ligament injury. Um or yeah, or the other thing to be considering is and ulnar ligament injury and so if the pain isn't going away,
+then we might consider an ultrasound or something to look at the structures there."
+19,147,P,"OK, that sounds great. Thank you."
+20,1,D,How may I help you?
+20,2,P,"Um so I was playing soccer the other day and I got kicked in the knee and since then my knee has been hurting and it looks a little bit red and a
+little bit swollen on the medial aspect of my right knee."
+20,3,D,OK. And. And this started right after the kick at soccer?
+20,4,P,Yes.
+20,5,D,"OK, and how many days ago was this?"
+20,6,P,This was two days ago.
+20,7,D,"OK, since then, has the pain begin getting any better or worse or staying the same?"
+20,8,P,"No, it's staying the same or a little bit worse."
+20,9,D,"OK. Could you describe the pain? Is it sharp, achy?"
+20,10,P,I'd say it's pretty sharp.
+20,11,D,OK. Uhm and do you feel the pain radiate anywhere like down the leg or or up into the thigh?
+20,12,P,Um no.
+20,13,D,"OK, any pain in the posterior aspect of the knee or the lateral aspect?"
+20,14,P,No.
+20,15,D,OK. Um and is there anything that makes the pain worse?
+20,16,P,"I guess if I press on that area or I try to. And. I don't know, flex or extend my knee too much."
+20,17,D,OK. An anything that you've tried to make the pain better?
+20,18,P,Um some ice helps.
+20,19,D,"OK, uh. And have you noticed swelling over the area?"
+20,20,P,Just a little bit.
+20,21,D,"OK, and redness as well?"
+20,22,P,Yes.
+20,23,D,OK. Uhm and what would you say the severity of the pain is a 10 being the worst pain that you've ever felt and 1 being low intensity pain.
+20,24,P,Um I'd give it about a 5.
+20,25,D,"OK, and have you had any injuries or any knee pain before?"
+20,26,P,No.
+20,27,D,"OK, at the time of the injury, did you hear a pop sound or or any kind of sounds like that?"
+20,28,P,I don't recall.
+20,29,D,"OK, and how about any difficulties walking or having any knee instability?"
+20,30,P,Um a little bit only when I like try to extend or flex my knee too much.
+20,31,D,"OK. Um. And. Uh, um alright. So have you been experiencing any other symptoms?"
+20,32,P,No.
+20,33,D,"Alright, so just to be comprehensive so I'll run through a review. So have you been, having any any headaches?"
+20,34,P,No.
+20,35,D,"Any sensory changes like changes to vision, hearing, smell or taste?"
+20,36,P,No.
+20,37,D,"OK, any eye symptoms or your symptoms?"
+20,38,P,No.
+20,39,D,Have you had a runny nose or sore throat?
+20,40,P,No.
+20,41,D,Have you had a cough?
+20,42,P,No.
+20,43,D,Any shortness of breath?
+20,44,P,No.
+20,45,D,Have you had any wheezing?
+20,46,P,No.
+20,47,D,Have you had any chest pain?
+20,48,P,No.
+20,49,D,Any heart palpitations or heart racing?
+20,50,P,No.
+20,51,D,OK. Have you had any fainting or dizziness?
+20,52,P,Um no.
+20,53,D,"Alright, have you had any nausea or vomiting?"
+20,54,P,No.
+20,55,D,Have you had any changes to your appetite like loss of appetite?
+20,56,P,No.
+20,57,D,Have you had any weight loss unexpectedly.
+20,58,P,No.
+20,59,D,"OK, have you had any abdominal pain?"
+20,60,P,Um no.
+20,61,D,"Any changes to bowel habits like diarrhea, constipation?"
+20,62,P,No.
+20,63,D,"OK, have you had any urinary problems like pain or frequency?"
+20,64,P,No.
+20,65,D,"Alright, and have you had any skin changes such as ra' rashes or anything like that?"
+20,66,P,No.
+20,67,D,"OK, any joint pains anywhere else?"
+20,68,P,Um no.
+20,69,D,"OK, and any fatigue?"
+20,70,P,No.
+20,71,D,"OK, and in the past, have you had or have you been diagnosed with any medical conditions?"
+20,72,P,Um no.
+20,73,D,"OK, do you have any allergies to medications?"
+20,74,P,"No, no, not that I know of."
+20,75,D,Are you currently taking any medications?
+20,76,P,No.
+20,77,D,"Alright, and have you had any surgeries or hospitalizations before?"
+20,78,P,No.
+20,79,D,"OK, and. Um, can you tell me a little bit about your living situation, like you you're living with and whereabouts?"
+20,80,P,"Sure, I live with both my parents and three of my siblings."
+20,81,D,"OK, and are you going to school?"
+20,82,P,"I am, I'm in my last year of grade 12."
+20,83,D,"OK. Well, that's good. How is that been going?"
+20,84,P,"It's been going OK. We've been doing part online, part in-person."
+20,85,D,"OK, have you been around anybody who's been sick?"
+20,86,P,No.
+20,87,D,Alright then. And you play soccer. Do you play any other sports?
+20,88,P,And I play football.
+20,89,D,"OK, cool and any injuries before to your knee or anything like that?"
+20,90,P,Um not that in the past.
+20,91,D,Alright. And do you smoke cigarettes?
+20,92,P,No.
+20,93,D,Um do you drink alcohol?
+20,94,P,No.
+20,95,D,"OK, did you use any recreational drugs like marijuana or anything else?"
+20,96,P,No.
+20,97,D,"OK, are you currently sexually active?"
+20,98,P,I am.
+20,99,D,"OK, are you in a relationship?"
+20,100,P,I am. We've been together for a year.
+20,101,D,"OK, is there any concern for a sexually transmitted infection?"
+20,102,P,"No, we were both tested."
+20,103,D,"OK, great, um and any chance that you could be pregnant?"
+20,104,P,No.
+20,105,D,"OK and uh in the family, are there any musculoskeletal or neurological conditions?"
+20,106,P,Um no.
+20,107,D,"OK, um. And so that I that was everything I wanted to ask on history. So for the physical exam, when inspecting the knee, are you seeing any joint
+effusions or joint swelling or ecchymosis or bruising?"
+20,108,P,"It looks or is that a bruise, it looks red and I would say it's a little bit swollen on the medial aspect only."
+20,109,D,"OK, is there any muscle atrophy?"
+20,110,P,Um no.
+20,111,D,"OK, and is there any misalignment or joint deformities?"
+20,112,P,"No, not that I notice."
+20,113,D,"OK. And alright on gait or walking, is there any limp or antalgia?"
+20,114,P,Um no.
+20,115,D,You're able to walk normally?
+20,116,P,"I am able to walk normally and it hurts, but I think I'm walking OK."
+20,117,D,OK. Uhm and next is there any changes to temperature like the joint itself feel hot?
+20,118,P,No.
+20,119,D,OK and are there any areas of the joint line itself of the knee that is painful to palpation?
+20,120,P,At just the medial part of it like the I guess where the ligament would be.
+20,121,D,"OK, so just let me OK, and, any pain over the patella?"
+20,122,P,No.
+20,123,D,Any pain over the tibial tuberosity or patellar tendon?
+20,124,P,No.
+20,125,D,Any pain over your over the fibular head or the lateral part of the knee?
+20,126,P,No.
+20,127,D,Any pain in the calf or the thigh muscles?
+20,128,P,No.
+20,129,D,Any pain in the hamstring muscles?
+20,130,P,No.
+20,131,D,"OK, and is there any pain to a like varus stress of the knee?"
+20,132,P,"To the varus stress? I guess it would be, there will be pain if I press down in that area."
+20,133,D,"OK, and is there any joint yeah, the joint laxity or pain too, like a valgus stress of the knee?"
+20,134,P,"Yeah, so when I press when I do that it hurts on the medial aspect but not the lateral aspect."
+20,135,D,OK. Uhm and does it feel is as though there's some like the joints opening more when you put the valgus stress?
+20,136,P,"A little bit, yes."
+20,137,D,"OK. Uhm and is there any instability moving the tibia anteriorly, if you're like, pull it outwards?"
+20,138,P,Um no.
+20,139,D,"And how about if you pull the tibia posteriorly, any instability?"
+20,140,P,No.
+20,141,D,"OK, um and the is their full range of motion of the knee?"
+20,142,P,Yes.
+20,143,D,And full range of motion of the hip and ankle?
+20,144,P,Yes.
+20,145,D,"OK, um and do you have any like numbness, tingling or muscle weakness?"
+20,146,P,No.
+20,147,D,"OK, and any sensory changes to the skin?"
+20,148,P,"No, no."
+20,149,D,OK and reflexes are normal.
+20,150,P,Mmmm
+20,151,D,"OK. So I think that was everything I wanted to ask and and kind of go through on the physical exam. Did you have any other questions or anything that
+maybe I forgot to mention today?"
+20,152,P,"Ah no, that was it. Just what can I do about my my knee?"
+20,153,D,"Yeah, so right now it's sounding like this could be an MCL or medial collateral ligament strain, or injury and so these types of injuries are usually
+treated conservatively, like with things like NSAIDs or anti-inflammatories to help that pain and swelling. If the pain depending on how severe it is,
+it might be useful to use maybe crutches for a day or two to try to help let the pain to subside and allow you to be able to do some physical therapy
+exercises like strengthening the quadriceps and hamstring muscles."
+20,154,P,OK.
+20,155,D,"But typically injuries that are lower grade will heal within two weeks and so if it's more more severe, it could take a bit longer. And although that
+it's most likely an MCL injury that you're describing, it could be a medial meniscal injury as well or possibly even a bursitis at the medial aspect of
+the knee. But the treatment to start with would be the same and maybe we will get any x-ray if things aren't improving."
+20,156,P,"OK, that sounds good, thank you."
+21,1,D,How may I help you?
+21,2,P,"So I've just been having this pain in my knee since I um just fell, uh, just three days ago slipping on the stairs. Since then I've been having a lot
+of pain."
+21,3,D,I see uh so did this pain start right after like falling on the stairs?
+21,4,P,"Yeah, yeah, I've been having the pain since then."
+21,5,D,OK.
+21,6,P,And that was three days ago.
+21,7,D,"Three days ago, OK. And you're feeling the pain in your in your right knee?"
+21,8,P,"Yeah, in my right knee."
+21,9,D,"OK, uh. And what would you say the character of the pain is, or how would you describe the pain?"
+21,10,P,It's kind of like a dull aching pain.
+21,11,D,"OK. And has the pain been getting um, any better or any worse?"
+21,12,P,"Uhm, it's kind of getting worse actually just in my right knee as well as my whole right calf as well."
+21,13,D,"OK, OK. Uh. What is the intensity of the pain on a scale of 1 to 10, 10 being the worst pain you've ever felt?"
+21,14,P,Probably around 6.
+21,15,D,"OK. Um. And. Did your knee hurt before this at all, or did you have any trauma to the leg before?"
+21,16,P,"No, no before 3 days ago before my slip I was fine."
+21,17,D,"OK, are you feeling the pain anywhere else besides your right knee?"
+21,18,P,In my calf I'm getting a lot of pain as well. In my right calf.
+21,19,D,"OK, has there been anything that's made the pain worse?"
+21,20,P,"Yeah, if I am If I'm walking or if I'm moving that leg and putting weight on it, it's definitely worse, so it's definitely like better if I just stay
+seated and stay resting."
+21,21,D,"OK. Is there anything she said resting that helps, is there anything else that's helped?"
+21,22,P,"I did take some Advil which did help for a few hours, but then it just kind of went back to the same."
+21,23,D,"OK. Uhm. And. Yeah, have you had any other, uh, like associated symptoms with the right knee and calf pain?"
+21,24,P,"Yes, I also think there's some swelling in my right calf as well. Since yesterday."
+21,25,D,"OK. OK, there's some swelling there."
+21,26,P,Mmm
+21,27,D,Have noticed if your calf was red or if there was a rash over it?
+21,28,P,"I don't see any rashes or redness, but it definitely does seem swollen and then it hurts as well when I move it or press it."
+21,29,D,"OK, uh, OK, and when you fell did you injure any other parts of your body like your your hands or wrists?"
+21,30,P,"Um just a few scratches on my hands, but nothing too bad."
+21,31,D,And how about your head? Did you lose consciousness or or hit your head?
+21,32,P,"No, no, I didn't hit my head at all. I caught myself before then and no, I didn't lose any consciousness."
+21,33,D,"OK. OK, have you had any fevers or chills?"
+21,34,P,No.
+21,35,D,"OK, have you had any chest pain?"
+21,36,P,No.
+21,37,D,Have you had any cough?
+21,38,P,No cough.
+21,39,D,Have you have you had any shortness of breath?
+21,40,P,No.
+21,41,D,"OK, have you had any dizziness or or lightheadedness?"
+21,42,P,No.
+21,43,D,"OK, and have you had any heart palpitations or feeling like your heart is racing?"
+21,44,P,"No, nothing like that."
+21,45,D,"OK, uh. And. Have you had any like infectious symptoms, such as like. Like a runny nose or sore throat?"
+21,46,P,"No, nothing like that."
+21,47,D,OK. And have you had any nausea or vomiting.
+21,48,P,No.
+21,49,D,Have you had any abdominal pain?
+21,50,P,No.
+21,51,D,"OK, have you had any changes to your bowel movements like diarrhea or or constipation?"
+21,52,P,"No, nothing like that."
+21,53,D,"Alright, so have you had any urinary problems?"
+21,54,P,Nope.
+21,55,D,"Alright, so have you had any recent weight changes?"
+21,56,P,"No, nothing like that."
+21,57,D,"OK. Uhm, And. Um, have you have you noticed any any rashes anywhere else over your whole body?"
+21,58,P,"No, not that I've noticed."
+21,59,D,Alright have you noticed any muscle weakness?
+21,60,P,No.
+21,61,D,Have you had any numbness to the skin?
+21,62,P,"Not that I've noted, no."
+21,63,D,And have you had any tingling?
+21,64,P,No. OK.
+21,65,D,"And. Um. So in the past, have you been diagnosed with any medical conditions?"
+21,66,P,I do have some high cholesterol and high blood pressure.
+21,67,D,"I see, and do you take any medications?"
+21,68,P,"Yeah, so cholesterol. I'm taking a like a Crestor medication and then for high blood pressure I'm taking a Ramipril."
+21,69,D,OK. Have you had any hospitalizations or surgeries before?
+21,70,P,"Um. Just a. No, I I don't, um just besides a c-section for one of my children. I don't have any other surgeries."
+21,71,D,"OK. I'm and. Have you had any thrombosis before, or a blood clot in the past?"
+21,72,P,"No, I've never had anything like that."
+21,73,D,"OK, and uh, have you been so you. You've had the birth of your you pregnant at other times in the past?"
+21,74,P,"Um No, that was that was it."
+21,75,D,OK so have you had a miscarriage before?
+21,76,P,No.
+21,77,D,"OK, any allergies to medications?"
+21,78,P,No allergies.
+21,79,D,"OK and. Uhm, could you tell me a little bit about your, uhm, living situation currently like who you're living with and whereabouts you're living?"
+21,80,P,"Yeah, I live with my husband and our daughter. And it's just in a small townhouse, just in the city."
+21,81,D,"OK, and are you working currently?"
+21,82,P,"I I do work from home, I'm actually just an accounting clerk, but I most of my work is from home right now."
+21,83,D,OK. And any exposures to anybody who's been sick?
+21,84,P,No.
+21,85,D,Have you traveled anywhere recently?
+21,86,P,Um nope.
+21,87,D,"OK. Uh. And over the last couple of days with that with the leg pain, do you feel as though you've been like immobilized?"
+21,88,P,"Yeah, I've been trying to just like stay rested, just stay seated otherwise it hurts a lot, especially after my fall so. I've tried to stay
+immobilized."
+21,89,D,"OK for the last couple of days. OK, uh, and uh, do you drink alcohol?"
+21,90,P,"Just socially, sometimes when I'm with friends or relatives like a glass of wine."
+21,91,D,"OK, and do you use recreational drugs like marijuana or or other things such like cocaine?"
+21,92,P,"No, I've never tried that."
+21,93,D,OK. And do you smoke cigarettes?
+21,94,P,"Uhm, No, I don't."
+21,95,D,"OK, I'm OK so. Oh, and uh in the family are there any history of heart or lung conditions?"
+21,96,P,"Um so I don't know about heart or lung conditions, but uh my Mother had a stroke in her late 60s and my Father is pretty healthy."
+21,97,D,OK. Has there been any blood clots in the family before?
+21,98,P,"I'm not sure about blood clots, but my mother had a stroke that's, is that kind of like a blood clot?"
+21,99,D,"It could be, a stroke could have had many different type of types of causes for it, and one of them could be 'cause caused by blood clot. But I
+wouldn't be able to say for sure."
+21,100,P,OK.
+21,101,D,"Just because, yeah, there are so many different types or reasons for for having a stroke ."
+21,102,P,I see OK.
+21,103,D,"So yeah, so you mentioned your leg has some swelling, um do you feel as though there's any any like temperature change to your calf like is it hot?"
+21,104,P,"Uhm, I think I I don't know if it's maybe a little bit warm, but definitely swollen."
+21,105,D,"OK, and do you feel, is there any pain to palpation? Like if you touch your calf or something like that is there pain?"
+21,106,P,"Yeah if I touch my right calf it's painful and then if I press down on it's really painful and then just on the outside of my right knee if I touch
+or press down it really hurts as well."
+21,107,D,"OK. And if you move your foot so it yeah, if you dorsiflex your ankle. Or bending your your toe up towards your nose, do you end up getting any calf
+pain? Doing the Homan test."
+21,108,P,"Yeah, yeah I'll try that. And yeah, I think it definitely hurts. When I when I move my or point my toes towards my nose."
+21,109,D,"OK. OK, so I think that was everything that I wanted to ask today on history. Was there anything else that that maybe I missed?"
+21,110,P,"No, I think that's all."
+21,111,D,"OK yeah alright so with the. I fall 2 days ago. Things that I'm thinking about right now would be possibly a muscle strain, so this could be a
+gastrocnemius strain to the calf muscle itself, from from the fall which could have pain when you touch it, there could be some swelling and said it
+would be aggravated by movements. Also could be like injuries to some of that, the ligaments there as well. And however, with this the swelling
+immobilization for the last two days, as well as the pain kind of being a bit progressive that with swelling and a positive Homan in test and your
+temperature is a little bit elevated today not quite a fever, but feverish. It does increase the suspicion for deep vein thrombosis and so I think the
+most likely thing right now is actually a DVT or deep vein thrombosis. And so we will order some diagnostic studies, get an ultrasound of your right
+calf as well as an X Ray of the right knee to to start OK."
+21,112,P,OK sounds good. Thank you so much.
+22,1,D,How may I help you?
+22,2,P,"I just came in here today, I've been having a lot of shoulder pain that's just kind of left me not doing any of my activities recently. Just in my
+left shoulder."
+22,3,D,"OK and when, when did this pain start?"
+22,4,P,"It started 5 days ago but it became pretty bad and I've been kind of having like a somewhat of a pain for the last couple weeks, but it got really
+bad just this week."
+22,5,D,"OK, did you have any trauma to the shoulder like any any injuries or triggers that could have caused the pain?"
+22,6,P,"Uhm I have been just going to the gym more frequently over the last few months and lifting weights and things like that. But just this week I wasn't
+even really able to do that either."
+22,7,D,"OK, when you were lifting weights like a few days ago like was there an episode where there was an acute onset of the pain, where it got worse kind
+of like right away."
+22,8,P,"I think it was more progressive, but five days ago I do feel that there was like just. I was having some pain before that, but then I just noticed
+while working on I I started having more pain. But yeah I don't think there was anything like sudden that happened though."
+22,9,D,"Oh OK, but it yeah it was progressing and then it got acutely worse with the weight lifting. It sounds like."
+22,10,P,Maybe like I did increase my weight like in the last two weeks. So I did feel like a little bit more pain with the increase last week.
+22,11,D,"OK, I see an in the left shoulder do you feel the pain at the front at the sides or or back?"
+22,12,P,"It hurts, particularly like in the front part of the shoulder."
+22,13,D,"OK, do you feel that it's radiating anywhere else?"
+22,14,P,"Just my whole left shoulder, nothing else really."
+22,15,D,"OK. And could you describe the character or the quality of the pain? Is it sharp, or is it a key?"
+22,16,P,It's more achy.
+22,17,D,OK.
+22,18,P,But but certain like some movements so it can get like kind of sharp.
+22,19,D,"OK, and has there been anything that has made the pain worse?"
+22,20,P,"Uhm, if I just if I carry anything with my left arm or if I have to lift anything or place it on my shoulder like it really hurts."
+22,21,D,"OK, and have you done anything that's made it better?"
+22,22,P,"I just like resting it, not carrying anything. And trying not to lie on my shoulder."
+22,23,D,"OK, so you're sleeping on the others on the right side then."
+22,24,P,Yeah.
+22,25,D,"OK alright, how would what would you say the severity of the pain is on a scale of 1 to 10."
+22,26,P,"Uhm, if I'm not doing it, doing anything or not doing much, it's probably like a two or three, but if I try to carry anything it goes up to like
+probably like a 7."
+22,27,D,"OK, uh, and um. Do you do any repetitive kind of like overhead activities? Things like playing basketball or just lifting things like above your head
+at the gym?"
+22,28,P,"Um not recently just just like normal weight exercise, maybe with the bands I do some overhead exercises, but in terms of sports I I play or I used
+to play a lot of tennis. I did have some issues with the same shoulder, which is why I kind of stopped playing tennis. My doctor said it, I might have
+overused that shoulder, but that's that was like a couple of years back so I thought it must have healed by now."
+22,29,D,"OK, so previous overuse injury of the left shoulder?"
+22,30,P,Mmmm
+22,31,D,"OK, and uh. I'm have you had any trauma to the shoulder?"
+22,32,P,Um no not that I know of.
+22,33,D,"OK, have you had any fevers or chills?"
+22,34,P,No.
+22,35,D,Have you had any night sweats?
+22,36,P,No.
+22,37,D,"OK, have you had any skin rashes or or skin changes?"
+22,38,P,No.
+22,39,D,OK so even over the area you haven't noticed any redness or like soft tissue swelling?
+22,40,P,No.
+22,41,D,OK. Have you had any chest pain?
+22,42,P,Nope.
+22,43,D,"OK, how about any shortness of breath?"
+22,44,P,"No, not that I've noticed."
+22,45,D,"OK, have you had pains and any other joints?"
+22,46,P,"No, just my shoulder."
+22,47,D,"OK And. Um, Have you had any recent infections or or symptoms such as like a runny nose or sore throat or even a cough?"
+22,48,P,"No, nothing like that."
+22,49,D,"OK, and how about any nausea or vomiting?"
+22,50,P,Um nope.
+22,51,D,OK. And um. How has your sleep been these past couple of nights? So you mentioned you haven't been able to lay on your left side?
+22,52,P,"Yeah, it's been pretty painful like I kind of wake up every time I accidentally go on to my left side."
+22,53,D,"OK, so you're getting worse thing a pain at night?"
+22,54,P,Yup.
+22,55,D,OK. Have you had any weakness? Do you feel like you have less strength in your arm?
+22,56,P,"Um I do you feel that there might be some less strength in my left arm, but it's I'm not really using it much so it's hard to tell."
+22,57,D,"OK, And how about a range of motion. Do you feel as though you could lift your left arm up to like, scratch your head and back?"
+22,58,P,It does hurt like when I try to lift my arm up.
+22,59,D,"OK, so it sounds like a range of motion is decreased?"
+22,60,P,Mmm
+22,61,D,"OK, and have you had any altered sensation of your arms being like numbness or tingling?"
+22,62,P,"No, I haven't felt any of that."
+22,63,D,OK. Um and have you had any changes to your bowel habits like constipation or diarrhea?
+22,64,P,"Nope, nothing like that."
+22,65,D,Have you had any abdominal pain?
+22,66,P,Nope.
+22,67,D,And have you had any urinary problems?
+22,68,P,No.
+22,69,D,"OK, and in the past have you been diagnosed with any medical conditions?"
+22,70,P,"Uh. No, I've been a pretty healthy actually just just that overuse injury like two years ago."
+22,71,D,"OK, great and do you have any allergies to medications?"
+22,72,P,No.
+22,73,D,"OK, do you take any medications regularly?"
+22,74,P,"Just recently I've been taking a lot more of the Advil, but that's about it."
+22,75,D,"OK, I and have you had any hospitalizations or prior surgeries?"
+22,76,P,"No, no prior surgeries or hospitalizations."
+22,77,D,"OK, and could you tell me a little bit about your living situation currently, like who you're living with, and whereabouts?"
+22,78,P,"Yeah, so I'm living with with my wife in a small condominium in downtown."
+22,79,D,"OK, and are you working currently?"
+22,80,P,"Yeah, I'm working as a real estate agent."
+22,81,D,"OK, uh, and do you drink alcohol?"
+22,82,P,"Rarely just on some occasions, but not regularly."
+22,83,D,No. OK. How about smoking cigarettes or cannabis?
+22,84,P,"No, I've never smoked."
+22,85,D,Do you use any recreational drugs or have you in the past?
+22,86,P,Nope
+22,87,D,"OK. Um. And so so the next part, just for the physical exam. So do you have pain with shoulder AB duction."
+22,88,P,"Uhm yes. So just to yeah, I do have some pain. Especially from. Yeah yeah pain throughout AB duction."
+22,89,D,"OK, is there any like pain that's like parts of that that range of motion that are more painful for you?"
+22,90,P,"yeah, so probably from 60 degrees to 120 degrees is more painful."
+22,91,D,OK. And. If your arm is outstretched and your thumb pointing down so your arm is internally rotated does that give you pain?
+22,92,P,"Yeah, if yeah, not not just like that, but if you were to like press down on it it the internal rotation does cause a little bit of pain."
+22,93,D,"OK. OK, so it sounds like a positive jobes test and a positive Neer's test as well as a painful arc for your shoulder. And is there pain to
+palpation?"
+22,94,P,"Uh. Just to, yeah, definitely just at the front of the shoulder there is some some pain over with palpation."
+22,95,D,"OK, that sensation is normal, reflexes are normal and strength is slightly reduced as well. OK, so that was everything that I wanted to ask on
+history and check on the physical exam as well. Was there anything else that you wanted to mention today that I maybe forgot?"
+22,96,P,"No, I think that's it."
+22,97,D,"OK, um so based onI know that the symptoms today along with your age and prior history of an overuse injury of the left shoulder, it certainly raises
+concern of having a rotator cuff tear or um a rotator cuff impingement syndrome and where there is inflammation there not necessarily actually a full
+tear of the muscle that's causing the pain. So, uh, those would be the two most likely things. Yeah, their rotator cuff tear or subacromial impingement
+syndrome. And so we were going to get an ultrasound of the left shoulder to evaluate the structures and possibly some other imaging such as an X Ray or
+MRI to determine the extent of the injury in the left shoulder."
+22,98,P,"OK, sounds good. Thank you."
+23,1,D,What brings you here today?
+23,2,P,"Yeah I had last night um so I'm having this pain in my right wrist. Yeah, but last night. I I tripped over something and I I ended up like landing on
+my hand to help break the fall and this morning I woke up and I have some like bruising on my hand and it's it's really sore to touch it."
+23,3,D,"OK, and which right, which hand is this?"
+23,4,P,It's my right hand.
+23,5,D,"OK, and when you had your fall, when was your fall?"
+23,6,P,"So it was last night, probably like at 10:00 PM, something like that. Went out with a few friends for dinner and drinks."
+23,7,D,"OK, and do you remember how high you fell from or what what you fell onto?"
+23,8,P,"Yeah, I was standing height. We were just kind of walking down the street and I tripped over something on the curb. I think there is that yeah maybe
+like a pothole or something like that and so I felt right onto the concrete with my hand."
+23,9,D,"OK, did you hit your head at all or lose consciousness?"
+23,10,P,"No, nothing like that."
+23,11,D,"OK, so it was. It was mainly your hand that got injured."
+23,12,P,"Yeah, it was just it mostly right my hand."
+23,13,D,OK and are you having any pain on movement or if you press on it?
+23,14,P,"Um yeah, I do get some pain pain if I'm trying to move the wrist around and it hurts her to press on it as well."
+23,15,D,"OK, and do you notice any kind of swelling or bruising?"
+23,16,P,"I do, yes. There's some swelling and bruising."
+23,17,D,"OK, and if you had to describe where the swelling and bruising in the pain are, how would you describe it?"
+23,18,P,"Um so I have a sharp pain right at my wrist. I kind of. I feel it mostly at the base of my thumb, kind of right at the wrist, and that's where the
+swelling and bruising is as well."
+23,19,D,"OK and, is it right under your palm or uh at the back of your hand on the wrist?"
+23,20,P,"At the back of the hand, at the wrist and base of the thumb."
+23,21,D,"OK, OK, alright, and what kind of pain are you feeling? Is this sharp, is it a dull aching?"
+23,22,P,"Oh yeah, it's really sharp. It feels like sorry just stabbing me in the hand."
+23,23,D,"OK, and how how much would you rate the pain on a scale of zero to 1010 being the worst pain you felt in your life?"
+23,24,P,"If I'm not moving it around, it's a three, but if I move it, it goes up to like a 9 out of 10."
+23,25,D,"OK, and is it radiating or moving anywhere else onto your hand?"
+23,26,P,"No, I don't feel it anywhere else."
+23,27,D,"OK, and do you have any kind of pins and needles sensation tingling or numbness anywhere in your hands?"
+23,28,P,"No, nothing like that."
+23,29,D,"OK, anything that makes the pain worse or better?"
+23,30,P,"Um yeah I tried some anti-inflammatories that did help with taking the edge off a little bit and. But the pain just came right back and then also
+like just moving it at all hurts even texting on my phone was really bugging me."
+23,31,D,"OK. Yeah, so we definitely, uh, you went, so you had the fall yesterday or?"
+23,32,P,Yeah it was yesterday.
+23,33,D,"OK, OK. Alright. So when did it start hurting? Did it start hurting right away or has it gotten worse at all?"
+23,34,P,"Yeah it started hurting right away and it's. Well, this morning it's a a bit worse yeah."
+23,35,D,"OK. Do you have any other symptoms at all like fever, chills, headache, anything like that?"
+23,36,P,No.
+23,37,D,Any dizziness or fainting?
+23,38,P,No.
+23,39,D,"OK, any diarrhea, constipation?"
+23,40,P,No.
+23,41,D,"Any changes in your vision, hearing a balance?"
+23,42,P,"Nope, nothing like that."
+23,43,D,"OK, but yeah, so your main concern today is this pain in your wrist?"
+23,44,P,Yeah exactly.
+23,45,D,"OK, alright and do you have any past medical conditions you've been diagnosed with?"
+23,46,P,"Yeah I do. I have a Asthma and I use an orange inhaler daily. It's been well controlled, I'll use, I haven't used the blue one in awhile."
+23,47,D,"OK, so it's pretty well controlled. Yeah, and do you take any other medications at all?"
+23,48,P,Just a Multi vitamin.
+23,49,D,OK
+23,50,P,And vitamin D as well.
+23,51,D,"OK, alright, and have you been hospitalized in the past or had any surgeries?"
+23,52,P,Yeah I had my my tonsils out and my wisdom teeth out when I was a teenager and or tonsils when I was a kid actually. Um and a c-second for my son.
+23,53,D,OK any complications at all with that at all?
+23,54,P,No no every every that was OK.
+23,55,D,"OK, OK, and have you injured your right hand or broken any bones before?"
+23,56,P,"No, I haven't."
+23,57,D,"OK, so this is the first injury on your right hand?"
+23,58,P,Mmm
+23,59,D,OK and do you have any family history of any medical conditions at all?
+23,60,P,"Yeah my my uncle died of a heart attack when he was in his 60s and I think my Grandfather also had had a heart attack as well. Um yeah, that's about
+it."
+23,61,D,"OK. And in terms of your work, do you work currently?"
+23,62,P,"Um yeah I do, I I work um in a restaurant and so. And this will be a difficult for my job coming up with an injured wrist I and hand. I I just
+restarted and I'll have to be carrying a lot of different things, and so I just hope it's not broken."
+23,63,D,"Oh, I see. Yeah, it might definitely that's that might be concerning if you know well, we'll get that check though on X Ray and everything, but we
+just need to do a few few more questions and some examination as well. How would you describe your living situation right now?"
+23,64,P,Oh so. I'm living on on my own actually in an apartment.
+23,65,D,OK. And do you currently smoke?
+23,66,P,"Um no, I've I. I've never smoked, I couldn't with having asthma so I just stayed away from all of that."
+23,67,D,"OK, OK, and do you drink alcohol?"
+23,68,P,Yeah I do I. I have a couple of bottles of wine per week.
+23,69,D,"OK. Alright, uh, a couple of bottles a week, so how much would you have in an average day?"
+23,70,P,"I'll probably I guess, probably like two or three glasses of wine a day."
+23,71,D,"OK. Yeah, so we definitely recommend for women. Uh to limit themselves to an maybe one to two, max 2 glasses of wine a day as it can have health
+effects in the future in terms of drinking and on your liver. OK, and other than that I just had a few questions. Do any recreational drugs like
+marijuana?"
+23,72,P,"No, stayed away from that as well."
+23,73,D,"OK, OK, so I'm just going to ask you questions about specifically to examine your wrist so you notice. So can you. Are you able to move your wrist
+around? Are you able to make a fist?"
+23,74,P,I I can but it I can't really bad my thumb and it it it hurts a lot. So I can bend my fingers but my thumb is kinda out.
+23,75,D,"OK, due to the joints in your thumb hurt at all."
+23,76,P,Um no.
+23,77,D,OK. An any pain anywhere else like on your fingers or your elbow?
+23,78,P,No.
+23,79,D,"OK, and. What movement would you say hurts the most?"
+23,80,P,I I. Probably just moving the the wrist like flexing and extending the wrist
+23,81,D,"OK and where the swelling you said is at the base of the thumb, right?"
+23,82,P,"Yeah, exactly at the base of the thumb on the on the back of the hand there are some bad bruising and swelling there."
+23,83,D,OK is it warm at all to touch?
+23,84,P,"No, it doesn't feel warm."
+23,85,D,"OK, OK, and if you press on are you getting any bony pain in that area, like if you press on a bone?"
+23,86,P,"Yeah, like, I mean, if I there's one spot that if I press down on it, it's like 10 of the 10 pain. It hurts really bad if I press at the base of my
+thumb there."
+23,87,D,"OK, alright, so those are all the questions I had for you today. We definitely need to, since you're having pain on, just tell palpate palpating the
+area, there swelling redness, and you did have a fall and you landed on your you caught yourself with your hand. There is a common fracture that can
+happen in those circumstances to your wrist. And so we need to do an X-Ray and we will see if you have a fracture or not. But we also need to see if we
+need to get a cast for you or if if we can manage your injury with a splint or. And then based on what we see and if your physical examination we will
+determine how long you need to be in a cast or splint, and then we'll go from there."
+23,88,P,"OK, that sounds good, thank you."
+24,1,D,What brings you in here today?
+24,2,P,"I've had this pain in my back thats kind of like in my lower back and my buttocks and it's now radiating down to my right leg. I've had this for
+awhile now, but it's getting worse and I just want to come get it checked out."
+24,3,D,"OK, and how long have you had this pain for?"
+24,4,P,About a month.
+24,5,D,"OK, and has gone worse at all like did you have the it radiating through your leg before or is that something that happened after?"
+24,6,P,That's something that happened after that happens that that's been going on for the past week.
+24,7,D,"OK, and is this pain constant or does it come and go?"
+24,8,P,"And it's pretty much always there, but certain things can make it worse. Like if I'm walking or doing certain activities it can it can make it
+worse."
+24,9,D,OK. And did you have any back pain before this month?
+24,10,P,"No, not, I mean no, not really."
+24,11,D,OK. An what kind of pain would you say it is. Is it like a sharp stabbing pain or is it more so a dull aching pain?
+24,12,P,"Um usually or well before it was like a mild achy pain, but now it can be. It's sharp and it feels like a burning sensation."
+24,13,D,"OK, a burning sensation, where would you say that burning sensation is?"
+24,14,P,It's like down my buttocks to the right leg.
+24,15,D,"OK, and do you feel any kind of numbness or tingling with it?"
+24,16,P,"Um a little, a little bit of tingling. Yeah, a little bit of tingling."
+24,17,D,"OK, and how would you rate the pain from a scale of zero to 10, 10 being the worst pain you've had in your life?"
+24,18,P,"So usually it's about like a 5 to 6 out of 10, but when it gets bad and um sharp, I'd give it an 8 out of 10."
+24,19,D,"OK, and are there any kind of motions or positions that cause you more pain?"
+24,20,P,"Yeah, so I'd say like just any sort of physical activity, like if I'm on my feet a lot, it hurts."
+24,21,D,Mmm.
+24,22,P,"Yeah, that's pretty much the only thing that I can think of right now."
+24,23,D,"OK, did anything happen one month ago or before this pain started. Like any injuries or falls that might have caused this pain?"
+24,24,P,"Um no like a long time ago, like 6-7 years ago I injured my back at work but. I just did some conservative treatments for that and it went away."
+24,25,D,OK was it your lower back.
+24,26,P,Yes.
+24,27,D,OK. And what do you do for work?
+24,28,P,"I used to work on an assembly line, so I used to. Like carry heavy objects and things like that. Like car parts."
+24,29,D,"OK, and do you still work there?"
+24,30,P,"No, I don't."
+24,31,D,OK when did you stop working there?
+24,32,P,About three years back.
+24,33,D,OK and is there any other work you do currently?
+24,34,P,Um I work from home now. I do daycare at home.
+24,35,D,"OK. OK, and just getting back to the pain so it's kind of in your lower back, your buttocks and then it goes to your right upper leg?"
+24,36,P,Mmmm
+24,37,D,Does it move anywhere else besides that or those are the regions that it stays in?
+24,38,P,"No, those are kind of the only regions that I'm experiencing it right now."
+24,39,D,OK. And do you get more pain leaning bending forward or would you say extending your back?
+24,40,P,I would say ext.. Extending my back hurts more.
+24,41,D,OK and you get pain with sitting down?
+24,42,P,Um sometimes.
+24,43,D,"OK, how about lying down?"
+24,44,P,"Um lying down I guess it depends on the position. If I am straight on my back it's it's not too bad, but if I like I'm hunched over or something like
+that, it hurts."
+24,45,D,"OK, I see OK and have you tried any medications over the counter and painkillers that have helped?"
+24,46,P,I tried some ibuprofen and some like topical.. um like ointments but it helps temporarily and then the pain comes back.
+24,47,D,"OK, let's see and. Other than that, so other than this pain that's been going on do you have any fevers or chills?"
+24,48,P,"Uhm No, no fevers or chills."
+24,49,D,"OK, no night sweats?"
+24,50,P,No.
+24,51,D,Any increased fatigue?
+24,52,P,"No, no."
+24,53,D,Any rashes or skin changes?
+24,54,P,No
+24,55,D,Any uh. Any cough or cold symptoms recently?
+24,56,P,Um no nothing like that.
+24,57,D,"OK and apart from your back, any kind of joint or muscle pain anywhere else in your body?"
+24,58,P,No.
+24,59,D,Any changes in your bowel movements?
+24,60,P,No.
+24,61,D,"OK, any urinary problems?"
+24,62,P,Nope.
+24,63,D,Any stool incontinence for your urinary incontinence?
+24,64,P,No.
+24,65,D,"OK, and any kind of numbness or paresthesia like around just your lower back and buttocks?"
+24,66,P,"No, no numbness just like that, tingling, burning feeling."
+24,67,D,"OK, OK any recent weight changes like any significant weight loss?"
+24,68,P,No.
+24,69,D,OK. Any muscle weakness at all in that area?
+24,70,P,I'm finding it hard to walk.
+24,71,D,Harder to walk? OK. Are you limping at all?
+24,72,P,"Yeah, I'm putting more weight on my left leg."
+24,73,D,"OK. And do you feel, so you mention you feel tingling going down your right leg? Do you feel any kind of numbness at all?"
+24,74,P,No.
+24,75,D,"No, OK alright do you have any kind of urinary or fecal retention like at all?"
+24,76,P,"No, I'm going. I'm using the washroom OK."
+24,77,D,"OK, uh. Do you have any history of any cancers at all?"
+24,78,P,No.
+24,79,D,No OK. Are you on any. So do you have any past medical conditions you've been diagnosed with?
+24,80,P,No.
+24,81,D,No. Do you take any medications regularly?
+24,82,P,"No, I don't. I just take calcium and vitamin D and other but multi vitamins."
+24,83,D,"OK, any allergies to any medications?"
+24,84,P,No.
+24,85,D,Have you had any previous surgeries or have you been hospitalized for any reason?
+24,86,P,No.
+24,87,D,"No, OK, any family history of any autoimmune conditions, any heart or lung conditions?"
+24,88,P,Um no not that I know of.
+24,89,D,"OK, an and, currently you said you work from home. How would you describe your living situation like?"
+24,90,P,I would say I it's it's OK. I live in an apartment with my husband.
+24,91,D,OK. And currently do you smoke?
+24,92,P,No.
+24,93,D,"OK, and do you drink alcohol?"
+24,94,P,I'll have a glass of wine like once a week.
+24,95,D,"OK, and do you use any recreational drugs?"
+24,96,P,Um so I've I've been using cannabis oil for the past month just to see if it helps with the pain.
+24,97,D,"OK, and has that been working for you at all?"
+24,98,P,A little bit I think.
+24,99,D,"OK. OK, so those are some of the questions I had. And I'm just gonna ask a few questions about just examining the areas that are giving you trouble.
+So along your back, if you if you were to press down on from the middle to your lower back, any kind of pain when you press down."
+24,100,P,"Um lower back, yes."
+24,101,D,"OK, So what kind of pain is it like sharp or is it kind of a dull aching pain?"
+24,102,P,When I press down it feels sharp.
+24,103,D,"OK, and do you have you notice any kind of swelling in your legs or, near the areas where you have pain swelling or redness, or any warmth?"
+24,104,P,"Um it seems to. Actually, no, it's not. It's not warm."
+24,105,D,"OK. And in terms of just movement, are you able to bend down?"
+24,106,P,"I can bend down, it's just hard for me to get back up."
+24,107,D,OK See and how about like bend sideways.
+24,108,P,I can do that.
+24,109,D,OK nd how about if you're laying flat are you able to raise your legs without bending your knees?
+24,110,P,"I can do that, yeah, actually no. I can't. Sorry that that hurts."
+24,111,D,So your right leg hurts when you do that?
+24,112,P,Yeah
+24,113,D,"OK, great. And other than that, like when you when you do any of those movements, can you, do you get like that tingling again?"
+24,114,P,Yeah it does. Yeah.
+24,115,D,"OK alright and when you stand up and walk how would you describe, are you having any kind of limping at all?"
+24,116,P,"Um a little bit of limp yeah, I'm putting more weight on the left leg."
+24,117,D,"OK, alright, so yeah, those are just some of the questions I I had for you today. Do you have any questions at all?"
+24,118,P,"Um no, what can I do about this back pain and how long do you think I'll have it for?"
+24,119,D,"Yeah, so it's been happening for one month right and you're getting some symptoms in in your lower leg, so normally we would wait before we do any
+kind of diagnostic imaging. But since you're also having these other symptoms we we were worrying about sometimes lower back pain can lead to something
+called sciatica. It's just when one of the nerves get pinched, and then that's why you're getting the tingling around your right upper leg. So what we
+can do is. We can do if you haven't had an X Ray, we can do an X Ray of your lower back. And then we can also do an MRI."
+24,120,P,OK
+24,121,D,"And. Based on what results come back at the same time we will, I will give you some information about some anti- inflammatory medications you could
+take to help relieve some of your pain, but other than that I will also refer you to some physiotherapy. That will help you do some exercises at home.
+Just ways to protect your back as well as strengthen some of your muscles to help deal with some of that pain. Yeah, so we'll get the results back. And
+then we'll go from there."
+24,122,P,"OK, sounds good. Thank you."
+24,123,D,You're welcome. Take care.
+25,1,D,How may I help you?
+25,2,P,"Hi, I'm here because I've had this numbness and tingling in my feet for awhile now and I started to notice these open wounds on my feet as well and
+I'm not feeling it, but it's there."
+25,3,D,"OK, and when did you first notice the numbness and tingling?"
+25,4,P,"It's been on going for the past like 2 years, but recently I've seen the past like 3 months it's gotten worse."
+25,5,D,"OK, and do you feel it in in both feet?"
+25,6,P,Yes.
+25,7,D,"OK and, where about do you feel the numbness and tingling tingling. Do you feel like all the way up your up your leg, or is it only part way?"
+25,8,P,It it goes right up until my ankles.
+25,9,D,"OK. And do you have wounds on your feet that like you, you don't notice them because you can't feel it?"
+25,10,P,"Yeah, I don't notice it because I can't feel it, but then I'll see them and they look bad."
+25,11,D,"OK, do you recall hitting your foot or off of anything or stepping on any objects that could have caused trauma to your feet?"
+25,12,P,"Um I mean it's possible um, but I didn't feel anything, so I'm not too sure about that. It is the summer, so I've been like going to the beach and
+when I'm at the park like I'll take off my flip flops."
+25,13,D,"OK, have you had any like muscle weakness, to your legs or feet?"
+25,14,P,"Hum, maybe a little bit of muscle weakness in my legs."
+25,15,D,"OK, have you had any problems with balance or have it you had any falls?"
+25,16,P,No.
+25,17,D,"OK. Um and. Um OK, have you had any fevers or chills?"
+25,18,P,No.
+25,19,D,Have you had any night sweats?
+25,20,P,No.
+25,21,D,And have you had any unexpected weight loss?
+25,22,P,No.
+25,23,D,"OK, have you had any headaches?"
+25,24,P,No.
+25,25,D,"Alright, have you had any sensory changes like changes to your vision, hearing or sense of smell or taste?"
+25,26,P,No.
+25,27,D,Have you had any any sore throat or cough?
+25,28,P,Nope.
+25,29,D,How about um any shortness of breath?
+25,30,P,No.
+25,31,D,"OK, have you had any wheezing?"
+25,32,P,No.
+25,33,D,Have you had any chest pain?
+25,34,P,No.
+25,35,D,Any have you had any dizziness or lightheadedness?
+25,36,P,Nope.
+25,37,D,Have you had any heart palpitations or feeling like your heart's racing?
+25,38,P,No.
+25,39,D,Have you had any nausea or vomiting?
+25,40,P,No.
+25,41,D,How about any abdominal pain?
+25,42,P,No.
+25,43,D,Have you had any changes to bowel movements like diarrhea or constipation?
+25,44,P,Nope.
+25,45,D,OK. And have you had any urinary problems like frequency or painful urination?
+25,46,P,No.
+25,47,D,"OK, and have you had any rashes on your skin?"
+25,48,P,No.
+25,49,D,"OK, and any muscle aches or joint pains?"
+25,50,P,"No, nothing like that."
+25,51,D,"OK, and do you have any numbness or tingling to any other parts of your body?"
+25,52,P,Maybe a little bit in my fingertips as well.
+25,53,D,"OK, and when did you first start noticing that?"
+25,54,P,Um in the past year.
+25,55,D,"OK, and have you had any like like clumsiness or like dropping objects?"
+25,56,P,"Um yeah, definitely some of that like I'll find it hard to like open cans and bottles."
+25,57,D,"OK, any weakness in the hands?"
+25,58,P,"Um only when, only sometimes when I'm trying to grip things pretty hard."
+25,59,D,"OK, uh. And. Have you had any memory changes or any confusion?"
+25,60,P,No.
+25,61,D,"OK, and have you had any any back pain?"
+25,62,P,No.
+25,63,D,"OK, in the past have you been diagnosed with any? Or sorry before that and have you had any neck pain?"
+25,64,P,"No, no neck pain."
+25,65,D,"OK. And in the past, have you been diagnosed with any medical conditions?"
+25,66,P,"Um yeah, so I've been diagnosed with diabetes. Hypertension. Hypercholesterolemia. Obesity. And and I think, yeah, I think that's that's about it."
+25,67,D,"OK, and are you currently on any medications? Like do you have? Do you use insulin?"
+25,68,P,"I do so. I'm on insulin, short acting and long acting, I'm on Ramipril, I'm on Atorvastatin, yeah."
+25,69,D,"OK. an, and do you recall any like what your A1C has been in the past or, an have you had your eyes checked and kidneys checked?"
+25,70,P,"A1c has been pretty high. Especially recently I think it was eight point 8.1 or something. The last time I got it checked. I haven't had my eyes
+checked in awhile, and in terms of my kidneys, I think I did a urinalysis recently and everything came back normal."
+25,71,D,OK. And do you have any allergies to medications?
+25,72,P,No.
+25,73,D,"Alright, and have you had any prior surgeries or hospitalizations?"
+25,74,P,"No, I don't believe so."
+25,75,D,"OK, and are your immunizations up to date?"
+25,76,P,Yes.
+25,77,D,"OK, and. and. Can you tell me a little bit about where you're living currently and who you're living with?"
+25,78,P,I live in a house downtown with my wife.
+25,79,D,"OK, and are you working currently?"
+25,80,P,"I am, I work from home though."
+25,81,D,"OK. So and, have you been around anybody who's been sick?"
+25,82,P,"Oh no, I don't think so."
+25,83,D,"OK, and have you traveled anywhere recently?"
+25,84,P,"No, not outside the province."
+25,85,D,"Alright, and do you drink alcohol?"
+25,86,P,"Um yeah, I'll have some alcohol every day."
+25,87,D,"OK, OK how many drinks per day would you have for and how many drinks per week?"
+25,88,P,I'll have about 5 beers a day.
+25,89,D,"OK, do you feel as though that's a lot?"
+25,90,P,"Yeah, I. I'm hoping to cut down."
+25,91,D,"OK, that's good, and if at any point you need help or I would like to discuss that, just please let me know. OK, and do you smoke cigarettes?"
+25,92,P,I do.
+25,93,D,"OK, how much do you smoke?"
+25,94,P,Talk about half a pack a day.
+25,95,D,And for how long have you been smoking for?
+25,96,P,For the past almost 20 years.
+25,97,D,"OK, have you thought about cutting down?"
+25,98,P,"Ah yeah again, that's something that I'm hoping to quit doing in the future as well."
+25,99,D,Certainly OK. And are you currently sexually active?
+25,100,P,I am.
+25,101,D,OK and. Could you tell me about your partners or partner?
+25,102,P,"Yeah, just my wife. We've been together for the past five years."
+25,103,D,"OK, any concerns for a sexually transmitted infection at this time?"
+25,104,P,No.
+25,105,D,OK. And any a musculoskeletal or neurological conditions that run in the family?
+25,106,P,No.
+25,107,D,"OK, and how about any cancers that run in the family?"
+25,108,P,No cancers that I know of.
+25,109,D,"OK, and how about heart conditions or or lung conditions?"
+25,110,P,"No, nothing like that."
+25,111,D,"OK, so next. Just wanted to move on to their physical exam piece of the appointment today, so just looking at your um, the, at your feet and at the
+joints of the ankle and toes are you seeing any swelling, redness, or yeah, any swelling or redness?"
+25,112,P,Um no no swelling or redness.
+25,113,D,"All right, are there is there a temperature change to your feet or any of the joints? Are they feeling hot or cold?"
+25,114,P,No.
+25,115,D,OK. And is there any deformities or misalignment of any of the joints?
+25,116,P,No.
+25,117,D,"OK, and any scarring from any of the trauma?"
+25,118,P,"Uhm, there are like. Yeah, there's some scarring from like ulcers."
+25,119,D,From previous ones that have that have healed?
+25,120,P,"Healed. Yeah, that's right."
+25,121,D,"OK, and. And is there any pain to palpation over the um ankle joint, over the ankle joint?"
+25,122,P,No.
+25,123,D,"OK, then how about over any of the joints of your toes?"
+25,124,P,"Um no not nothing like that. No pain, just um I can't feel it."
+25,125,D,OK. And how is the range of motion of your feet and toes?
+25,126,P,Um pretty good. I can move them all.
+25,127,D,"OK, and then how about your knees?"
+25,128,P,My knees are also the same.
+25,129,D,"OK, uh, an any ankle like instability with any special tests?"
+25,130,P,No
+25,131,D,"OK, and and on walking is there any limp or does it appear, how does the walk appear?"
+25,132,P,I'm pretty normal. I'm not limping.
+25,133,D,"OK. And. OK, so that was everything that I wanted to ask and and check today. Did you have any questions?"
+25,134,P,Just what do you think is going on with my feet and how do I get some sensation back?
+25,135,D,"So it does sound like it could be related to diabetes where what happens is you get like a peripheral neuropathy overtime and you can lose sensation
+to your feet in a glove and stocking distribution, which sounds like the history history you're saying today with having sensation reduced on your feet
+and also your fingertips as well."
+25,136,P,Mmmm
+25,137,D,"Where you lose sensation and you can't feel pain. And so But other things to consider could be. Possibly like vitamin deficiencies or things like
+that, but I would be much much lower down on the differential. And. So to regain sensation I think. Really, the only thing that can be done now is to
+help prevent further damage to the nerves, and that would be to make sure that the diabetes is under good control and. Trying to monitor your feet as
+regularly as you can, making sure that the. There aren't any kind of open wounds or sores that are are not healing. If things are not healing, it will
+be important to check to see if there is an underlying infection such as osteomyelitis, which will prevent wound healing. And so if there are any, is
+anything like that it would be important to have that checked out. So feet hygiene is extremely important. As we're working on improving the diabetes
+control as well as things like cutting down alcohol could could also help as well."
+25,138,P,"OK OK, thank you."
+26,1,D,How may I help you?
+26,2,P,"I just came in here today, I usually don't come to the doctor that much unless I absolutely need it. Five days ago I started having this pain and
+swelling in my right knee. So and at first I thought it was just like my arthritis acting up but it's been getting more swollen and painful than usual,
+so I just wanted to come in and check it out."
+26,3,D,"OK, so when did you first notice that this pain, like when did it get more swollen and painful than usual?"
+26,4,P,"So like I would say around 5 days ago it started getting more and usually I do get pain in some of my joints but I I don't really get swelling so
+that was a bit different."
+26,5,D,"OK, and is the joint hot as well, or is there a temperature change?"
+26,6,P,"It is, it does feel like if I touch the joint it does feel a bit warmer than the surrounding areas."
+26,7,D,"OK, does it look red?"
+26,8,P,It It definitely it definitely looks more red than my other knee.
+26,9,D,"OK, and so what knee is it that, that's bothering you right now?"
+26,10,P,It's the right knee.
+26,11,D,"OK. And so this pain has been going on for the last five days. Has it been getting better, worse, or staying the same?"
+26,12,P,"I think it's getting a. It's getting it was getting worse, but it's like a bit better right now."
+26,13,D,OK.
+26,14,P,Yeah it comes and goes in severity though.
+26,15,D,"OK, and how would you describe the the pain. The character of it, is it sharp, dull, or achy?"
+26,16,P,It's it's like someone is stabbing me in the knee and it hurts the most when I'm moving the knee.
+26,17,D,"OK, and does the pain radiate anywhere?"
+26,18,P,"Uhm, I don't think so, no."
+26,19,D,"OK, so you're feeling it just in the knee and you said moving the knees is painful. Is there anything else that makes the pain worse?"
+26,20,P,"Uhm, not really like resting it definitely helps, yeah, but I just have to keep it a bit immobilized."
+26,21,D,"OK, and is there anything that that makes the pain better that you've tried like maybe medications or any ice packs or anything like that?"
+26,22,P,"Uh, not really. I do take some painkillers, so just some Advil, which seems to help a little bit."
+26,23,D,"OK. And. And um. OK, is the pain worse at any particular time of the day, like do you have morning stiffness?"
+26,24,P,"Yeah, usually with my normal this arthritis I do get some morning stiffness but this is completely different, it's throughout the day pretty much."
+26,25,D,"OK, and did you have any trauma or any injury to the knee?"
+26,26,P,"No, I didn't."
+26,27,D,"OK, uh."
+26,28,P,"I I did have like a steroid injection to the same knee just a week ago, but no, I I haven't fallen on it. I haven't had any operations."
+26,29,D,OK. Anne. And. Have you had any fevers or chills?
+26,30,P,No.
+26,31,D,"OK, have you had any changes to any of your senses like vision, hearing or your sense of smell or taste?"
+26,32,P,"No, nothing like that."
+26,33,D,Have you had a runny nose or sore throat?
+26,34,P,No.
+26,35,D,Have you had any cough or shortness of breath?
+26,36,P,No.
+26,37,D,How about any wheezing?
+26,38,P,Nope.
+26,39,D,"Have you had any chest pain or yeah, have you had any chest pain?"
+26,40,P,No.
+26,41,D,How about any lightheadedness or dizziness?
+26,42,P,"No,"
+26,43,D,OK and have you had any nausea or vomiting?
+26,44,P,Um nope.
+26,45,D,"Alright, have you had any loss of appetite?"
+26,46,P,No.
+26,47,D,And have you had any abdominal pain?
+26,48,P,No.
+26,49,D,"Have you had any changes to your bowel movements such as diarrhea or constipation, incontinence?"
+26,50,P,No.
+26,51,D,Any urinary problems like painful urination or frequency.
+26,52,P,"No, not really."
+26,53,D,Have you had any skin changes like rashes anywhere?
+26,54,P,No.
+26,55,D,"OK, and any other painful joints or muscle aches or body pains?"
+26,56,P,"Yeah, I just got my general like I havee osteoarthritis, so I like It's been a pretty long time though but I get some pain in my hips sometimes my
+knees, so it's it's that's been going on for awhile, but this is something I've never experienced though like this significant pain and swelling and
+redness."
+26,57,D,OK. And have you had any changes to your memory or any confusion?
+26,58,P,Nope.
+26,59,D,"OK, and have you had any unexpected weight loss?"
+26,60,P,No.
+26,61,D,And how about any night sweats?
+26,62,P,No.
+26,63,D,"OK, Um in the past have you been diagnosed with any medical conditions?"
+26,64,P,"I do have. So I have a couple conditions. I have osteoarthritis in both my knees and hips. I have high blood pressure. I did have a heart attack four
+years ago and I also have had heart failure. And also I'm just a bit on the overweight side."
+26,65,D,"OK, are you currently taking any medications?"
+26,66,P,"Yeah, so I am taking just um Furosemide then Ramipril for my blood pressure. But yeah, that's that's about it right now and like just painkillers
+Document was truncated. For full conversion please use offline version of Total Doc Converter."
