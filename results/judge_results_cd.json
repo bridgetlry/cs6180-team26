@@ -1,0 +1,1698 @@
+[
+  {
+    "encounter_id": "D2N088",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "systolic_murmur_grade: 2 \u2014 transcript never stated any murmur grade or murmur presence",
+      "smoker: False \u2014 transcript never discussed smoking status",
+      "medication_count: 2 \u2014 transcript mentions patient is on medications but never specifies a count of 2"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The extraction contains three hallucinated values not present in the transcript. Most concerning is systolic_murmur_grade: 2, which fabricates a cardiac finding never mentioned (doctor only said 'heart sounds nice and strong'). The smoker: False flag and medication_count: 2 are also fabricated as these topics were not explicitly addressed. While hemoglobin_a1c: 8.0 is correctly extracted, the hallucinated cardiac finding could mislead clinical decision-making.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N088",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "systolic_murmur_grade: 2 \u2014 transcript never stated any murmur grade or murmur presence",
+        "smoker: False \u2014 transcript never discussed smoking status",
+        "medication_count: 2 \u2014 transcript mentions patient is on medications but never specifies a count of 2"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The extraction contains three hallucinated values not present in the transcript. Most concerning is systolic_murmur_grade: 2, which fabricates a cardiac finding never mentioned (doctor only said 'heart sounds nice and strong'). The smoker: False flag and medication_count: 2 are also fabricated as these topics were not explicitly addressed. While hemoglobin_a1c: 8.0 is correctly extracted, the hallucinated cardiac finding could mislead clinical decision-making."
+    }
+  },
+  {
+    "encounter_id": "D2N089",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "bp_systolic: 120 \u2014 transcript never stated this value",
+      "bp_diastolic: 77 \u2014 transcript never stated this value",
+      "heart_rate: 80 \u2014 transcript never stated this value",
+      "pain_severity: 0.0 \u2014 transcript never stated a numeric pain score"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The system fabricated specific vital sign values (BP 120/77, HR 80) that were never stated in the transcript. The doctor only said 'your heart rate's really good today' and 'show me the vital signs' without verbalizing any numbers. Additionally, pain_severity was set to 0.0 when no numeric pain score was mentioned (patient only said 'yeah, it does a bit' when asked about elbow pain). These hallucinated values could mislead clinicians reviewing the structured data, though they are not immediately life-threatening.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N089",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "bp_systolic: 120 \u2014 transcript never stated this value",
+        "bp_diastolic: 77 \u2014 transcript never stated this value",
+        "heart_rate: 80 \u2014 transcript never stated this value",
+        "pain_severity: 0.0 \u2014 transcript never stated a numeric pain score"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The system fabricated specific vital sign values (BP 120/77, HR 80) that were never stated in the transcript. The doctor only said 'your heart rate's really good today' and 'show me the vital signs' without verbalizing any numbers. Additionally, pain_severity was set to 0.0 when no numeric pain score was mentioned (patient only said 'yeah, it does a bit' when asked about elbow pain). These hallucinated values could mislead clinicians reviewing the structured data, though they are not immediately life-threatening."
+    }
+  },
+  {
+    "encounter_id": "D2N090",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "bp_systolic: 120 \u2014 transcript never stated this value",
+      "bp_diastolic: 77 \u2014 transcript never stated this value",
+      "heart_rate: 70 \u2014 transcript never stated this value",
+      "smoker: False \u2014 smoking status was never mentioned in the transcript",
+      "alcohol_use: False \u2014 alcohol use was never mentioned in the transcript",
+      "recreational_drugs: False \u2014 recreational drug use was never mentioned in the transcript"
+    ],
+    "missed_examples": [
+      "patient_gender: transcript says 'male' (doctor states 'Albert is a 62-year-old male') but field is null",
+      "blood_glucose: transcript says '162' (doctor states 'your blood sugar is about 162') but field is null"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "severe",
+    "reasoning": "The extraction contains multiple severe hallucinations of vital signs (BP 120/77, HR 70) that were never stated in the transcript \u2014 the doctor only said 'vital signs look great' without providing specific numbers. These fabricated values are clinically dangerous as they could be used for medical decision-making. Additionally, the system fabricated negative values for smoking, alcohol, and drug use when these were never discussed. The extraction also missed explicitly stated values including patient gender ('male') and blood glucose (162), though these are less critical given the hallucination severity.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N090",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "bp_systolic: 120 \u2014 transcript never stated this value",
+        "bp_diastolic: 77 \u2014 transcript never stated this value",
+        "heart_rate: 70 \u2014 transcript never stated this value",
+        "smoker: False \u2014 smoking status was never mentioned in the transcript",
+        "alcohol_use: False \u2014 alcohol use was never mentioned in the transcript",
+        "recreational_drugs: False \u2014 recreational drug use was never mentioned in the transcript"
+      ],
+      "missed_examples": [
+        "patient_gender: transcript says 'male' (doctor states 'Albert is a 62-year-old male') but field is null",
+        "blood_glucose: transcript says '162' (doctor states 'your blood sugar is about 162') but field is null"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "severe",
+      "reasoning": "The extraction contains multiple severe hallucinations of vital signs (BP 120/77, HR 70) that were never stated in the transcript \u2014 the doctor only said 'vital signs look great' without providing specific numbers. These fabricated values are clinically dangerous as they could be used for medical decision-making. Additionally, the system fabricated negative values for smoking, alcohol, and drug use when these were never discussed. The extraction also missed explicitly stated values including patient gender ('male') and blood glucose (162), though these are less critical given the hallucination severity."
+    }
+  },
+  {
+    "encounter_id": "D2N091",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "pain_severity: 8.0 \u2014 transcript never stated any numeric pain score",
+      "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or murmur grade; doctor only said 'heart sounds good'",
+      "medication_count: 1 \u2014 transcript mentions at least two medications (Fosamax for osteoporosis and MS medications), not one"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The extraction contains three hallucinated values not present in the transcript. A pain severity of 8.0 was fabricated when no pain score was mentioned. A systolic murmur grade of 2 was invented despite the doctor stating the heart 'sounds good' with no murmur mentioned. The medication count of 1 is inaccurate as the patient is on at least Fosamax and MS medications. These fabrications could mislead clinicians about the patient's pain status, cardiac findings, and medication regimen, affecting clinical decision-making.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N091",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "pain_severity: 8.0 \u2014 transcript never stated any numeric pain score",
+        "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or murmur grade; doctor only said 'heart sounds good'",
+        "medication_count: 1 \u2014 transcript mentions at least two medications (Fosamax for osteoporosis and MS medications), not one"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The extraction contains three hallucinated values not present in the transcript. A pain severity of 8.0 was fabricated when no pain score was mentioned. A systolic murmur grade of 2 was invented despite the doctor stating the heart 'sounds good' with no murmur mentioned. The medication count of 1 is inaccurate as the patient is on at least Fosamax and MS medications. These fabrications could mislead clinicians about the patient's pain status, cardiac findings, and medication regimen, affecting clinical decision-making."
+    }
+  },
+  {
+    "encounter_id": "D2N092",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+      "pain_quality: sharp \u2014 transcript never described the pain quality as 'sharp' or any other descriptor"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The system fabricated two clinical values that were never stated in the transcript. The pain severity of 8.0 is completely invented\u2014no numeric pain scale was mentioned. The pain quality 'sharp' is also fabricated\u2014the patient only described location and mechanism, never characterizing the pain quality. These hallucinations could mislead clinical decision-making regarding pain management intensity and diagnostic considerations, though they do not rise to severe harm potential like fabricated vital signs would.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N092",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+        "pain_quality: sharp \u2014 transcript never described the pain quality as 'sharp' or any other descriptor"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The system fabricated two clinical values that were never stated in the transcript. The pain severity of 8.0 is completely invented\u2014no numeric pain scale was mentioned. The pain quality 'sharp' is also fabricated\u2014the patient only described location and mechanism, never characterizing the pain quality. These hallucinations could mislead clinical decision-making regarding pain management intensity and diagnostic considerations, though they do not rise to severe harm potential like fabricated vital signs would."
+    }
+  },
+  {
+    "encounter_id": "D2N093",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": true,
+    "hallucinated_examples": [],
+    "missed_examples": [
+      "alcohol_use: transcript says 'tough during the holiday season, but I'm better' indicating alcohol consumption but field is null"
+    ],
+    "overall_failure_type": "missed",
+    "severity": "minor",
+    "reasoning": "The extraction correctly captured patient_age (62), patient_gender (male), symptom_duration (10 days), and systolic_murmur_grade (3 out of 6). However, it missed alcohol_use, which was explicitly discussed when the doctor asked about alcohol intake and the patient acknowledged it was 'tough during the holiday season' but he's 'better', indicating he does consume alcohol. This is a minor omission as it doesn't affect the primary clinical decision-making for the acute heart failure exacerbation, though alcohol use is relevant for comprehensive CHF management.",
+    "taxonomy_label": "missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N093",
+      "technique": "constrained_decoding",
+      "hallucinated": false,
+      "missed": true,
+      "hallucinated_examples": [],
+      "missed_examples": [
+        "alcohol_use: transcript says 'tough during the holiday season, but I'm better' indicating alcohol consumption but field is null"
+      ],
+      "overall_failure_type": "missed",
+      "severity": "minor",
+      "reasoning": "The extraction correctly captured patient_age (62), patient_gender (male), symptom_duration (10 days), and systolic_murmur_grade (3 out of 6). However, it missed alcohol_use, which was explicitly discussed when the doctor asked about alcohol intake and the patient acknowledged it was 'tough during the holiday season' but he's 'better', indicating he does consume alcohol. This is a minor omission as it doesn't affect the primary clinical decision-making for the acute heart failure exacerbation, though alcohol use is relevant for comprehensive CHF management."
+    }
+  },
+  {
+    "encounter_id": "D2N094",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "systolic_murmur_grade: 2 \u2014 transcript never stated this value or mentioned any cardiac murmur"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The extraction contains one clear hallucination: systolic_murmur_grade is set to 2, but the transcript contains no mention of cardiac examination, heart sounds, or murmurs. This is a fabricated clinical finding. All other typed fields are either correctly extracted (patient_age: 42, patient_gender: female, symptom_duration: 5 days, pain_severity: 7.0, pain_location: right index finger) or appropriately null. The hallucinated murmur grade could mislead clinicians reviewing the structured data and represents a moderate severity error as it introduces false cardiac pathology.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N094",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "systolic_murmur_grade: 2 \u2014 transcript never stated this value or mentioned any cardiac murmur"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The extraction contains one clear hallucination: systolic_murmur_grade is set to 2, but the transcript contains no mention of cardiac examination, heart sounds, or murmurs. This is a fabricated clinical finding. All other typed fields are either correctly extracted (patient_age: 42, patient_gender: female, symptom_duration: 5 days, pain_severity: 7.0, pain_location: right index finger) or appropriately null. The hallucinated murmur grade could mislead clinicians reviewing the structured data and represents a moderate severity error as it introduces false cardiac pathology."
+    }
+  },
+  {
+    "encounter_id": "D2N095",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+      "bp_systolic: 120 \u2014 transcript only states 'vital signs look great' and 'blood pressure's really well controlled' with no specific numbers",
+      "bp_diastolic: 77 \u2014 transcript never stated any diastolic blood pressure value",
+      "heart_rate: 60 \u2014 transcript never stated a heart rate value"
+    ],
+    "missed_examples": [
+      "patient_gender: transcript says 'Cheryl is a 34-year-old female' but field is null",
+      "systolic_murmur_grade: transcript says 'slight two out of six systolic ejection murmur' but field is null"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "severe",
+    "reasoning": "Multiple critical vital signs (BP 120/77, HR 60) and pain severity (8.0) were fabricated without any numeric values stated in the transcript. The doctor only said vitals 'look great' without providing specific numbers. Additionally, explicitly stated values for patient gender (female) and murmur grade (2/6) were missed. These hallucinated vital signs could lead to inappropriate clinical decisions if relied upon for treatment adjustments.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N095",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+        "bp_systolic: 120 \u2014 transcript only states 'vital signs look great' and 'blood pressure's really well controlled' with no specific numbers",
+        "bp_diastolic: 77 \u2014 transcript never stated any diastolic blood pressure value",
+        "heart_rate: 60 \u2014 transcript never stated a heart rate value"
+      ],
+      "missed_examples": [
+        "patient_gender: transcript says 'Cheryl is a 34-year-old female' but field is null",
+        "systolic_murmur_grade: transcript says 'slight two out of six systolic ejection murmur' but field is null"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "severe",
+      "reasoning": "Multiple critical vital signs (BP 120/77, HR 60) and pain severity (8.0) were fabricated without any numeric values stated in the transcript. The doctor only said vitals 'look great' without providing specific numbers. Additionally, explicitly stated values for patient gender (female) and murmur grade (2/6) were missed. These hallucinated vital signs could lead to inappropriate clinical decisions if relied upon for treatment adjustments."
+    }
+  },
+  {
+    "encounter_id": "D2N096",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+      "smoker: False \u2014 smoking status was never discussed in the transcript",
+      "alcohol_use: False \u2014 alcohol use was never discussed in the transcript",
+      "recreational_drugs: False \u2014 recreational drug use was never discussed in the transcript",
+      "systolic_murmur_grade: 2 \u2014 no cardiac exam or murmur was mentioned in the transcript",
+      "medication_count: 4 \u2014 no count of current medications was stated in the transcript"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "Multiple typed fields contain fabricated values not present in the transcript. Most critically, pain_severity is recorded as 8.0 when no numeric pain score was ever stated (patient only said 'paining a lot'). Additionally, systolic_murmur_grade of 2 is completely fabricated with no cardiac exam mentioned. Social history fields (smoker, alcohol_use, recreational_drugs) and medication_count are all populated as definitive values despite never being discussed. These hallucinations could mislead clinical decision-making, particularly the fabricated pain score and cardiac finding.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N096",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+        "smoker: False \u2014 smoking status was never discussed in the transcript",
+        "alcohol_use: False \u2014 alcohol use was never discussed in the transcript",
+        "recreational_drugs: False \u2014 recreational drug use was never discussed in the transcript",
+        "systolic_murmur_grade: 2 \u2014 no cardiac exam or murmur was mentioned in the transcript",
+        "medication_count: 4 \u2014 no count of current medications was stated in the transcript"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "Multiple typed fields contain fabricated values not present in the transcript. Most critically, pain_severity is recorded as 8.0 when no numeric pain score was ever stated (patient only said 'paining a lot'). Additionally, systolic_murmur_grade of 2 is completely fabricated with no cardiac exam mentioned. Social history fields (smoker, alcohol_use, recreational_drugs) and medication_count are all populated as definitive values despite never being discussed. These hallucinations could mislead clinical decision-making, particularly the fabricated pain score and cardiac finding."
+    }
+  },
+  {
+    "encounter_id": "D2N097",
+    "technique": "constrained_decoding",
+    "structural_failure_type": "unexpected",
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "The system experienced a structural failure and produced no typed field output. Since there are no extracted values to evaluate, there can be no hallucinated or missed field errors. This is a json_parse or pydantic failure that is detected automatically by other evaluation mechanisms. No typed field assessment is possible when structured output is absent.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N097",
+      "technique": "constrained_decoding",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "The system experienced a structural failure and produced no typed field output. Since there are no extracted values to evaluate, there can be no hallucinated or missed field errors. This is a json_parse or pydantic failure that is detected automatically by other evaluation mechanisms. No typed field assessment is possible when structured output is absent."
+    }
+  },
+  {
+    "encounter_id": "D2N098",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+      "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or murmur grade"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The system fabricated two typed field values not present in the transcript. A pain severity of 8.0 was assigned when the patient only described pain qualitatively ('pretty bad at times', 'hurts all the time') without providing a numeric score. More concerning, a systolic_murmur_grade of 2 was recorded despite no mention of cardiac examination or murmur in this orthopedic encounter. These hallucinations could mislead clinicians reviewing the structured data, though they are less severe than fabricated vital signs or allergies.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N098",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+        "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or murmur grade"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The system fabricated two typed field values not present in the transcript. A pain severity of 8.0 was assigned when the patient only described pain qualitatively ('pretty bad at times', 'hurts all the time') without providing a numeric score. More concerning, a systolic_murmur_grade of 2 was recorded despite no mention of cardiac examination or murmur in this orthopedic encounter. These hallucinations could mislead clinicians reviewing the structured data, though they are less severe than fabricated vital signs or allergies."
+    }
+  },
+  {
+    "encounter_id": "D2N099",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "patient_age: 62 \u2014 transcript states date of birth 8/10/2020, making patient approximately 4 years old (encounter appears recent), not 62",
+      "systolic_murmur_grade: 2 \u2014 transcript never mentions a heart murmur or murmur grade",
+      "smoker: False \u2014 patient is an infant/toddler; smoking status is not applicable and was never discussed",
+      "alcohol_use: False \u2014 patient is an infant/toddler; alcohol use is not applicable and was never discussed",
+      "recreational_drugs: False \u2014 patient is an infant/toddler; drug use is not applicable and was never discussed"
+    ],
+    "missed_examples": [
+      "patient_gender: transcript refers to patient as 'he/him' and 'Randy' (male name) throughout but field is null"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "severe",
+    "reasoning": "The extraction contains multiple severe hallucinations. Most critically, patient_age is grossly incorrect (62 vs ~4 years old based on DOB 8/10/2020), which fundamentally misrepresents the patient as a geriatric adult rather than an infant/toddler. The systolic_murmur_grade of 2 is completely fabricated with no mention of cardiac findings in the transcript. Additionally, the system missed the explicitly stated patient gender (male, referenced throughout as 'he'). These errors could lead to catastrophically inappropriate clinical decision-making.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N099",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "patient_age: 62 \u2014 transcript states date of birth 8/10/2020, making patient approximately 4 years old (encounter appears recent), not 62",
+        "systolic_murmur_grade: 2 \u2014 transcript never mentions a heart murmur or murmur grade",
+        "smoker: False \u2014 patient is an infant/toddler; smoking status is not applicable and was never discussed",
+        "alcohol_use: False \u2014 patient is an infant/toddler; alcohol use is not applicable and was never discussed",
+        "recreational_drugs: False \u2014 patient is an infant/toddler; drug use is not applicable and was never discussed"
+      ],
+      "missed_examples": [
+        "patient_gender: transcript refers to patient as 'he/him' and 'Randy' (male name) throughout but field is null"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "severe",
+      "reasoning": "The extraction contains multiple severe hallucinations. Most critically, patient_age is grossly incorrect (62 vs ~4 years old based on DOB 8/10/2020), which fundamentally misrepresents the patient as a geriatric adult rather than an infant/toddler. The systolic_murmur_grade of 2 is completely fabricated with no mention of cardiac findings in the transcript. Additionally, the system missed the explicitly stated patient gender (male, referenced throughout as 'he'). These errors could lead to catastrophically inappropriate clinical decision-making."
+    }
+  },
+  {
+    "encounter_id": "D2N100",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "pain_severity: 0.0 \u2014 transcript never stated a numeric pain score",
+      "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or murmur grade"
+    ],
+    "missed_examples": [
+      "patient_gender: transcript clearly identifies patient as female ('she', 'her', 'Kayla', 'Mrs. Ward' referring to mother) but field is null"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "moderate",
+    "reasoning": "The extraction contains two hallucinated values: a pain severity score of 0.0 when no pain assessment was documented, and a systolic murmur grade of 2 when no cardiac examination or murmur was mentioned in this dermatology visit. Additionally, patient gender was missed despite clear female pronouns and context throughout. The hallucinated murmur grade is particularly concerning as it fabricates a cardiac finding in a routine acne visit, which could lead to unnecessary follow-up or confusion in the medical record.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N100",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "pain_severity: 0.0 \u2014 transcript never stated a numeric pain score",
+        "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or murmur grade"
+      ],
+      "missed_examples": [
+        "patient_gender: transcript clearly identifies patient as female ('she', 'her', 'Kayla', 'Mrs. Ward' referring to mother) but field is null"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "moderate",
+      "reasoning": "The extraction contains two hallucinated values: a pain severity score of 0.0 when no pain assessment was documented, and a systolic murmur grade of 2 when no cardiac examination or murmur was mentioned in this dermatology visit. Additionally, patient gender was missed despite clear female pronouns and context throughout. The hallucinated murmur grade is particularly concerning as it fabricates a cardiac finding in a routine acne visit, which could lead to unnecessary follow-up or confusion in the medical record."
+    }
+  },
+  {
+    "encounter_id": "D2N101",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+      "pain_quality: dull \u2014 transcript never described pain quality as 'dull'",
+      "bp_systolic: 120 \u2014 transcript contains no blood pressure measurement",
+      "bp_diastolic: 77 \u2014 transcript contains no blood pressure measurement",
+      "heart_rate: 70 \u2014 transcript contains no heart rate measurement",
+      "o2_saturation: 99.0 \u2014 transcript contains no oxygen saturation measurement",
+      "respiratory_rate: 12 \u2014 transcript contains no respiratory rate measurement",
+      "temperature_f: 98.1 \u2014 transcript contains no temperature measurement",
+      "hemoglobin_a1c: 7.4 \u2014 transcript contains no hemoglobin A1c value",
+      "systolic_murmur_grade: 2 \u2014 transcript contains no mention of heart murmur",
+      "bsa: 2.65 \u2014 transcript contains no body surface area calculation"
+    ],
+    "missed_examples": [
+      "alcohol_use: transcript says 'I drink a little wine on occasion' but field is False"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "severe",
+    "reasoning": "This extraction contains extensive hallucination of vital signs and lab values that were never mentioned in a breast reduction consultation transcript. The fabricated values include complete vital signs (BP 120/77, HR 70, RR 12, O2 99%, temp 98.1\u00b0F), hemoglobin A1c (7.4), systolic murmur grade (2), BSA (2.65), pain severity (8.0), and pain quality (dull). Additionally, the system incorrectly marked alcohol_use as False when the patient explicitly stated she drinks wine occasionally. These fabricated clinical values could lead to inappropriate medical decision-making and represent severe extraction failures.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N101",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+        "pain_quality: dull \u2014 transcript never described pain quality as 'dull'",
+        "bp_systolic: 120 \u2014 transcript contains no blood pressure measurement",
+        "bp_diastolic: 77 \u2014 transcript contains no blood pressure measurement",
+        "heart_rate: 70 \u2014 transcript contains no heart rate measurement",
+        "o2_saturation: 99.0 \u2014 transcript contains no oxygen saturation measurement",
+        "respiratory_rate: 12 \u2014 transcript contains no respiratory rate measurement",
+        "temperature_f: 98.1 \u2014 transcript contains no temperature measurement",
+        "hemoglobin_a1c: 7.4 \u2014 transcript contains no hemoglobin A1c value",
+        "systolic_murmur_grade: 2 \u2014 transcript contains no mention of heart murmur",
+        "bsa: 2.65 \u2014 transcript contains no body surface area calculation"
+      ],
+      "missed_examples": [
+        "alcohol_use: transcript says 'I drink a little wine on occasion' but field is False"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "severe",
+      "reasoning": "This extraction contains extensive hallucination of vital signs and lab values that were never mentioned in a breast reduction consultation transcript. The fabricated values include complete vital signs (BP 120/77, HR 70, RR 12, O2 99%, temp 98.1\u00b0F), hemoglobin A1c (7.4), systolic murmur grade (2), BSA (2.65), pain severity (8.0), and pain quality (dull). Additionally, the system incorrectly marked alcohol_use as False when the patient explicitly stated she drinks wine occasionally. These fabricated clinical values could lead to inappropriate medical decision-making and represent severe extraction failures."
+    }
+  },
+  {
+    "encounter_id": "D2N102",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "bp_systolic: 120 \u2014 transcript never stated this value",
+      "bp_diastolic: 77 \u2014 transcript never stated this value",
+      "heart_rate: 60 \u2014 transcript never stated this value",
+      "o2_saturation: 99.0 \u2014 transcript never stated this value",
+      "respiratory_rate: 12 \u2014 transcript never stated this value",
+      "temperature_f: 98.1 \u2014 transcript never stated this value",
+      "hemoglobin_a1c: 8.0 \u2014 transcript never stated this value",
+      "blood_glucose: 120.0 \u2014 transcript never stated this value",
+      "systolic_murmur_grade: 1 \u2014 transcript never stated this value",
+      "wound_length_cm: 10.8 \u2014 transcript never stated this value (this is kidney length, not wound)",
+      "wound_width_cm: 5.0 \u2014 transcript never stated this value (this is kidney width, not wound)",
+      "muscle_strength_right: 5 \u2014 transcript never stated this value",
+      "muscle_strength_left: 5 \u2014 transcript never stated this value",
+      "bsa: 2.4 \u2014 transcript never stated this value"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "severe",
+    "reasoning": "The system fabricated numerous vital signs (BP 120/77, HR 60, O2 99%, RR 12, temp 98.1\u00b0F) and lab values (HbA1c 8.0, glucose 120) that were never mentioned in the transcript. It also incorrectly mapped kidney dimensions to wound measurements and added muscle strength grades and BSA values without any basis. These fabricated clinical values could lead to inappropriate clinical decisions and represent dangerous hallucinations in structured data extraction.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N102",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "bp_systolic: 120 \u2014 transcript never stated this value",
+        "bp_diastolic: 77 \u2014 transcript never stated this value",
+        "heart_rate: 60 \u2014 transcript never stated this value",
+        "o2_saturation: 99.0 \u2014 transcript never stated this value",
+        "respiratory_rate: 12 \u2014 transcript never stated this value",
+        "temperature_f: 98.1 \u2014 transcript never stated this value",
+        "hemoglobin_a1c: 8.0 \u2014 transcript never stated this value",
+        "blood_glucose: 120.0 \u2014 transcript never stated this value",
+        "systolic_murmur_grade: 1 \u2014 transcript never stated this value",
+        "wound_length_cm: 10.8 \u2014 transcript never stated this value (this is kidney length, not wound)",
+        "wound_width_cm: 5.0 \u2014 transcript never stated this value (this is kidney width, not wound)",
+        "muscle_strength_right: 5 \u2014 transcript never stated this value",
+        "muscle_strength_left: 5 \u2014 transcript never stated this value",
+        "bsa: 2.4 \u2014 transcript never stated this value"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "severe",
+      "reasoning": "The system fabricated numerous vital signs (BP 120/77, HR 60, O2 99%, RR 12, temp 98.1\u00b0F) and lab values (HbA1c 8.0, glucose 120) that were never mentioned in the transcript. It also incorrectly mapped kidney dimensions to wound measurements and added muscle strength grades and BSA values without any basis. These fabricated clinical values could lead to inappropriate clinical decisions and represent dangerous hallucinations in structured data extraction."
+    }
+  },
+  {
+    "encounter_id": "D2N103",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "pain_severity: 8.0 \u2014 transcript never stated this numeric value",
+      "hemoglobin_a1c: 7.4 \u2014 transcript never stated this value",
+      "systolic_murmur_grade: 2 \u2014 transcript never stated this value"
+    ],
+    "missed_examples": [
+      "patient_gender: transcript clearly identifies patient as female ('Ms. Sanchez', 'she') but field is null",
+      "medication_count: transcript explicitly lists 3 medications (Coumadin 4mg, Lasix 4mg, Atenolol 50mg) but field is null"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "severe",
+    "reasoning": "The extraction contains three fabricated clinical values that were never stated in the transcript: a pain severity score of 8.0, hemoglobin A1c of 7.4, and systolic murmur grade of 2. These hallucinated values are clinically dangerous as they could mislead treatment decisions. Additionally, the system missed explicitly stated information including patient gender (clearly female) and medication count (three medications explicitly named with dosages). The combination of fabricated lab values and vital assessment data with missed basic demographic information represents a severe extraction failure.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N103",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "pain_severity: 8.0 \u2014 transcript never stated this numeric value",
+        "hemoglobin_a1c: 7.4 \u2014 transcript never stated this value",
+        "systolic_murmur_grade: 2 \u2014 transcript never stated this value"
+      ],
+      "missed_examples": [
+        "patient_gender: transcript clearly identifies patient as female ('Ms. Sanchez', 'she') but field is null",
+        "medication_count: transcript explicitly lists 3 medications (Coumadin 4mg, Lasix 4mg, Atenolol 50mg) but field is null"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "severe",
+      "reasoning": "The extraction contains three fabricated clinical values that were never stated in the transcript: a pain severity score of 8.0, hemoglobin A1c of 7.4, and systolic murmur grade of 2. These hallucinated values are clinically dangerous as they could mislead treatment decisions. Additionally, the system missed explicitly stated information including patient gender (clearly female) and medication count (three medications explicitly named with dosages). The combination of fabricated lab values and vital assessment data with missed basic demographic information represents a severe extraction failure."
+    }
+  },
+  {
+    "encounter_id": "D2N104",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "pain_severity: 6.0 \u2014 transcript never stated a numeric pain score",
+      "hemoglobin_a1c: 7.0 \u2014 transcript never mentioned hemoglobin A1c or any lab values",
+      "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or cardiac exam findings",
+      "smoker: False \u2014 smoking status was never discussed in the transcript",
+      "alcohol_use: False \u2014 alcohol use was never discussed in the transcript",
+      "recreational_drugs: False \u2014 recreational drug use was never discussed in the transcript"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "severe",
+    "reasoning": "Multiple fabricated clinical values were inserted into typed fields without any basis in the transcript. Most critically, a pain severity score of 6.0, hemoglobin A1c of 7.0, and systolic murmur grade of 2 were completely invented \u2014 none of these values appear in the encounter. The patient mentioned pain but never quantified it numerically, no lab values were discussed, and no cardiac exam was performed. Additionally, social history fields (smoking, alcohol, drugs) were populated as false when these topics were never addressed. These hallucinations could lead to inappropriate clinical decisions and represent dangerous documentation errors.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N104",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "pain_severity: 6.0 \u2014 transcript never stated a numeric pain score",
+        "hemoglobin_a1c: 7.0 \u2014 transcript never mentioned hemoglobin A1c or any lab values",
+        "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or cardiac exam findings",
+        "smoker: False \u2014 smoking status was never discussed in the transcript",
+        "alcohol_use: False \u2014 alcohol use was never discussed in the transcript",
+        "recreational_drugs: False \u2014 recreational drug use was never discussed in the transcript"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "severe",
+      "reasoning": "Multiple fabricated clinical values were inserted into typed fields without any basis in the transcript. Most critically, a pain severity score of 6.0, hemoglobin A1c of 7.0, and systolic murmur grade of 2 were completely invented \u2014 none of these values appear in the encounter. The patient mentioned pain but never quantified it numerically, no lab values were discussed, and no cardiac exam was performed. Additionally, social history fields (smoking, alcohol, drugs) were populated as false when these topics were never addressed. These hallucinations could lead to inappropriate clinical decisions and represent dangerous documentation errors."
+    }
+  },
+  {
+    "encounter_id": "D2N105",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score for leg pain",
+      "bp_systolic: 120 \u2014 transcript contains no blood pressure measurement",
+      "bp_diastolic: 77 \u2014 transcript contains no blood pressure measurement",
+      "heart_rate: 72 \u2014 transcript contains no heart rate measurement",
+      "o2_saturation: 99.0 \u2014 transcript contains no oxygen saturation measurement",
+      "temperature_f: 98.1 \u2014 transcript contains no temperature measurement",
+      "systolic_murmur_grade: 4 \u2014 transcript never specifies a murmur grade number",
+      "medication_count: 6 \u2014 transcript does not enumerate or count medications"
+    ],
+    "missed_examples": [
+      "patient_gender: transcript clearly identifies patient as female (name 'Diana', pronouns 'she/her' used throughout) but field is null"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "severe",
+    "reasoning": "Multiple critical vital signs (BP 120/77, HR 72, O2 sat 99%, temp 98.1\u00b0F) are completely fabricated with no corresponding values in the transcript. The doctor says 'let's do a quick exam' and 'breathe normally' but never verbalizes any measurements. Additionally, pain_severity of 8.0 is invented when the patient only describes 'severe pains' without numeric rating. The systolic_murmur_grade of 4 and medication_count of 6 are also fabricated. Patient gender is missed despite clear female identification throughout. These hallucinated vital signs could lead to inappropriate clinical decisions.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N105",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score for leg pain",
+        "bp_systolic: 120 \u2014 transcript contains no blood pressure measurement",
+        "bp_diastolic: 77 \u2014 transcript contains no blood pressure measurement",
+        "heart_rate: 72 \u2014 transcript contains no heart rate measurement",
+        "o2_saturation: 99.0 \u2014 transcript contains no oxygen saturation measurement",
+        "temperature_f: 98.1 \u2014 transcript contains no temperature measurement",
+        "systolic_murmur_grade: 4 \u2014 transcript never specifies a murmur grade number",
+        "medication_count: 6 \u2014 transcript does not enumerate or count medications"
+      ],
+      "missed_examples": [
+        "patient_gender: transcript clearly identifies patient as female (name 'Diana', pronouns 'she/her' used throughout) but field is null"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "severe",
+      "reasoning": "Multiple critical vital signs (BP 120/77, HR 72, O2 sat 99%, temp 98.1\u00b0F) are completely fabricated with no corresponding values in the transcript. The doctor says 'let's do a quick exam' and 'breathe normally' but never verbalizes any measurements. Additionally, pain_severity of 8.0 is invented when the patient only describes 'severe pains' without numeric rating. The systolic_murmur_grade of 4 and medication_count of 6 are also fabricated. Patient gender is missed despite clear female identification throughout. These hallucinated vital signs could lead to inappropriate clinical decisions."
+    }
+  },
+  {
+    "encounter_id": "D2N106",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "patient_age: 62 \u2014 transcript never stated patient age",
+      "bp_systolic: 120 \u2014 transcript only says 'vital signs look good', no numeric value given",
+      "bp_diastolic: 77 \u2014 transcript only says 'vital signs look good', no numeric value given",
+      "heart_rate: 72 \u2014 transcript only says 'pulse is okay', no numeric value given",
+      "o2_saturation: 99.0 \u2014 transcript only says 'pulse ox is normal', no numeric value given",
+      "respiratory_rate: 18 \u2014 transcript never stated respiratory rate value",
+      "hemoglobin_a1c: 8.0 \u2014 transcript never mentioned hemoglobin A1c or diabetes testing",
+      "systolic_murmur_grade: 2 \u2014 transcript never mentioned heart murmur or cardiac auscultation findings"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "severe",
+    "reasoning": "Multiple fabricated vital signs and lab values that were never stated in the transcript. The doctor only said qualitative assessments like 'vital signs look good' and 'pulse ox is normal' without providing numeric values. Most critically, hemoglobin A1c of 8.0 and systolic murmur grade 2 are completely fabricated clinical findings with no basis in the transcript. These hallucinated values could lead to inappropriate clinical decisions including unnecessary diabetes management or cardiac workup.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N106",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "patient_age: 62 \u2014 transcript never stated patient age",
+        "bp_systolic: 120 \u2014 transcript only says 'vital signs look good', no numeric value given",
+        "bp_diastolic: 77 \u2014 transcript only says 'vital signs look good', no numeric value given",
+        "heart_rate: 72 \u2014 transcript only says 'pulse is okay', no numeric value given",
+        "o2_saturation: 99.0 \u2014 transcript only says 'pulse ox is normal', no numeric value given",
+        "respiratory_rate: 18 \u2014 transcript never stated respiratory rate value",
+        "hemoglobin_a1c: 8.0 \u2014 transcript never mentioned hemoglobin A1c or diabetes testing",
+        "systolic_murmur_grade: 2 \u2014 transcript never mentioned heart murmur or cardiac auscultation findings"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "severe",
+      "reasoning": "Multiple fabricated vital signs and lab values that were never stated in the transcript. The doctor only said qualitative assessments like 'vital signs look good' and 'pulse ox is normal' without providing numeric values. Most critically, hemoglobin A1c of 8.0 and systolic murmur grade 2 are completely fabricated clinical findings with no basis in the transcript. These hallucinated values could lead to inappropriate clinical decisions including unnecessary diabetes management or cardiac workup."
+    }
+  },
+  {
+    "encounter_id": "D2N107",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+      "pain_quality: sharp \u2014 transcript never described the pain as 'sharp'; patient only mentioned 'tightening up' and 'pins and needles'",
+      "systolic_murmur_grade: 2 \u2014 transcript contains no mention of a heart murmur or cardiac examination"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "severe",
+    "reasoning": "The extraction contains three fabricated values not present in the transcript. Most critically, pain_severity of 8.0 was never stated\u2014the partner mentioned '6 hours' duration but no numeric pain scale was discussed. The pain_quality 'sharp' contradicts the actual description of 'tightening up.' Most concerning is systolic_murmur_grade: 2, which fabricates a cardiac finding from a musculoskeletal encounter with no cardiac examination documented. These hallucinations could lead to inappropriate clinical decisions and documentation fraud.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N107",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+        "pain_quality: sharp \u2014 transcript never described the pain as 'sharp'; patient only mentioned 'tightening up' and 'pins and needles'",
+        "systolic_murmur_grade: 2 \u2014 transcript contains no mention of a heart murmur or cardiac examination"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "severe",
+      "reasoning": "The extraction contains three fabricated values not present in the transcript. Most critically, pain_severity of 8.0 was never stated\u2014the partner mentioned '6 hours' duration but no numeric pain scale was discussed. The pain_quality 'sharp' contradicts the actual description of 'tightening up.' Most concerning is systolic_murmur_grade: 2, which fabricates a cardiac finding from a musculoskeletal encounter with no cardiac examination documented. These hallucinations could lead to inappropriate clinical decisions and documentation fraud."
+    }
+  },
+  {
+    "encounter_id": "D2N108",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "patient_age: 62 \u2014 transcript never stated patient age",
+      "pain_severity: 8.0 \u2014 transcript never stated numeric pain score (patient said 'sometimes it throbs' with no number)",
+      "bp_systolic: 120 \u2014 transcript only said 'vital signs look normal', no specific blood pressure values stated",
+      "bp_diastolic: 77 \u2014 transcript only said 'vital signs look normal', no specific blood pressure values stated",
+      "heart_rate: 80 \u2014 transcript only said 'vital signs look normal', no specific heart rate stated",
+      "o2_saturation: 99.0 \u2014 transcript never stated oxygen saturation value",
+      "respiratory_rate: 12 \u2014 transcript never stated respiratory rate",
+      "temperature_f: 98.1 \u2014 transcript said 'you don't have a fever' but no specific temperature stated",
+      "blood_glucose: 250.0 \u2014 transcript never stated blood glucose value",
+      "systolic_murmur_grade: 2 \u2014 transcript never mentioned heart murmur or cardiac exam",
+      "wound_length_cm: 5.0 \u2014 transcript stated 'one by two inch' wound, not 5.0 cm",
+      "wound_width_cm: 2.0 \u2014 transcript stated 'one by two inch' wound (should be ~2.54 cm and ~5.08 cm if converted)",
+      "kidney_stone_size_mm: 10.0 \u2014 transcript never mentioned kidney stones",
+      "bladder_volume_prevoid_ml: 0.0 \u2014 transcript never mentioned bladder volume",
+      "bladder_volume_postvoid_ml: 0.0 \u2014 transcript never mentioned bladder volume",
+      "muscle_strength_right: 0 \u2014 transcript never assessed muscle strength",
+      "muscle_strength_left: 0 \u2014 transcript never assessed muscle strength",
+      "bsa: 2.0 \u2014 transcript never stated body surface area",
+      "medication_count: 1 \u2014 transcript mentioned PCP prescribed antibiotics (not picked up) and doctor prescribed clindamycin, but no clear count of current medications"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "severe",
+    "reasoning": "Extensive hallucination of clinical values not present in the transcript. Most critically, vital signs (BP 120/77, HR 80, RR 12, temp 98.1, O2 99%) were completely fabricated when transcript only stated 'vital signs look normal'. Pain severity of 8.0 was invented when patient only described 'throbbing' without numeric scale. Multiple irrelevant fields (kidney stones, bladder volumes, muscle strength, cardiac murmur) contain fabricated values for conditions never discussed. The hemoglobin A1c of 10.0 was correctly extracted, but blood glucose 250.0 was hallucinated. This represents dangerous fabrication of clinical data that could mislead downstream care decisions.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N108",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "patient_age: 62 \u2014 transcript never stated patient age",
+        "pain_severity: 8.0 \u2014 transcript never stated numeric pain score (patient said 'sometimes it throbs' with no number)",
+        "bp_systolic: 120 \u2014 transcript only said 'vital signs look normal', no specific blood pressure values stated",
+        "bp_diastolic: 77 \u2014 transcript only said 'vital signs look normal', no specific blood pressure values stated",
+        "heart_rate: 80 \u2014 transcript only said 'vital signs look normal', no specific heart rate stated",
+        "o2_saturation: 99.0 \u2014 transcript never stated oxygen saturation value",
+        "respiratory_rate: 12 \u2014 transcript never stated respiratory rate",
+        "temperature_f: 98.1 \u2014 transcript said 'you don't have a fever' but no specific temperature stated",
+        "blood_glucose: 250.0 \u2014 transcript never stated blood glucose value",
+        "systolic_murmur_grade: 2 \u2014 transcript never mentioned heart murmur or cardiac exam",
+        "wound_length_cm: 5.0 \u2014 transcript stated 'one by two inch' wound, not 5.0 cm",
+        "wound_width_cm: 2.0 \u2014 transcript stated 'one by two inch' wound (should be ~2.54 cm and ~5.08 cm if converted)",
+        "kidney_stone_size_mm: 10.0 \u2014 transcript never mentioned kidney stones",
+        "bladder_volume_prevoid_ml: 0.0 \u2014 transcript never mentioned bladder volume",
+        "bladder_volume_postvoid_ml: 0.0 \u2014 transcript never mentioned bladder volume",
+        "muscle_strength_right: 0 \u2014 transcript never assessed muscle strength",
+        "muscle_strength_left: 0 \u2014 transcript never assessed muscle strength",
+        "bsa: 2.0 \u2014 transcript never stated body surface area",
+        "medication_count: 1 \u2014 transcript mentioned PCP prescribed antibiotics (not picked up) and doctor prescribed clindamycin, but no clear count of current medications"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "severe",
+      "reasoning": "Extensive hallucination of clinical values not present in the transcript. Most critically, vital signs (BP 120/77, HR 80, RR 12, temp 98.1, O2 99%) were completely fabricated when transcript only stated 'vital signs look normal'. Pain severity of 8.0 was invented when patient only described 'throbbing' without numeric scale. Multiple irrelevant fields (kidney stones, bladder volumes, muscle strength, cardiac murmur) contain fabricated values for conditions never discussed. The hemoglobin A1c of 10.0 was correctly extracted, but blood glucose 250.0 was hallucinated. This represents dangerous fabrication of clinical data that could mislead downstream care decisions."
+    }
+  },
+  {
+    "encounter_id": "D2N109",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The system fabricated a pain severity score of 8.0 when no numeric pain rating was ever stated in the transcript. The patient only described the ankle as 'very sore' with 'quite a bit of pain' and difficulty walking, but never provided a 0-10 scale rating. All other typed fields are either accurately extracted (age 36, gender female, symptom duration 2 days, BP 120/70, HbA1c 6.8, murmur grade 2/6) or legitimately null. This hallucinated pain score could affect clinical decision-making regarding pain management intensity.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N109",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The system fabricated a pain severity score of 8.0 when no numeric pain rating was ever stated in the transcript. The patient only described the ankle as 'very sore' with 'quite a bit of pain' and difficulty walking, but never provided a 0-10 scale rating. All other typed fields are either accurately extracted (age 36, gender female, symptom duration 2 days, BP 120/70, HbA1c 6.8, murmur grade 2/6) or legitimately null. This hallucinated pain score could affect clinical decision-making regarding pain management intensity."
+    }
+  },
+  {
+    "encounter_id": "D2N110",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "patient_age: 62 \u2014 transcript never stated patient age",
+      "o2_saturation: 99.0 \u2014 transcript never stated oxygen saturation value",
+      "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or murmur grade"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The extraction contains three hallucinated values not present in the transcript: patient age (62), oxygen saturation (99.0), and systolic murmur grade (2). The murmur grade is particularly concerning as no cardiac murmur was mentioned during the examination. The oxygen saturation, while clinically plausible, was never stated when vitals were reviewed. Patient age was never mentioned in the encounter. All other typed fields appear accurate or legitimately null based on transcript content.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N110",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "patient_age: 62 \u2014 transcript never stated patient age",
+        "o2_saturation: 99.0 \u2014 transcript never stated oxygen saturation value",
+        "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or murmur grade"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The extraction contains three hallucinated values not present in the transcript: patient age (62), oxygen saturation (99.0), and systolic murmur grade (2). The murmur grade is particularly concerning as no cardiac murmur was mentioned during the examination. The oxygen saturation, while clinically plausible, was never stated when vitals were reviewed. Patient age was never mentioned in the encounter. All other typed fields appear accurate or legitimately null based on transcript content."
+    }
+  },
+  {
+    "encounter_id": "D2N111",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "pain_severity: 7.0 \u2014 transcript never stated a numeric pain score",
+      "pain_quality: sharp \u2014 transcript never described pain quality as sharp",
+      "heart_rate: 70 \u2014 transcript never stated a heart rate value",
+      "systolic_murmur_grade: 2 \u2014 doctor explicitly stated 'I don't appreciate any murmur'",
+      "muscle_strength_right: 4 \u2014 transcript never stated numeric muscle strength values",
+      "muscle_strength_left: 4 \u2014 transcript never stated numeric muscle strength values"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "severe",
+    "reasoning": "Multiple critical hallucinations detected. The system fabricated a pain severity score (7.0) and pain quality (sharp) that were never stated. Most concerning is systolic_murmur_grade: 2 when the doctor explicitly said 'I don't appreciate any murmur' \u2014 this directly contradicts the transcript. Heart rate (70) and bilateral muscle strength values (4/4) were also fabricated without any numeric values stated in the encounter. These hallucinations could lead to inappropriate clinical decisions and represent dangerous extraction failures.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N111",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "pain_severity: 7.0 \u2014 transcript never stated a numeric pain score",
+        "pain_quality: sharp \u2014 transcript never described pain quality as sharp",
+        "heart_rate: 70 \u2014 transcript never stated a heart rate value",
+        "systolic_murmur_grade: 2 \u2014 doctor explicitly stated 'I don't appreciate any murmur'",
+        "muscle_strength_right: 4 \u2014 transcript never stated numeric muscle strength values",
+        "muscle_strength_left: 4 \u2014 transcript never stated numeric muscle strength values"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "severe",
+      "reasoning": "Multiple critical hallucinations detected. The system fabricated a pain severity score (7.0) and pain quality (sharp) that were never stated. Most concerning is systolic_murmur_grade: 2 when the doctor explicitly said 'I don't appreciate any murmur' \u2014 this directly contradicts the transcript. Heart rate (70) and bilateral muscle strength values (4/4) were also fabricated without any numeric values stated in the encounter. These hallucinations could lead to inappropriate clinical decisions and represent dangerous extraction failures."
+    }
+  },
+  {
+    "encounter_id": "D2N112",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "bp_systolic: 120 \u2014 transcript never stated this value",
+      "bp_diastolic: 77 \u2014 transcript never stated this value",
+      "heart_rate: 80 \u2014 transcript never stated this value",
+      "o2_saturation: 99.0 \u2014 transcript never stated this value",
+      "respiratory_rate: 12 \u2014 transcript never stated this value",
+      "temperature_f: 98.1 \u2014 transcript never stated this value",
+      "hemoglobin_a1c: 7.4 \u2014 transcript never stated this value",
+      "blood_glucose: 100.0 \u2014 transcript never stated this value",
+      "systolic_murmur_grade: 2 \u2014 transcript never stated this value",
+      "bsa: 1.8 \u2014 transcript never stated this value",
+      "smoker: False \u2014 smoking status never mentioned in transcript",
+      "alcohol_use: False \u2014 alcohol use never mentioned in transcript",
+      "recreational_drugs: False \u2014 recreational drug use never mentioned in transcript"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "severe",
+    "reasoning": "The system fabricated extensive vital signs and laboratory values that were never stated in the transcript. The doctor only said 'your vitals look good' without providing any specific numbers, yet the output contains precise values for blood pressure (120/77), heart rate (80), oxygen saturation (99.0), respiratory rate (12), temperature (98.1), HbA1c (7.4), glucose (100.0), murmur grade (2), and BSA (1.8). Additionally, smoking/substance use fields are marked false when these topics were never discussed. This represents severe hallucination that could lead to dangerous clinical decisions based on fabricated data.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N112",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "bp_systolic: 120 \u2014 transcript never stated this value",
+        "bp_diastolic: 77 \u2014 transcript never stated this value",
+        "heart_rate: 80 \u2014 transcript never stated this value",
+        "o2_saturation: 99.0 \u2014 transcript never stated this value",
+        "respiratory_rate: 12 \u2014 transcript never stated this value",
+        "temperature_f: 98.1 \u2014 transcript never stated this value",
+        "hemoglobin_a1c: 7.4 \u2014 transcript never stated this value",
+        "blood_glucose: 100.0 \u2014 transcript never stated this value",
+        "systolic_murmur_grade: 2 \u2014 transcript never stated this value",
+        "bsa: 1.8 \u2014 transcript never stated this value",
+        "smoker: False \u2014 smoking status never mentioned in transcript",
+        "alcohol_use: False \u2014 alcohol use never mentioned in transcript",
+        "recreational_drugs: False \u2014 recreational drug use never mentioned in transcript"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "severe",
+      "reasoning": "The system fabricated extensive vital signs and laboratory values that were never stated in the transcript. The doctor only said 'your vitals look good' without providing any specific numbers, yet the output contains precise values for blood pressure (120/77), heart rate (80), oxygen saturation (99.0), respiratory rate (12), temperature (98.1), HbA1c (7.4), glucose (100.0), murmur grade (2), and BSA (1.8). Additionally, smoking/substance use fields are marked false when these topics were never discussed. This represents severe hallucination that could lead to dangerous clinical decisions based on fabricated data."
+    }
+  },
+  {
+    "encounter_id": "D2N113",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "patient_age: 62 \u2014 transcript never stated the patient's age",
+      "hemoglobin_a1c: 8.0 \u2014 transcript never mentioned hemoglobin A1c value or any diabetes lab results"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The extraction contains two hallucinated values: patient age (62) and hemoglobin A1c (8.0), neither of which appear in the transcript. The age fabrication is problematic for demographic accuracy, and the A1c fabrication is clinically significant as it suggests diabetes monitoring that was never discussed. The correctly extracted fields (smoker: true, alcohol_use: true, recreational_drugs: true based on past IV drug use, systolic_murmur_grade: 2) are accurate. No clearly stated typed field values were missed.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N113",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "patient_age: 62 \u2014 transcript never stated the patient's age",
+        "hemoglobin_a1c: 8.0 \u2014 transcript never mentioned hemoglobin A1c value or any diabetes lab results"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The extraction contains two hallucinated values: patient age (62) and hemoglobin A1c (8.0), neither of which appear in the transcript. The age fabrication is problematic for demographic accuracy, and the A1c fabrication is clinically significant as it suggests diabetes monitoring that was never discussed. The correctly extracted fields (smoker: true, alcohol_use: true, recreational_drugs: true based on past IV drug use, systolic_murmur_grade: 2) are accurate. No clearly stated typed field values were missed."
+    }
+  },
+  {
+    "encounter_id": "D2N114",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "patient_age: 62 \u2014 transcript never stated the patient's age",
+      "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+      "bp_systolic: 120 \u2014 transcript only said 'vitals look good including your blood pressure' with no specific numbers",
+      "bp_diastolic: 77 \u2014 transcript only said 'vitals look good including your blood pressure' with no specific numbers",
+      "heart_rate: 70 \u2014 transcript never stated a numeric heart rate",
+      "o2_saturation: 99.0 \u2014 transcript never stated oxygen saturation",
+      "respiratory_rate: 12 \u2014 transcript never stated respiratory rate",
+      "temperature_f: 98.1 \u2014 transcript never stated temperature",
+      "hemoglobin_a1c: 7.4 \u2014 transcript never mentioned hemoglobin A1c",
+      "systolic_murmur_grade: 2 \u2014 transcript stated 'no murmurs rubs or gallops', contradicting this value"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "severe",
+    "reasoning": "The extraction contains extensive hallucination of vital signs and lab values that were never stated in the transcript. The doctor only said 'vitals look good including your blood pressure' without providing any specific numbers, yet the system fabricated complete vital signs (BP 120/77, HR 70, O2 99%, RR 12, temp 98.1) and a hemoglobin A1c value. Most critically, it assigned a systolic murmur grade of 2 when the transcript explicitly states 'no murmurs.' These fabricated clinical values could lead to inappropriate clinical decisions and represent severe extraction failures.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N114",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "patient_age: 62 \u2014 transcript never stated the patient's age",
+        "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+        "bp_systolic: 120 \u2014 transcript only said 'vitals look good including your blood pressure' with no specific numbers",
+        "bp_diastolic: 77 \u2014 transcript only said 'vitals look good including your blood pressure' with no specific numbers",
+        "heart_rate: 70 \u2014 transcript never stated a numeric heart rate",
+        "o2_saturation: 99.0 \u2014 transcript never stated oxygen saturation",
+        "respiratory_rate: 12 \u2014 transcript never stated respiratory rate",
+        "temperature_f: 98.1 \u2014 transcript never stated temperature",
+        "hemoglobin_a1c: 7.4 \u2014 transcript never mentioned hemoglobin A1c",
+        "systolic_murmur_grade: 2 \u2014 transcript stated 'no murmurs rubs or gallops', contradicting this value"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "severe",
+      "reasoning": "The extraction contains extensive hallucination of vital signs and lab values that were never stated in the transcript. The doctor only said 'vitals look good including your blood pressure' without providing any specific numbers, yet the system fabricated complete vital signs (BP 120/77, HR 70, O2 99%, RR 12, temp 98.1) and a hemoglobin A1c value. Most critically, it assigned a systolic murmur grade of 2 when the transcript explicitly states 'no murmurs.' These fabricated clinical values could lead to inappropriate clinical decisions and represent severe extraction failures."
+    }
+  },
+  {
+    "encounter_id": "D2N115",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "bp_systolic: 120 \u2014 transcript never stated this value",
+      "bp_diastolic: 77 \u2014 transcript never stated this value",
+      "heart_rate: 72 \u2014 transcript never stated this value",
+      "o2_saturation: 99.0 \u2014 transcript never stated this value",
+      "respiratory_rate: 12 \u2014 transcript never stated this value",
+      "temperature_f: 98.6 \u2014 transcript never stated this value",
+      "systolic_murmur_grade: 2 \u2014 transcript never stated this value"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "severe",
+    "reasoning": "The system fabricated a complete set of vital signs (blood pressure 120/77, heart rate 72, O2 sat 99%, respiratory rate 12, temperature 98.6\u00b0F) and a cardiac finding (systolic murmur grade 2) that were never mentioned in the transcript. The doctor performed only a focused neck examination with no vital signs documented and no cardiac auscultation described. These hallucinated values could mislead clinicians into believing a comprehensive physical examination was performed when it was not, potentially affecting clinical decision-making and continuity of care.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N115",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "bp_systolic: 120 \u2014 transcript never stated this value",
+        "bp_diastolic: 77 \u2014 transcript never stated this value",
+        "heart_rate: 72 \u2014 transcript never stated this value",
+        "o2_saturation: 99.0 \u2014 transcript never stated this value",
+        "respiratory_rate: 12 \u2014 transcript never stated this value",
+        "temperature_f: 98.6 \u2014 transcript never stated this value",
+        "systolic_murmur_grade: 2 \u2014 transcript never stated this value"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "severe",
+      "reasoning": "The system fabricated a complete set of vital signs (blood pressure 120/77, heart rate 72, O2 sat 99%, respiratory rate 12, temperature 98.6\u00b0F) and a cardiac finding (systolic murmur grade 2) that were never mentioned in the transcript. The doctor performed only a focused neck examination with no vital signs documented and no cardiac auscultation described. These hallucinated values could mislead clinicians into believing a comprehensive physical examination was performed when it was not, potentially affecting clinical decision-making and continuity of care."
+    }
+  },
+  {
+    "encounter_id": "D2N116",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "patient_age: 62 \u2014 transcript never stated the patient's age",
+      "pain_severity: 7.0 \u2014 transcript never stated a numeric pain score",
+      "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or murmur grade",
+      "medication_count: 2 \u2014 transcript only mentions Advil (1 medication), not 2"
+    ],
+    "missed_examples": [
+      "patient_gender: transcript indicates male patient ('Bobby', 'he', 'his wife') but field is null"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "severe",
+    "reasoning": "Multiple severe hallucinations present clinically dangerous fabricated data. The system invented a patient age (62), a numeric pain severity score (7.0), and a cardiac finding (systolic murmur grade 2) that were never mentioned in the transcript. The medication count is also incorrect. Additionally, the patient's gender was clearly indicated but missed. These fabricated values, particularly the cardiac murmur and pain score, could lead to inappropriate clinical decision-making and represent the most dangerous type of extraction failure.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N116",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "patient_age: 62 \u2014 transcript never stated the patient's age",
+        "pain_severity: 7.0 \u2014 transcript never stated a numeric pain score",
+        "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or murmur grade",
+        "medication_count: 2 \u2014 transcript only mentions Advil (1 medication), not 2"
+      ],
+      "missed_examples": [
+        "patient_gender: transcript indicates male patient ('Bobby', 'he', 'his wife') but field is null"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "severe",
+      "reasoning": "Multiple severe hallucinations present clinically dangerous fabricated data. The system invented a patient age (62), a numeric pain severity score (7.0), and a cardiac finding (systolic murmur grade 2) that were never mentioned in the transcript. The medication count is also incorrect. Additionally, the patient's gender was clearly indicated but missed. These fabricated values, particularly the cardiac murmur and pain score, could lead to inappropriate clinical decision-making and represent the most dangerous type of extraction failure."
+    }
+  },
+  {
+    "encounter_id": "D2N117",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": true,
+    "hallucinated_examples": [],
+    "missed_examples": [
+      "patient_age: transcript says '45-year-old male' but field is null",
+      "patient_gender: transcript says 'male' but field is null",
+      "symptom_duration: transcript says 'for the last three weeks or so' but field is null",
+      "pain_severity: transcript says '8 when using it' and '3 when resting' but field is null",
+      "pain_quality: transcript says 'shooting stabbing very sharp' but field is null",
+      "pain_location: transcript says 'outside part' (lateral elbow) but field is null",
+      "systolic_murmur_grade: transcript says 'grade three out of six systolic ejection murmur' but field is null"
+    ],
+    "overall_failure_type": "missed",
+    "severity": "moderate",
+    "reasoning": "The extraction system failed to capture multiple explicitly stated typed values from the transcript. Critical clinical data points including patient demographics (45-year-old male), pain characteristics (severity 8/10 active, 3/10 rest; shooting/stabbing quality; lateral location), symptom duration (3 weeks), and a significant physical exam finding (grade 3/6 systolic murmur) were all clearly stated but not extracted. These omissions represent moderate clinical impact as they include key diagnostic information for lateral epicondylitis and important cardiovascular monitoring data.",
+    "taxonomy_label": "missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N117",
+      "technique": "constrained_decoding",
+      "hallucinated": false,
+      "missed": true,
+      "hallucinated_examples": [],
+      "missed_examples": [
+        "patient_age: transcript says '45-year-old male' but field is null",
+        "patient_gender: transcript says 'male' but field is null",
+        "symptom_duration: transcript says 'for the last three weeks or so' but field is null",
+        "pain_severity: transcript says '8 when using it' and '3 when resting' but field is null",
+        "pain_quality: transcript says 'shooting stabbing very sharp' but field is null",
+        "pain_location: transcript says 'outside part' (lateral elbow) but field is null",
+        "systolic_murmur_grade: transcript says 'grade three out of six systolic ejection murmur' but field is null"
+      ],
+      "overall_failure_type": "missed",
+      "severity": "moderate",
+      "reasoning": "The extraction system failed to capture multiple explicitly stated typed values from the transcript. Critical clinical data points including patient demographics (45-year-old male), pain characteristics (severity 8/10 active, 3/10 rest; shooting/stabbing quality; lateral location), symptom duration (3 weeks), and a significant physical exam finding (grade 3/6 systolic murmur) were all clearly stated but not extracted. These omissions represent moderate clinical impact as they include key diagnostic information for lateral epicondylitis and important cardiovascular monitoring data."
+    }
+  },
+  {
+    "encounter_id": "D2N118",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "smoker: False \u2014 transcript never stated whether patient smokes or not",
+      "alcohol_use: False \u2014 transcript never stated whether patient uses alcohol",
+      "recreational_drugs: False \u2014 transcript never stated whether patient uses recreational drugs"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "minor",
+    "reasoning": "The extraction contains three hallucinated boolean fields (smoker, alcohol_use, recreational_drugs) all set to False when these topics were never discussed in the transcript. While these are fabricated values, they represent negative findings that are less likely to cause immediate clinical harm compared to fabricated positive findings or vital signs. All explicitly stated values (BP 150/90, A1C 6.7, systolic murmur grade 2, medication count 2) were correctly extracted. No values that were explicitly stated in the transcript were missed.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N118",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "smoker: False \u2014 transcript never stated whether patient smokes or not",
+        "alcohol_use: False \u2014 transcript never stated whether patient uses alcohol",
+        "recreational_drugs: False \u2014 transcript never stated whether patient uses recreational drugs"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "minor",
+      "reasoning": "The extraction contains three hallucinated boolean fields (smoker, alcohol_use, recreational_drugs) all set to False when these topics were never discussed in the transcript. While these are fabricated values, they represent negative findings that are less likely to cause immediate clinical harm compared to fabricated positive findings or vital signs. All explicitly stated values (BP 150/90, A1C 6.7, systolic murmur grade 2, medication count 2) were correctly extracted. No values that were explicitly stated in the transcript were missed."
+    }
+  },
+  {
+    "encounter_id": "D2N119",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All extracted typed fields are accurate and grounded in the transcript. Vital signs (BP 128/82, RR 16, O2 sat 99%) match the doctor's explicit statements. Smoking and recreational drug use are correctly captured as false based on the patient's clear denial. Fields left null (age, gender, symptom duration, etc.) are appropriate as these values were either not explicitly stated or not applicable to this asthma-focused encounter.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N119",
+      "technique": "constrained_decoding",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All extracted typed fields are accurate and grounded in the transcript. Vital signs (BP 128/82, RR 16, O2 sat 99%) match the doctor's explicit statements. Smoking and recreational drug use are correctly captured as false based on the patient's clear denial. Fields left null (age, gender, symptom duration, etc.) are appropriate as these values were either not explicitly stated or not applicable to this asthma-focused encounter."
+    }
+  },
+  {
+    "encounter_id": "D2N120",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+      "muscle_strength_right: 4 \u2014 transcript never stated a numeric muscle strength grade",
+      "muscle_strength_left: 4 \u2014 transcript never stated a numeric muscle strength grade"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The system fabricated three numeric clinical values that were never stated in the transcript. The pain_severity of 8.0 is particularly problematic as pain scores are critical for treatment decisions and documentation, yet no numeric scale was mentioned. The bilateral muscle_strength grades of 4 were also invented \u2014 the doctor only asked about weakness and the patient denied it, with no formal strength grading performed. These hallucinations could mislead subsequent providers about the patient's clinical presentation.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N120",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+        "muscle_strength_right: 4 \u2014 transcript never stated a numeric muscle strength grade",
+        "muscle_strength_left: 4 \u2014 transcript never stated a numeric muscle strength grade"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The system fabricated three numeric clinical values that were never stated in the transcript. The pain_severity of 8.0 is particularly problematic as pain scores are critical for treatment decisions and documentation, yet no numeric scale was mentioned. The bilateral muscle_strength grades of 4 were also invented \u2014 the doctor only asked about weakness and the patient denied it, with no formal strength grading performed. These hallucinations could mislead subsequent providers about the patient's clinical presentation."
+    }
+  },
+  {
+    "encounter_id": "D2N121",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "patient_age: 62 \u2014 transcript never stated the patient's age",
+      "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+      "pain_quality: aching \u2014 transcript never described pain quality as 'aching'",
+      "hemoglobin_a1c: 8.0 \u2014 transcript never mentioned hemoglobin A1c value",
+      "systolic_murmur_grade: 2 \u2014 transcript stated 'I don't appreciate any murmur', indicating no murmur present"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "severe",
+    "reasoning": "Multiple critical hallucinations are present in the typed fields. The system fabricated a hemoglobin A1c value (8.0) that was never mentioned, invented a pain severity score (8.0) when no numeric rating was given, and most concerning, assigned a systolic murmur grade of 2 when the doctor explicitly stated no murmur was appreciated. The bp_systolic value of 125 appears to reflect the home reading mentioned by the patient rather than the office reading of 120, though both were stated. These fabricated clinical values could lead to inappropriate treatment decisions and represent dangerous extraction failures.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N121",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "patient_age: 62 \u2014 transcript never stated the patient's age",
+        "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+        "pain_quality: aching \u2014 transcript never described pain quality as 'aching'",
+        "hemoglobin_a1c: 8.0 \u2014 transcript never mentioned hemoglobin A1c value",
+        "systolic_murmur_grade: 2 \u2014 transcript stated 'I don't appreciate any murmur', indicating no murmur present"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "severe",
+      "reasoning": "Multiple critical hallucinations are present in the typed fields. The system fabricated a hemoglobin A1c value (8.0) that was never mentioned, invented a pain severity score (8.0) when no numeric rating was given, and most concerning, assigned a systolic murmur grade of 2 when the doctor explicitly stated no murmur was appreciated. The bp_systolic value of 125 appears to reflect the home reading mentioned by the patient rather than the office reading of 120, though both were stated. These fabricated clinical values could lead to inappropriate treatment decisions and represent dangerous extraction failures."
+    }
+  },
+  {
+    "encounter_id": "D2N122",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "patient_age: 62 \u2014 transcript never stated this value",
+      "pain_severity: 0.0 \u2014 transcript never stated a numeric pain score",
+      "systolic_murmur_grade: 2 \u2014 transcript explicitly states 'no clicks rubs or murmurs', contradicting any murmur grade"
+    ],
+    "missed_examples": [
+      "patient_gender: transcript says 'hey kyle' (male name) and uses 'he' pronouns but field is null",
+      "temperature_f: transcript says 'you are afebrile' (indicating temperature was measured and normal) but field is null"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "severe",
+    "reasoning": "Multiple critical hallucinations detected. The systolic_murmur_grade of 2 directly contradicts the transcript stating 'no clicks rubs or murmurs', which is a dangerous fabrication. Patient age 62 is completely absent from the transcript. Pain severity 0.0 was never explicitly stated as a numeric value. Additionally, patient gender (male, evident from name 'Kyle') was missed despite being clearly stated. These errors could lead to incorrect clinical decision-making and documentation.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N122",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "patient_age: 62 \u2014 transcript never stated this value",
+        "pain_severity: 0.0 \u2014 transcript never stated a numeric pain score",
+        "systolic_murmur_grade: 2 \u2014 transcript explicitly states 'no clicks rubs or murmurs', contradicting any murmur grade"
+      ],
+      "missed_examples": [
+        "patient_gender: transcript says 'hey kyle' (male name) and uses 'he' pronouns but field is null",
+        "temperature_f: transcript says 'you are afebrile' (indicating temperature was measured and normal) but field is null"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "severe",
+      "reasoning": "Multiple critical hallucinations detected. The systolic_murmur_grade of 2 directly contradicts the transcript stating 'no clicks rubs or murmurs', which is a dangerous fabrication. Patient age 62 is completely absent from the transcript. Pain severity 0.0 was never explicitly stated as a numeric value. Additionally, patient gender (male, evident from name 'Kyle') was missed despite being clearly stated. These errors could lead to incorrect clinical decision-making and documentation."
+    }
+  },
+  {
+    "encounter_id": "D2N123",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "systolic_murmur_grade: 2 \u2014 transcript states 'heart exam is normal no murmurs' which directly contradicts any murmur grade",
+      "smoker: False \u2014 smoking status was never mentioned in the transcript",
+      "recreational_drugs: False \u2014 recreational drug use was never mentioned in the transcript"
+    ],
+    "missed_examples": [
+      "symptom_duration: transcript says 'over the last you know four to five weeks' but field is null",
+      "medication_count: transcript mentions metformin and norvasc (2 medications) but field shows 1"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "moderate",
+    "reasoning": "The extraction contains a clinically significant hallucination: systolic_murmur_grade is set to 2 when the doctor explicitly stated 'no murmurs', which directly contradicts the transcript. Additionally, boolean fields for smoker and recreational_drugs are set to False when these topics were never discussed, representing fabricated data. The system also missed the explicitly stated symptom duration of 4-5 weeks and miscounted medications (2 mentioned, only 1 recorded). The murmur hallucination is particularly concerning as it introduces false cardiac findings into the medical record.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N123",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "systolic_murmur_grade: 2 \u2014 transcript states 'heart exam is normal no murmurs' which directly contradicts any murmur grade",
+        "smoker: False \u2014 smoking status was never mentioned in the transcript",
+        "recreational_drugs: False \u2014 recreational drug use was never mentioned in the transcript"
+      ],
+      "missed_examples": [
+        "symptom_duration: transcript says 'over the last you know four to five weeks' but field is null",
+        "medication_count: transcript mentions metformin and norvasc (2 medications) but field shows 1"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "moderate",
+      "reasoning": "The extraction contains a clinically significant hallucination: systolic_murmur_grade is set to 2 when the doctor explicitly stated 'no murmurs', which directly contradicts the transcript. Additionally, boolean fields for smoker and recreational_drugs are set to False when these topics were never discussed, representing fabricated data. The system also missed the explicitly stated symptom duration of 4-5 weeks and miscounted medications (2 mentioned, only 1 recorded). The murmur hallucination is particularly concerning as it introduces false cardiac findings into the medical record."
+    }
+  },
+  {
+    "encounter_id": "D2N124",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+      "pain_quality: aching \u2014 transcript never described pain quality as 'aching'",
+      "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or murmur grade"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The extraction contains three hallucinated typed field values. The patient never provided a numeric pain severity score (8.0 was fabricated), never described the pain quality as 'aching', and most concerning, a systolic murmur grade of 2 was completely fabricated for a musculoskeletal encounter with no cardiac examination. While the murmur hallucination is clinically irrelevant to this ankle injury case, fabricating clinical values that were never stated represents a moderate extraction quality failure that could mislead downstream clinical decision-making.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N124",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "pain_severity: 8.0 \u2014 transcript never stated a numeric pain score",
+        "pain_quality: aching \u2014 transcript never described pain quality as 'aching'",
+        "systolic_murmur_grade: 2 \u2014 transcript never mentioned a heart murmur or murmur grade"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The extraction contains three hallucinated typed field values. The patient never provided a numeric pain severity score (8.0 was fabricated), never described the pain quality as 'aching', and most concerning, a systolic murmur grade of 2 was completely fabricated for a musculoskeletal encounter with no cardiac examination. While the murmur hallucination is clinically irrelevant to this ankle injury case, fabricating clinical values that were never stated represents a moderate extraction quality failure that could mislead downstream clinical decision-making."
+    }
+  },
+  {
+    "encounter_id": "D2N125",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "smoker: False \u2014 transcript never stated whether patient smokes or not",
+      "alcohol_use: False \u2014 transcript never stated whether patient uses alcohol",
+      "recreational_drugs: False \u2014 transcript never stated whether patient uses recreational drugs",
+      "medication_count: 2 \u2014 transcript does not provide a count of current medications; only mentions ibuprofen/motrin and tylenol as tried remedies, and tegretol/gabapentin as proposed treatments"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "minor",
+    "reasoning": "The extraction contains four hallucinated typed fields where boolean values (False) or numeric values (2) were assigned despite these topics never being discussed in the transcript. The smoker, alcohol_use, and recreational_drugs fields should be null rather than False, as the absence of discussion does not equal explicit denial. The medication_count of 2 appears to be an inference rather than an explicit statement. However, these hallucinations are relatively low-risk as they involve social history items that were not clinically relevant to this neurosurgical consultation for facial pain, and the core clinical fields (age, gender, pain characteristics) were accurately extracted.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N125",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "smoker: False \u2014 transcript never stated whether patient smokes or not",
+        "alcohol_use: False \u2014 transcript never stated whether patient uses alcohol",
+        "recreational_drugs: False \u2014 transcript never stated whether patient uses recreational drugs",
+        "medication_count: 2 \u2014 transcript does not provide a count of current medications; only mentions ibuprofen/motrin and tylenol as tried remedies, and tegretol/gabapentin as proposed treatments"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "minor",
+      "reasoning": "The extraction contains four hallucinated typed fields where boolean values (False) or numeric values (2) were assigned despite these topics never being discussed in the transcript. The smoker, alcohol_use, and recreational_drugs fields should be null rather than False, as the absence of discussion does not equal explicit denial. The medication_count of 2 appears to be an inference rather than an explicit statement. However, these hallucinations are relatively low-risk as they involve social history items that were not clinically relevant to this neurosurgical consultation for facial pain, and the core clinical fields (age, gender, pain characteristics) were accurately extracted."
+    }
+  },
+  {
+    "encounter_id": "D2N126",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "bp_systolic: 120 \u2014 transcript never stated this value",
+      "heart_rate: 80 \u2014 transcript never stated this value",
+      "o2_saturation: 98.0 \u2014 transcript never stated this value",
+      "respiratory_rate: 20 \u2014 transcript never stated this value",
+      "temperature_f: 98.1 \u2014 transcript never stated this value",
+      "hemoglobin_a1c: 8.0 \u2014 transcript never stated this value",
+      "blood_glucose: 90.0 \u2014 transcript never stated this value",
+      "systolic_murmur_grade: 2 \u2014 transcript states 'I don't appreciate any murmur', indicating no murmur present",
+      "muscle_strength_right: 0 \u2014 transcript never stated this value",
+      "muscle_strength_left: 0 \u2014 transcript never stated this value",
+      "bsa: 1.8 \u2014 transcript never stated this value",
+      "medication_count: 1 \u2014 transcript never stated this value"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "severe",
+    "reasoning": "The system fabricated numerous vital signs and laboratory values that were never mentioned in the transcript, including blood pressure, heart rate, oxygen saturation, respiratory rate, temperature, hemoglobin A1c, and blood glucose. Most critically, it assigned a systolic murmur grade of 2 when the doctor explicitly stated no murmur was appreciated. It also fabricated muscle strength scores, BSA, and medication count. These hallucinated clinical values could lead to inappropriate clinical decisions and represent a severe patient safety risk.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N126",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "bp_systolic: 120 \u2014 transcript never stated this value",
+        "heart_rate: 80 \u2014 transcript never stated this value",
+        "o2_saturation: 98.0 \u2014 transcript never stated this value",
+        "respiratory_rate: 20 \u2014 transcript never stated this value",
+        "temperature_f: 98.1 \u2014 transcript never stated this value",
+        "hemoglobin_a1c: 8.0 \u2014 transcript never stated this value",
+        "blood_glucose: 90.0 \u2014 transcript never stated this value",
+        "systolic_murmur_grade: 2 \u2014 transcript states 'I don't appreciate any murmur', indicating no murmur present",
+        "muscle_strength_right: 0 \u2014 transcript never stated this value",
+        "muscle_strength_left: 0 \u2014 transcript never stated this value",
+        "bsa: 1.8 \u2014 transcript never stated this value",
+        "medication_count: 1 \u2014 transcript never stated this value"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "severe",
+      "reasoning": "The system fabricated numerous vital signs and laboratory values that were never mentioned in the transcript, including blood pressure, heart rate, oxygen saturation, respiratory rate, temperature, hemoglobin A1c, and blood glucose. Most critically, it assigned a systolic murmur grade of 2 when the doctor explicitly stated no murmur was appreciated. It also fabricated muscle strength scores, BSA, and medication count. These hallucinated clinical values could lead to inappropriate clinical decisions and represent a severe patient safety risk."
+    }
+  },
+  {
+    "encounter_id": "D2N127",
+    "technique": "constrained_decoding",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "pain_severity: 10.0 \u2014 transcript states patient said 'twelve' when asked to rate pain on 1-10 scale, not 10",
+      "systolic_murmur_grade: 2 \u2014 transcript never mentions a heart murmur or cardiac auscultation findings",
+      "smoker: False \u2014 smoking status was never discussed in the transcript",
+      "alcohol_use: False \u2014 alcohol use was never discussed in the transcript",
+      "recreational_drugs: False \u2014 recreational drug use was never discussed in the transcript"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "severe",
+    "reasoning": "Multiple hallucinated values present serious clinical risks. The pain_severity was incorrectly recorded as 10.0 when the patient explicitly stated 'twelve', which could affect pain management decisions. Most critically, systolic_murmur_grade: 2 is completely fabricated\u2014no cardiac examination or murmur was mentioned in this encounter focused on neck pain. The false negative values for smoking, alcohol, and drug use are also problematic as these were never assessed, yet the system confidently recorded them as 'False' rather than null.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N127",
+      "technique": "constrained_decoding",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "pain_severity: 10.0 \u2014 transcript states patient said 'twelve' when asked to rate pain on 1-10 scale, not 10",
+        "systolic_murmur_grade: 2 \u2014 transcript never mentions a heart murmur or cardiac auscultation findings",
+        "smoker: False \u2014 smoking status was never discussed in the transcript",
+        "alcohol_use: False \u2014 alcohol use was never discussed in the transcript",
+        "recreational_drugs: False \u2014 recreational drug use was never discussed in the transcript"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "severe",
+      "reasoning": "Multiple hallucinated values present serious clinical risks. The pain_severity was incorrectly recorded as 10.0 when the patient explicitly stated 'twelve', which could affect pain management decisions. Most critically, systolic_murmur_grade: 2 is completely fabricated\u2014no cardiac examination or murmur was mentioned in this encounter focused on neck pain. The false negative values for smoking, alcohol, and drug use are also problematic as these were never assessed, yet the system confidently recorded them as 'False' rather than null."
+    }
+  }
+]

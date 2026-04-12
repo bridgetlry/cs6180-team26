@@ -150,19 +150,19 @@ Upper respiratory infection
 
 HISTORY OF PRESENT ILLNESS
 
-The patient, Andrew, is a 59-year-old male with a past medical history of depression, type two diabetes, and hypertension. He presents with an upper respiratory infection, which started with fatigue, shortness of breath, and a cough. He has been experiencing joint pain and muscle aches, particularly in his elbows and knees. He has not had any recent exposure to COVID-19 and has received both COVID-19 vaccines. He has been monitoring his blood sugar levels and blood pressure at home, but has not been consistent with his monitoring on weekends.
+59-year-old male with past medical history of depression, type two diabetes, and hypertension, presents with upper respiratory infection. He was feeling tired and short of breath after lifting heavy bags of soil, and thinks he caught a cold. He has had both COVID vaccines and has no history of seasonal allergies. He reports shortness of breath when lifting or carrying something, and feels like he's going to cough up something. He has a little bit of fever, but thinks it's from exertion. He has elbow pain and knee pain, but thinks it's from lifting. He's been doing well with his depression, using barre classes to relax. He's monitoring his sugar levels during the week, but not on weekends. He's taking his medication for high blood pressure.
 
 PHYSICAL EXAM
 
-The patient's vital signs are within normal limits. The doctor performs a physical exam and finds scattered ronchi bilaterally on the lung exam, which clears with cough. The patient has some edema of the lower extremities and pain to palpation of the elbows bilaterally.
+Scattered ronchi bilaterally on lung exam, clears with cough. Edema of lower extremities, pain to palpation of elbows bilaterally.
 
 RESULTS
 
-The patient's chest x-ray shows no airspace disease or pneumonia. His hemoglobin A1c is elevated at 8, and the doctor would like to see it around 6 or 7. The patient's diabetic labs are reviewed, and the doctor notes that the patient's blood sugar levels have not been elevated since the episode of illness.
+Chest x-ray shows no airspace disease, no pneumonia. Hemoglobin A1c is 8.0. Diabetic labs show elevated hemoglobin A1c.
 
 ASSESSMENT AND PLAN
 
-The patient has a viral syndrome, likely an upper respiratory infection. The doctor orders a COVID test to rule out COVID-19. The patient's diabetes is managed with metformin, and his blood pressure is controlled with lisinopril. The doctor also orders a lipid panel and a hemoglobin A1c test in four months. The patient is prescribed robitussin for his cough and ibuprofen or tylenol for any fever. The patient is to follow up with the doctor in four months.",D2N088
+Viral syndrome, will send COVID test to rule out COVID. Will give Rohtussin for cough and Tylenol/Ibuprofen for fever. Will increase metformin to 1000mg twice daily for type 2 diabetes. Will get another hemoglobin A1c in 4 months. Will continue on lisinopril 20mg daily for high blood pressure. Will order lipid panel. Will see patient again in 4 months.",D2N088
 "[doctor] hi andrea , how are you ?
 [patient] i'm doing well . how are you ?
 [doctor] doing well . uh , so i know the nurse told you about dax . i'd like to tell dax a little bit about you . okay ?
@@ -260,23 +260,23 @@ GERD.
 
 Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.","CHIEF COMPLAINT
 
-Annual exam, follow-up on rheumatoid arthritis, atrial fibrillation, and reflux
+Annual exam
 
 HISTORY OF PRESENT ILLNESS
 
-Patient reports doing well, no joint pain or stiffness, no issues with methotrexate, still experiencing palpitations with stress, reflux symptoms improved with dietary modifications and protonix
+Doing well. No issues with arthritis or pain. Been walking, exercising, and doing yoga.
 
 PHYSICAL EXAM
 
-Heart rate controlled, regular rhythm, lungs clear, 2/6 systolic ejection murmur, edema and erythema on right elbow with pain to palpation
+Everything looks good on physical examination. A slight 2/6 systolic ejection murmur.
 
 RESULTS
 
-Event monitor shows conversion pause, autoimmune panel shows well-controlled rheumatoid arthritis
+Event monitor: conversion pause. Autoimmune panel: everything good.
 
 ASSESSMENT AND PLAN
 
-Continue methotrexate 2.5 mg weekly, refer to cardiology for cardiac ablation, continue protonix 40 mg daily and dietary modifications",D2N089
+Continue methotrexate for rheumatoid arthritis. Referral to cardiology for cardiac ablation for atrial fibrillation. Continue protonix for reflux.",D2N089
 "[doctor] hi , albert . how are you ?
 [patient] hey , good to see you .
 [doctor] it's good to see you too . so , i know the nurse told you about dax . i'd like to tell dax a little bit about you .
@@ -418,23 +418,23 @@ Status post renal transplant.
 
 Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.","CHIEF COMPLAINT
 
-Hyperglycemia, depression, kidney transplant follow-up
+Hyperglycemia
 
 HISTORY OF PRESENT ILLNESS
 
-Patient, Albert, 62-year-old male, with past medical history of depression, type 2 diabetes, and kidney transplant. He was in the emergency room for hyperglycemia, but was not admitted. He attributes his high blood sugar to not monitoring his diet during a recent hospital visit to see his mother. He has been following his diet since then. He is taking immunotherapy meds for his kidney transplant and has been diligent about following doctor's orders. He has been experiencing depression for about a year and a half, but has been managing it with meditation. He does not want to revisit medical therapy for his depression.
+Patient has not been monitoring blood sugar readings, leading to elevated readings. Stated that blood sugar increased to 162 before the visit, with no pre-meal reading available. Measures have been taken to follow a diet, but consistency is lacking.
 
 PHYSICAL EXAM
 
-Vital signs: pulse ox great, blood pressure and heart rate normal. Physical exam: no carotid bruits, heart exam shows a slight 2/6 systolic ejection murmur, lungs sound clear, 1+ edema in lower extremities.
+No distress noted, pulse ox, blood pressure, and heart rate are all within normal limits. 1+ edema in lower extremities noted.
 
 RESULTS
 
-Blood sugar: 162, hemoglobin A1c: 8
+Hemoglobin A1c: 8, Blood Sugar: 162
 
 ASSESSMENT AND PLAN
 
-For hyperglycemia: increase Lantus to 20 units at night, monitor blood sugar and adjust as needed. For depression: hold off on medication or therapy, continue meditation. For kidney transplant: stable kidney function, refer back to Dr. Reyes for immunosuppression medication management.",D2N090
+Hyperglycemia: Increase Lantus to 20 units at night, Continue monitoring blood sugar, and obtain another HbA1c in 2 months. Depression: Continue meditation and monitor for changes, and handle as needed. Kidney Transplant: Manage immunosuppression with Dr. Reyes.",D2N090
 "[doctor] hi jerry , how are you doing ?
 [patient] hi , good to see you .
 [doctor] good to see you as well . um , so i know that the nurse told you about dax . i'd like to tell dax about you .
@@ -533,23 +533,23 @@ Right knee arthritis.
 
 Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.","CHIEF COMPLAINT
 
-Insomnia, stress from traveling, adjusting to new environment
+annual exam
 
 HISTORY OF PRESENT ILLNESS
 
-Patient is a 54-year-old male with a past medical history of osteoporosis and multiple sclerosis. He presents for an annual exam. He has been experiencing insomnia and stress from traveling. He has tried various strategies to manage his insomnia, including melatonin, meditation, and stretching, but has not found relief. He has not had any issues with his joints or broken bones recently. He has been taking fosamax for osteoporosis and has not had any issues with the medication. He has been seeing a neurologist for multiple sclerosis and has not had any issues with the medication. He has a lingering issue with his right knee from a previous surgery, but it has been improving.
+traveled all over the country, stressed summer, adjusting to everything in the fall, lack of sleep, tried everything from melatonin to meditation to t-stretching out every morning, no help
 
 PHYSICAL EXAM
 
-Vital signs are good. Lungs are clear. Heart sounds good. Patient has weakness in lower extremities, with a 4/5 strength in the right leg and 3/5 strength in the left leg. Reflexes are good. Patient has arthritic changes in the right knee.
+weakness of lower extremities, right is 4/5, left is 3/5, arthritic changes of the right knee, lungs are nice and clear, heart sounds good
 
 RESULTS
 
-X-ray of the right knee shows changes from arthritis, but otherwise looks good.
+x-ray of right knee shows changes from arthritis
 
 ASSESSMENT AND PLAN
 
-Continue fosamax for osteoporosis. Continue seeing neurologist for multiple sclerosis. Order a refill of fosamax. Follow up with patient as needed.",D2N091
+continue fosamax, see neurologist and continue medication for multiple sclerosis, refill fosamax 1 tab per week for 11 refills",D2N091
 "[doctor] hello , mrs . martinez . good to see you today .
 [patient] hey , dr . gomez .
 [doctor] hey , dragon , i'm here seeing mrs . martinez . she's a 43-year-old female . why are we seeing you today ?
@@ -613,19 +613,23 @@ PLAN
 
 At this point, I discussed the diagnosis and treatment options with the patient. I have recommended ice and anti-inflammatory medications. I am prescribing Motrin, 800 mg to take 3 times a day with food. She will follow up with me in 1 week or as needed.","CHIEF COMPLAINT
 
-Pain in the distal radius after a tennis injury
+pain in arm toward wrist
 
 HISTORY OF PRESENT ILLNESS
 
-Patient, Mrs. Martinez, is a 43-year-old female who presents with pain in her distal radius after a tennis injury. She reports that she was playing tennis and hit the top of the net with her arm, causing a jarring sensation. She describes the pain as being in the distal radius, with some swelling and tenderness. She also reports a little bit of pain when moving her wrist. She has a past medical history of allergies and takes Flonase. She has had a past surgery for a stabbing injury.
+patient's arm hurts from hitting net during tennis, little swelling, some pain when moving wrist, numbness in hand no
 
 PHYSICAL EXAM
 
-Physical examination reveals tenderness over the distal radius, with pain when the doctor presses on the area, bends the arm, and flexes the thumb. The patient has a little bit of numbness in the hand when moving the wrist.
+tenderness over distal radius, pain when stressing thumb and flexing thumb
+
+RESULTS
+
+x-ray of arm showed no fractures or abnormalities
 
 ASSESSMENT AND PLAN
 
-The doctor diagnoses a strain and contusion to the muscle in the distal radius, with no fracture. The plan is to treat the patient conservatively with ice, anti-inflammatory medication, and Motrin 800mg three times a day with food. The patient will be re-evaluated in a week if the symptoms do not improve.",D2N092
+strain and contusion to muscle from hitting arm, treating conservatively with ice, anti-inflammatory, Motrin 800mg 3x/day, follow-up in 1 week",D2N092
 "[doctor] hey lawrence . how are you ?
 [patient] hey , good to see you .
 [doctor] it's good to see you too . so , i know the nurse told you about dax .
@@ -759,23 +763,23 @@ Acid reflux.
 
 Patient Agreements: The patient understands and agrees with the recommended medical treatment plan. his endo","CHIEF COMPLAINT
 
-Shortness of breath
+shortness of breath
 
 HISTORY OF PRESENT ILLNESS
 
-62-year-old male with past medical history of type I diabetes, congestive heart failure, depression, and reflux, presents with complaints of shortness of breath, swelling, lethargy, and dietary indiscretion. Reports shortness of breath when walking up stairs, noticed swelling in legs, and discomfort lying flat in bed. Denies acute shortness of breath at night, chest pain, fever, chills, cough, and belly pain. Reports good blood sugar control, but admits to forgetting to monitor on weekends. Denies suicidal ideation.
+shortness of breath, swelling in legs, lethargy, possibly related to house parties, salty foods, and holidays
 
 PHYSICAL EXAM
 
-Vital signs: pulse ox looks good. Physical exam: no jugular venous distension or carotid bruits, slight 3/6 systolic ejection murmur, crackles bilaterally at the bases, and 1+ pitting edema.
+slight 3 out of 6 systolic ejection murmur, some crackles, bilaterally, at the bases, 1+ pitting edema
 
 RESULTS
 
-Chest x-ray: no evidence of airspace disease. Labs: no elevated white blood cell count.
+chest x-ray: no evidence of airspace disease, lab results: normal white blood cell count
 
 ASSESSMENT AND PLAN
 
-Acute heart failure exacerbation: lasix 40mg/day, weigh daily, call if weight not decreasing or increasing. Type I diabetes: hemoglobin A1c in a month, follow up with endocrinologist, recent eye exam. Depression: refer to psychiatry for talk therapy. Reflux: continue omeprazole 20mg/day.",D2N093
+acute heart failure exacerbation, treatment: lasix 40 mg/day, weigh self daily, call if weight doesn't change or shortness of breath worsens; type I diabetes: order hemoglobin A1c, follow up with endocrinologist; depression: refer to psychiatry for talk therapy; reflux: continue omeprazole 20 mg/day",D2N093
 "[doctor] hey , ms. james . nice to meet you .
 [patient] nice to meet you , dr. cooper . how are you ?
 [doctor] i'm well . hey , dragon , i'm seeing ms. james . she's a 42-year-old female , and what brings you in today ?
@@ -853,23 +857,23 @@ PLAN
 
 At this point, I discussed the diagnosis and treatment options with the patient. I have recommended a splint. A prescription is provided for Mobic 15 mg once a day, dispense 14. She will follow up with me in 2 weeks for a repeat evaluation. If she is unimproved, we will consider hand therapy at that time. All questions were answered.","CHIEF COMPLAINT
 
-Right index finger pain after skiing accident
+hurting finger after skiing
 
 HISTORY OF PRESENT ILLNESS
 
-Patient, 42-year-old female, reports right index finger pain after skiing accident 5 days ago. Pain rated 7/10. No other injuries. Chronic constipation with Miralax treatment. No surgeries besides appendectomy at age 7.
+42-year-old female, skiing accident, index finger hurt, jammed on something, pain for 5 days, took ibuprofen, no relief, pain is 7/10
 
 PHYSICAL EXAM
 
-Right index finger pain with palpation, squeezing, and pulling. Normal right hand x-ray with no fractures.
+palpation, examination of the right index finger, distal interphalangeal joint seems to be affected
 
 RESULTS
 
-Normal right hand x-ray with no fractures.
+x-ray of the right hand and index finger shows no fractures, normal joints and bones
 
 ASSESSMENT AND PLAN
 
-Diagnosis: Sprain of distal interphalangeal joint (dip joint) of right index finger. Treatment: Splint, Mobic (15mg once daily) for 14 days, follow-up in 2 weeks.",D2N094
+sprain of the distal interphalangeal joint (dip joint) of the right index finger, treatment: splint, mocic (15mg/d), appointment in 2 weeks for re-evaluation and possible hand therapy",D2N094
 "[doctor] hi , cheryl . how are you ?
 [patient] i'm doing well . how are you ?
 [doctor] i'm doing well . so i know the nurse told you a little bit about dax . i'd like to tell dax about you .
@@ -969,19 +973,19 @@ Back pain
 
 HISTORY OF PRESENT ILLNESS
 
-Patient, Cheryl, 34-year-old female, presents with back pain. She has been walking 30 minutes to an hour a day and experienced a sudden back spasm 6 days ago. She has been taking ibuprofen and applying heat, but the pain is still present. She has a history of hypertension and has been taking lisinopril. She has been lifting weights 3 times a week and has been doing deadlifts. She denies numbness, tingling, or weakness in her lower extremities. She has a little bit of nasal congestion due to seasonal allergies.
+34-year-old female with hypertension, presents with back pain due to walking and lifting. Recently experienced back seizure, possibly due to deadlifts. Symptoms include back pain, stiffness, and pain with flexion and extension. No numbness or tingling in lower extremities. Blood pressure well-controlled.
 
 PHYSICAL EXAM
 
-Vital signs are within normal limits. Blood pressure is well-controlled. Physical examination reveals pain to palpation on the right lateral aspect of the lumbar spine, pain with flexion and extension, and a negative straight leg raise. A 2/6 systolic ejection murmur is present, but it is stable. The heart and lung exams are otherwise normal.
+Physical examination revealed pain to palpation on the right lateral aspect of the lumbar spine, pain with flexion and extension, and a negative straight leg raise.
 
 RESULTS
 
-X-ray of the lumbar spine shows good boney alignment with no obvious fracture. Labs are normal with no elevated white blood cell count or signs of infection.
+X-ray of the lumbar spine showed good boney alignment, no obvious fracture. Lab results showed no elevated white blood cell count, no signs of infection.
 
 ASSESSMENT AND PLAN
 
-Diagnosis: Lumbar strain. Plan: Prescribe meloxicam 15mg once a day. Ice and heat application as needed. Refer to physical therapy for strengthening exercises. Continue lisinopril 10mg daily and monitor blood pressure readings. Order a refill of lisinopril.",D2N095
+Lumbar strain due to lifting or exercising. Prescribed meloxicam 15mg once a day. Referral to physical therapy for strengthening exercises of the back. Continue on lisinopril 10mg a day.",D2N095
 "[doctor] um , hi mrs. anderson . right ?
 [patient] yeah . yes , doctor .
 [doctor] what brings you here today ?
@@ -1092,15 +1096,19 @@ Left shoulder pain
 
 HISTORY OF PRESENT ILLNESS
 
-Patient has been experiencing left shoulder pain for a week, which worsens with movement. She has not taken any pain medications, but did try Tylenol for 2-3 days without relief. She attributes the pain to a gymnastics class incident.
+I've had left shoulder pain for a week. I was in gymnastics class and think I must have toppled over into a weird position. It started to pain since then. I did take a Tylenol for 2-3 days, but that didn't help. I went overboard, I think. Any kind of movement on my left shoulder actually hurts.
 
 PHYSICAL EXAM
 
-Patient's left shoulder pain is exacerbated by movement. No broken bones or fractures were visible on the x-ray.
+The patient's left shoulder hurts when moving it. The doctor takes a quick look and notes that the x-ray doesn't show any broken bone or fracture.
+
+RESULTS
+
+The x-ray doesn't show any broken bone or fracture. The doctor guesses that the patient probably hurt their joint a little bit.
 
 ASSESSMENT AND PLAN
 
-Patient likely has a joint injury. Suggested treatment includes using 600mg of ibuprofen 3 times a day for a week, resting the left arm, and avoiding heavy lifting. Follow-up appointment in 3 weeks to reassess pain.",D2N096
+Continue using pain reliever, 600mg ibuprofen 3 times a day for a week. If still painful, use ice or heat pad to relieve pain. Rest the left arm while it's healing. Use right hand instead for the next 3-4 weeks. Come back in 3 weeks if pain still persists.",D2N096
 "[doctor] elizabeth , how are you ?
 [patient] i'm doing okay . how are you ?
 [doctor] doing okay . so i know the nurse told you about dax . i'd like to tell dax a little bit about you , okay ?
@@ -1189,21 +1197,7 @@ Healthcare maintenance.
 • Medical Reasoning: She is due for her annual mammogram.
 • Additional Testing: We will order a mammogram for her.
 
-Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.","CHIEF COMPLAINT
-
-Annual exam, depression, hypertension
-
-HISTORY OF PRESENT ILLNESS
-
-66-year-old female with past medical history of depression and hypertension, presents for annual exam, doing well, been vaccinated, able to see grandkids, go to birthday parties, been going to therapy once a week, good support system at home, using blood pressure cuff, taking lisinopril, no other symptoms
-
-PHYSICAL EXAM
-
-Blood pressure 120/77, heart rate 60, lungs clear, trace lower extremity edema bilaterally, 2/6 systolic ejection murmur, no carotid bruits
-
-ASSESSMENT AND PLAN
-
-Depression: doing well with strategies, no medication needed at this time. Hypertension: continue on lisinopril, 20mg/day, monitor blood pressures. Annual exam: schedule mammogram.",D2N097
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.",,D2N097
 "[doctor] all right . today i am seeing jose james . uh , date of birth 9/29/1957 . mr . james is a new patient who's having pain in his left shoulder and elbow . he fell five months ago going up a stairs , and the pain has been present since .
 [doctor] hi mr . james , i'm doctor isabella . how are you doing ?
 [patient] i'm okay . thank you .
@@ -1272,19 +1266,19 @@ INSTRUCTIONS
 
 email, or call if symptoms worsen or do not resolve.","CHIEF COMPLAINT
 
-Pain in left shoulder and elbow after a fall five months ago.
+pain in left shoulder and elbow
 
 HISTORY OF PRESENT ILLNESS
 
-Patient has been experiencing constant pain in left shoulder and elbow for five months. Pain is worse with lifting and has not improved with ice or rest. Patient has stopped exercising due to pain but continues to walk with his wife.
+Constant pain in left shoulder and left elbow for 5 months, hurts all the time. Worsened by lifting weights.
 
 PHYSICAL EXAM
 
-Tender left shoulder and elbow, no warmth, erythema, or deformity. Positive Hawkins-Kennedy and Neer's test. Normal proximal and distal upper extremity strength. Intact median, radial, and ulnar sensation and abduction to 90 degrees.
+Tender left shoulder and elbow, no warmth, erythema or deformity. Positive Hawkins-Kennedy and Neer's test. Normal proximal and distal upper extremity strength. Intact median, radial, and ulnar sensation and abduction to 90 degrees.
 
 ASSESSMENT AND PLAN
 
-Impingement syndrome of left shoulder. Plan: physical therapy referral to Dr. Martha Rivera for two sessions per week. Continue to ice and rest. Follow-up if symptoms worsen or do not improve with therapy.",D2N098
+Impingement syndrome of left shoulder. Plan: Physical therapy 2 sessions/week, referral to Dr. Martha Rivera.",D2N098
 "[doctor] next patient is randy gutierrez . date of birth , 8/10/2020 . please use review of symptoms . all text to write . physical exam , auto text uri .
 [doctor] hello , how are you doing today ?
 [patient_guest] we're okay , thank you .
@@ -1437,19 +1431,23 @@ INSTRUCTIONS
 
 Return in one week for a re-check.","CHIEF COMPLAINT
 
-Runny nose, stuffy nose, cough, low-grade fever, and irritability in a 1-year-old male.
+Runny nose, stuffy nose, cough, cradle cap
 
 HISTORY OF PRESENT ILLNESS
 
-Patient has been experiencing symptoms for 1 day, starting with a runny nose, followed by a stuffy nose, cough, and low-grade fever (100.3°F). The patient has been irritable and has difficulty sleeping. The patient's sister has also been sick, and the patient had a playdate with a nephew who had a sinus infection.
+Started around supper time last night, runny nose, stuffy nose, cough, cradle cap. Been pulling on ears, rubbing at nose, low-grade fever 100.3. Irritable, can't go to sleep. Used saline mist, Tylenol, baby Vick's, humidifier. Been using cradle cap brush and Aveno shampoo.
 
 PHYSICAL EXAM
 
-Physical exam revealed a runny nose, stuffy nose, and a cough. The patient's ears looked okay, and the doctor did not find any issues with the ears. The patient's temperature was 100.3°F.
+Physical examination findings: mucous is clear, cough is not barky, ears look okay, cradle cap
+
+RESULTS
+
+Lab results: low-grade fever 100.3, normal mucous, normal ears, cradle cap
 
 ASSESSMENT AND PLAN
 
-The doctor suspects a viral infection, possibly a sinus infection, and recommends keeping the patient hydrated, resting, and monitoring for a barking cough. If the patient develops a barking cough, the doctor recommends giving him a half teaspoon of his sister's medicine. The doctor also recommends using Zarbee's for the stuffy nose and a specific shampoo for the cradle cap. The patient will be seen again in one week.",D2N099
+Viral infection, possibly sinus infection. No antibiotics needed at this point. Keep up with fluids, rest, watch for barky cough. Give half a teaspoon of sister's medicine if barky cough develops. Use Zarbee's for stuffy nose, cradle cap shampoo every 2 days. No honey for baby, use agave instead.",D2N099
 "[doctor] kayla ward , date of birth , 4/28/07 . mrn 3-8-4-9-2-0 . she's here for a new visit with her mother for acne located on the face , which started about two years ago and is present most every day . she has been using persa-gel and washing regularly , which is somewhat helpful . there are no associated symptoms including itching , bleeding , or pain . no additional past medical history . she lives with her parents and sister . they have a dog , bird , and bunnies . she is in 7th grade . she plays basketball and volleyball and tap . she wears sunscreen in the summer , spf 30 . no additional family history . hi kayla , i'm dr. juan price . i hear you are starting to get some acne on the face . how about the chest and back ?
 [patient] it's not too bad .
 [doctor] so , it's not bad on the chest or back . you've used some over the counter items like washes and persa-gel ?
@@ -1533,15 +1531,19 @@ Acne on the face
 
 HISTORY OF PRESENT ILLNESS
 
-Patient, Kayla, 14 years old, has been experiencing acne on her face for about 2 years, present most every day. She has been using Persa-Gel and washing regularly, which is somewhat helpful. No associated symptoms, including itching, bleeding, or pain. No additional past medical history. Lives with parents and sister, has a dog, bird, and bunnies. Plays basketball and volleyball and tap. Wears sunscreen in the summer, SPF 30. No additional family history.
+Acne on the face started about 2 years ago and is present most every day. Patient has been using Persa-Gel and washing regularly, which is somewhat helpful. No associated symptoms including itching, bleeding, or pain.
 
 PHYSICAL EXAM
 
-Full exam performed, except for under the underwear and under the bra. Multiple benign nevi on the trunk and extremities. Scattered skin-colored papules. Open and closed comedones. Erythematous papules on the face, primarily on the forehead and with also some on the central cheeks and chin. The chest and back are relatively spared. The remainder of the examination is normal.
+Full exam is performed today, except for under the underwear and under the bra. Multiple benign nevi on the trunk and extremities. Scattered skin colored papules. Open and closed comedones. And erythematous papules on the face, primarily on the forehead and with also some on the central cheeks and chin.
+
+RESULTS
+
+Mild to moderate acne, mostly comodonal with small inflammatory component.
 
 ASSESSMENT AND PLAN
 
-Mild to moderate acne, mostly comedonal with small inflammatory component. Topical therapy to be started: wash face with mild cleanser, apply non-comedogenic moisturizer with SPF 30 or higher, apply adapalene 0.1% cream a few nights a week and gradually increase to every night, and use Clean and Clear Persa-Gel and non-comedogenic moisturizer. Follow-up in 6 months.",D2N100
+Topical therapy with adapalene 0.1% cream, noncomedogenic moisturizer, and sunscreen SPF 30 or higher. Start with a few nights a week and gradually increase to every night. Follow up in 6 months.",D2N100
 "[doctor] patient is julia jones , date of birth 5/16/1996 . she is a new breast reduction consult . hello , how are you doing today ? i'm dr. gonzalez . it's nice to meet you .
 [patient] nice to meet you , ma'am . how are you ?
 [doctor] i'm doing good , thank you . so you're here to discuss a breast reduction , correct ?
@@ -1699,19 +1701,23 @@ The patient will be switching to a different insurance policy in 07/2021. Once w
 
 Return to clinic prior to scheduled surgery date for preoperative counseling and consent.","CHIEF COMPLAINT
 
-Symptomatic macromastia
+Breast reduction consult
 
 HISTORY OF PRESENT ILLNESS
 
-Patient Julia Jones, 25 years old, presents with symptomatic macromastia. She has been considering breast reduction for 6-7 years. She experiences back pain, neck pain, and limited activities due to breast size. She has tried chiropractic care but not physical therapy or pain medication. She has a history of breast cancer in her family and has had mammograms starting at age 30. She is currently studying psychology and drinks wine occasionally. She is not a smoker, does not use recreational drugs, and does not have any allergies.
+Patient has been experiencing back pain, neck pain, and discomfort due to large breasts. She has tried chiropractic care but has not seen significant relief. She is 25 years old and has a history of breast cancer in her family. She is currently studying psychology and does not have any children. She takes propranolol for migraines and occasionally drinks wine. She is a 34E sports bra size and wears a G cup bra.
 
 PHYSICAL EXAM
 
-Physical exam findings: asymmetrical breasts with severe ptosis bilaterally, no nipple retraction or discharge, no breast tenderness, masses, or axillary lymphadenopathy.
+Inspection reveals asymmetrical breasts with severe ptosis bilaterally. No nipple retraction or discharge is present bilaterally. No breast tenderness, masses, or axillary lymphadenopathy is palpable.
+
+RESULTS
+
+Physical exam findings consistent with symptomatic macromastia. Patient is an ideal candidate for bilateral reduction mammoplasty.
 
 ASSESSMENT AND PLAN
 
-Patient is an ideal candidate for bilateral reduction mammoplasty. Minimum required resection is 1,792 grams, which should be attainable. Potential for using a nipple graft due to extremely large breasts. Surgery will take about 3 hours, with drains in for 1 week. Patient will have activity restrictions for 6 weeks, including no heavy lifting and no driving for 2-3 weeks. Breastfeeding may be affected due to gland removal.",D2N101
+Patient is a good candidate for breast reduction surgery. The doctor will perform a bilateral reduction mammoplasty, removing 1,792 grams of tissue, and will consider using a nipple graft due to the patient's extremely large breasts. The patient will need to wait until her insurance is switched over before scheduling the surgery.",D2N101
 "[doctor] kelly wood . date of birth , february 15th , 1979 . established patient here for renal ultrasound because of hematuria . urine dipstick today . negative for leukocytes , nitrates , protein , ketone , bilirubin and glucose . color yellow and clear , urobilinogen 0.2 , ph 5.5 and specific gravity 1.020 . there is a trace amount of blood in the urine and intact . renal ultrasound impression . right kidney is 10 cm in length by five centimeter wide . there are no stones , masses or hydronephrosis . the left kidney is 10.8 centimeters in length and five centimeters wide . there is a six millimeter left renal stone non-obstructing . 533 milliliters pre-void and 0 milliliters post-void . hi , mrs. wood . i see you're just finished your ultrasound .
 [patient] yes , ma'am .
 [doctor] well , it looks like you have one stone in the left kidney but it's not obstructing anything .
@@ -1797,23 +1803,23 @@ INSTRUCTIONS
 
 Follow up in 1 year with renal ultrasound, sooner should symptoms arise. Should you develop sudden onset of severe pain or gross hematuria go to the emergency room.","CHIEF COMPLAINT
 
-Hematuria
+renal ultrasound because of hematuria
 
 HISTORY OF PRESENT ILLNESS
 
-Patient reports passing 2 small stones last week, bright red urine for 6 weeks, constant urination and severe pain (8/10) for 1 week. No flank pain or tenderness now. Taking Alavert 10mg daily, no drug allergies.
+for the past six weeks, I had a few episodes of bright red urine the color of cherry kool-aid, and last week I was constantly having to pee and it hurt something terrible
 
 PHYSICAL EXAM
 
-Abdomen exam: no flank pain. Anti-GU normal. Vaginal exam normal.
+kidney ultrasound impression: right kidney is 10 cm in length by five centimeter wide, no stones, masses or hydronephrosis; left kidney is 10.8 centimeters in length and five centimeters wide, a six millimeter left renal stone non-obstructing; urinalysis: trace amount of blood in the urine, negative for leukocytes, nitrates, protein, ketone, and glucose
 
 RESULTS
 
-Urine dipstick: negative for leukocytes, nitrates, protein, ketone, bilirubin, and glucose. Color yellow and clear, urobilinogen 0.2, pH 5.5, specific gravity 1.020. Renal ultrasound: right kidney 10cm x 5cm, no stones, masses, or hydronephrosis. Left kidney 10.8cm x 5cm, 6mm non-obstructing stone. Bladder volume 533ml pre-void, 0ml post-void.
+urine dipstick: negative for leukocytes, nitrates, protein, ketone, bilirubin and glucose; color yellow and clear, urobilinogen 0.2, pH 5.5 and specific gravity 1.020
 
 ASSESSMENT AND PLAN
 
-Diagnosis: hematuria, chronic urolithiasis. No surgical intervention recommended. Patient to drink 125oz of water daily, avoid sugary drinks, salty and processed foods, and foods high in sodium oxalate and animal protein. Follow-up in 1 year unless symptoms worsen.",D2N102
+the blood in the urine was due to the kidney stones; two stones were passed last week; one stone remains in the left kidney, not obstructing or causing pain; no surgical intervention recommended; recommendations: drink at least half of body weight in ounces of water per day, avoid sugary drinks like Mountain Dew, reduce sodium intake to less than 1,000 milligrams per day, decrease consumption of animal protein; provided handout with dietary recommendations",D2N102
 "[doctor] next patient is melissa sanchez . date of birth , 9/23/1962 . mrn : 5484367 . she is being seen in office today for status post mitral valve repair done on 8/3/2020 . at her previous follow-up on 9/17 , we felt that she was doing quite well from a cardiac standpoint , and so we recommended she continue with the same medication . ecg taken on 12/26/2020 reveals atrial fibrillation with a controlled ventricular response . t-wave inversion anteriorly . compared to the previous study , there are no significant changes , and please add in the history , patient has a history of mitral regurgitation and atrial fibrillation , history of diabetes , asthma , and recurrent chest discomfort with negative cardiac workup for coronary artery disease .
 [doctor] ms. sanchez , it's good to see you again .
 [patient] yeah , it's good seeing you too dr. hughes . you look like you're doing well .
@@ -1922,19 +1928,23 @@ INSTRUCTIONS
 
 Return to clinic in 6-9 months.","CHIEF COMPLAINT
 
-Status post mitral valve repair, follow-up for atrial fibrillation and chest discomfort
+Status post mitral valve repair
 
 HISTORY OF PRESENT ILLNESS
 
-Patient has a history of mitral regurgitation and atrial fibrillation, history of diabetes, asthma, and recurrent chest discomfort with negative cardiac workup for coronary artery disease. Currently taking coumadin, lasix, and atenolol. Reports feeling better after surgery, but still experiences occasional chest pains and shallow breathing. Medications are being taken regularly, but notes side effects from atenolol.
+Pretty good, definitely feeling better, but getting some chest pains sometimes and shallow breathing.
 
 PHYSICAL EXAM
 
-Physical examination reveals no jugular venous distension, reduced breath sounds, but clear auscultation and percussion. Heart rhythm is irregularly irregular, with a slightly accentuated S1 and no S3. Peripheral edema is present on extremities.
+Head and neck: no JVD detected. Lungs: reduced breath, but auscultation and percussion are clear. Heart: rhythm is irregularly irregular. Belly: no pain. Feet: no pain. Trace peripheral edema on extremities.
+
+RESULTS
+
+ECG taken on 12/26/2020 reveals atrial fibrillation with a controlled ventricular response. T-wave inversion anteriorly. Compared to the previous study, there are no significant changes.
 
 ASSESSMENT AND PLAN
 
-Patient is recovering well from surgery, with controlled atrial fibrillation and no significant changes in ECG. Current medications will be continued, and patient will be followed up in 6-9 months. Patient will continue to take coumadin, lasix, and atenolol, and will try to keep active to aid in recovery.",D2N103
+Heart valves are working well and recovering from the surgery nicely. The atrial fibrillation is being well controlled with the medicine.",D2N103
 "[doctor] judy gomez , mrn 869723 . date of birth , 5 , 7 , 1961 . she's in office today for ongoing management of psoriatic arthritis . hello , judy , how are you doing today ?
 [patient] i'm doing good , thank you . how are you ?
 [doctor] i'm great , thanks . so how have you been since the last time ? i know the last time we were talking about decreasing your prednisone dose , correct ?
@@ -1999,19 +2009,19 @@ INSTRUCTIONS
 
 The patient will follow up in 3 months.","CHIEF COMPLAINT
 
-Ongoing management of psoriatic arthritis
+psoriatic arthritis
 
 HISTORY OF PRESENT ILLNESS
 
-Patient Judy Gomez, 5/7/1961, reports good overall health but experiences occasional pain in feet joints, especially after periods of inactivity. She has a desk job and notes that pain worsens on days off when she is more active. She has been taking prednisone, but has reduced the dose to one tablet per day. She also takes methotrexate, which she believes has helped with joint pain. She has experienced bruising, particularly on the skin, which she attributes to the prednisone.
+ongoing management of psoriatic arthritis
 
 PHYSICAL EXAM
 
-Patient has a good range of motion in toes, but experiences pain in joints, particularly in feet. Ridges in nails are noted, consistent with psoriasis. No other abnormalities are noted.
+bruises, ridges in nails, psoriasis
 
 ASSESSMENT AND PLAN
 
-Discontinue prednisone and continue with methotrexate. Schedule blood work appointment and follow up in three months.",D2N104
+discontinue prednisone, continue with methotrexate",D2N104
 "[doctor] patient's name is diana scott . date of birth , 12/8/1920 . the date of service is 7/9/2021 . this is a new patient note .
 [doctor] good afternoon . how are you today ?
 [patient] i'm good , thank you .
@@ -2202,19 +2212,23 @@ INSTRUCTIONS
 
 Follow-up in 3 to 4 weeks after her echocardiogram is done to discuss results and next steps.","CHIEF COMPLAINT
 
-Patient reports heart murmur, severe leg pain, and shortness of breath
+has a heart murmur
 
 HISTORY OF PRESENT ILLNESS
 
-Patient is 100 years old, reports severe leg pain, shortness of breath, and lightheadedness. Has a history of heart problems in the family. Never smoked, no known allergies. Currently taking medications for hyperthyroidism, high blood pressure, and high cholesterol.
+diana scott, 100, 100 years old, has a new worrisome heart murmur. She is worried. She does not think she has any symptoms except for severe leg pains. She had a recent chest x-ray. She takes pain pills for her legs.
 
 PHYSICAL EXAM
 
-Physical exam reveals a 4/6 systolic murmur at the right upper sternal border with mild radiation to the carotids. Neurologic exam shows a normal gait for age.
+for physical exam, constitutional elderly otherwise no acute distress. Cardiovascular normal s1 and s2 is preserved with a normal rate and regular rhythm. There is a 4/6 systolic murmur at the right upper sternal border with, uhm, mild radiation to the carotids. Neurologic gait is normal for age.
+
+RESULTS
+
+echocardiogram to be done. Blood pressure is good. Continue taking amlodipine or lisinopril.
 
 ASSESSMENT AND PLAN
 
-Patient has a 4/6 systolic murmur at the upper right sternal border with mild radiation to the carotids, likely representing aortic stenosis. Echocardiogram will be performed to assess cardiac structure and function. Possible tavr evaluation following echocardiogram. Statin could be indicated. Follow-up in 3-4 weeks to discuss results and next steps.",D2N105
+probably one cardiac murmur. Diana has a 4/6 systolic murmur at the upper right sternal border with mild radiation to the carotids. This is most likely representative of aortic stenosis, for symptoms could be due to severe aortic, aortic stenosis. However, her s2 is relatively preserved, which would be more consistent with moderate. Some of her outside records do note diastolic dysfunction, so it is possible she, she did have an echocardiogram at some point in the past. She does not appear significantly volume overloaded today. Her next problem is pvcs. Her referral mentioned tachycardia. Uh, her ekg today shows sinus rhythm with frequent pvcs, as well as an anterior septum infarct pattern.",D2N105
 "[doctor] hey charles i'm using this cool new recording device to help me with my documentation is that okay with you
 [patient] sure
 [doctor] awesome how are you doing today
@@ -2315,19 +2329,23 @@ INSTRUCTIONS
 
 The patient will follow up with me in 1 week for skin testing.","CHIEF COMPLAINT
 
-Shortness of breath, possibly related to allergies
+shortness of breath lately
 
 HISTORY OF PRESENT ILLNESS
 
-Patient reports shortness of breath, especially when moving to the city, and has noticed it in various situations, including near his cat and outside the house. He has a history of heavy drinking and has experienced diarrhea after drinking. He has a dog and has noticed his dog's eye symptoms. He has not had any issues with allergies in the past.
+patient has been noticing shortness of breath, but hasn't made anything of it. mentioned new apartment and concern about allergies. patient has a dog with eye issues and knows someone with asthma.
 
 PHYSICAL EXAM
 
-Vital signs are normal, pulse is okay, and pulse ox is normal. No rash, angioedema, or stridor. Faint expiratory wheezing bilaterally in all lung fields.
+{""bp_systolic"": 120, ""bp_diastolic"": 77, ""heart_rate"": 72, ""o2_saturation"": 99.0, ""respiratory_rate"": 18, ""temperature_f"": null}
+
+RESULTS
+
+chest x-ray and pulmonary function test both normal. patient has been prescribed inhalers and allergy testing
 
 ASSESSMENT AND PLAN
 
-Newly diagnosed allergic asthma. Continue albuterol inhaler as needed. Prescribe Singulair 10mg daily to decrease asthma occurrences. Schedule skin testing to identify triggers. Discuss further testing if necessary.",D2N106
+newly diagnosed allergic asthma. instructions to take inhailer as soon as symptoms occur every day. prescribed singulair. recommended further allergy testing: skin testing at next appointment.",D2N106
 "[doctor] so bryan it's nice to see you again in the office today what's going on
 [patient] i was in my yard yesterday and i was raking leaves and i felt fine and then when i got into my house about two hours later my back started tightening up and i started getting pins and needles in my right foot
 [doctor] alright have you ever had this type of back pain before
@@ -2406,19 +2424,19 @@ INSTRUCTIONS
 
 The patient will follow up in 2 weeks.","CHIEF COMPLAINT
 
-Back pain after raking leaves, tingling in right foot
+Lower back pain
 
 HISTORY OF PRESENT ILLNESS
 
-Patient had back pain after raking leaves, described as tightening up and pins and needles in right foot. Had similar pain 3 years ago, but it resolved on its own. Tried ice and Advil, but no relief. Pain worse when standing, better when sitting or lying down. No prior history of back pain. Partner reports similar pain when patient stands up.
+Patient was raking leaves, felt fine, then developed back pain and pins and needles in right foot 2 hours later. Has had similar pain 3 years ago. Tried icing and 2 Advils, but no relief. Pain improves with laying down, sitting, and hot shower.
 
 PHYSICAL EXAM
 
-Patient had normal dorsiflexion, equal pulses in all extremities. Tingling sensation in right leg. Pain worse with flexion, better with extension. Pain to palpation around L5.
+Patient has some pain with flexion and palpation around L5. No pain with extension. Dorsiflexion is normal. Pulses are equal in all extremities. Tingling in right leg.
 
 ASSESSMENT AND PLAN
 
-Probable sprained low back. Prescribed meloxicam and physical therapy. Will re-evaluate in 2 weeks if pain persists, then consider MRI.",D2N107
+Probable sprained low back. Prescribed meloxicam and physical therapy. Will re-evaluate in 2 weeks if pain persists.",D2N107
 "[doctor] hey gregory good to see you today so take a look at my notes and i see that you're here you've had a nonhealing foot ulcer so can you tell me how you're doing how long have you had it what's going on with it
 [patient] sure so i've had it for about two months now and it's recently become red and is draining so i was concerned about how it's healed
 [doctor] okay and when you when you got it would you have any trauma to your foot or it just just did it pop up all of a sudden
@@ -2500,15 +2518,19 @@ Nonhealing foot ulcer
 
 HISTORY OF PRESENT ILLNESS
 
-Patient has had a nonhealing foot ulcer for 2 months, recently became red and draining. Patient reports throbbing pain, but no specific pain score. Patient has diabetes, but does not check blood sugar regularly. Last A1C was around 10.
+Had the ulcer for 2 months, recently became red and is draining
 
 PHYSICAL EXAM
 
-1x2 inch circular wound on dorsal aspect of lateral right foot, redness, drainage, edema, increased pressure with palpation, but no distinct pain. No fever, no necrosis, no odor, no bony exposure.
+1 by 2 inch circular wound on the dorsal aspect of the lateral right foot, redness, drainage, edema, increased pressure upon touch
+
+RESULTS
+
+X-ray showed no evidence of osteomyelitis
 
 ASSESSMENT AND PLAN
 
-Diabetic foot ulcer, infection present. Ordered ABI ankle brachial index, debridement, and clindamycin 400mg twice daily for 7 days. Prescribed surgical shoe for 1 month. Follow-up in 2 weeks.",D2N108
+Diabetic foot ulcer, ordered ABI ankle brachial index, debridement, and prescription of clindamycin 400mg twice daily for 7 days",D2N108
 "[doctor] so stephanie morales is a 36 -year-old female today complaining of her ankle pain and she also has a history of diabetes and high blood pressure so stephanie tell me what's going on with your ankle
 [patient] well we had a long spring and the other day we got some snow and ice i was walking to my car and i slipped and my left ankle kinda turned underneath me
 [doctor] okay and so this happened couple days ago or how many days ago
@@ -2609,19 +2631,19 @@ ASSESSMENT AND PLAN
 
 Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.","CHIEF COMPLAINT
 
-Ankle pain after twisting injury
+ankle pain
 
 HISTORY OF PRESENT ILLNESS
 
-Patient Stephanie Morales, 36-year-old female, reports ankle pain after twisting injury 2 days ago. She has a history of diabetes and high blood pressure. She has been taking metformin and norvasc. She has tried ibuprofen, ice, and elevation for pain and swelling. Her blood sugars have been stable, and she checks them regularly. She has an upcoming appointment with an ophthalmologist for a diabetes checkup.
+Patient fell on left ankle 2 days ago, described as twisting injury on outside of ankle. Pain is mostly on outside of ankle, not above ankle. Swollen. Had increased pain and swelling after initial injury.
 
 PHYSICAL EXAM
 
-Physical examination revealed tenderness over the lateral malleolus and the fifth metatarsal. Swelling and redness were noted. Valgus stressing of the ankle caused pain. Normal sensation and pulses were present.
+Normal neck, lungs, and heart exams. Systolic ejection murmur 2/6. Tenderness over lateral malleolus and fifth metatarsal. Swelling and redness. Pain with valgus stressing of ankle.
 
 ASSESSMENT AND PLAN
 
-Diagnosis: probable ankle sprain. Ordered x-ray of the ankle to rule out fracture. Patient will wear an air splint and use crutches until the x-ray results are available. Naprosyn 500mg twice a day for pain control. Follow-up appointment to be scheduled if x-ray shows a fracture.",D2N109
+Probable ankle sprain. X-ray ordered to rule out fracture. To avoid weightbearing. Naprosyn for pain control. Elevate and apply ice. Scheduled follow-up exam to reevaluate ankle and check x-ray results.",D2N109
 "[doctor] okay hi wayne well i understand you're here for you've got a sore on your foot that's not healing is that right
 [patient] yes
 [doctor] so can you tell me about that how are you doing
@@ -2705,19 +2727,23 @@ INSTRUCTIONS
 
 The patient will follow up with me in 2 weeks to check on his progress.","CHIEF COMPLAINT
 
-Sore on right foot not healing
+Sore on the foot not healing
 
 HISTORY OF PRESENT ILLNESS
 
-Patient has had a wound on right foot for 2-3 weeks, no trauma, no pain, no fever, no chills, no drainage. Patient has diabetes, last HbA1c was 8.1. Patient has neuropathy and has been wearing tight shoes.
+Patient has had the wound for 2-3 weeks, no trauma to the foot, no pain, no fever, no chills, no drainage from the wound. The wound sticks to the sock when removed.
 
 PHYSICAL EXAM
 
-Vital signs: temperature 98.1°F, heart rate 72, respirations 16, blood pressure 110/65. Physical exam: 1x2 inch circular wound on dorsal aspect of lateral right foot, yellow slough, minimal granulation tissue, no surrounding erythema or cellulitis, no fluid collection, no necrosis, no odor. Vascular exam: palpable bilateral femoral and popliteal pulses, no palpable DP or PT pulses, Doppler signs present.
+1 by 2 inch circular wound on the dorsal aspect of the lateral right foot, yellow slough present, minimal granulation tissue, no surrounding erythema or cellulitis, no fluid collection, no necrosis, no odor, no bony exposure.
+
+RESULTS
+
+Right foot x-ray shows no evidence of osteomyelitis. Vital signs: temperature 98.1, heart rate 72, respirations 16, blood pressure 110/65. Ankle brachial index ABI to be ordered to determine blood supply to the foot.
 
 ASSESSMENT AND PLAN
 
-Diabetic foot ulcer, no evidence of osteomyelitis. ABI to determine blood supply to foot, debridement, collagenase ointment, surgical shoe. Follow-up in 2 weeks. Possible referral to vascular specialist. Diabetes management to control HbA1c.",D2N110
+Diabetic foot ulcer, order ABI to determine blood supply, perform debridement, prescribe collagenase ointment, wear surgical shoe, continue until wound shrinks and pink tissue is present. Refer to vascular specialist if ABI indicates poor blood supply. Get diabetic consult to control diabetes and modify diet.",D2N110
 "[doctor] hey william so i see that you injured your knee could you tell me a bit about what happened
 [patient] yeah i thought it was a good idea to go to the trampoline park with my wife and heard a snap and instant pain when i was on the trampoline
 [doctor] okay alright and so do do you go to the trampoline park often
@@ -2827,19 +2853,23 @@ For his hypertension, I'm concerned that his blood pressure is not well controll
 
 For his diabetes, he stated that he has been measuring his blood glucose levels 4 to 5 times per week, but I want him to start measuring them 2 to 3 times per day. His hemoglobin A1c levels should provide more detail as far as his long-term progress so we will order that today. I'm also going to order a lipid panel and we can determine if any adjustments need to be made to his medication. In the meantime, he should continue taking metformin 500 mg.","CHIEF COMPLAINT
 
-Right knee pain after trampoline park injury
+right knee injury
 
 HISTORY OF PRESENT ILLNESS
 
-Patient injured right knee at trampoline park, heard a snap and experienced instant pain. No previous knee injuries. No regular exercise regimen. Takes Tylenol for pain, but it doesn't help. Has hypertension and diabetes, takes lisinopril and metformin. Blood pressure is 180/80, blood sugars are better but not consistently measured.
+injured knee at trampoline park, heard a snap and experienced sudden pain, first time doing something like that, no regular exercise regimen, hypertension and diabetes also discussed
 
 PHYSICAL EXAM
 
-Patient's right knee has ecchymosis and edema on the lateral aspect. No effusion. Range of motion is decent, but patient experiences pain with movement. Blood pressure is 180/80. Heart rate is regular and rhythm is normal. Lungs sound clear bilaterally.
+right knee pain, lateral aspect hurts more, 単 take taking for pain, no significant findings elsewhere
+
+RESULTS
+
+x-ray of right knee shows no fracture or bony abnormality
 
 ASSESSMENT AND PLAN
 
-Lateral ligament strain in right knee. Prescribed meloxicam 15mg daily for pain and swelling. Referral to physical therapy to strengthen muscles around the area and prevent further injury. Continue lisinopril 20mg for hypertension and order an echo to assess blood pressure control. Order an A1C and lipid panel to assess diabetes management.",D2N111
+lateral ligament strain, prescribe meloxicam (15mg daily), refer to physical therapy, hypertension: continue lisinopril (20mg), order echo, medication modification may be necessary, diabetes: order a1c, lipid panel",D2N111
 "[doctor] hey matthew i see here that you've had some back pain for a while and your pcp sent you over to see me how're you doing today
 [patient] pretty good i'm feeling pretty good do n't like the weather you know i've been sitting in the waiting area for you know thirty minutes and that definitely makes the symptoms worse
 [doctor] okay well first of all i i agree with you the weather has kinda been all over the place been hot and been cold and and and now it seems like we've had a week of pretty chilly weather hopefully that changes pretty soon so tell me a little bit about when when your back pain started and and and what happened there
@@ -2891,7 +2921,25 @@ Acute disc herniation at L4-5 with nerve root impingement.
 
 PLAN
 
-I have recommended that we treat the patient conservatively with a epidural steroid injection and formal physical therapy. With the patient's consent, we will proceed with a epidural steroid injection into the lumbar spine today. He will follow up with me in 4 weeks to check on his progress.",,D2N112
+I have recommended that we treat the patient conservatively with a epidural steroid injection and formal physical therapy. With the patient's consent, we will proceed with a epidural steroid injection into the lumbar spine today. He will follow up with me in 4 weeks to check on his progress.","CHIEF COMPLAINT
+
+Back pain
+
+HISTORY OF PRESENT ILLNESS
+
+Patient has been experiencing back pain for a long time, with symptoms worsening over the past month. Pain radiates down the left leg and is described as an electrical toothache. The patient reports a pain level of 6/10 currently, but 13/10 at its worst. Symptoms are exacerbated by standing, walking, coughing, and sneezing, but relieved by lying down.
+
+PHYSICAL EXAM
+
+Patient has weakness and pain in the lower back and left leg, with a positive pain response to palpation at the L4 vertebrae and pain with flexion and extension of the back. Strength in the left leg is 4/5 and in the right leg is 5/5. Reflexes are brisk and motor and sensory function is intact in both lower extremities.
+
+RESULTS
+
+MRI results show a disk herniation at the L4-L5 vertebrae with nerve root impingement.
+
+ASSESSMENT AND PLAN
+
+Diagnosis: Acute disk herniation at L4-L5 with nerve root impingement. Treatment plan: Epidural steroid injection to be performed today, followed by physical therapy and a follow-up appointment in one month.",D2N112
 "[doctor] hi jacqueline how are you doing today
 [patient] i'm doing okay i'm just really anxious about my recent blood work that my pcp did and said that i have hepatitis c i'm just really surprised because i've been feeling fine
 [doctor] okay so were you ever told in the past that you have hepatitis c
@@ -2998,23 +3046,23 @@ INSTRUCTIONS
 
 The patient will follow up in 3 weeks.","CHIEF COMPLAINT
 
-Patient's recent blood work showing hepatitis C
+recent blood work showing hepatitis c
 
 HISTORY OF PRESENT ILLNESS
 
-Patient reports feeling anxious about hepatitis C diagnosis, denies previous knowledge of condition, reports history of IV drug use in past but clean for 15+ years, current smoker (1-2 cigarettes/day), occasional alcohol use (1 beer/day), no other medical conditions
+feeling anxious about recent blood work, had hepatitis c positive results, never knew had hepatitis c, used to use iv drugs, now clean for 15 years, used to drink a lot, now drinks about 1 beer a day, smokes 1-2 cigarettes a day, tired at end of day, no other medical conditions
 
 PHYSICAL EXAM
 
-Patient appears in no distress, no jaundice on skin exam, regular heart rate and rhythm with 2/6 systolic murmur, clear lungs with no wheezes, rales, or rhonchi, soft abdomen with no hepatosplenomegaly, no gait disturbance or edema
+general appearance: in no distress, no jaundice on skin exam, heart exam: regular rate and rhythm with 2/6 systolic murmur, lungs: clear with no wheezes rales or rhonchi, abdomen: soft with no hepatosplenomegaly, musculoskeletal exam: no gait disturbance or edema
 
 RESULTS
 
-HCV antibody test positive, liver panel showing elevated AST (39) but normal ALT, albumin, and total bilirubin
+hcv antibody test positive, liver panel: elevated AST at 39, normal alt, albumin, and total bilirubin
 
 ASSESSMENT AND PLAN
 
-Hepatitis C diagnosis confirmed, next steps include additional blood work (HCV RNA and genotype), ultrasound to determine liver disease severity, and treatment planning",D2N113
+hepatitis c diagnosis confirmed, need additional blood work to check hep c rna and hcv genotype, determine liver disease severity with ultrasound, start treatment",D2N113
 "[doctor] alright
 [patient] good morning Julie how are you doing today
 [doctor] i'm doing okay i'm just a little nervous about what's been going on with my headaches
@@ -3088,19 +3136,23 @@ INSTRUCTIONS
 
 The patient will follow up with me once the MRI results are available for review and further recommendations.","CHIEF COMPLAINT
 
-Headaches, worsening frequency and severity, with associated symptoms of ringing in the ears and blurred vision
+headaches getting more frequent and severe
 
 HISTORY OF PRESENT ILLNESS
 
-Patient has been experiencing headaches for years, initially related to menstrual periods, but now occurring more frequently and severely. Headaches are described as pulsing and located on the right side, behind the eye. Patient also reports ringing in the ears and blurred vision. Patient has noticed that exercise exacerbates headaches. Patient is a runner and uses Asics shoes.
+headaches have been getting worse, especially with exercise and stress. Associated symptoms: ringing in ears, blurred vision.
 
 PHYSICAL EXAM
 
-Vitals are within normal limits. Blood pressure is normal. Heart exam is normal sinus rhythm with no murmurs, rubs, or gallops. Funduscopic exam shows papilledema. Neurological exam is normal, with cranial nerves 1-12 intact. Musculoskeletal exam is normal, with a normal gait.
+physical exam shows normal sinus rhythm with no murmurs, rubs, or gallops. Funduscopic exam shows papilledema.
+
+RESULTS
+
+patient's vitals are normal.
 
 ASSESSMENT AND PLAN
 
-Patient is suspected to have idiopathic intracranial hypertension, a condition characterized by increased pressure in the brain without a known cause. Patient will undergo an MRI, spinal tap, and referral to a neuro-ophthalmologist for further evaluation and treatment. Medications may be prescribed to decrease pressure in the brain and alleviate symptoms. Patient will also be advised to exercise and lose weight to help manage symptoms.",D2N114
+concerns for idiopathic intracranial hypertension (IIH). Recommend MRI, spinal tap, and ophthalmology exam. Medications may help decrease brain pressure and alleviate headaches.",D2N114
 "[doctor] alright so hey it's nice to see you jack i know you've been experiencing some neck pain could you tell me what happened
 [patient] yeah so i was in a a car accident
 [doctor] mm-hmm
@@ -3191,19 +3243,23 @@ PLAN
 
 After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with the patient in regards to his current symptoms. We discussed his x-rays did not reveal any signs of a fracture or bony abnormalities. Treatment options were discussed and conservative treatment has been recommended. He will begin taking Motrin 600 mg every 6 to 8 hours. A prescription for Flexeril 10 mg every 12 hours as needed was also provided. He was advised to be mindful of how he moves his neck and to be conservative to avoid straining his neck. I have also recommended that we obtain an MRI for further evaluation as the patient did not go to the emergency room following his accident. He will also be referred to either physical rehab or a chiropractor pending his MRI results.","CHIEF COMPLAINT
 
-Neck pain after car accident
+neck pain
 
 HISTORY OF PRESENT ILLNESS
 
-Patient experienced neck pain after car accident 1 week ago, pain severity 7/10, worsens with neck movement, tried ibuprofen with some relief, no headaches, no hearing or visual disturbances, no prior neck injuries, did not seek emergency room care
+Patient was in a car accident about a week ago, hit in the back and neck went forward, causing pain. Pain is not constant, but worsens with neck movement. Severity is 7/10. Has tried ibuprofen, which provided some relief.
 
 PHYSICAL EXAM
 
-Positive pain to palpation of soft tissues of the neck, positive pain with flexion, extension, rotation, and lateral bending, no swelling or bruising noted
+Positive pain to palpation of the soft tissues of the neck. Pain worsens with flexion, extension, and rotation.
+
+RESULTS
+
+X-ray results: no signs of fracture or bony abnormalities.
 
 ASSESSMENT AND PLAN
 
-Diagnosis: neck strain, treatment: anti-inflammatories (Motrin 600mg), muscle relaxant (Flexeril 10mg), MRI ordered, referral to physical rehab or chiropractor for further evaluation",D2N115
+Diagnosis: neck strain. Treatment: anti-inflammatories (600mg of Motrin, every 6-8 hours), muscle relaxant (10mg of Flexeril, every 12 hours as needed), and an MRI to rule out concussion. Refer to physical rehab or a chiropractor for further treatment.",D2N115
 "[doctor] hey hi bobby how are you doing
 [patient] i'm doing good how are you
 [doctor] i'm doing fine so i understand you're here having some left or some right shoulder pain that you've had for a few weeks now
@@ -3285,19 +3341,23 @@ After reviewing the patient's examination and radiographic findings today, I hav
 
 In regards to his bilateral feet pain, I have recommended that we treat the patient conservatively. I am recommending the patient soak his feet in an Epsom salt soak as well as elevate as needed.","CHIEF COMPLAINT
 
-Left or right shoulder pain
+left or right shoulder pain
 
 HISTORY OF PRESENT ILLNESS
 
-Patient reports right shoulder pain for a few weeks, worse with movement, no numbness or tingling, pain dulls with Advil and icing, no fever, no recent injuries
+Patient has been experiencing shoulder pain for a few weeks, particularly on the right side. The pain is tender to the touch and worsens with arm movement. Patient has a history of baseball injuries to the right shoulder, but this pain is different. Patient reports that the pain is most noticeable when moving the arm, and it is not present when sitting still.
 
 PHYSICAL EXAM
 
-Vitals: 97.8°F, 62 HR, 16 RR, 116/84 BP, 99% O2 sat; limited active and passive range of motion in right shoulder, tenderness at great tuberosity of humerus, no tenderness at sternoclavicular or acromioclavicular joints, good hand grip, intact sensation to touch, capillary refill < 3 seconds
+Patient has limited active and passive range of motion in the right shoulder. There is tenderness at the great tuberosity of the humerus. Capillary refill is less than three seconds, and sensation to touch is intact.
+
+RESULTS
+
+Shoulder X-ray shows no fracture. MRI is pending.
 
 ASSESSMENT AND PLAN
 
-Rotator cuff tendinopathy, MRI ordered, physical therapy referral for 6-8 weeks, continue Tylenol, consider steroid injection if symptoms don't improve",D2N116
+Patient has rotator cuff tendinopathy, likely due to overuse from yard work. Will refer to physical therapy for 6-8 weeks. Continue Tylenol and consider steroid injection if symptoms do not improve.",D2N116
 "[doctor] mister jackson is a 45 -year-old male who has a history of diabetes type two and mild intermittent asthma and he is here today with right elbow pain so hey there mark nice to see you again listen sorry you're having some elbow pain let's talk about it but i would like to record this conversation with this cool app that i'm using that's gon na help me focus on you a bit more would that be alright with you
 [patient] yeah that sounds great
 [doctor] okay great so mark tell me about your right elbow pain what's been happening
@@ -3419,19 +3479,19 @@ Right elbow pain
 
 HISTORY OF PRESENT ILLNESS
 
-The patient reports a 3-week history of right elbow pain, which worsens with movement and improves with rest. He describes the pain as sharp, stabbing, and throbbing. He has tried taking Tylenol and ibuprofen, but they do not provide significant relief. He has also tried icing the area, but it has not helped. He attributes the pain to increased tennis activity.
+45-year-old male with history of diabetes type two and mild intermittent asthma. Recently increased tennis activity leads to right elbow pain. Pain is located outside the elbow, sharp, and throbbing. Pain increases with movement and decreases with rest. No trauma recently, but increased tennis activity is suspected cause. Pain intensity is 8/10 with movement and 3/10 with rest. Patient reports no improvement with Tylenol and ibuprofen, but slight improvement with ice.
 
 PHYSICAL EXAM
 
-The physical examination reveals moderate lateral epicondylar tenderness of the right elbow, with pain on passive range of motion and mild pain with resisted extension of the right wrist. The heart exam shows a grade 3/6 systolic ejection murmur, which is unchanged from prior exams. The rest of the exam is normal.
+Physical examination reveals moderate lateral epicondylar tenderness of the right elbow. Pain increases with passive range of motion of the right elbow. No palpable joint effusion. Mild pain with resisted extension of the right wrist.
 
 RESULTS
 
-The right elbow x-ray shows no acute fracture or other bony abnormality, with no malalignment or joint effusion.
+Right elbow x-ray shows no acute fracture or other bony abnormality, no malalignment or joint effusion
 
 ASSESSMENT AND PLAN
 
-The doctor diagnoses acute lateral epicondylitis of the right elbow and recommends rest, ice, and a brace. He also increases the patient's metformin dosage and orders blood tests to monitor his diabetes. The patient's asthma remains under good control.",D2N117
+Diagnosis: Acute lateral epicondylitis of the right elbow (tennis elbow). Recommendation: Rest the right arm, stop tennis for 4-6 weeks, avoid repetitive stress, ice the right elbow for 20 minutes, 3 times per day, and use a brace. Additionally, prescribe Ultram 50mg once a day for pain relief. Follow-up appointment in 4 weeks. Also: Increase metformin to 1000mg twice a day for diabetes type two, check blood sugar twice daily for 2 weeks and adjust medication accordingly. Order lab tests (hemoglobin A1c, CBC, and chem-12) and check results.",D2N117
 "[doctor] alright so how're you doing today angela
 [patient] i'm doing pretty well
 [doctor] alright so looking here at your appointment notes it says you're you're here you think you have a kidney stone you had some in the past so we're gon na take a look at that and then you also have a past medical history of hypertension and diabetes we want to take a look at those as well so first thing what's going on with your kidneys you as what how long ago have you been feeling pain and and how's all that
@@ -3604,19 +3664,23 @@ INSTRUCTIONS
 
 Patient will return for follow-up in 3 months.","CHIEF COMPLAINT
 
-Kidney stones, hypertension, diabetes
+Kidney stones
 
 HISTORY OF PRESENT ILLNESS
 
-Patient reports recurrent kidney stones, past medical history of hypertension and diabetes, currently taking norvasc and metformin, reports good blood sugar control but struggles with diet and fast food consumption, also reports insomnia and uses meditation apps to help
+Pain's been up and down, had 7-8 kidney stones in the past, thought this one passed 3 days ago.
 
 PHYSICAL EXAM
 
-BP 150/90, lungs clear bilaterally, heart exam reveals grade 2 systolic ejection murmur, abdomen exam shows no tenderness to palpation
+Blood pressure 150/90, palpation of abdomen shows no tenderness, no pain on pressing in abdomen or back.
+
+RESULTS
+
+Fasting blood sugar (last visit): 6.7, Using 2.5mg of Norvasc daily
 
 ASSESSMENT AND PLAN
 
-Assessment: Kidney stones passed, hypertension and diabetes under control. Plan: Referral to urology for recurrent kidney stones, urinalysis and urine culture, consult to nutrition for diet counseling, continue norvasc and metformin, start taking blood sugars before meals, prescribe melatonin as needed for insomnia",D2N118
+Urinalysis, Urine culture, Referral to urology. Monitor blood pressure, kidney stones recurrence. Consult nutrition to address diet, Keep metformin 500mg daily. Take melatonin 10mg as needed for sleep.",D2N118
 "[doctor] hey betty how are you doing
 [patient] i'm doing okay i just been really frustrated because with my asthma and it just seems like i can never catch a break never get better i'm always it seems like i'm always coughing and wheezing
 [doctor] i'm sorry to hear that what normally triggers your asthma type symptoms
@@ -3730,23 +3794,23 @@ INSTRUCTIONS
 
 The patient will follow up in 1 month for reevaluation or sooner for worsening symptoms.","CHIEF COMPLAINT
 
-Asthma symptoms, frequent coughing and wheezing
+Asthma flare-ups and wheezing
 
 HISTORY OF PRESENT ILLNESS
 
-Patient reports frequent asthma symptoms, triggered by illness and cat exposure. Uses albuterol inhaler daily, often at night. Has had multiple urgent care and ER visits in the past year, often requiring prednisone. Last exacerbation was a month ago.
+Patient reports frequent asthma symptoms, particularly when experiencing respiratory infections. Has used antibiotics and steroids for treatment.
 
 PHYSICAL EXAM
 
-BP 128/82, respiratory rate 16, oxygen saturation 99% on room air. Diminished lung sounds with occasional expiratory wheeze bilaterally. Strong bilateral pulses, no clubbing or lymphadenopathy.
+Diminished lung sounds with occasional slight expiratory wheeze, bilaterally
 
 RESULTS
 
-Pulmonary function test results consistent with asthma diagnosis.
+Pulmonary function test results consistent with asthma
 
 ASSESSMENT AND PLAN
 
-Diagnosis: Moderate intermittent asthma. Treatment: Start on inhaled steroid (Flovent) 1 puff twice daily. Continue using albuterol inhaler as needed. Create asthma action plan to manage symptoms and prevent exacerbations. Follow-up in 30 days.",D2N119
+Diagnosis: Moderate intermittent asthma. Started on Flovent 110mcg, one puff twice daily. Suggests use of rescue inhaler when experiencing acute symptoms, following an asthma action plan. Follow-up in a month.",D2N119
 "[doctor] hello larry how are you doing today
 [patient] i've been better my primary care doctor wanted me to see you for this back pain that i've been having for a couple of years now
 [doctor] okay
@@ -3841,19 +3905,19 @@ Chronic lumbar back pain
 
 HISTORY OF PRESENT ILLNESS
 
-Patient has been experiencing back pain for 2 years, initially after moving furniture. Pain is sharp and stabbing, radiating to the right leg and toe. Patient has tried physical therapy and strong pain medications, but with temporary relief. Patient is concerned about surgery and wants to avoid it.
+Patient has been experiencing back pain for 2 years, which worsens with sitting and activities. Pain described as sharp stabbing in the back and down to the right leg, especially to the big toe. Also reports numbness and tingling in the right leg. Patient has tried physical therapy, pain medications, and surgery was mentioned but not desired. Patient is overweight and has been trying to be active but has been difficult due to back pain.
 
 PHYSICAL EXAM
 
-Physical examination revealed midline tenderness at L4-L5 disk space, right-sided lumbar paravertebral tenderness, decreased sensation to light touch at the right lateral thigh at L4 dermatome, and positive straight leg test.
+Midline tenderness at L4-L5 disk space with right-sided lumbar paravertebral tenderness. Decreased sensation to light touch at the right lateral thigh at L4 dermatome.
 
 RESULTS
 
-MRI results showed disk herniation with nerve impingement.
+BP: 122/79, O2 Saturation: 98.0%, Temperature: 98.1°F
 
 ASSESSMENT AND PLAN
 
-Patient's symptoms are consistent with an L4-L5 herniated disk with radiculopathy. Recommended treatment is a spinal injection with a corticosteroid to reduce inflammation and alleviate pain.",D2N120
+L4-L5 herniated disk with radiculopathy. Recommended spinal injection with corticosteroid medication.",D2N120
 "[patient] hi kenneth how are you the medical assistant told me that you had some knee pain yeah i was getting ready for the holiday weekend and i was out on my boat skiing and i i did a jump and kinda twisted when i landed and my knee has been hurting me ever since
 [doctor] okay so that was about five days ago then
 [patient] yeah yeah that was last weekend
@@ -3961,19 +4025,23 @@ INSTRUCTIONS
 
 The patient will follow-up for his x-ray results.","CHIEF COMPLAINT
 
-Right knee pain after twisting injury while water skiing
+knee pain
 
 HISTORY OF PRESENT ILLNESS
 
-Patient reports right knee pain after twisting injury 5 days ago, pain worsens with bending or squatting, no numbness or tingling in foot, managed with Aleve and cold pack, no previous knee injuries
+I was getting ready for the holiday weekend and I was out on my boat skiing and I did a jump and kinda twisted when I landed and my knee has been hurting me ever since.
 
 PHYSICAL EXAM
 
-Vital signs: BP 120/77, HR regular, lungs clear, no lymphadenopathy, ecchymosis and edema on right knee, effusion present, pain to palpation, decreased range of motion, negative varus and valgus test, negative Lachman sign, palpable dorsalis pedis and posterior tibial pulse
+the patient's right knee is painful to palpation, and there is a palpable effusion present.
+
+RESULTS
+
+the patient's blood pressure is 125/80, and the patient's lungs are clear to auscultation bilaterally.
 
 ASSESSMENT AND PLAN
 
-Medial collateral ligament strain, ordered X-ray to rule out fractures, referred to physical therapy, prescribed meloxicam 15mg daily, advised to rest knee for a while, continued on lisinopril 20mg daily, ordered lipid panel, tetanus shot administered",D2N121
+the doctor's assessment is that the patient has a medial collateral ligament strain, and the plan is to order an X-ray, refer the patient to physical therapy, and prescribe meloxicam.",D2N121
 "[doctor] hey kyle it's nice to see you today can you tell me a little bit about what brought you in
 [patient] yeah i went to see my pcp for a cough which they diagnosed as bronchitis but then they did that chest x-ray to make sure i did n't have pneumonia and they found this lung nodule i went for a cat scan that confirmed it and they referred me here to you i'm really nervous document
 [doctor] okay well first of all i'm i'm sorry that you're nervous and what we're gon na do is we're gon na partner together okay and i'm gon na be right by your side the whole time to hopefully make you a little less nervous and and recognize the fact that we're you're gon na have a big support team around you okay
@@ -4069,23 +4137,23 @@ ASSESSMENT AND PLAN
 
 Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.","CHIEF COMPLAINT
 
-Incidentally found lung nodule on chest CT
+Incidentally found right upper lobe lung nodule
 
 HISTORY OF PRESENT ILLNESS
 
-Patient has had a cough for 3 months, diagnosed with bronchitis and referred to specialist. Has a history of rheumatoid arthritis, controlled with methotrexate. Stopped smoking 7 years ago. No pain or shortness of breath. No family history of lung cancer. No previous history of lung infections.
+Had cough for about three months, diagnosed with bronchitis by PCP, but chest X-ray and CT scan found lung nodule. Prior smoker, stopped about 7 years ago. No pain or shortness of breath.
 
 PHYSICAL EXAM
 
-Vital signs: BP 124/76, HR 70, RR 16, O2 sat 98% on room air. Lungs clear and equal bilateral. Heart regular rate and rhythm. No clicks, rubs, or murmurs. Extremities: skin pink, warm, and dry. No edema. Swelling in knuckles consistent with RA. Pulses intact and capillary refill brisk.
+Vital signs: blood pressure 124/76, heart rate 70, respiration rate 16, O2 sat 98% on room air. Lung examination: clear and equal bilateral, no clicks or murmurs. Extremity examination: slightly swollen knuckles, but no edema.
 
 RESULTS
 
-Chest CT showed a solitary 2 cm nodule in the lateral aspect of the right upper lobe, smooth in appearance, no emphysematous disease.
+Chest CT: solitary 2-cm nodule in lateral aspect of right upper lobe, smooth in appearance. No evidence of emphysematous disease.
 
 ASSESSMENT AND PLAN
 
-Incidentally found right upper lobe lung nodule. Ordered PFT and PET CT to determine if nodule is metabolically active. Suggested removal via video-assisted thoracoscopy. Patient to be under general anesthesia for 1.5 hours, admitted for 1 night, and discharged the next day. Continue RA medication therapy as previously outlined.",D2N122
+Incidentally found lung nodule, will order pulmonary function test (PFT) and PET CT to determine if nodule is metabolically active. Will recommend removal via video-assisted thoracoscopy, with general anesthesia and hospital admission.",D2N122
 "[doctor] so tyler is a 56 -year-old male who presents today complaining of difficulty swallowing and has a past medical history of diabetes and high blood pressure so tyler tell me what's going on with your swallowing problem
 [patient] well it's just been something that i have noticed over the last you know four to five weeks it seems like something is always stuck in my throat and you know just i kinda go about my day and it kinda bothers me you know a little bit sometimes a little painful and when i try to eat it just seems like i have to i do n't know when it's something solid i kinda have to wash it down on occasion i i've never really fully choked but i have to admit that i've thought about potentially choking
 [doctor] okay and is it seem to be stuck in your throat or does it seem to go in your lungs area or are you coughing with this at all or just mostly when you're swallowing
@@ -4193,19 +4261,19 @@ INSTRUCTIONS
 
 The patient will follow-up in 1 month for his diabetic lab results and any modifications needed.","CHIEF COMPLAINT
 
-Difficulty swallowing
+difficulty swallowing
 
 HISTORY OF PRESENT ILLNESS
 
-Patient reports difficulty swallowing for 4-5 weeks, feels like something is stuck in throat, more with solids, no pain, no coughing, no vomiting blood, no weight loss, no chest pain or shortness of breath. Diabetes and high blood pressure managed with metformin and norvasc.
+patient has noticed difficulty swallowing over last 4-5 weeks, something always feels stuck in throat, sometimes painful, more with solids, no vomiting or coughing
 
 PHYSICAL EXAM
 
-Normal neck exam, no swelling, normal thyroid, no masses or lymph nodes, normal lung and heart exams, epigastric tenderness, normal back and extremity exams, normal neurological exam.
+patient's neck is fine, no swelling, thyroid feels normal, no lymph nodes, no masses or swelling in throat, lung and heart exams are clear, belly exam shows epigastric tenderness but no masses or swelling
 
 ASSESSMENT AND PLAN
 
-Possible narrowing of the esophagus causing difficulty swallowing, referral to gastroenterology for scope, prilosec 20mg once daily, chew food frequently, follow-up in a month for hemoglobin A1c and blood work results, eye referral for diabetic retinopathy.",D2N123
+concerned about narrowing in throat causing difficulty swallowing, may be stricture or narrowing of esophagus, refer to gastroenterology, take scope and look down throat, prescribe prilosec 20mg once daily, recommend careful chewing of food, regular follow-up in a month, eye referral to ophthalmology for diabetic retinopathy, continue metformin, consider adjustments if needed after blood test results",D2N123
 "[doctor] so jerry is a 45 -year-old male who came in today with an ankle injury jerry what happened
 [patient] hey doctor michael yeah so my son sean i think you met in the past he he started playing basketball and there we do multiple seasons and so we're kinda getting ready for the next season that starts in in april and we were at the courts plan and i went up for a shot and he's far more aggressive than with me than he is with you know his peers i guess he could say and so he he found me while i was going for a lap and then when i came down i kind of landed awkwardly and i kind of like rolled and twisted my my ankle so now it's it's hurting a bit like kind of on the outside you can you can even see it's it's bruised up and a bit swollen
 [doctor] yeah
@@ -4273,23 +4341,23 @@ After reviewing the patient's examination and radiographic findings today, I hav
 
 The patient understands and agrees with the recommended medical treatment plan.","CHIEF COMPLAINT
 
-Ankle injury from basketball
+Ankle injury
 
 HISTORY OF PRESENT ILLNESS
 
-Patient, Jerry, 45-year-old male, reports ankle injury from basketball. He landed awkwardly and twisted his ankle, resulting in bruising and swelling. He has trouble walking and feels instability in the ankle. He recently started working out and doesn't want to disrupt his routine. He also mentioned coaching his son's basketball team starting in April.
+Patient had an ankle injury while playing basketball with his son. He landed awkwardly and twisted his ankle, resulting in swelling and pain on the outside of his ankle. He has been having trouble walking and feels instability in his ankle.
 
 PHYSICAL EXAM
 
-Tenderness on the lateral and medial deltoid regions, swelling on the lateral side of the ankle, brisk capillary refill, no epidermolysis, skin intact. Patient has trouble walking and feels instability in the ankle.
+Tenderness on the lateral side of the ankle, with some tenderness on the medial deltoid region. Swelling on the lateral side of the ankle. Skin is intact and capillary refill is brisk.
 
 RESULTS
 
-X-ray results show a displaced lateral malleolus fracture at the Weber C level, no evidence of medial or posterior malleolar fractures.
+X-ray showed a displaced lateral malleolus fracture at the Weber C level, with no evidence of medial or posterior malleolar fractures.
 
 ASSESSMENT AND PLAN
 
-Diagnosis: Lateral malleolar fracture. Recommendation: Surgery with plate and screws to stabilize the ankle. Patient will be out for approximately 3 months. Medication: Meloxicam to reduce swelling. Instructions: Ice, elevate ankle, and use crutches. Continue coaching in April.",D2N124
+Lateral malleolar fracture. Surgery is recommended to insert a plate and screws. Patient will be out for 3 months, but can continue coaching in April. Prescribed meloxicam to reduce swelling. Ice and elevate the ankle regularly.",D2N124
 "[patient] miss edwards is here for evaluation of facial pain this is a 54 -year-old male
 [doctor] how're you doing doctor cruz nice to see you today
 [patient] good to see you mister edwards i'm doctor
@@ -4378,19 +4446,23 @@ INSTRUCTIONS
 
 The patient will follow up with me in 1 month. If at that time his facial pain persists, we may further discuss surgical options.","CHIEF COMPLAINT
 
-Facial pain
+Evaluation of facial pain
 
 HISTORY OF PRESENT ILLNESS
 
-Patient reports stabbing, shooting pain in right cheek bone area for 2-3 months, worse with temperature changes. No sensory loss, weakness, or vision changes. Pain is excruciating, 10/10. Tried ibuprofen, Motrin, and tiger balm with no relief.
+Patient has stabbing, shooting pain in right cheek bone area, especially in cold temperatures, lasting from a few minutes to an hour, with a severity of 10/10
 
 PHYSICAL EXAM
 
-Patient follows doctor's finger in both directions, has symmetric teeth, and can hear on both sides. Right side of face is numb, left side is normal. Doctor pokes patient's face with a needle and finds dull sensation on left side and sharp sensation on right side.
+Patient has symmetric teeth, follows doctor's finger in both directions, can hear with both ears, and has a little numbness on right side of face
+
+RESULTS
+
+MRI shows small blood vessel pinching trigeminal nerve, which may cause trigeminal neuralgia
 
 ASSESSMENT AND PLAN
 
-Patient has trigeminal neuralgia due to compression of the trigeminal nerve by a small blood vessel. Treatment plan is to start with medication (Tegretol) and follow up in a month. If medication is not effective, surgery may be considered to decompress the nerve.",D2N125
+Patient may have trigeminal neuralgia, treatment will be gabapentin (tegretol) first, and if not effective, surgical decompression of the nerve may be considered",D2N125
 "[doctor] hi michelle what's been going on the medical assistant told me that you injured your knee
 [patient] yeah i'm gon na have to keep this my favorite story is that i had a sandra who injured her knee cold dancing so that would immediately came up to mine but let's try skiing so i was skiing in vermont last weekend and i caught my ski when i was coming off the lift and i fell and my knee popped and it's hurt ever since
 [doctor] okay and were you able to ski down the hill or did you have to be taken down by the ski patrol
@@ -4483,19 +4555,23 @@ INSTRUCTIONS
 
 The patient will follow up with me once the MRI results are available for review and further discussion.","CHIEF COMPLAINT
 
-Right knee injury from skiing accident
+injured knee
 
 HISTORY OF PRESENT ILLNESS
 
-Patient injured right knee while skiing, reports pain on the outside and feeling like it won't hold weight, unable to bend or straighten fully, no numbness or tingling in toes, generally healthy, no high blood pressure or diabetes
+patient fell skiing in vermont and heard a pop in her right knee, has been hurt ever since. unable to bear weight after injury.
 
 PHYSICAL EXAM
 
-Right knee examination reveals edema and effusion, pain to palpation, decreased flexion and extension, positive Lachman sign, palpable dorsalis pedis and posterior tibial pulse, no leg edema in the ankle
+right knee examination: edema and effusion over the right knee, pain to palpation of the right lateral knee, decreased flexion and extension, positive lachman sign, palpable dorsalis pedis and posterior tibial pulse. lungs are clear to auscultation. heart sounds regular and rhythmic.
+
+RESULTS
+
+xrays did not show any bony abnormalities
 
 ASSESSMENT AND PLAN
 
-Concerned about ACL rupture, ordering knee MRI to confirm, recommending continued use of ibuprofen, putting patient in a brace, planning follow-up conversation after MRI results",D2N126
+possible ruptured acl, ordered knee mri to confirm. continue with ibuprofen for pain. use a brace to support knee. mri will be done in the next couple days. discussion of treatment will follow.",D2N126
 "[doctor] hey brandon you know glad to see you in here today i see on your chart that you're experiencing some neck pain could you tell me a bit about what happened
 [patient] yeah i was in a car crash
 [doctor] wow okay when was that
@@ -4610,4 +4686,22 @@ After reviewing the patient's examination and radiographic findings today, I hav
 
 INSTRUCTIONS
 
-The patient will follow up with me after his MRI for results.",,D2N127
+The patient will follow up with me after his MRI for results.","CHIEF COMPLAINT
+
+neck pain
+
+HISTORY OF PRESENT ILLNESS
+
+multiple car crashes, neck pain since February, fentanyl prescribed before
+
+PHYSICAL EXAM
+
+neck pain on palpation, moderate range of movement, no bruising, swelling, or laceration
+
+RESULTS
+
+imaging results pending CT/MRI
+
+ASSESSMENT AND PLAN
+
+diagnosis: neck sprain, treatment: robaxin, ice, physical therapy, potential local injections, refer to pain medicine",D2N127

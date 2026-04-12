@@ -1,0 +1,1288 @@
+[
+  {
+    "encounter_id": "D2N088",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "medication_count: 2 \u2014 transcript never stated this specific number; doctor only mentioned patient is 'on medication for other things' without enumerating them"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "minor",
+    "reasoning": "The extraction contains one hallucinated value: medication_count is set to 2, but the transcript never provides a specific count of medications. The doctor mentions the patient is 'on medication for other things' and later confirms 'you're taking your medication' but never enumerates how many. All other typed fields are either accurately extracted (patient_age: 59, patient_gender: male, symptom_duration, pain_location, hemoglobin_a1c: 8.0) or appropriately null where values were not explicitly stated. This is a minor severity issue as it does not directly impact clinical safety, though medication counts can be relevant for polypharmacy assessment.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N088",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "medication_count: 2 \u2014 transcript never stated this specific number; doctor only mentioned patient is 'on medication for other things' without enumerating them"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "minor",
+      "reasoning": "The extraction contains one hallucinated value: medication_count is set to 2, but the transcript never provides a specific count of medications. The doctor mentions the patient is 'on medication for other things' and later confirms 'you're taking your medication' but never enumerates how many. All other typed fields are either accurately extracted (patient_age: 59, patient_gender: male, symptom_duration, pain_location, hemoglobin_a1c: 8.0) or appropriately null where values were not explicitly stated. This is a minor severity issue as it does not directly impact clinical safety, though medication counts can be relevant for polypharmacy assessment."
+    }
+  },
+  {
+    "encounter_id": "D2N089",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All extracted typed fields are accurate and grounded in the transcript. Patient age (52), gender (female), and systolic murmur grade (2/6) are explicitly stated. Symptom duration captures the temporal context of palpitations. Medication count (2) correctly reflects methotrexate and protonix. All null fields are appropriate as those values were not explicitly stated in the transcript.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N089",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All extracted typed fields are accurate and grounded in the transcript. Patient age (52), gender (female), and systolic murmur grade (2/6) are explicitly stated. Symptom duration captures the temporal context of palpitations. Medication count (2) correctly reflects methotrexate and protonix. All null fields are appropriate as those values were not explicitly stated in the transcript."
+    }
+  },
+  {
+    "encounter_id": "D2N090",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "bp_systolic: 120 \u2014 transcript never stated this value",
+      "bp_diastolic: 77 \u2014 transcript never stated this value",
+      "heart_rate: 80 \u2014 transcript never stated this value",
+      "o2_saturation: 99.0 \u2014 transcript never stated this value"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "severe",
+    "reasoning": "The system fabricated specific numeric values for four vital signs (BP 120/77, HR 80, O2 sat 99%) that were never stated in the transcript. The doctor only said 'your vital signs look great' and 'your pulse ox is great' and 'your blood pressure and heart rate are right where they should be' without providing any actual numbers. Fabricating vital signs is clinically dangerous as these values could be used for medical decision-making. The correctly extracted values (age 62, gender male, HbA1c 8.0, glucose 162, murmur grade 2/6) demonstrate the system can extract when values are explicitly stated.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N090",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "bp_systolic: 120 \u2014 transcript never stated this value",
+        "bp_diastolic: 77 \u2014 transcript never stated this value",
+        "heart_rate: 80 \u2014 transcript never stated this value",
+        "o2_saturation: 99.0 \u2014 transcript never stated this value"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "severe",
+      "reasoning": "The system fabricated specific numeric values for four vital signs (BP 120/77, HR 80, O2 sat 99%) that were never stated in the transcript. The doctor only said 'your vital signs look great' and 'your pulse ox is great' and 'your blood pressure and heart rate are right where they should be' without providing any actual numbers. Fabricating vital signs is clinically dangerous as these values could be used for medical decision-making. The correctly extracted values (age 62, gender male, HbA1c 8.0, glucose 162, murmur grade 2/6) demonstrate the system can extract when values are explicitly stated."
+    }
+  },
+  {
+    "encounter_id": "D2N091",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All typed fields are accurately extracted or legitimately null. Patient age (54), gender (male), and muscle strength values (right 4/5, left 3/5) are explicitly stated in the transcript and correctly captured. Vital signs are mentioned as 'looking really good' but no specific numeric values are provided, so null values are appropriate. Social history items (smoking, alcohol, drugs) are not discussed in the transcript, making null values correct. No hallucinated or missed values detected.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N091",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All typed fields are accurately extracted or legitimately null. Patient age (54), gender (male), and muscle strength values (right 4/5, left 3/5) are explicitly stated in the transcript and correctly captured. Vital signs are mentioned as 'looking really good' but no specific numeric values are provided, so null values are appropriate. Social history items (smoking, alcohol, drugs) are not discussed in the transcript, making null values correct. No hallucinated or missed values detected."
+    }
+  },
+  {
+    "encounter_id": "D2N092",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All typed fields are accurately extracted or legitimately null. Patient age (43), gender (female), and pain location (distal radius) are correctly captured from the transcript. Medication count (1) correctly reflects the single prescribed medication (Motrin). No numeric pain severity, vital signs, or social history values were explicitly stated in the transcript, so null values are appropriate. No hallucinated or missed values detected.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N092",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All typed fields are accurately extracted or legitimately null. Patient age (43), gender (female), and pain location (distal radius) are correctly captured from the transcript. Medication count (1) correctly reflects the single prescribed medication (Motrin). No numeric pain severity, vital signs, or social history values were explicitly stated in the transcript, so null values are appropriate. No hallucinated or missed values detected."
+    }
+  },
+  {
+    "encounter_id": "D2N093",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 2,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": true,
+    "hallucinated_examples": [],
+    "missed_examples": [
+      "systolic_murmur_grade: transcript says '3 out of 6 systolic ejection murmur' but field shows 3 (correctly captured, not missed)",
+      "alcohol_use: transcript says 'tough during the holiday season, but I'm better' indicating alcohol use but field is null"
+    ],
+    "overall_failure_type": "missed",
+    "severity": "minor",
+    "reasoning": "The extraction correctly captured patient_age (62), patient_gender (male), symptom_duration (10 days), and systolic_murmur_grade (3). However, it missed alcohol_use, which was explicitly discussed when the doctor asked about alcohol intake and the patient acknowledged it was 'tough during the holiday season' but he's 'better', indicating he does consume alcohol. This is a minor omission as it does not directly impact the acute clinical decision-making for the heart failure exacerbation, though it is relevant for comprehensive documentation.",
+    "taxonomy_label": "missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N093",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": true,
+      "hallucinated_examples": [],
+      "missed_examples": [
+        "systolic_murmur_grade: transcript says '3 out of 6 systolic ejection murmur' but field shows 3 (correctly captured, not missed)",
+        "alcohol_use: transcript says 'tough during the holiday season, but I'm better' indicating alcohol use but field is null"
+      ],
+      "overall_failure_type": "missed",
+      "severity": "minor",
+      "reasoning": "The extraction correctly captured patient_age (62), patient_gender (male), symptom_duration (10 days), and systolic_murmur_grade (3). However, it missed alcohol_use, which was explicitly discussed when the doctor asked about alcohol intake and the patient acknowledged it was 'tough during the holiday season' but he's 'better', indicating he does consume alcohol. This is a minor omission as it does not directly impact the acute clinical decision-making for the heart failure exacerbation, though it is relevant for comprehensive documentation."
+    }
+  },
+  {
+    "encounter_id": "D2N094",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All extracted typed fields are accurate and grounded in the transcript. Patient age (42), gender (female), symptom duration (5 days), pain severity (7/10), and pain location (index finger) are all explicitly stated. The medication_count of 1 correctly reflects the single new prescription (Mobic). All null fields are appropriate as those values were not mentioned in the encounter. No hallucinations or missed extractions detected.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N094",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All extracted typed fields are accurate and grounded in the transcript. Patient age (42), gender (female), symptom duration (5 days), pain severity (7/10), and pain location (index finger) are all explicitly stated. The medication_count of 1 correctly reflects the single new prescription (Mobic). All null fields are appropriate as those values were not mentioned in the encounter. No hallucinations or missed extractions detected."
+    }
+  },
+  {
+    "encounter_id": "D2N095",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "bp_systolic: 120 \u2014 transcript never stated this numeric value",
+      "bp_diastolic: 77 \u2014 transcript never stated this numeric value"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The system fabricated specific blood pressure values (120/77) that were never stated in the transcript. The doctor only said 'your vital signs look great' and 'your blood pressure's really well controlled' without providing numeric values. While the patient mentioned home readings 'looking great,' no specific numbers were given. This represents a clinically significant hallucination as fabricated vital signs could mislead future care decisions, though the values fall within a plausible range for controlled hypertension.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N095",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "bp_systolic: 120 \u2014 transcript never stated this numeric value",
+        "bp_diastolic: 77 \u2014 transcript never stated this numeric value"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The system fabricated specific blood pressure values (120/77) that were never stated in the transcript. The doctor only said 'your vital signs look great' and 'your blood pressure's really well controlled' without providing numeric values. While the patient mentioned home readings 'looking great,' no specific numbers were given. This represents a clinically significant hallucination as fabricated vital signs could mislead future care decisions, though the values fall within a plausible range for controlled hypertension."
+    }
+  },
+  {
+    "encounter_id": "D2N096",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "medication_count: 2 \u2014 transcript never stated this value; only ibuprofen was prescribed, and Tylenol was patient's prior self-medication, not a current prescription"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "minor",
+    "reasoning": "The medication_count field shows 2, but the transcript only documents one prescribed medication (ibuprofen 600mg three times daily). The doctor mentions alternative options (Advil, Aleve) but does not prescribe them. The patient's prior Tylenol use was self-medication before the visit, not a current prescription. All other typed fields are accurately extracted or legitimately null, with patient_age (44), patient_gender (female), symptom_duration (a week), and pain_location (left shoulder) correctly captured from explicit transcript statements.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N096",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "medication_count: 2 \u2014 transcript never stated this value; only ibuprofen was prescribed, and Tylenol was patient's prior self-medication, not a current prescription"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "minor",
+      "reasoning": "The medication_count field shows 2, but the transcript only documents one prescribed medication (ibuprofen 600mg three times daily). The doctor mentions alternative options (Advil, Aleve) but does not prescribe them. The patient's prior Tylenol use was self-medication before the visit, not a current prescription. All other typed fields are accurately extracted or legitimately null, with patient_age (44), patient_gender (female), symptom_duration (a week), and pain_location (left shoulder) correctly captured from explicit transcript statements."
+    }
+  },
+  {
+    "encounter_id": "D2N097",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "bp_systolic: 120 \u2014 transcript never stated this numeric value",
+      "bp_diastolic: 77 \u2014 transcript never stated this numeric value",
+      "heart_rate: 60 \u2014 transcript never stated this numeric value"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The system fabricated specific numeric values for vital signs (BP 120/77, HR 60) that were never stated in the transcript. The doctor only said 'your blood pressure looks really good, as does your heart rate' without providing actual numbers. While the systolic_murmur_grade of 2 is correctly extracted from '2/6 systolic ejection murmur', the hallucinated vital signs represent moderate clinical risk as they could be used for documentation or clinical decision-making despite being fabricated.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N097",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "bp_systolic: 120 \u2014 transcript never stated this numeric value",
+        "bp_diastolic: 77 \u2014 transcript never stated this numeric value",
+        "heart_rate: 60 \u2014 transcript never stated this numeric value"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The system fabricated specific numeric values for vital signs (BP 120/77, HR 60) that were never stated in the transcript. The doctor only said 'your blood pressure looks really good, as does your heart rate' without providing actual numbers. While the systolic_murmur_grade of 2 is correctly extracted from '2/6 systolic ejection murmur', the hallucinated vital signs represent moderate clinical risk as they could be used for documentation or clinical decision-making despite being fabricated."
+    }
+  },
+  {
+    "encounter_id": "D2N098",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": true,
+    "hallucinated_examples": [],
+    "missed_examples": [
+      "patient_gender: transcript states 'mr. james' and uses 'he/his' pronouns throughout \u2014 gender is male but field is null"
+    ],
+    "overall_failure_type": "missed",
+    "severity": "minor",
+    "reasoning": "The extraction correctly captured patient_age (65, calculated from DOB 9/29/1957), symptom_duration (5 months), and pain_location (left shoulder and elbow). However, it missed patient_gender despite clear indicators throughout the transcript ('Mr. James', 'he', 'his'). Other null fields are appropriate as those values were not explicitly stated in the transcript (pain severity was described qualitatively as 'pretty bad' but no numeric scale was used; vitals and lab values were not mentioned). This is a minor extraction failure as gender is clearly inferable from the transcript but does not affect clinical safety.",
+    "taxonomy_label": "missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N098",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": true,
+      "hallucinated_examples": [],
+      "missed_examples": [
+        "patient_gender: transcript states 'mr. james' and uses 'he/his' pronouns throughout \u2014 gender is male but field is null"
+      ],
+      "overall_failure_type": "missed",
+      "severity": "minor",
+      "reasoning": "The extraction correctly captured patient_age (65, calculated from DOB 9/29/1957), symptom_duration (5 months), and pain_location (left shoulder and elbow). However, it missed patient_gender despite clear indicators throughout the transcript ('Mr. James', 'he', 'his'). Other null fields are appropriate as those values were not explicitly stated in the transcript (pain severity was described qualitatively as 'pretty bad' but no numeric scale was used; vitals and lab values were not mentioned). This is a minor extraction failure as gender is clearly inferable from the transcript but does not affect clinical safety."
+    }
+  },
+  {
+    "encounter_id": "D2N099",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "patient_age: 2 \u2014 transcript states date of birth 8/10/2020, which would make patient approximately 4 years old at time of encounter, not 2 years old",
+      "medication_count: 3 \u2014 transcript mentions saline mist, Tylenol, baby Vick's, and humidifier use, but medication_count should reflect actual medications (saline, Tylenol, possibly baby Vick's = 2-3 depending on definition), and the exact count of 3 is not explicitly stated or clearly derivable"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The patient_age field contains an incorrect value derived from miscalculation of the stated date of birth (8/10/2020), resulting in age 2 instead of approximately 4 years. The medication_count of 3 appears to be an inference rather than an explicit statement, though it may be defensible depending on what counts as a medication. The age error is clinically significant as it affects dosing calculations and developmental assessments, warranting a moderate severity rating.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N099",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "patient_age: 2 \u2014 transcript states date of birth 8/10/2020, which would make patient approximately 4 years old at time of encounter, not 2 years old",
+        "medication_count: 3 \u2014 transcript mentions saline mist, Tylenol, baby Vick's, and humidifier use, but medication_count should reflect actual medications (saline, Tylenol, possibly baby Vick's = 2-3 depending on definition), and the exact count of 3 is not explicitly stated or clearly derivable"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The patient_age field contains an incorrect value derived from miscalculation of the stated date of birth (8/10/2020), resulting in age 2 instead of approximately 4 years. The medication_count of 3 appears to be an inference rather than an explicit statement, though it may be defensible depending on what counts as a medication. The age error is clinically significant as it affects dosing calculations and developmental assessments, warranting a moderate severity rating."
+    }
+  },
+  {
+    "encounter_id": "D2N100",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "medication_count: 1 \u2014 transcript never stated a specific medication count; patient uses over-the-counter products (persa-gel, elf cleanser, toner) but no prescription medications were documented as current medications"
+    ],
+    "missed_examples": [
+      "patient_gender: transcript clearly identifies patient as female ('Kayla', 'she', 'her', 'Mrs. Ward' referring to mother)"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "minor",
+    "reasoning": "The extraction missed the clearly stated patient gender (female) which is explicitly referenced throughout the transcript. Additionally, medication_count was set to 1 when no prescription medications were documented; the patient only uses over-the-counter products. These are minor extraction errors that do not affect clinical safety or treatment decisions, as gender can be inferred from context and the medication count discrepancy involves non-prescription products rather than critical medication information.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N100",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "medication_count: 1 \u2014 transcript never stated a specific medication count; patient uses over-the-counter products (persa-gel, elf cleanser, toner) but no prescription medications were documented as current medications"
+      ],
+      "missed_examples": [
+        "patient_gender: transcript clearly identifies patient as female ('Kayla', 'she', 'her', 'Mrs. Ward' referring to mother)"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "minor",
+      "reasoning": "The extraction missed the clearly stated patient gender (female) which is explicitly referenced throughout the transcript. Additionally, medication_count was set to 1 when no prescription medications were documented; the patient only uses over-the-counter products. These are minor extraction errors that do not affect clinical safety or treatment decisions, as gender can be inferred from context and the medication count discrepancy involves non-prescription products rather than critical medication information."
+    }
+  },
+  {
+    "encounter_id": "D2N101",
+    "technique": "gvr",
+    "structural_failure_type": "pydantic",
+    "structural_failed_fields": [
+      "assessment_and_plan"
+    ],
+    "attempts": 3,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "Structural failure \u2014 typed field judge not applicable.",
+    "taxonomy_label": "pydantic",
+    "judge_skipped": true,
+    "judge_raw": null
+  },
+  {
+    "encounter_id": "D2N102",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All typed fields are accurately extracted from the transcript. Patient age (43, calculated from DOB February 15, 1979), gender (female), symptom duration (six weeks), pain severity (8 out of 10), kidney stone size (6 millimeters), bladder volumes (533 ml pre-void, 0 ml post-void), and medication count (1 - Alavert) are all explicitly stated. Fields appropriately left null (pain quality, pain location, vital signs, substance use) were either not mentioned or not explicitly quantified in the transcript.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N102",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All typed fields are accurately extracted from the transcript. Patient age (43, calculated from DOB February 15, 1979), gender (female), symptom duration (six weeks), pain severity (8 out of 10), kidney stone size (6 millimeters), bladder volumes (533 ml pre-void, 0 ml post-void), and medication count (1 - Alavert) are all explicitly stated. Fields appropriately left null (pain quality, pain location, vital signs, substance use) were either not mentioned or not explicitly quantified in the transcript."
+    }
+  },
+  {
+    "encounter_id": "D2N103",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": true,
+    "hallucinated_examples": [],
+    "missed_examples": [
+      "patient_gender: transcript states 'Ms. Sanchez' and 'she' throughout but field is null"
+    ],
+    "overall_failure_type": "missed",
+    "severity": "minor",
+    "reasoning": "The extraction correctly captured patient_age (calculated from DOB 9/23/1962), pain_location (chest), and medication_count (3: Coumadin, Lasix, Atenolol). However, patient_gender was missed despite clear references to 'Ms. Sanchez' and female pronouns throughout the transcript. No hallucinated values were detected \u2014 all populated fields are grounded in the transcript. The missed gender field is a minor omission that does not affect clinical safety or treatment decisions.",
+    "taxonomy_label": "missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N103",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": true,
+      "hallucinated_examples": [],
+      "missed_examples": [
+        "patient_gender: transcript states 'Ms. Sanchez' and 'she' throughout but field is null"
+      ],
+      "overall_failure_type": "missed",
+      "severity": "minor",
+      "reasoning": "The extraction correctly captured patient_age (calculated from DOB 9/23/1962), pain_location (chest), and medication_count (3: Coumadin, Lasix, Atenolol). However, patient_gender was missed despite clear references to 'Ms. Sanchez' and female pronouns throughout the transcript. No hallucinated values were detected \u2014 all populated fields are grounded in the transcript. The missed gender field is a minor omission that does not affect clinical safety or treatment decisions."
+    }
+  },
+  {
+    "encounter_id": "D2N104",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All typed fields are accurately extracted or legitimately null. Patient age (61, calculated from DOB 5/7/1961), gender (female, inferred from name 'Judy' and 'Ms. Gomez'), symptom_duration (ongoing), pain_location (joints in feet and knees), and medication_count (2: prednisone and methotrexate) are all correctly captured. No numeric pain severity, vital signs, or lab values were explicitly stated in the transcript, so null values are appropriate. No hallucinated data present.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N104",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All typed fields are accurately extracted or legitimately null. Patient age (61, calculated from DOB 5/7/1961), gender (female, inferred from name 'Judy' and 'Ms. Gomez'), symptom_duration (ongoing), pain_location (joints in feet and knees), and medication_count (2: prednisone and methotrexate) are all correctly captured. No numeric pain severity, vital signs, or lab values were explicitly stated in the transcript, so null values are appropriate. No hallucinated data present."
+    }
+  },
+  {
+    "encounter_id": "D2N105",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "systolic_murmur_grade: 4 \u2014 transcript never stated a numeric murmur grade",
+      "medication_count: 6 \u2014 transcript never stated a specific number of medications"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The system hallucinated two typed field values that were never stated in the transcript. The systolic_murmur_grade of 4 is particularly concerning as the doctor only mentioned 'a heart murmur' and 'new worrisome heart murmur' without any numeric grading. The medication_count of 6 was also fabricated \u2014 the doctor only confirmed the patient was taking medications reviewed with Madison, but no count was provided. These fabrications could affect clinical decision-making regarding murmur severity assessment and medication reconciliation.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N105",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "systolic_murmur_grade: 4 \u2014 transcript never stated a numeric murmur grade",
+        "medication_count: 6 \u2014 transcript never stated a specific number of medications"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The system hallucinated two typed field values that were never stated in the transcript. The systolic_murmur_grade of 4 is particularly concerning as the doctor only mentioned 'a heart murmur' and 'new worrisome heart murmur' without any numeric grading. The medication_count of 6 was also fabricated \u2014 the doctor only confirmed the patient was taking medications reviewed with Madison, but no count was provided. These fabrications could affect clinical decision-making regarding murmur severity assessment and medication reconciliation."
+    }
+  },
+  {
+    "encounter_id": "D2N106",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All typed fields are either correctly extracted or legitimately null. The alcohol_use field is correctly set to true based on the doctor's reference to 'heavy drinking' in the transcript. The medication_count of 2 accurately reflects the albuterol inhaler and Singulair mentioned in the assessment. No vital sign values were explicitly stated as numbers in the transcript, so those fields are appropriately null. No hallucinated values were introduced and no explicitly stated extractable values were missed.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N106",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All typed fields are either correctly extracted or legitimately null. The alcohol_use field is correctly set to true based on the doctor's reference to 'heavy drinking' in the transcript. The medication_count of 2 accurately reflects the albuterol inhaler and Singulair mentioned in the assessment. No vital sign values were explicitly stated as numbers in the transcript, so those fields are appropriately null. No hallucinated values were introduced and no explicitly stated extractable values were missed."
+    }
+  },
+  {
+    "encounter_id": "D2N107",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "symptom_duration: 6 hours \u2014 transcript never stated this value. The partner said 'it's been hurting for like six hours now' but this was stated in a hypothetical/exaggerated context ('I think he had surgery yesterday... it's been hurting for like six hours now') and contradicts the patient's actual timeline of 'yesterday... about two hours later my back started tightening up'"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "minor",
+    "reasoning": "The symptom_duration field contains '6 hours' which appears to be extracted from the partner's exaggerated statement made in a non-literal context, rather than the patient's actual timeline of symptoms starting 'yesterday' after raking leaves. While this represents a hallucination (extracting a value from unreliable context), the severity is minor because the actual symptom onset timeframe is ambiguous in the transcript and this error is unlikely to affect clinical management. All other typed fields are appropriately null given the information explicitly stated in the transcript.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N107",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "symptom_duration: 6 hours \u2014 transcript never stated this value. The partner said 'it's been hurting for like six hours now' but this was stated in a hypothetical/exaggerated context ('I think he had surgery yesterday... it's been hurting for like six hours now') and contradicts the patient's actual timeline of 'yesterday... about two hours later my back started tightening up'"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "minor",
+      "reasoning": "The symptom_duration field contains '6 hours' which appears to be extracted from the partner's exaggerated statement made in a non-literal context, rather than the patient's actual timeline of symptoms starting 'yesterday' after raking leaves. While this represents a hallucination (extracting a value from unreliable context), the severity is minor because the actual symptom onset timeframe is ambiguous in the transcript and this error is unlikely to affect clinical management. All other typed fields are appropriately null given the information explicitly stated in the transcript."
+    }
+  },
+  {
+    "encounter_id": "D2N108",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "pain_severity: 5.0 \u2014 transcript never stated a numeric pain score; patient only said 'sometimes it throbs' and 'I don't have specific pain'"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The system hallucinated a pain_severity value of 5.0 when no numeric pain score was provided in the transcript. The patient described throbbing without specific pain but never quantified it on a numeric scale. This fabricated value could mislead clinical decision-making regarding pain management. All other typed fields are either accurately extracted (symptom_duration: 2 months, hemoglobin_a1c: 10.0, wound dimensions) or legitimately null where values were not stated.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N108",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "pain_severity: 5.0 \u2014 transcript never stated a numeric pain score; patient only said 'sometimes it throbs' and 'I don't have specific pain'"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The system hallucinated a pain_severity value of 5.0 when no numeric pain score was provided in the transcript. The patient described throbbing without specific pain but never quantified it on a numeric scale. This fabricated value could mislead clinical decision-making regarding pain management. All other typed fields are either accurately extracted (symptom_duration: 2 months, hemoglobin_a1c: 10.0, wound dimensions) or legitimately null where values were not stated."
+    }
+  },
+  {
+    "encounter_id": "D2N109",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All extracted typed fields are accurately grounded in the transcript. Patient demographics (36-year-old female), symptom duration (2 days), pain location (outside of ankle), vital signs (BP 120/70), hemoglobin A1c (6.8), systolic murmur grade (2 over 6), and medication count (metformin and Norvasc = 2) are all explicitly stated. Fields left null (pain severity, smoking status, heart rate, etc.) are appropriate as these values were not mentioned in the encounter. No hallucinated or missed values detected.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N109",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All extracted typed fields are accurately grounded in the transcript. Patient demographics (36-year-old female), symptom duration (2 days), pain location (outside of ankle), vital signs (BP 120/70), hemoglobin A1c (6.8), systolic murmur grade (2 over 6), and medication count (metformin and Norvasc = 2) are all explicitly stated. Fields left null (pain severity, smoking status, heart rate, etc.) are appropriate as these values were not mentioned in the encounter. No hallucinated or missed values detected."
+    }
+  },
+  {
+    "encounter_id": "D2N110",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "hemoglobin_a1c: 8.0 \u2014 transcript states 'a little over eight' which is imprecise and should not be recorded as exactly 8.0",
+      "wound_length_cm: 5.08 \u2014 transcript states 'one by two inch' wound but this was converted to centimeters (5.08 cm = 2 inches) when the original measurement was in inches",
+      "wound_width_cm: 2.54 \u2014 transcript states 'one by two inch' wound but this was converted to centimeters (2.54 cm = 1 inch) when the original measurement was in inches"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "minor",
+    "reasoning": "The system hallucinated precise numeric values where the transcript provided approximate or different units. The HbA1c was stated as 'a little over eight' but recorded as exactly 8.0, introducing false precision. The wound dimensions were stated in inches (1x2) but converted to centimeters without documentation that this conversion occurred, potentially causing confusion. However, these are minor issues as the clinical meaning is largely preserved and the conversions are mathematically correct, though the unit change was not transparent.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N110",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "hemoglobin_a1c: 8.0 \u2014 transcript states 'a little over eight' which is imprecise and should not be recorded as exactly 8.0",
+        "wound_length_cm: 5.08 \u2014 transcript states 'one by two inch' wound but this was converted to centimeters (5.08 cm = 2 inches) when the original measurement was in inches",
+        "wound_width_cm: 2.54 \u2014 transcript states 'one by two inch' wound but this was converted to centimeters (2.54 cm = 1 inch) when the original measurement was in inches"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "minor",
+      "reasoning": "The system hallucinated precise numeric values where the transcript provided approximate or different units. The HbA1c was stated as 'a little over eight' but recorded as exactly 8.0, introducing false precision. The wound dimensions were stated in inches (1x2) but converted to centimeters without documentation that this conversion occurred, potentially causing confusion. However, these are minor issues as the clinical meaning is largely preserved and the conversions are mathematically correct, though the unit change was not transparent."
+    }
+  },
+  {
+    "encounter_id": "D2N111",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": true,
+    "hallucinated_examples": [],
+    "missed_examples": [
+      "patient_gender: transcript says 'hey william' (male name) but field is null"
+    ],
+    "overall_failure_type": "missed",
+    "severity": "minor",
+    "reasoning": "The typed field extraction correctly captured symptom_duration ('a week'), pain_location ('right knee'), and vital signs (bp_systolic: 180, bp_diastolic: 80) as explicitly stated in the transcript. However, patient_gender was missed despite the doctor addressing the patient as 'William' at the start, which strongly indicates male gender. No hallucinated values were detected \u2014 all populated fields correspond to explicit statements in the transcript. This is a minor omission that does not affect clinical safety.",
+    "taxonomy_label": "missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N111",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": true,
+      "hallucinated_examples": [],
+      "missed_examples": [
+        "patient_gender: transcript says 'hey william' (male name) but field is null"
+      ],
+      "overall_failure_type": "missed",
+      "severity": "minor",
+      "reasoning": "The typed field extraction correctly captured symptom_duration ('a week'), pain_location ('right knee'), and vital signs (bp_systolic: 180, bp_diastolic: 80) as explicitly stated in the transcript. However, patient_gender was missed despite the doctor addressing the patient as 'William' at the start, which strongly indicates male gender. No hallucinated values were detected \u2014 all populated fields correspond to explicit statements in the transcript. This is a minor omission that does not affect clinical safety."
+    }
+  },
+  {
+    "encounter_id": "D2N112",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All typed fields are accurately extracted or legitimately null. Pain severity correctly captured as 6.0 (patient stated 'right now it's six out of ten'), pain quality as 'Electrical toothache' (exact quote), pain location accurately describes lower back radiating down left leg, and muscle strength values (5/5 right, 4/5 left) match the physician's explicit assessment. No values are fabricated, and all null fields represent information not stated in the transcript.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N112",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All typed fields are accurately extracted or legitimately null. Pain severity correctly captured as 6.0 (patient stated 'right now it's six out of ten'), pain quality as 'Electrical toothache' (exact quote), pain location accurately describes lower back radiating down left leg, and muscle strength values (5/5 right, 4/5 left) match the physician's explicit assessment. No values are fabricated, and all null fields represent information not stated in the transcript."
+    }
+  },
+  {
+    "encounter_id": "D2N113",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": true,
+    "hallucinated_examples": [],
+    "missed_examples": [
+      "patient_gender: transcript clearly uses 'Jacqueline' (female name) and doctor says 'good for you' in feminine context, but field is null"
+    ],
+    "overall_failure_type": "missed",
+    "severity": "minor",
+    "reasoning": "The extraction correctly captured smoker (true), alcohol_use (true), recreational_drugs (true - past IV drug use mentioned), and systolic_murmur_grade (2 out of 6). Patient gender is inferable from the name 'Jacqueline' and conversational context, though not explicitly stated as 'female'. All other null fields are legitimately absent from the transcript (no vitals numbers stated, no pain scores, no age mentioned). The single missed field is patient_gender, which represents a minor omission that does not affect clinical safety.",
+    "taxonomy_label": "missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N113",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": true,
+      "hallucinated_examples": [],
+      "missed_examples": [
+        "patient_gender: transcript clearly uses 'Jacqueline' (female name) and doctor says 'good for you' in feminine context, but field is null"
+      ],
+      "overall_failure_type": "missed",
+      "severity": "minor",
+      "reasoning": "The extraction correctly captured smoker (true), alcohol_use (true), recreational_drugs (true - past IV drug use mentioned), and systolic_murmur_grade (2 out of 6). Patient gender is inferable from the name 'Jacqueline' and conversational context, though not explicitly stated as 'female'. All other null fields are legitimately absent from the transcript (no vitals numbers stated, no pain scores, no age mentioned). The single missed field is patient_gender, which represents a minor omission that does not affect clinical safety."
+    }
+  },
+  {
+    "encounter_id": "D2N114",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": true,
+    "hallucinated_examples": [],
+    "missed_examples": [
+      "patient_gender: transcript clearly identifies patient as female (mentions menstrual periods, 'she' pronouns) but field is null"
+    ],
+    "overall_failure_type": "missed",
+    "severity": "minor",
+    "reasoning": "The extraction correctly captured pain_quality (pulsing), pain_location (right side, behind eye), and symptom_duration (years). However, it missed patient_gender despite clear evidence in the transcript (menstrual periods mentioned, female pronouns used). No vital signs were stated numerically in the transcript, so those null values are appropriate. The missed gender field is a minor omission that does not affect clinical safety or treatment decisions.",
+    "taxonomy_label": "missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N114",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": true,
+      "hallucinated_examples": [],
+      "missed_examples": [
+        "patient_gender: transcript clearly identifies patient as female (mentions menstrual periods, 'she' pronouns) but field is null"
+      ],
+      "overall_failure_type": "missed",
+      "severity": "minor",
+      "reasoning": "The extraction correctly captured pain_quality (pulsing), pain_location (right side, behind eye), and symptom_duration (years). However, it missed patient_gender despite clear evidence in the transcript (menstrual periods mentioned, female pronouns used). No vital signs were stated numerically in the transcript, so those null values are appropriate. The missed gender field is a minor omission that does not affect clinical safety or treatment decisions."
+    }
+  },
+  {
+    "encounter_id": "D2N115",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All extracted typed fields are accurate and grounded in the transcript. The patient explicitly states the accident was 'about a week ago' (symptom_duration: 1 week), rates pain as 'about a seven' (pain_severity: 7.0), and localizes it to 'the back of my neck' (pain_location: Back of the neck). All other typed fields are appropriately null as those values were not explicitly stated in the encounter. No hallucinations or missed extractions detected.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N115",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All extracted typed fields are accurate and grounded in the transcript. The patient explicitly states the accident was 'about a week ago' (symptom_duration: 1 week), rates pain as 'about a seven' (pain_severity: 7.0), and localizes it to 'the back of my neck' (pain_location: Back of the neck). All other typed fields are appropriately null as those values were not explicitly stated in the encounter. No hallucinations or missed extractions detected."
+    }
+  },
+  {
+    "encounter_id": "D2N116",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "medication_count: 2 \u2014 transcript only mentions Advil (1 medication), not 2"
+    ],
+    "missed_examples": [
+      "patient_gender: transcript clearly identifies patient as male ('Bobby', 'he', 'his wife', 'my wife's really put me to work')",
+      "pain_quality: transcript states 'sore' and 'tender' multiple times but field is null"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "minor",
+    "reasoning": "The extraction contains one hallucinated value (medication_count: 2 when only Advil was mentioned) and two missed values (patient_gender clearly male, pain_quality explicitly stated as 'sore'/'tender'). The hallucinated medication count is a minor error that does not affect clinical safety. The missed gender and pain quality are also minor omissions as the gender is contextually obvious and pain quality is documented in narrative sections. All vital signs are accurately extracted.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N116",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "medication_count: 2 \u2014 transcript only mentions Advil (1 medication), not 2"
+      ],
+      "missed_examples": [
+        "patient_gender: transcript clearly identifies patient as male ('Bobby', 'he', 'his wife', 'my wife's really put me to work')",
+        "pain_quality: transcript states 'sore' and 'tender' multiple times but field is null"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "minor",
+      "reasoning": "The extraction contains one hallucinated value (medication_count: 2 when only Advil was mentioned) and two missed values (patient_gender clearly male, pain_quality explicitly stated as 'sore'/'tender'). The hallucinated medication count is a minor error that does not affect clinical safety. The missed gender and pain quality are also minor omissions as the gender is contextually obvious and pain quality is documented in narrative sections. All vital signs are accurately extracted."
+    }
+  },
+  {
+    "encounter_id": "D2N117",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All extracted typed fields are accurate and grounded in the transcript. Patient age (45), gender (male), symptom duration (3 weeks), pain severity (8), pain quality (sharp, stabbing), pain location (right elbow), and systolic murmur grade (3 out of 6) are all explicitly stated. Fields left null (vitals, labs, social history) are appropriately null as these values were not mentioned in the transcript. No hallucinations or missed extractions detected.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N117",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All extracted typed fields are accurate and grounded in the transcript. Patient age (45), gender (male), symptom duration (3 weeks), pain severity (8), pain quality (sharp, stabbing), pain location (right elbow), and systolic murmur grade (3 out of 6) are all explicitly stated. Fields left null (vitals, labs, social history) are appropriately null as these values were not mentioned in the transcript. No hallucinations or missed extractions detected."
+    }
+  },
+  {
+    "encounter_id": "D2N118",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All extracted typed field values are accurately grounded in the transcript. BP 150/90, A1C 6.7, systolic murmur grade 2/6, and medication count of 2 (Norvasc and metformin) are all explicitly stated. Fields left null (patient_age, pain_severity, etc.) are appropriate as these values were not explicitly provided in the conversation. No hallucinations or missed extractions detected.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N118",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All extracted typed field values are accurately grounded in the transcript. BP 150/90, A1C 6.7, systolic murmur grade 2/6, and medication count of 2 (Norvasc and metformin) are all explicitly stated. Fields left null (patient_age, pain_severity, etc.) are appropriate as these values were not explicitly provided in the conversation. No hallucinations or missed extractions detected."
+    }
+  },
+  {
+    "encounter_id": "D2N119",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All extracted typed fields are accurately grounded in the transcript. Vital signs (BP 128/82, RR 16, O2 sat 99%) match the doctor's explicit statements. Symptom duration of 6 months aligns with 'every month or every other month for the past six months.' Smoker (false) and recreational_drugs (false) correctly reflect the patient's denial of cigarette, marijuana, and vaping use. Medication_count of 2 matches the two inhalers mentioned. Fields left null are appropriate as those values were not explicitly stated in the transcript.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N119",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All extracted typed fields are accurately grounded in the transcript. Vital signs (BP 128/82, RR 16, O2 sat 99%) match the doctor's explicit statements. Symptom duration of 6 months aligns with 'every month or every other month for the past six months.' Smoker (false) and recreational_drugs (false) correctly reflect the patient's denial of cigarette, marijuana, and vaping use. Medication_count of 2 matches the two inhalers mentioned. Fields left null are appropriate as those values were not explicitly stated in the transcript."
+    }
+  },
+  {
+    "encounter_id": "D2N120",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All extracted typed fields are accurate and grounded in the transcript. The patient explicitly states 'a couple of years' for symptom duration, describes pain as 'sharp stabbing' in the 'back' radiating 'down to my right leg', and confirms quitting smoking 'about twenty years ago' (smoker: False is correct). No numeric values for vitals, pain severity, or other measurements were explicitly stated in the transcript, so null values are appropriate. No hallucinations or missed extractions detected.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N120",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All extracted typed fields are accurate and grounded in the transcript. The patient explicitly states 'a couple of years' for symptom duration, describes pain as 'sharp stabbing' in the 'back' radiating 'down to my right leg', and confirms quitting smoking 'about twenty years ago' (smoker: False is correct). No numeric values for vitals, pain severity, or other measurements were explicitly stated in the transcript, so null values are appropriate. No hallucinations or missed extractions detected."
+    }
+  },
+  {
+    "encounter_id": "D2N121",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "pain_severity: 7.0 \u2014 transcript never stated this numeric value",
+      "bp_systolic: 125 \u2014 transcript states '120 over 77' in office, patient reports home BP as '125 over 80', but the extracted 125 appears to conflate these two different measurements",
+      "bp_diastolic: 77 \u2014 transcript states office BP as '120 over 77', but this conflicts with the home BP of '125 over 80' mentioned earlier"
+    ],
+    "missed_examples": [
+      "bp_systolic: transcript says 'one twenty over seventy seven today here in the office' but field shows 125 instead of 120",
+      "bp_diastolic: transcript clearly states 'seventy seven' for office BP"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "moderate",
+    "reasoning": "The extraction contains a fabricated pain severity score of 7.0 that was never stated in the transcript. Additionally, there is confusion in the blood pressure values: the patient reported home BP as 125/80, but the office measurement was clearly stated as 120/77. The extracted values (125/77) appear to be an incorrect conflation of these two separate measurements. While not immediately life-threatening, these errors could affect clinical decision-making regarding pain management and hypertension control assessment.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N121",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "pain_severity: 7.0 \u2014 transcript never stated this numeric value",
+        "bp_systolic: 125 \u2014 transcript states '120 over 77' in office, patient reports home BP as '125 over 80', but the extracted 125 appears to conflate these two different measurements",
+        "bp_diastolic: 77 \u2014 transcript states office BP as '120 over 77', but this conflicts with the home BP of '125 over 80' mentioned earlier"
+      ],
+      "missed_examples": [
+        "bp_systolic: transcript says 'one twenty over seventy seven today here in the office' but field shows 125 instead of 120",
+        "bp_diastolic: transcript clearly states 'seventy seven' for office BP"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "moderate",
+      "reasoning": "The extraction contains a fabricated pain severity score of 7.0 that was never stated in the transcript. Additionally, there is confusion in the blood pressure values: the patient reported home BP as 125/80, but the office measurement was clearly stated as 120/77. The extracted values (125/77) appear to be an incorrect conflation of these two separate measurements. While not immediately life-threatening, these errors could affect clinical decision-making regarding pain management and hypertension control assessment."
+    }
+  },
+  {
+    "encounter_id": "D2N122",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All typed fields are accurately extracted or legitimately null. Vital signs (BP 124/76, HR 70, RR 16, O2 sat 98%) match the transcript exactly. Symptom duration of 3 months is correctly captured. Smoker status is correctly marked false (patient stopped 7 years ago, making them a former smoker, not a current smoker). No values are fabricated, and no explicitly stated values are missed.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N122",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All typed fields are accurately extracted or legitimately null. Vital signs (BP 124/76, HR 70, RR 16, O2 sat 98%) match the transcript exactly. Symptom duration of 3 months is correctly captured. Smoker status is correctly marked false (patient stopped 7 years ago, making them a former smoker, not a current smoker). No values are fabricated, and no explicitly stated values are missed."
+    }
+  },
+  {
+    "encounter_id": "D2N123",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All extracted typed fields are accurately grounded in the transcript. Patient age (56), gender (male), symptom duration (4-5 weeks), pain location (throat), blood pressure (120/50), hemoglobin A1C (7.4), and medication count (2: metformin and norvasc) are all explicitly stated. Fields left null (pain severity, smoking status, heart rate, etc.) are appropriate as these values were not provided in the transcript. No hallucinations or missed extractions detected.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N123",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All extracted typed fields are accurately grounded in the transcript. Patient age (56), gender (male), symptom duration (4-5 weeks), pain location (throat), blood pressure (120/50), hemoglobin A1C (7.4), and medication count (2: metformin and norvasc) are all explicitly stated. Fields left null (pain severity, smoking status, heart rate, etc.) are appropriate as these values were not provided in the transcript. No hallucinations or missed extractions detected."
+    }
+  },
+  {
+    "encounter_id": "D2N124",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All typed fields are accurately extracted or legitimately null. Patient age (45), gender (male), and pain location (outside of the ankle) are correctly captured from the transcript. The medication_count of 1 correctly reflects the meloxicam prescription. No vital signs, lab values, or social history details were explicitly stated in the transcript, so null values are appropriate. No hallucinated or missed values detected.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N124",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All typed fields are accurately extracted or legitimately null. Patient age (45), gender (male), and pain location (outside of the ankle) are correctly captured from the transcript. The medication_count of 1 correctly reflects the meloxicam prescription. No vital signs, lab values, or social history details were explicitly stated in the transcript, so null values are appropriate. No hallucinated or missed values detected."
+    }
+  },
+  {
+    "encounter_id": "D2N125",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": false,
+    "missed": false,
+    "hallucinated_examples": [],
+    "missed_examples": [],
+    "overall_failure_type": "accurate",
+    "severity": "none",
+    "reasoning": "All extracted typed fields are accurate and grounded in the transcript. Patient age (54), gender (male), symptom duration (2-3 months), pain severity (10), pain quality (stabbing, shooting), and pain location (right cheek bone area) are all explicitly stated. Fields left null (vitals, labs, social history) are appropriately null as these values were not mentioned in the transcript. No hallucinations or missed extractions detected.",
+    "taxonomy_label": "accurate",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N125",
+      "technique": "gvr",
+      "hallucinated": false,
+      "missed": false,
+      "hallucinated_examples": [],
+      "missed_examples": [],
+      "overall_failure_type": "accurate",
+      "severity": "none",
+      "reasoning": "All extracted typed fields are accurate and grounded in the transcript. Patient age (54), gender (male), symptom duration (2-3 months), pain severity (10), pain quality (stabbing, shooting), and pain location (right cheek bone area) are all explicitly stated. Fields left null (vitals, labs, social history) are appropriately null as these values were not mentioned in the transcript. No hallucinations or missed extractions detected."
+    }
+  },
+  {
+    "encounter_id": "D2N126",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [],
+    "attempts": 1,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": true,
+    "hallucinated_examples": [
+      "medication_count: 1 \u2014 transcript never stated a specific medication count; patient only mentioned taking ibuprofen which is an over-the-counter medication, not typically counted as a prescribed medication"
+    ],
+    "missed_examples": [
+      "patient_gender: transcript clearly identifies patient as 'Michelle' (female name) and doctor uses feminine pronouns throughout, but field is null"
+    ],
+    "overall_failure_type": "hallucinated_and_missed",
+    "severity": "minor",
+    "reasoning": "The extraction contains one hallucinated field (medication_count: 1) where the transcript mentions ibuprofen but does not provide an explicit medication count, and one missed field (patient_gender) where the patient is clearly identified as female through name and pronouns. Both errors are relatively minor as they do not directly impact clinical safety or treatment decisions. The other null fields are appropriately null as those values were not explicitly stated in the transcript.",
+    "taxonomy_label": "hallucinated_and_missed",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N126",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": true,
+      "hallucinated_examples": [
+        "medication_count: 1 \u2014 transcript never stated a specific medication count; patient only mentioned taking ibuprofen which is an over-the-counter medication, not typically counted as a prescribed medication"
+      ],
+      "missed_examples": [
+        "patient_gender: transcript clearly identifies patient as 'Michelle' (female name) and doctor uses feminine pronouns throughout, but field is null"
+      ],
+      "overall_failure_type": "hallucinated_and_missed",
+      "severity": "minor",
+      "reasoning": "The extraction contains one hallucinated field (medication_count: 1) where the transcript mentions ibuprofen but does not provide an explicit medication count, and one missed field (patient_gender) where the patient is clearly identified as female through name and pronouns. Both errors are relatively minor as they do not directly impact clinical safety or treatment decisions. The other null fields are appropriately null as those values were not explicitly stated in the transcript."
+    }
+  },
+  {
+    "encounter_id": "D2N127",
+    "technique": "gvr",
+    "structural_failure_type": null,
+    "structural_failed_fields": [
+      "pain_severity"
+    ],
+    "attempts": 2,
+    "instruction_bleed": false,
+    "instruction_bleed_examples": [],
+    "hallucinated": true,
+    "missed": false,
+    "hallucinated_examples": [
+      "pain_severity: 10.0 \u2014 transcript states patient said 'twelve' when asked to rate pain on 1-10 scale, not 10.0",
+      "medication_count: 2 \u2014 transcript only mentions fentanyl (1 medication), no second medication is stated"
+    ],
+    "missed_examples": [],
+    "overall_failure_type": "hallucinated",
+    "severity": "moderate",
+    "reasoning": "The extraction contains two hallucinated values. The pain_severity was normalized to 10.0 when the patient explicitly stated 'twelve', which misrepresents the patient's reported experience. The medication_count of 2 is fabricated as only fentanyl is mentioned in the transcript. While the pain score normalization might be clinically defensible, it alters the patient's actual statement, and the medication count error could affect medication reconciliation and safety checks.",
+    "taxonomy_label": "hallucinated",
+    "judge_skipped": false,
+    "judge_raw": {
+      "encounter_id": "D2N127",
+      "technique": "gvr",
+      "hallucinated": true,
+      "missed": false,
+      "hallucinated_examples": [
+        "pain_severity: 10.0 \u2014 transcript states patient said 'twelve' when asked to rate pain on 1-10 scale, not 10.0",
+        "medication_count: 2 \u2014 transcript only mentions fentanyl (1 medication), no second medication is stated"
+      ],
+      "missed_examples": [],
+      "overall_failure_type": "hallucinated",
+      "severity": "moderate",
+      "reasoning": "The extraction contains two hallucinated values. The pain_severity was normalized to 10.0 when the patient explicitly stated 'twelve', which misrepresents the patient's reported experience. The medication_count of 2 is fabricated as only fentanyl is mentioned in the transcript. While the pain score normalization might be clinically defensible, it alters the patient's actual statement, and the medication count error could affect medication reconciliation and safety checks."
+    }
+  }
+]
