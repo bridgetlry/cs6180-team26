@@ -1,0 +1,74 @@
+flowchart TB
+
+    INPUT[("ACIEncounter
+    transcript · encounter_id · metadata")]
+
+    subgraph EPF["  Engineered Prompt Framework  "]
+        direction LR
+        WS["working_space
+        reasoning scratchpad
+        written before JSON"]
+        SCHEMA["Auto-generated
+        Compact Schema
+        always in sync with SOAPNote"]
+        RULES["Extraction Rules
+        + Reflection Checklist
+        7 verification steps"]
+    end
+
+    LLM["🧠  LLM  ·  llama-3.1-8b-instruct  ·  T=0  ·  max_tokens=3000"]
+
+    JSON["Layer 1 — parse_json_response()
+    strip fences  ·  json.loads()  ·  brace repair"]
+
+    JSON_GATE{"JSON valid?"}
+
+    PYD["Layer 2 — SOAPNote(**parsed)
+    5 required text fields  ·  44 total  ·  15 validators"]
+
+    PYD_GATE{"Schema valid?"}
+
+    RETRY["build_retry_prompt()
+    transcript  ·  prev output  ·  exact failed_fields
+    targeted error  ·  max 2 retries  ·  3 total calls"]
+
+    SUCCESS(["✓ SUCCESS
+    PipelineResult · success=True · attempts=1–3"])
+
+    FAILURE(["✗ FAILURE
+    failure_type: json_parse · pydantic · unexpected
+    failed_fields · attempts=3"])
+
+    INPUT --> EPF
+    WS & SCHEMA & RULES --> LLM
+    LLM -- "raw string" --> JSON
+    JSON --> JSON_GATE
+    JSON_GATE -- PASS --> PYD
+    PYD --> PYD_GATE
+    PYD_GATE -- PASS --> SUCCESS
+    JSON_GATE -- "FAIL" --> RETRY
+    PYD_GATE -- "FAIL + failed_fields" --> RETRY
+    RETRY -. "retry with last_error" .-> LLM
+    RETRY -- "attempts exhausted" --> FAILURE
+
+    classDef clsInput    fill:#FDEBD0,stroke:#7D6608,stroke-width:2px,color:#000
+    classDef clsEPF      fill:#E65100,stroke:#BF360C,stroke-width:2px,color:#fff
+    classDef clsLLM      fill:#1B5E20,stroke:#0D3B12,stroke-width:3px,color:#fff
+    classDef clsLayer    fill:#D6EAF8,stroke:#1A5276,stroke-width:2px,color:#000
+    classDef clsGateJ    fill:#AED6F1,stroke:#1A5276,stroke-width:2px,color:#000
+    classDef clsPyd      fill:#D5F5E3,stroke:#145A32,stroke-width:2px,color:#000
+    classDef clsGateP    fill:#A9DFBF,stroke:#145A32,stroke-width:2px,color:#000
+    classDef clsRetry    fill:#FADBD8,stroke:#C0392B,stroke-width:2px,color:#000
+    classDef clsSuccess  fill:#A9DFBF,stroke:#1E8449,stroke-width:3px,color:#000
+    classDef clsFailure  fill:#FADBD8,stroke:#C0392B,stroke-width:3px,color:#000
+
+    class INPUT clsInput
+    class WS,SCHEMA,RULES clsEPF
+    class LLM clsLLM
+    class JSON clsLayer
+    class JSON_GATE clsGateJ
+    class PYD clsPyd
+    class PYD_GATE clsGateP
+    class RETRY clsRetry
+    class SUCCESS clsSuccess
+    class FAILURE clsFailure
