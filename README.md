@@ -7,17 +7,29 @@ Comparing three structured output generation techniques for clinical SOAP note e
 
 - [Introduction](#introduction)
 - [Project Structure](#project-structure)
+- [ACI-BENCH Data Source](#aci-bench-data-source)
+    - [Files](#files)
+    - [Dataset subsets](#dataset-subsets)
+    - [Download Instructions](#download-instructions)
+- [ACI-Bench Baseline](#aci-bench-baseline)
+    - [How to score a baseline](#how-to-score-a-baseline)
+    - [Reference scores](#reference-scores-yim-et-al-2023-table-6--test-set-1)
 - [Setup](#setup)
 - [Running an Individual Technique](#running-an-individual-technique)
 - [How to Implement a New Technique](#how-to-implement-a-new-technique)
 - [The Shared SOAPNote Schema](#the-shared-soapnote-schema)
-- [MEDCON Evaluation Setup](#medcon-evaluation-setup)
+- [Evaluation](#evaluation)
+    - [Files](#files-1)
+    - [Dependencies](#dependencies)
+    - [How to run](#how-to-run)
+    - [Metrics](#metrics)
+    - [MEDCON - UMLS / QuickUMLS setup](#medcon---umls--quickumls-setup)
 - [Note on Constrained Decoding](#note-on-constrained-decoding)
 - [Shared Data Model](#shared-data-model)
-
-
+- [Output Format](#output-format)
+---
 ## Introduction
-The clinical note extraction system convert doctor-patient conversations to organized SOAP notes*. The data comes from the ACI-Bench dataset, which contains 40 encounters as well as as "gold-standard" SOAP notes  that we used to evalute the success of our methods. Our team leveraged three new different approaches (generate-validate-retry, constrained decoding, and prompt engineering) that utilized the `llama-3.1-8b-instruct` model to process the dialogue and generate the proper documentation.
+The clinical note extraction system converts doctor-patient conversations to organized SOAP notes*. The data comes from the ACI-Bench dataset, which contains 40 encounters as well as as "gold-standard" SOAP notes  that we used to evalute the success of our methods. Our team leveraged three new different approaches (generate-validate-retry, constrained decoding, and prompt engineering) that utilized the `llama-3.1-8b-instruct` model to process the dialogue and generate the proper documentation.
 
 *SOAP notes consist of Subjective Information, Objective Information, Assessment, and Plan, and is often used by physicians to document interactions with patients.
 
@@ -32,7 +44,8 @@ Our baseline approach consists of a carefully engineered prompt that is provided
 
 ---
 
-## Project Structure
+## Project Structure 
+--> TODO: needs to be updated with new organization
 
 ```
 cs6180-team26/
@@ -86,6 +99,107 @@ cs6180-team26/
 ```
 
 ---
+
+## ACI-Bench Data Source
+ACI-Bench test set 1 data files used in ACI Bench Paper and for our additional validated output experiments. 
+
+Downloaded from the ACI-Bench figshare repository:
+[https://doi.org/10.6084/m9.figshare.22494601](https://doi.org/10.6084/m9.figshare.22494601)
+
+### Files
+
+| File | Rows | Description |
+|---|---|---|
+| `clinicalnlp_taskB_test1.csv` | 40 | Primary data file. Contains four columns: `dataset` (subset name), `encounter_id` (unique identifier), `dialogue` (full doctor-patient conversation transcript), and `note` (gold standard clinical note used as the evaluation reference — automatically generated then reviewed and corrected by domain experts including medical scribes and physicians) |
+| `clinicalnlp_taskB_test1_metadata.csv` | 40 | Metadata file. Contains: `dataset`, `encounter_id`, `id`, `doctor_name`, `patient_gender`, `patient_age`, `patient_firstname`, `patient_familyname`, `cc` (chief complaint), `2nd_complaints` (secondary complaints). Joined to the primary file on `encounter_id` |
+| `clinicalnlp_taskB_test1_n5.csv` | 5 | First 5 encounters from the primary file — used for quick batch runs |
+| `clinicalnlp_taskB_test1_metadata_n5.csv` | 5 | Metadata for the first 5 encounters — used alongside the n5 data file |
+
+### Dataset subsets
+
+The 40 encounters span three subsets, each representing a different mode of clinical note generation:
+
+| Subset | Count | Description |
+|---|---|---|
+| `virtassist` | 10 | Doctor uses explicit wake words to activate a virtual assistant |
+| `virtscribe` | 8 | Doctor directs a separate scribe; includes pre-ambles and after-visit dictations |
+| `aci` | 22 | Natural doctor-patient conversation with no explicit assistant or scribe |
+
+### Download instructions
+
+The data files are already included in the repo for ease, but to download:
+1. Go to [https://doi.org/10.6084/m9.figshare.22494601](https://doi.org/10.6084/m9.figshare.22494601)
+2. Download the ACI-Bench release
+3. Copy these two files into this `data/` directory:
+   - `clinicalnlp_taskB_test1.csv`
+   - `clinicalnlp_taskB_test1_metadata.csv`
+4. We generated the n5 files to create a small test subset
+
+### Citation
+
+```bibtex
+@article{aci-bench,
+  author = {Wen{-}wai Yim and
+            Yujuan Fu and
+            Asma {Ben Abacha} and
+            Neal Snider and Thomas Lin and Meliha Yetisgen},
+  title = {ACI-BENCH: a Novel Ambient Clinical Intelligence Dataset for Benchmarking Automatic Visit Note Generation},
+  journal = {Nature Scientific Data},
+  year = {2023}
+}
+```
+---
+
+## ACI-Bench Baseline
+
+Published baseline prediction outputs from the original ACI-Bench paper
+([Yim et al. 2023](https://github.com/wyim/aci-bench)), used as comparison
+points for our three techniques. All files in this folder are directly from [https://github.com/wyim/aci-bench](https://github.com/wyim/aci-bench),
+none were created by us. 
+
+
+All four CSVs cover the same 40 encounters from `clinicalnlp_taskB_test1.csv`
+and use the four-column format expected by `evaluate_fullnote.py`:
+
+| Column | Description |
+|---|---|
+| `Dialogues` | The original doctor-patient conversation transcript |
+| `Reference Summaries` | The gold standard clinical note used for evaluation |
+| `note` | The model's predicted/generated clinical note |
+| `encounter_id` | Unique encounter identifier, e.g. `D2N088` |
+
+### How to score a baseline
+
+Must be run from the **project root** (`PythonProject4/`), not from inside `baselines/`:
+
+```bash
+cd ~/PycharmProjects/PythonProject4
+
+python evaluation/evaluate_fullnote.py \
+  data/clinicalnlp_taskB_test1.csv \
+  baselines/predictions/aci_bench_paper/test1ChatGPT_.csv \
+  data/clinicalnlp_taskB_test1_metadata.csv
+```
+
+Results are written to `results/test1ChatGPT_.json`.
+
+### Reference scores (Yim et al. 2023, Table 6 — test set 1)
+
+All scores are reported as F1 × 100.
+
+| Model | ROUGE-1 | ROUGE-2 | ROUGE-L | MEDCON |
+|---|---|---|---|---|
+| ChatGPT (gpt-3.5-turbo) | 47.44 | 19.01 | 42.47 | 55.84 |
+| GPT-4 | 51.76 | 22.58 | 45.97 | 57.78 |
+| text-davinci-002 | 41.08 | 17.27 | 37.46 | 47.39 |
+| text-davinci-003 | 47.07 | 22.08 | 43.11 | 57.16 |
+
+Our GVR pipeline (Llama-3.1-8B) on the same test set: ROUGE-1: 0.4082,
+ROUGE-2: 0.1801, ROUGE-L: 0.2675. Note the paper reports scores × 100;
+our evaluation script reports raw fractions.
+
+---
+
 
 ## Setup
 
@@ -205,9 +319,83 @@ Key fields your prompt needs to produce:
 > (nested keys, different names) instead of following yours. Make your prompt
 > explicitly list the required field names.
 
+The `SOAPNote` schema has two layers:
+
+**ACI-Bench text divisions (required):**
+- `chief_complaint` — primary reason for visit
+- `subjective` — HPI, PMH, medications, social/family history
+- `objective_exam` — physical exam findings
+- `objective_results` — labs, imaging (empty string if none)
+- `assessment_and_plan` — diagnosis and treatment plan
+
+**Typed clinical fields (optional, novel contribution):**
+- Vital signs: `bp_systolic`, `bp_diastolic`, `heart_rate`, `o2_saturation`, `temperature_f`, `respiratory_rate`
+- Lab values: `hemoglobin_a1c`, `blood_glucose`
+- Demographics: `patient_age`, `patient_gender`
+- Symptoms: `pain_severity`, `pain_location`, `symptom_duration`, `associated_symptoms`
+- History: `past_medical_history`, `current_medications`, `allergies`, `medication_count`
+- Physical measurements: `muscle_strength_right/left`, `wound_length/width_cm`, etc.
+
+All optional fields default to `null` if not mentioned in the transcript.
+
 ---
 
-## MEDCON Evaluation Setup
+
+## Evaluation
+Evaluation scripts for scoring generated SOAP notes against gold standard references.
+All four files are adapted from the ACI-Bench repository (Yim et al. 2023) and are
+published under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+
+### Files
+
+| File | Description |
+|---|---|
+| `evaluate_fullnote.py` | Main evaluation script. Computes ROUGE, MEDCON (UMLS), BERTScore, and BLEURT across the full note and each of the four SOAP divisions. Outputs a JSON results file. |
+| `UMLS_evaluation.py` | MEDCON scoring logic. Uses QuickUMLS to extract UMLS medical concepts from generated and reference notes, then computes F1 over matched concepts. Called by `evaluate_fullnote.py`. |
+| `sectiontagger.py` | Rule-based section parser. Detects and splits a clinical note into its four divisions (`subjective`, `objective_exam`, `objective_results`, `assessment_and_plan`) using regex patterns. Called by `evaluate_fullnote.py`. |
+| `semantics.py` | Loads the list of UMLS semantic type IDs used to filter MEDCON concept extraction to clinically relevant categories (Anatomy, Chemicals & Drugs, Disorders, etc.). Called by `UMLS_evaluation.py`. Reads from `resources/semantic_types.txt`. |
+
+### Dependencies
+
+| Script | Requires |
+|---|---|
+| `evaluate_fullnote.py` | `evaluate`, `pandas`, `numpy` |
+| `UMLS_evaluation.py` | `quickumls`, `spacy`, `en_ner_bc5cdr_md` model, QuickUMLS index at `resources/des/` |
+| `semantics.py` | `resources/semantic_types.txt` |
+
+All UMLS/MEDCON-related scripts require the `umls_env` conda environment (Python 3.11).
+The main `.venv` (Python 3.13) is **incompatible** with QuickUMLS due to a `leveldb` dependency.
+
+### How to run
+
+Must be run from the **project root** (`PythonProject4/`) with `umls_env` activated:
+
+```bash
+conda activate umls_env
+
+python evaluation/evaluate_fullnote.py \
+    data/clinicalnlp_taskB_test1.csv \
+    results/gvr_results_predictions.csv \
+    data/clinicalnlp_taskB_test1_metadata.csv
+```
+
+Arguments:
+- `<gold>` — path to the gold CSV (`clinicalnlp_taskB_test1.csv`)
+- `<sys>` — path to the predictions CSV (e.g. `results/gvr_results_predictions.csv`)
+- `<metadata-file>` — path to the metadata CSV (`clinicalnlp_taskB_test1_metadata.csv`)
+
+Output is written to `results/<predictions_filename>.json`.
+
+### Metrics
+
+| Metric | Status | Notes |
+|---|---|---|
+| ROUGE-1, ROUGE-2, ROUGE-Lsum | ✅ Working | `rougeLsum` is the summary-level variant used in the ACI-Bench paper |
+| MEDCON (UMLS) | ✅ Working | Requires `umls_env` and QuickUMLS index |
+| BERTScore | ⚠️ Stubbed | Returns 0.0 — pending Python 3.13/DeBERTa tokenizer compatibility fix |
+| BLEURT | ⚠️ Stubbed | Returns 0.0 — pending Python 3.13/DeBERTa tokenizer compatibility fix |
+
+### MEDCON - UMLS / QuickUMLS setup
 
 MEDCON requires QuickUMLS, which depends on a C extension (`leveldb`) that only compiles correctly on **Python 3.11**. It will fail on the main `.venv` (Python 3.13) and on `acidemo` (Python 3.9). You need a dedicated environment.
 
