@@ -243,6 +243,10 @@ def _merge_eval(live_path: Path, static_key: str) -> dict:
     live = _load_json(live_path)
     if live:
         result.update(live)
+        # Prefer rougeLsum over rougeL (ACI-Bench paper convention)
+        for slice_key, slice_val in result.items():
+            if isinstance(slice_val, dict) and "rougeLsum" in slice_val:
+                slice_val["rougeL"] = slice_val["rougeLsum"]
     return result
 
 
@@ -355,12 +359,12 @@ def pct(val, decimals=2):
 
 
 def make_fullnote_bar() -> go.Figure:
-    """Grouped bar: ROUGE-1, ROUGE-2, ROUGE-L, MEDCON for all 4 techniques."""
+    """Grouped bar: ROUGE-1, ROUGE-2, Rouge-LSum, MEDCON for all 4 techniques."""
     rows = []
     for tkey, tmeta in TECHNIQUE_META.items():
         a = EVAL[tkey].get("ALL", {})
         for raw, label in [("rouge1", "ROUGE-1"), ("rouge2", "ROUGE-2"),
-                           ("rougeL", "ROUGE-L"), ("umls", "MEDCON")]:
+                           ("rougeL", "Rouge-LSum"), ("umls", "MEDCON")]:
             rows.append({"Technique": tmeta["label"], "Metric": label,
                          "Score": round(a.get(raw, 0) * 100, 2)})
     fig = px.bar(
@@ -572,7 +576,7 @@ with tab_ov:
                 "Model":   tmeta["label"],
                 "ROUGE-1": f"{e.get('rouge1', 0) * 100:.2f}",
                 "ROUGE-2": f"{e.get('rouge2', 0) * 100:.2f}",
-                "ROUGE-L": f"{e.get('rougeL', 0) * 100:.2f}",
+                "Rouge-LSum": f"{e.get('rougeL', 0) * 100:.2f}",
                 "MEDCON":  f"{e.get('umls', 0) * 100:.2f}",
                 "Success": f"{st_i['success']}/{st_i['total']}"
                            if st_i["available"] else "39/40",
@@ -584,7 +588,7 @@ with tab_ov:
                 "Model":   name,
                 "ROUGE-1": f"{scores['rouge1'] * 100:.2f}",
                 "ROUGE-2": f"{scores['rouge2'] * 100:.2f}",
-                "ROUGE-L": f"{scores['rougeL'] * 100:.2f}",
+                "Rouge-LSum": f"{scores['rougeL'] * 100:.2f}",
                 "MEDCON":  f"{scores['umls'] * 100:.2f}" if scores.get("umls") is not None else "—",
                 "Success": "—",
                 "_ours": False,
@@ -614,7 +618,7 @@ with tab_ov:
     with col_radar:
         st.markdown("<div class='section-title'>Radar — ROUGE & MEDCON</div>",
                     unsafe_allow_html=True)
-        cats = ["ROUGE-1", "ROUGE-2", "ROUGE-L", "MEDCON"]
+        cats = ["ROUGE-1", "ROUGE-2", "Rouge-LSum", "MEDCON"]
         fig_r = go.Figure()
         # GPT-4 reference
         fig_r.add_trace(go.Scatterpolar(
@@ -803,11 +807,11 @@ with tab_met:
     st.markdown("<div class='section-title'>vs ACI-Bench Paper Baselines</div>",
                 unsafe_allow_html=True)
     bm_choice = st.radio(
-        "Select metric", ["ROUGE-1", "ROUGE-2", "ROUGE-L", "MEDCON"],
+        "Select metric", ["ROUGE-1", "ROUGE-2", "Rouge-LSum", "MEDCON"],
         horizontal=True, key="bm_metric",
     )
     bm_key = {"ROUGE-1": "rouge1", "ROUGE-2": "rouge2",
-              "ROUGE-L": "rougeL", "MEDCON": "umls"}[bm_choice]
+              "Rouge-LSum": "rougeL", "MEDCON": "umls"}[bm_choice]
     st.plotly_chart(make_benchmark_bar(bm_key, bm_choice), use_container_width=True)
     st.caption(
         "Dark gray = paper baselines. Colored = Team 26 (Llama-3.1-8b-instruct). "
