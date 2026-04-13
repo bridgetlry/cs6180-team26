@@ -1,36 +1,88 @@
-# cs6180-team26
-**Organizing Unstructured Doctor-Patient Conversations Utilizing Different LLM Strategies**
+# **Small Model, Strict Schema**: Benchmarking Structured Clinical Note Extraction from Doctor-Patient Conversations via ACI-Bench Dataset 
+_Generative AI (CS 6180)_
 
 Comparing three structured output generation techniques for clinical SOAP note extraction from ACI-Bench doctor-patient transcripts.
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Project Structure](#project-structure)
+- [Setup](#setup)
+- [Running an Individual Technique](#running-an-individual-technique)
+- [How to Implement a New Technique](#how-to-implement-a-new-technique)
+- [The Shared SOAPNote Schema](#the-shared-soapnote-schema)
+- [MEDCON Evaluation Setup](#medcon-evaluation-setup)
+- [Note on Constrained Decoding](#note-on-constrained-decoding)
+- [Shared Data Model](#shared-data-model)
+
+
+## Introduction
+The clinical note extraction system convert doctor-patient conversations to organized SOAP notes*. The data comes from the ACI-Bench dataset, which contains 40 encounters as well as as "gold-standard" SOAP notes  that we used to evalute the success of our methods. Our team leveraged three new different approaches (generate-validate-retry, constrained decoding, and prompt engineering) that utilized the `llama-3.1-8b-instruct` model to process the dialogue and generate the proper documentation.
+
+*SOAP notes consist of Subjective Information, Objective Information, Assessment, and Plan, and is often used by physicians to document interactions with patients.
+
+### Generate-Validate-Retry (GVR)
+The conversation is processed up to three times with feedback-injected retry prompts. This gives the LLM the opportunity to improve its output by parsing it as a JSON and validating with Pydantic and retrying the generation with this feedback.
+
+### Constrained Decoding
+The `instructor` library is used to create the client that takes in the `SOAPNote` schema which gives the model a structure to enforce when generating SOAP note for the given conversation. 
+
+### Prompt Engineering
+Our baseline approach consists of a carefully engineered prompt that is provided to the model to generate a valid output without retry or constrained decoding.
+
 ---
 
-## Project structure
+## Project Structure
 
 ```
 cs6180-team26/
+├── app.py                       # Streamlit front end application
+│
 ├── pipeline_base.py             # SHARED — base class, PipelineResult, LLM wrapper
 ├── batch_runner.py              # SHARED — batch loop, saving, CLI, summary stats
 ├── aci_data_loader.py           # SHARED — loads ACI-Bench test1 encounters
 │
+├── simple_baseline.py           # Technique: replication of ACI-Bench research's pipeline
+│
 ├── generate_validate_retry.py   # Technique: GVR (Liz)
-├── prompt_engineering.py        # Technique: Prompt Engineering (teammate)
-├── constrained_decoding.py      # Technique: Constrained Decoding (teammate)
+├── prompt_engineering.py        # Technique: Prompt Engineering (Priyam)
+├── constrained_decoding.py      # Technique: Constrained Decoding (Bridget)
 │
 ├── gvr_pydantic_schema.py       # Shared SOAPNote Pydantic schema
 ├── gvr_prompt_templates.py      # GVR prompt templates (initial + retry)
+│
+├── baseline/...                 # See README_baselines.md for folder structure
 │
 ├── data/
 │   ├── clinicalnlp_taskB_test1.csv
 │   └── clinicalnlp_taskB_test1_metadata.csv
 │
-└── results/                     # Auto-created on first run
+├── diagrams/                    # Mermaid diagrams for overall architecture and individual approaches
+│   ├── cd.mmd
+│   ├── full_arch.mmd
+│   ├── gvr.mmd
+│   └── pe.mmd
+│
+├── evaluation/...               # See README_evaluation.md for folder structure
+│
+├── resources/
+│   └── semantic_types.txt       # MEDCON documentation subject categories
+│
+└── results/                     
     ├── gvr_results.json
     ├── gvr_results_predictions.csv
     ├── pe_results.json
     ├── pe_results_predictions.csv
     ├── cd_results.json
-    └── cd_results_predictions.csv
+    ├── cd_results_predictions.csv
+    ├── llm_judge.py             # Script to run LLM as judge for typed field extraction, see file for how to run
+    ├── judge_results_gvr.json
+    ├── judge_results_gvr.csv
+    ├── judge_results_pe.json
+    ├── judge_results_pe.csv
+    ├── judge_results_cd.json
+    ├── judge_results_cd.csv
+
 ```
 
 ---
@@ -58,7 +110,7 @@ Download from: https://doi.org/10.6084/m9.figshare.22494601
 
 ---
 
-## Running your technique
+## Running an Individual Technique
 
 All three technique scripts share the same CLI:
 
@@ -87,7 +139,7 @@ Runs are **resumable** — if interrupted, rerunning will skip already-completed
 
 ---
 
-## How to implement your technique
+## How to Implement A New Technique
 
 Your technique file only needs to do two things:
 
@@ -132,7 +184,7 @@ That's it. The batch loop, incremental saving, predictions CSV, and summary stat
 
 ---
 
-## The shared SOAPNote schema
+## The Shared SOAPNote Schema
 
 All three techniques validate against the same Pydantic model in `gvr_pydantic_schema.py`.
 Key fields your prompt needs to produce:
@@ -155,7 +207,7 @@ Key fields your prompt needs to produce:
 
 ---
 
-## MEDCON evaluation setup
+## MEDCON Evaluation Setup
 
 MEDCON requires QuickUMLS, which depends on a C extension (`leveldb`) that only compiles correctly on **Python 3.11**. It will fail on the main `.venv` (Python 3.13) and on `acidemo` (Python 3.9). You need a dedicated environment.
 
@@ -214,7 +266,7 @@ python evaluation/UMLS_evaluation.py ...
 
 ---
 
-## Constrained decoding note
+## Note on Constrained Decoding
 
 The `instructor` library must be initialized in **JSON mode** to avoid tool-call
 compatibility issues with `llama-3.1-8b-instruct` via OpenRouter:

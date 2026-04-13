@@ -1,7 +1,6 @@
 """
 constrained_decoding.py
 ───────────────────────
-doest work.. but a start...
 Constrained decoding technique using `instructor` to enforce Pydantic schema
 at the token generation level.
 
@@ -55,8 +54,6 @@ class ConstrainedDecodingPipeline(SOAPPipeline):
 
     def _build_prompt(self, encounter: ACIEncounter) -> str:
         """
-        TODO: Replace with your actual prompt for constrained decoding.
-
         This is where your technique's prompt engineering lives.
         You have access to:
             encounter.transcript        — the full doctor-patient dialogue
