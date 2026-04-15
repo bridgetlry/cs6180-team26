@@ -49,53 +49,67 @@ Our baseline approach consists of a carefully engineered prompt that is provided
 
 ```
 cs6180-team26/
-├── app.py                       # Streamlit front end application
+├── experiments/
+│   ├── shared_pipeline_elements/
+│   │   ├── aci_data_loader.py       # SHARED — loads ACI-Bench test1 encounters
+│   │   ├── batch_runner.py          # SHARED — batch loop, saving, CLI, summary stats
+│   │   ├── pipeline_base.py         # SHARED — base class, PipelineResult, LLM wrapper
+│   │   └── pydantic_schema.py       # Shared SOAPNote Pydantic schema
+│   ├── simple_baseline.py           # Technique: replication of ACI-Bench research's pipeline
+│   ├── generate_validate_retry.py   # Technique: GVR (Liz)
+│   ├── prompt_engineering.py        # Technique: Prompt Engineering (Priyam)
+│   ├── constrained_decoding.py      # Technique: Constrained Decoding (Bridget)
+│   └── gvr_prompt_templates.py      # GVR prompt templates (initial + retry)
 │
-├── pipeline_base.py             # SHARED — base class, PipelineResult, LLM wrapper
-├── batch_runner.py              # SHARED — batch loop, saving, CLI, summary stats
-├── aci_data_loader.py           # SHARED — loads ACI-Bench test1 encounters
+├── streamlit/
+│   └── app.py                       # Streamlit front end application
 │
-├── simple_baseline.py           # Technique: replication of ACI-Bench research's pipeline
-│
-├── generate_validate_retry.py   # Technique: GVR (Liz)
-├── prompt_engineering.py        # Technique: Prompt Engineering (Priyam)
-├── constrained_decoding.py      # Technique: Constrained Decoding (Bridget)
-│
-├── gvr_pydantic_schema.py       # Shared SOAPNote Pydantic schema
-├── gvr_prompt_templates.py      # GVR prompt templates (initial + retry)
-│
-├── baseline/...                 # See README_baselines.md for folder structure
+├── baselines/
+│   └── aci_bench_paper/             # ChatGPT, GPT-4, Text-Davinci baseline predictions
+│       ├── test1ChatGPT_.csv
+│       ├── test1GPT-4_.csv
+│       ├── test1Text-Davinci-002_.csv
+│       └── test1Text-Davinci-003_.csv
 │
 ├── data/
 │   ├── clinicalnlp_taskB_test1.csv
 │   └── clinicalnlp_taskB_test1_metadata.csv
 │
-├── diagrams/                    # Mermaid diagrams for overall architecture and individual approaches
-│   ├── cd.mmd
-│   ├── full_arch.mmd
-│   ├── gvr.mmd
-│   └── pe.mmd
+├── evaluation/
+│   ├── evaluate_fullnote.py         # ROUGE / MEDCON scoring script
+│   ├── UMLS_evaluation.py           # MEDCON / QuickUMLS evaluation
+│   ├── sectiontagger.py             # ACI-Bench section parser
+│   └── llm_judge.py                 # LLM-as-judge typed field extraction
 │
-├── evaluation/...               # See README_evaluation.md for folder structure
+├── m2_diagrams/
+│   ├── architecture.mmd             # Overall system architecture diagram
+│   ├── cd.mmd                       # Constrained decoding diagram
+│   ├── gvr.mmd                      # GVR diagram
+│   └── pe.mmd                       # Prompt engineering diagram
 │
 ├── resources/
-│   └── semantic_types.txt       # MEDCON documentation subject categories
+│   └── semantic_types.txt           # MEDCON subject categories (UMLS)
 │
-└── results/                     
-    ├── gvr_results.json
-    ├── gvr_results_predictions.csv
-    ├── pe_results.json
-    ├── pe_results_predictions.csv
-    ├── cd_results.json
-    ├── cd_results_predictions.csv
-    ├── llm_judge.py             # Script to run LLM as judge for typed field extraction, see file for how to run
-    ├── judge_results_gvr.json
-    ├── judge_results_gvr.csv
-    ├── judge_results_pe.json
-    ├── judge_results_pe.csv
-    ├── judge_results_cd.json
-    ├── judge_results_cd.csv
-
+└── results/
+    ├── aci_bench_style_baseline_output/   # Plain-text predictions CSVs
+    │   ├── gvr_results_predictions.csv
+    │   ├── pe_results_predictions.csv
+    │   ├── cd_results_predictions.csv
+    │   └── simple_baseline_results_predictions.csv
+    ├── automatic_metric_results/          # ROUGE + MEDCON scores (JSON)
+    │   ├── gvr_results_predictions.json
+    │   ├── pe_results_predictions.json
+    │   ├── cd_results_predictions.json
+    │   └── simple_baseline_results_predictions.json
+    ├── constrained_JSON_output/           # Full structured pipeline outputs
+    │   ├── gvr_results.json
+    │   ├── pe_results.json
+    │   ├── cd_results.json
+    │   └── simple_baseline_results.json
+    └── llm_as_judge_failure_taxonomy_results/
+        ├── judge_results_gvr.json
+        ├── judge_results_pe.json
+        └── judge_results_cd.json
 ```
 
 ---
@@ -112,8 +126,6 @@ Downloaded from the ACI-Bench figshare repository:
 |---|---|---|
 | `clinicalnlp_taskB_test1.csv` | 40 | Primary data file. Contains four columns: `dataset` (subset name), `encounter_id` (unique identifier), `dialogue` (full doctor-patient conversation transcript), and `note` (gold standard clinical note used as the evaluation reference — automatically generated then reviewed and corrected by domain experts including medical scribes and physicians) |
 | `clinicalnlp_taskB_test1_metadata.csv` | 40 | Metadata file. Contains: `dataset`, `encounter_id`, `id`, `doctor_name`, `patient_gender`, `patient_age`, `patient_firstname`, `patient_familyname`, `cc` (chief complaint), `2nd_complaints` (secondary complaints). Joined to the primary file on `encounter_id` |
-| `clinicalnlp_taskB_test1_n5.csv` | 5 | First 5 encounters from the primary file — used for quick batch runs |
-| `clinicalnlp_taskB_test1_metadata_n5.csv` | 5 | Metadata for the first 5 encounters — used alongside the n5 data file |
 
 ### Dataset subsets
 
@@ -177,7 +189,7 @@ cd ~/PycharmProjects/PythonProject4
 
 python evaluation/evaluate_fullnote.py \
   data/clinicalnlp_taskB_test1.csv \
-  baselines/predictions/aci_bench_paper/test1ChatGPT_.csv \
+  baselines/aci_bench_paper/test1ChatGPT_.csv \
   data/clinicalnlp_taskB_test1_metadata.csv
 ```
 
@@ -230,13 +242,13 @@ All three technique scripts share the same CLI:
 
 ```bash
 # Quick test — runs on the first encounter only
-python <technique>.py single
+PYTHONPATH=. python experiments/<technique>.py single
 
 # Full run — all 40 ACI-Bench test1 encounters
-python <technique>.py batch
+PYTHONPATH=. python experiments/<technique>.py batch
 
 # Partial run — first N encounters (useful for debugging)
-python <technique>.py batch --n 5
+PYTHONPATH=. python experiments/<technique>.py batch --n 5
 ```
 
 Replace `<technique>` with your script name:
@@ -302,7 +314,7 @@ That's it. The batch loop, incremental saving, predictions CSV, and summary stat
 
 ## The Shared SOAPNote Schema
 
-All three techniques validate against the same Pydantic model in `gvr_pydantic_schema.py`.
+All three techniques validate against the same Pydantic model in `experiments/shared_pipeline_elements/pydantic_schema.py`.
 Key fields your prompt needs to produce:
 
 | Field | Type | Notes |
@@ -350,12 +362,13 @@ published under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 
 ### Files
 
-| File | Description |
-|---|---|
-| `evaluate_fullnote.py` | Main evaluation script. Computes ROUGE, MEDCON (UMLS), BERTScore, and BLEURT across the full note and each of the four SOAP divisions. Outputs a JSON results file. |
-| `UMLS_evaluation.py` | MEDCON scoring logic. Uses QuickUMLS to extract UMLS medical concepts from generated and reference notes, then computes F1 over matched concepts. Called by `evaluate_fullnote.py`. |
-| `sectiontagger.py` | Rule-based section parser. Detects and splits a clinical note into its four divisions (`subjective`, `objective_exam`, `objective_results`, `assessment_and_plan`) using regex patterns. Called by `evaluate_fullnote.py`. |
-| `semantics.py` | Loads the list of UMLS semantic type IDs used to filter MEDCON concept extraction to clinically relevant categories (Anatomy, Chemicals & Drugs, Disorders, etc.). Called by `UMLS_evaluation.py`. Reads from `resources/semantic_types.txt`. |
+| File                   | Description                                                                                                                                                                                                                                   |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `evaluate_fullnote.py` | Main evaluation script. Computes ROUGE, MEDCON (UMLS), BERTScore, and BLEURT across the full note and each of the four SOAP divisions. Outputs a JSON results file.                                                                           |
+| `UMLS_evaluation.py`   | MEDCON scoring logic. Uses QuickUMLS to extract UMLS medical concepts from generated and reference notes, then computes F1 over matched concepts. Called by `evaluate_fullnote.py`.                                                           |
+| `sectiontagger.py`     | Rule-based section parser. Detects and splits a clinical note into its four divisions (`subjective`, `objective_exam`, `objective_results`, `assessment_and_plan`) using regex patterns. Called by `evaluate_fullnote.py`.                    |
+| `semantics.py`         | Loads the list of UMLS semantic type IDs used to filter MEDCON concept extraction to clinically relevant categories (Anatomy, Chemicals & Drugs, Disorders, etc.). Called by `UMLS_evaluation.py`. Reads from `resources/semantic_types.txt`. |
+| `llm_judge.py`         | Uses anthropic/claude-sonnet-4-5 to score experimental pipeline output according to failure taxonomy criteria.                                                                                                                                |
 
 ### Dependencies
 
