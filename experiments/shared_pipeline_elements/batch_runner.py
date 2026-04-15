@@ -32,7 +32,7 @@ from collections import Counter
 from typing import TYPE_CHECKING
 
 from experiments.shared_pipeline_elements.aci_data_loader import load_test1_encounters, save_predictions
-from pipeline_base import PipelineResult, SOAPPipeline, soap_note_to_text
+from experiments.shared_pipeline_elements.pipeline_base import PipelineResult, SOAPPipeline, soap_note_to_text
 from experiments.shared_pipeline_elements.pydantic_schema import SOAPNote
 
 if TYPE_CHECKING:

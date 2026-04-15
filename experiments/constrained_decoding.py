@@ -10,11 +10,10 @@ Only technique-specific logic lives here. Everything shared
 Setup:
     pip install instructor openai
     Set OPENROUTER_API_KEY in your .env file.
-
-Run:
-    python constrained_decoding.py single
-    python constrained_decoding.py batch
-    python constrained_decoding.py batch --n 5
+Run from root:
+    PYTHONPATH=. python experiments/constrained_decoding.py single
+    PYTHONPATH=. python experiments/constrained_decoding.py -- n 5
+    PYTHONPATH=. python experiments/constrained_decoding.py batch
 """
 
 from __future__ import annotations

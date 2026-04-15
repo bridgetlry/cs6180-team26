@@ -8,9 +8,9 @@ Only technique-specific logic lives here. Everything shared
 (LLM calls, PipelineResult, batch runner) is in pipeline_base.py / batch_runner.py.
 
 Run:
-    python prompt_engineering.py single
-    python prompt_engineering.py batch
-    python prompt_engineering.py batch --n 5
+    PYTHONPATH=. python experiments/prompt_engineering.py single
+    PYTHONPATH=. python experiments/prompt_engineering.py -- n 5
+    PYTHONPATH=. python experiments/prompt_engineering.py batch
 """
 
 from __future__ import annotations

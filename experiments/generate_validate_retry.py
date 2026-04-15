@@ -7,6 +7,11 @@ This file contains only GVR-specific logic:
   - JSON repair parser
   - The retry loop with feedback injection
 
+Run:
+    PYTHONPATH=. python experiments/generate_validate_retry.py single
+    PYTHONPATH=. python experiments/generate_validate_retry.py -- n 5
+    PYTHONPATH=. python experiments/generate_validate_retry.py batch
+
 Everything shared (LLM calls, PipelineResult, batch runner, text formatting)
 lives in pipeline_base.py and batch_runner.py.
 """
