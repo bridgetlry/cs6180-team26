@@ -16,10 +16,10 @@ from __future__ import annotations
 import json
 from pydantic import ValidationError
 
-from aci_data_loader import ACIEncounter
+from experiments.shared_pipeline_elements.aci_data_loader import ACIEncounter
 from gvr_prompt_templates import build_initial_prompt, build_retry_prompt, format_validation_error
-from gvr_pydantic_schema import SOAPNote
-from pipeline_base import SOAPPipeline, PipelineResult
+from experiments.shared_pipeline_elements.pydantic_schema import SOAPNote
+from experiments.shared_pipeline_elements.pipeline_base import SOAPPipeline, PipelineResult
 
 MAX_RETRIES = 2  # max 2 retries = 3 total LLM calls per record (Dao et al.)
 
@@ -146,9 +146,9 @@ class GVRPipeline(SOAPPipeline):
 # ENTRY POINT
 # ─────────────────────────────────────────────
 if __name__ == "__main__":
-    from batch_runner import main
+    from experiments.shared_pipeline_elements.batch_runner import main
     main(
         GVRPipeline(),
-        default_results_path="results/constrained_JSON_output/gvr_results.json",
+        default_results_path="../results/constrained_JSON_output/gvr_results.json",
         default_max_retries=MAX_RETRIES,
     )

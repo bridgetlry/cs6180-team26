@@ -25,9 +25,9 @@ import instructor
 from openai import OpenAI
 from dotenv import load_dotenv
 
-from aci_data_loader import ACIEncounter
-from gvr_pydantic_schema import SOAPNote
-from pipeline_base import SOAPPipeline, PipelineResult
+from experiments.shared_pipeline_elements.aci_data_loader import ACIEncounter
+from experiments.shared_pipeline_elements.pydantic_schema import SOAPNote
+from experiments.shared_pipeline_elements.pipeline_base import SOAPPipeline, PipelineResult
 
 load_dotenv()
 
@@ -96,9 +96,9 @@ class ConstrainedDecodingPipeline(SOAPPipeline):
 # ENTRY POINT
 # ─────────────────────────────────────────────
 if __name__ == "__main__":
-    from batch_runner import main
+    from experiments.shared_pipeline_elements.batch_runner import main
     main(
         ConstrainedDecodingPipeline(),
-        default_results_path="results/constrained_JSON_output/cd_results.json",
+        default_results_path="../results/constrained_JSON_output/cd_results.json",
         default_max_retries=0,  # constrained decoding does not retry
     )

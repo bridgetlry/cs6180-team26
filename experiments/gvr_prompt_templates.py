@@ -1,6 +1,6 @@
-from typing import Optional, get_args, get_origin, Union
+from typing import get_args, get_origin, Union
 from pydantic import ValidationError
-from gvr_pydantic_schema import SOAPNote
+from experiments.shared_pipeline_elements.pydantic_schema import SOAPNote
 
 
 # ─────────────────────────────────────────────

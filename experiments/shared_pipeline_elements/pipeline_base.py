@@ -2,7 +2,7 @@
 pipeline_base.py
 ────────────────
 Shared infrastructure for all three SOAP note generation techniques:
-  - GVR                  (gvr.py)
+  - GVR                  (generate_validate_retry.py)
   - Prompt Engineering   (prompt_engineering.py)
   - Constrained Decoding (constrained_decoding.py)
 
@@ -35,8 +35,8 @@ import requests
 from dotenv import load_dotenv
 
 # local imports
-from aci_data_loader import ACIEncounter
-from gvr_pydantic_schema import SOAPNote
+from experiments.shared_pipeline_elements.aci_data_loader import ACIEncounter
+from experiments.shared_pipeline_elements.pydantic_schema import SOAPNote
 
 load_dotenv()
 

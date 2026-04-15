@@ -26,15 +26,14 @@ their pipeline instance:
 from __future__ import annotations
 
 import dataclasses
-import json
 import os
 import sys
 from collections import Counter
 from typing import TYPE_CHECKING
 
-from aci_data_loader import load_test1_encounters, save_predictions
+from experiments.shared_pipeline_elements.aci_data_loader import load_test1_encounters, save_predictions
 from pipeline_base import PipelineResult, SOAPPipeline, soap_note_to_text
-from gvr_pydantic_schema import SOAPNote
+from experiments.shared_pipeline_elements.pydantic_schema import SOAPNote
 
 if TYPE_CHECKING:
     pass

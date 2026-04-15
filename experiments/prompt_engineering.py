@@ -19,9 +19,9 @@ import json
 
 from pydantic import ValidationError
 
-from aci_data_loader import ACIEncounter
-from gvr_pydantic_schema import SOAPNote
-from pipeline_base import SOAPPipeline, PipelineResult
+from experiments.shared_pipeline_elements.aci_data_loader import ACIEncounter
+from experiments.shared_pipeline_elements.pydantic_schema import SOAPNote
+from experiments.shared_pipeline_elements.pipeline_base import SOAPPipeline, PipelineResult
 
 
 # ─────────────────────────────────────────────
@@ -116,9 +116,9 @@ class PromptEngineeringPipeline(SOAPPipeline):
 # ENTRY POINT
 # ─────────────────────────────────────────────
 if __name__ == "__main__":
-    from batch_runner import main
+    from experiments.shared_pipeline_elements.batch_runner import main
     main(
         PromptEngineeringPipeline(),
-        default_results_path="results/constrained_JSON_output/pe_results.json",
+        default_results_path="../results/constrained_JSON_output/pe_results.json",
         default_max_retries=0,  # single-shot by design
     )

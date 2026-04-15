@@ -260,16 +260,17 @@ Your technique file only needs to do two things:
 **1. Subclass `SOAPPipeline` and implement `run_pipeline()`**
 
 ```python
-from pipeline_base import SOAPPipeline, PipelineResult
-from aci_data_loader import ACIEncounter
-from gvr_pydantic_schema import SOAPNote
+from experiments.shared_pipeline_elements.pipeline_base import SOAPPipeline, PipelineResult
+from experiments.shared_pipeline_elements.aci_data_loader import ACIEncounter
+from experiments.shared_pipeline_elements.pydantic_schema import SOAPNote
+
 
 class MyTechniquePipeline(SOAPPipeline):
-    TECHNIQUE_NAME = "my_technique"   # "prompt_engineering" or "constrained_decoding"
+    TECHNIQUE_NAME = "my_technique"  # "prompt_engineering" or "constrained_decoding"
 
     def run_pipeline(self, encounter: ACIEncounter, max_retries: int = 0) -> PipelineResult:
         try:
-            raw  = self.call_llm(your_prompt)
+            raw = self.call_llm(your_prompt)
             soap = SOAPNote(**your_parsed_output)
             return self._success(encounter, soap, attempts=1)
         except Exception as e:
@@ -286,7 +287,8 @@ You get for free:
 
 ```python
 if __name__ == "__main__":
-    from batch_runner import main
+    from experiments.shared_pipeline_elements.batch_runner import main
+
     main(
         MyTechniquePipeline(),
         default_results_path="results/my_results.json",

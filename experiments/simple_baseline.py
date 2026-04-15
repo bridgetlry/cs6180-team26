@@ -33,14 +33,14 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from aci_data_loader import ACIEncounter, load_test1_encounters
-from pipeline_base import SOAPPipeline, PipelineResult
+from experiments.shared_pipeline_elements.aci_data_loader import ACIEncounter, load_test1_encounters
+from experiments.shared_pipeline_elements.pipeline_base import SOAPPipeline, PipelineResult
 
 load_dotenv()
 
 DATA_CSV     = "data/clinicalnlp_taskB_test1.csv"
 METADATA_CSV = "data/clinicalnlp_taskB_test1_metadata.csv"
-RESULTS_PATH = "results/constrained_JSON_output/simple_baseline_results.json"
+RESULTS_PATH = "../results/constrained_JSON_output/simple_baseline_results.json"
 
 
 # ─────────────────────────────────────────────
