@@ -23,19 +23,28 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # USAGE
 # ─────────────────────────────────────────────────────────────────────────────
-# Must be run from the project root (PythonProject4/). If running MEDCON,
-# also must conda environment umls_env activated:
+# Must be run from the project root (PythonProject4/).
 #
-#   conda activate umls_env
-#
+# Example for each experiment:
 #   python evaluation/evaluate_fullnote.py \
 #       data/clinicalnlp_taskB_test1.csv \
-#       results/gvr_results_predictions.csv \
+#       results/aci_bench_style_baseline_output/gvr_results_predictions.csv \
+#       data/clinicalnlp_taskB_test1_metadata.csv
+
+#   python evaluation/evaluate_fullnote.py \
+#       data/clinicalnlp_taskB_test1.csv \
+#       results/aci_bench_style_baseline_output/cd_results_predictions.csv \
+#       data/clinicalnlp_taskB_test1_metadata.csv
+
+#   python evaluation/evaluate_fullnote.py \
+#       data/clinicalnlp_taskB_test1.csv \
+#       results/aci_bench_style_baseline_output/pe_results_predictions.csv \
 #       data/clinicalnlp_taskB_test1_metadata.csv
 #
 # Arguments:
 #   <gold>           path to the gold CSV (clinicalnlp_taskB_test1.csv)
-#   <sys>            path to the predictions CSV (e.g. results/gvr_results_predictions.csv)
+#   <sys>            path to the predictions CSV
+#                    (e.g. results/aci_bench_style_baseline_output/gvr_results_predictions.csv)
 #   <metadata-file>  path to the metadata CSV (clinicalnlp_taskB_test1_metadata.csv)
 #
 # Output:
@@ -44,6 +53,8 @@
 #
 # Note: rougeLsum is the summary-level ROUGE-L used in the ACI-Bench paper.
 #       rougeL (sentence-level) is also stored in the JSON but is not the paper metric.
+#       MEDCON (UMLS) scoring is currently stubbed out (returns 0.0).
+#       To enable: conda activate umls_env before running.
 
 # ─────────────────────────────────────────────────────────────────────────────
 # INSIGNIFICANT MODIFICATIONS BY TEAM 26 (CS6180, Northeastern University, 2026)
@@ -316,7 +327,7 @@ for meta_type in ["patient_gender", "cc", "2nd_complaints"]:
 
 os.makedirs('../results', exist_ok=True)
 json_object = json.dumps( results_all, indent=4 )
-fn_out = 'results/{}.json'.format(fn_sys.split("/")[-1].split(".")[0])
+fn_out = 'results/new{}.json'.format(fn_sys.split("/")[-1].split(".")[0])
 with open( fn_out, 'w' ) as f :
     f.write( json_object )
 
