@@ -26,18 +26,25 @@ Priority for taxonomy_label:
   json_parse > pydantic > pipeline_error > hallucinated >
   missed > instruction_bleed > accurate
 
-Usage:
+Run from project root:
     # Judge a single technique's results:
-    python llm_judge.py --results gvr_results.json --transcripts data/clinicalnlp_taskB_test1.csv
+    python evaluation/llm_judge.py \
+        --results results/constrained_JSON_output/gvr_results.json \
+        --transcripts data/clinicalnlp_taskB_test1.csv
 
     # Judge all three techniques and compare:
-    python llm_judge.py \\
-        --results gvr_results.json pe_results.json cd_results.json \\
-        --transcripts data/clinicalnlp_taskB_test1.csv \\
+    python evaluation/llm_judge.py \
+        --results results/constrained_JSON_output/gvr_results.json \
+                  results/constrained_JSON_output/pe_results.json \
+                  results/constrained_JSON_output/cd_results.json \
+        --transcripts data/clinicalnlp_taskB_test1.csv \
         --output judge_results.json
 
     # Limit to first N records per technique (for testing):
-    python llm_judge.py --results gvr_results.json --transcripts data/clinicalnlp_taskB_test1.csv --n 5
+    python evaluation/llm_judge.py \
+        --results results/constrained_JSON_output/gvr_results.json \
+        --transcripts data/clinicalnlp_taskB_test1.csv \
+        --n 5
 
 Requirements:
     pip install requests pandas python-dotenv
