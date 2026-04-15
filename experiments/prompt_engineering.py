@@ -43,18 +43,6 @@ def _build_prompt(encounter: ACIEncounter) -> str:
                                handling, and typed field extraction, with examples
     """
 
-    # Pull metadata if available — gives the model authoritative anchors
-    # so it doesn't have to infer them from transcript language alone
-    meta_block = ""
-    if encounter.chief_complaint:
-        meta_block += f"Chief complaint (authoritative): {encounter.chief_complaint}\n"
-    if encounter.patient_age:
-        meta_block += f"Patient age: {encounter.patient_age}\n"
-    if encounter.patient_gender:
-        meta_block += f"Patient gender: {encounter.patient_gender}\n"
-    if meta_block:
-        meta_block = f"\nCLINICAL METADATA (use these as ground truth — do not override from transcript):\n{meta_block}"
-
     return f"""You are an experienced clinical documentation specialist. Your task is to read a doctor-patient conversation transcript and produce a structured SOAP note as a single valid JSON object.
 
 ══════════════════════════════════════════
@@ -101,7 +89,6 @@ OUTPUT CONTRACT:
     with string values — objective_results may be ""
   • Do not fabricate clinical information not present in the transcript
   • Do not repeat any JSON keys
-{meta_block}
 ══════════════════════════════════════════
 SCHEMA:
 {COMPACT_SCHEMA}

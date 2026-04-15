@@ -17,9 +17,9 @@ No JSON schema, no Pydantic validation, no retry — raw free-text output only.
 Direct apples-to-apples comparison of Llama-3.1-8B vs the paper's GPT baselines.
 
 Run:
-    python simple_baseline.py single
-    python simple_baseline.py batch
-    python simple_baseline.py batch --n 5
+    PYTHONPATH=. python experiments/simple_baseline.py single
+    PYTHONPATH=. python experiments/simple_baseline.py -- n 5
+    PYTHONPATH=. python experiments/simple_baseline.py batch
 """
 
 from __future__ import annotations
