@@ -2,20 +2,20 @@
 CS6180 Team 26 — Clinical SOAP Note Generation
 Streamlit showcase app
 
-Run:
-    streamlit run app.py
+Run from project root:
+    streamlit run streamlit/app.py
 
-Expected file layout next to app.py:
+Expected file layout (relative to project root, one level above app.py):
     data/clinicalnlp_taskB_test1.csv
     data/clinicalnlp_taskB_test1_metadata.csv
-    results/simple_baseline_results.json
-    results/pe_results.json
-    results/gvr_results.json            (optional)
-    results/cd_results.json             (optional)
-    results/simple_baseline_results_predictions.json   (live eval — overrides static)
-    results/gvr_results_predictions.json               (live eval — overrides static)
-    results/pe_results_predictions.json                (live eval — overrides static)
-    results/cd_results_predictions.json                (live eval — overrides static)
+    results/constrained_JSON_output/simple_baseline_results.json
+    results/constrained_JSON_output/pe_results.json
+    results/constrained_JSON_output/gvr_results.json            (optional)
+    results/constrained_JSON_output/cd_results.json             (optional)
+    results/automatic_metric_results/simple_baseline_results_predictions.json   (live eval — overrides static)
+    results/automatic_metric_results/gvr_results_predictions.json               (live eval — overrides static)
+    results/automatic_metric_results/pe_results_predictions.json                (live eval — overrides static)
+    results/automatic_metric_results/cd_results_predictions.json                (live eval — overrides static)
 """
 
 from __future__ import annotations
@@ -98,6 +98,8 @@ st.markdown("""
 # CONSTANTS
 # ─────────────────────────────────────────────────────────
 BASE = Path(__file__).parent
+DATA_DIR    = BASE.parent / "data"
+RESULTS_DIR = BASE.parent / "results"
 
 TECHNIQUE_META = {
     "simple_baseline": {
@@ -271,8 +273,10 @@ def _soap_to_text(soap: dict) -> str:
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv(BASE / "data" / "clinicalnlp_taskB_test1.csv")
-    meta = pd.read_csv(BASE / "data" / "clinicalnlp_taskB_test1_metadata.csv")
+    df   = pd.read_csv(DATA_DIR / "clinicalnlp_taskB_test1.csv")
+    meta = pd.read_csv(DATA_DIR / "clinicalnlp_taskB_test1_metadata.csv")
+    # df = pd.read_csv(BASE / "data" / "clinicalnlp_taskB_test1.csv")
+    # meta = pd.read_csv(BASE / "data" / "clinicalnlp_taskB_test1_metadata.csv")
     df = df.merge(
         meta[["encounter_id", "patient_gender", "patient_age", "patient_firstname",
               "patient_familyname", "cc", "2nd_complaints", "doctor_name"]],
@@ -285,16 +289,16 @@ def load_data():
             df[col] = df[col].astype(str).str.strip()
 
     # Per-encounter result dicts (for Encounter Explorer)
-    sb_res  = _index(_load_json(BASE / "results" / "simple_baseline_results.json"))
-    pe_res  = _index(_load_json(BASE / "results" / "pe_results.json"))
-    gvr_res = _index(_load_json(BASE / "results" / "gvr_results.json"))
-    cd_res  = _index(_load_json(BASE / "results" / "cd_results.json"))
+    sb_res  = _index(_load_json(RESULTS_DIR / "constrained_JSON_output" / "simple_baseline_results.json"))
+    pe_res  = _index(_load_json(RESULTS_DIR / "constrained_JSON_output" / "pe_results.json"))
+    gvr_res = _index(_load_json(RESULTS_DIR / "constrained_JSON_output" / "gvr_results.json"))
+    cd_res  = _index(_load_json(RESULTS_DIR / "constrained_JSON_output" / "cd_results.json"))
 
     # Aggregate eval metrics — static fallback + live JSON override
-    sb_eval  = _merge_eval(BASE / "results" / "simple_baseline_results_predictions.json", "simple_baseline")
-    pe_eval  = _merge_eval(BASE / "results" / "pe_results_predictions.json",               "prompt_engineering")
-    gvr_eval = _merge_eval(BASE / "results" / "gvr_results_predictions.json",              "gvr")
-    cd_eval  = _merge_eval(BASE / "results" / "cd_results_predictions.json",               "constrained_decoding")
+    sb_eval  = _merge_eval(RESULTS_DIR / "automatic_metric_results" / "simple_baseline_results_predictions.json", "simple_baseline")
+    pe_eval  = _merge_eval(RESULTS_DIR / "automatic_metric_results" / "pe_results_predictions.json",               "prompt_engineering")
+    gvr_eval = _merge_eval(RESULTS_DIR / "automatic_metric_results" / "gvr_results_predictions.json",              "gvr")
+    cd_eval  = _merge_eval(RESULTS_DIR / "automatic_metric_results" / "cd_results_predictions.json",               "constrained_decoding")
 
     return df, sb_res, pe_res, gvr_res, cd_res, sb_eval, pe_eval, gvr_eval, cd_eval
 
