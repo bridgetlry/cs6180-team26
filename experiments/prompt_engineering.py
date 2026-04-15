@@ -119,6 +119,6 @@ if __name__ == "__main__":
     from batch_runner import main
     main(
         PromptEngineeringPipeline(),
-        default_results_path="results/pe_results.json",
+        default_results_path="results/constrained_JSON_output/pe_results.json",
         default_max_retries=0,  # single-shot by design
     )

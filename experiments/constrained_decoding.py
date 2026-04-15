@@ -99,6 +99,6 @@ if __name__ == "__main__":
     from batch_runner import main
     main(
         ConstrainedDecodingPipeline(),
-        default_results_path="results/cd_results.json",
+        default_results_path="results/constrained_JSON_output/cd_results.json",
         default_max_retries=0,  # constrained decoding does not retry
     )

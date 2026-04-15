@@ -149,6 +149,6 @@ if __name__ == "__main__":
     from batch_runner import main
     main(
         GVRPipeline(),
-        default_results_path="results/gvr_results.json",
+        default_results_path="results/constrained_JSON_output/gvr_results.json",
         default_max_retries=MAX_RETRIES,
     )

@@ -1,0 +1,49 @@
+ALL
+Model,ROUGE-1,ROUGE-2,ROUGE-Lsum,Fact
+OpenAI (wo FT)
+GPT-4,51.76,22.58,45.97,57.78
+Llama-3.1-8b-instruct (wo FT)
+ACI-Bench Prompt,53.01,22.31,47.56,57.52
+Prompt Engineering,38.96,17.32,36.15,53.01
+Constrained Decoding,33.91,15.20,31.79,48.24
+Generate Validate Retry,40.82,18.01,37.47,53.37
+
+division-subjective
+Model,ROUGE-1,ROUGE-2,ROUGE-Lsum,Fact
+OpenAI (wo FT)
+GPT-4,41.20,19.02,26.56,44.25
+Llama-3.1-8b-instruct (wo FT)
+ACI-Bench Prompt,28.42,13.01,19.00,28.48
+Prompt Engineering,36.49,19.24,27.35,40.57
+Constrained Decoding,28.49,15.13,22.85,28.42
+Generate Validate Retry,36.99,19.28,27.20,41.32
+
+division-objective_exam
+Model,ROUGE-1,ROUGE-2,ROUGE-Lsum,Fact
+OpenAI (wo FT)
+GPT-4,50.11,28.20,40.43,42.59
+Llama-3.1-8b-instruct (wo FT)
+ACI-Bench Prompt,35.82,22.66,29.99,25.64
+Prompt Engineering,54.53,33.61,45.19,45.32
+Constrained Decoding,51.99,33.84,45.67,39.77
+Generate Validate Retry,52.88,33.32,45.33,47.01
+
+division-objective_results
+Model,ROUGE-1,ROUGE-2,ROUGE-Lsum,Fact
+OpenAI (wo FT)
+GPT-4,37.65,19.94,35.73,26.73
+Llama-3.1-8b-instruct (wo FT)
+ACI-Bench Prompt,34.10,21.68,31.55,16.19
+Prompt Engineering,41.77,14.75,40.30,14.17
+Constrained Decoding,47.66,26.30,46.29,25.70
+Generate Validate Retry,39.11,12.17,38.23,11.99
+
+division-assessment_and_plan
+Model,ROUGE-1,ROUGE-2,ROUGE-Lsum,Fact
+OpenAI (wo FT)
+GPT-4,38.16,14.12,24.90,42.36
+Llama-3.1-8b-instruct (wo FT)
+ACI-Bench Prompt,42.51,17.17,25.66,41.99
+Prompt Engineering,27.51,11.68,21.06,40.57
+Constrained Decoding,26.00,10.99,20.13,37.18
+Generate Validate Retry,30.49,12.80,22.73,38.82
